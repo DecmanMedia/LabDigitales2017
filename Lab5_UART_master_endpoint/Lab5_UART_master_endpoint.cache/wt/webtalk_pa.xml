@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue May 30 16:40:47 2017">
+<application name="pa" timeStamp="Tue Jun 06 19:48:26 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="a781ec5839cf4629898d13c19a99741f" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -16,10 +16,19 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
+<item name="Java Command Handlers">
+<property name="OpenProject" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="4" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="2" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_OPEN_PROJECT" value="1" type="GuiResourceData"/>
+</item>
 <item name="Other">
-<property name="GuiMode" value="26" type="GuiMode"/>
+<property name="GuiMode" value="37" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="19" type="TclMode"/>
+<property name="TclMode" value="24" type="TclMode"/>
 </item>
 </section>
 </application>
