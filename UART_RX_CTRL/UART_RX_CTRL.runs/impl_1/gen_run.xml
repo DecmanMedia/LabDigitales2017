@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1496785842">
+  <File Type="PWROPT-DRC" Name="Slave_Endpoint_top_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Slave_Endpoint_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Slave_Endpoint_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Slave_Endpoint_top_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="Slave_Endpoint_top.tcl"/>
+  <File Type="OPT-HWDEF" Name="Slave_Endpoint_top.hwdef"/>
+  <File Type="RDI-RDI" Name="Slave_Endpoint_top.vdi"/>
+  <File Type="OPT-DCP" Name="Slave_Endpoint_top_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Slave_Endpoint_top_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="Slave_Endpoint_top_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Slave_Endpoint_top_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="Slave_Endpoint_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Slave_Endpoint_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Slave_Endpoint_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Slave_Endpoint_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Slave_Endpoint_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Slave_Endpoint_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Slave_Endpoint_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Slave_Endpoint_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Slave_Endpoint_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Slave_Endpoint_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Slave_Endpoint_top_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Slave_Endpoint_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Slave_Endpoint_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Slave_Endpoint_top_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="Slave_Endpoint_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Slave_Endpoint_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Slave_Endpoint_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Slave_Endpoint_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Slave_Endpoint_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Slave_Endpoint_top_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="Slave_Endpoint_top.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="Slave_Endpoint_top_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="Slave_Endpoint_top.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Slave_Endpoint_top_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="Slave_Endpoint_top.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Slave_Endpoint_top_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="Slave_Endpoint_top.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Slave_Endpoint_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Slave_Endpoint_top_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Slave_Endpoint_top_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="Slave_Endpoint_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Slave_Endpoint_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Slave_Endpoint_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Slave_Endpoint_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Slave_Endpoint_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Slave_Endpoint_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Slave_Endpoint_top_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Slave_Endpoint_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Slave_Endpoint_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Slave_Endpoint_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Slave_Endpoint_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Slave_Endpoint_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="Slave_Endpoint_top.bit"/>
+  <File Type="BITSTR-RBT" Name="Slave_Endpoint_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="Slave_Endpoint_top.nky"/>
+  <File Type="BITSTR-BMM" Name="Slave_Endpoint_top_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Slave_Endpoint_top.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Slave_Endpoint_top.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/uart/data_sync.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/uart/data_sync.v"/>
+        <Attr Name="ImportTime" Val="1496785705"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/uart/uart_tx.v"/>
+        <Attr Name="ImportTime" Val="1496785705"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/uart/uart_rx.v"/>
+        <Attr Name="ImportTime" Val="1496785705"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart_baud_tick_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/uart/uart_baud_tick_gen.v"/>
+        <Attr Name="ImportTime" Val="1496785705"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UART_RX_CTRL.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart_basic.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/uart/uart_basic.v"/>
+        <Attr Name="ImportTime" Val="1496785705"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Slave_Endpoint_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Slave_Endpoint_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../The Final Alcachofita.xdc"/>
+        <Attr Name="ImportTime" Val="1491924669"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
