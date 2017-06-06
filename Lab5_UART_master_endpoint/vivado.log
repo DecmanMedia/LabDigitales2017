@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 30 16:06:46 2017
+# Process ID: 11600
+# Current directory: C:/Users/Diego/LabDigitales2017/Lab5_UART_master_endpoint
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13868 C:\Users\Diego\LabDigitales2017\Lab5_UART_master_endpoint\Lab5_UART_master_endpoint.xpr
+# Log file: C:/Users/Diego/LabDigitales2017/Lab5_UART_master_endpoint/vivado.log
+# Journal file: C:/Users/Diego/LabDigitales2017/Lab5_UART_master_endpoint\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Diego/LabDigitales2017/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/Lab5_UART_master_endpoint' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Diego/LabDigitales2017/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.ip_user_files', nor could it be found using path 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 763.996 ; gain = 118.344
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 30 16:40:51 2017...

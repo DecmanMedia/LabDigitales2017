@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Apr 25 15:38:09 2017
+# Process ID: 4388
+# Current directory: C:/Users/Diego/LabDigitales2017/Lab_3/Lab_3.runs/impl_1
+# Command line: vivado.exe -log dosbit_to_name.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source dosbit_to_name.tcl -notrace
+# Log file: C:/Users/Diego/LabDigitales2017/Lab_3/Lab_3.runs/impl_1/dosbit_to_name.vdi
+# Journal file: C:/Users/Diego/LabDigitales2017/Lab_3/Lab_3.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source dosbit_to_name.tcl -notrace

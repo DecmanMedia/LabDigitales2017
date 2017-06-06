@@ -1,0 +1,84 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 23 17:43:36 2017
+| Host         : LaptopDiewo running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab_4_control_sets_placed.rpt
+| Design       : lab_4
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |    57 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              21 |           10 |
+| No           | No                    | Yes                    |               2 |            1 |
+| No           | Yes                   | No                     |              59 |           18 |
+| Yes          | No                    | No                     |              85 |           29 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              16 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------+-------------------------------+-----------------------------------------+------------------+----------------+
+|     Clock Signal     |         Enable Signal         |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++----------------------+-------------------------------+-----------------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG |                               | FSM_sequential_estado_actual[1]_i_2_n_0 |                1 |              2 |
+|  clk_BUFG            |                               | displaycito/anodos_tmp[7]_i_1_n_0       |                1 |              4 |
+|  clk_BUFG            | doublecito/shift[11]_i_1_n_0  |                                         |                1 |              4 |
+|  clk_BUFG            | doublecito/shift[15]_i_1_n_0  |                                         |                1 |              4 |
+|  clk_BUFG            | doublecito/shift[19]_i_1_n_0  |                                         |                1 |              4 |
+|  clk_BUFG            | doublecito/shift[23]_i_1_n_0  |                                         |                1 |              4 |
+|  clk_BUFG            | doublecito/shift[27]_i_1_n_0  |                                         |                1 |              4 |
+|  clk_BUFG            | doublecito/shift[31]_i_1_n_0  |                                         |                1 |              4 |
+|  clk_BUFG            | doublecito/shift[3]_i_1_n_0   |                                         |                1 |              4 |
+|  clk_BUFG            | doublecito/shift[7]_i_1_n_0   |                                         |                1 |              4 |
+|  clk_BUFG            | doublecito/counter[5]_i_1_n_0 |                                         |                3 |              5 |
+|  CLK100MHZ_IBUF_BUFG |                               | canto/PB_cnt[4]_i_1_n_0                 |                2 |              5 |
+|  clk_BUFG            |                               |                                         |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG |                               |                                         |                6 |             13 |
+|  CLK100MHZ_IBUF_BUFG | alucito/A_next                |                                         |                8 |             16 |
+|  CLK100MHZ_IBUF_BUFG | alucito/B_next                | alucito/A_next                          |                7 |             16 |
+|  CLK100MHZ_IBUF_BUFG |                               | red/estado_actual[1]                    |                7 |             19 |
+|  CLK100MHZ_IBUF_BUFG |                               | clockcito/clk_out                       |                8 |             31 |
+|  clk_BUFG            | doublecito/bcd0               |                                         |               10 |             32 |
++----------------------+-------------------------------+-----------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 4      |                     9 |
+| 5      |                     2 |
+| 8      |                     1 |
+| 13     |                     1 |
+| 16+    |                     5 |
++--------+-----------------------+
+
+

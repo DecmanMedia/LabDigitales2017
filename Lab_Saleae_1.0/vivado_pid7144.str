@@ -1,0 +1,579 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+Process ID: 7144
+
+Current time: 	5/30/17 5:41:16 PM CLT
+Time zone: 	Chile Time (America/Santiago)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	Diego
+User home directory: C:/Users/Diego
+User working directory: C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0
+User country: 	MX
+User language: 	es
+User locale: 	es_MX
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Diego/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Diego/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	221 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 414 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Diego\LabDigitales2017\Lab_Saleae_1.0\Lab_Saleae_1.0.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [GUI Memory]: 35 MB (+34591kb) [00:00:08]
+// [Engine Memory]: 409 MB (+277457kb) [00:00:08]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 462 MB (+33872kb) [00:00:10]
+// [GUI Memory]: 46 MB (+8911kb) [00:00:12]
+// [Engine Memory]: 503 MB (+18853kb) [00:00:12]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 31 MB. Current time: 5/30/17 5:41:21 PM CLT
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 790.730 ; gain = 139.504 
+// Project name: Lab_Saleae_1.0; location: C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 51 MB (+3186kb) [00:00:21]
+// Elapsed time: 86 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bt:g (cd:JFrame):  IP Catalog : addNotify
+// [GUI Memory]: 54 MB (+427kb) [00:01:44]
+dismissDialog("IP Catalog"); // bt:g (cd:JFrame)
+// [GUI Memory]: 60 MB (+3355kb) [00:01:53]
+// Elapsed time: 20 seconds
+setText("PAResourceItoN.IPCoreView_IP_CATALOG_SEARCH_FIELD", "clock"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, cd:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:5.3", 14, "Clocking Wizard", 0, true); // M:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:5.3", 14, "Clocking Wizard", 0, true); // M:ab (JViewport:JComponent, cd:JFrame) - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:5.3", 14); // M:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:5.3", 14, "Clocking Wizard", 0, true, false, false, false, false, true); // M:ab (JViewport:JComponent, cd:JFrame) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// l:bt (cd:JFrame):  Customize IP : addNotify
+// [Engine Memory]: 567 MB (+40816kb) [00:02:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 595 MB. GUI used memory: 33 MB. Current time: 5/30/17 5:43:18 PM CLT
+// [Engine Memory]: 616 MB (+21850kb) [00:02:14]
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// p:g (cd:JFrame): Customize IP: addNotify
+dismissDialog("Customize IP"); // l:bt (cd:JFrame)
+// [GUI Memory]: 64 MB (+1321kb) [00:02:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 678 MB. GUI used memory: 43 MB. Current time: 5/30/17 5:43:33 PM CLT
+// [Engine Memory]: 680 MB (+34834kb) [00:02:27]
+// Elapsed time: 20 seconds
+setText("Component Name", "clk_nuevo"); // M:ak (bZ:L, p:g)
+selectCheckBox((HResource) null, "Minimize Power", true); // g:JCheckBox (bs:F, p:g): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "Minimize Power", false); // g:JCheckBox (bs:F, p:g): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 45 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cP:g (C:JPanel, p:g)
+// [GUI Memory]: 69 MB (+1177kb) [00:03:39]
+// Elapsed time: 16 seconds
+setText("CLKOUT1 REQUESTED OUT FREQ", "5.000"); // M:ak (cQ:L)
+selectCheckBox((HResource) null, "clk_out2", true); // g:JCheckBox (bs:F, p:g): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out2", false); // g:JCheckBox (bs:F, p:g): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out2", true); // g:JCheckBox (bs:F, p:g): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [GUI Memory]: 78 MB (+6447kb) [00:03:50]
+// Elapsed time: 21 seconds
+setText("CLKOUT2 REQUESTED OUT FREQ", "1.300"); // M:ak (cQ:L)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 697 MB. GUI used memory: 45 MB. Current time: 5/30/17 5:46:14 PM CLT
+// Elapsed time: 62 seconds
+setText("CLKOUT2 REQUESTED OUT FREQ", "6.500"); // M:ak (cQ:L)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 41 seconds
+selectCheckBox((HResource) null, "clk_out3", true); // g:JCheckBox (bs:F, p:g): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT3 REQUESTED OUT FREQ", (String) null); // M:ak (cQ:L, p:g)
+// [GUI Memory]: 84 MB (+2286kb) [00:05:59]
+setText("CLKOUT3 REQUESTED OUT FREQ", "4.7"); // M:ak (cQ:L)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT3 REQUESTED OUT FREQ", "4.700"); // M:ak (cQ:L)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [GUI Memory]: 91 MB (+3065kb) [00:06:54]
+// Elapsed time: 44 seconds
+setText("CLKOUT3 REQUESTED OUT FREQ", "4.7"); // M:ak (cQ:L)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 21 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cP:g (C:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+selectButton("RDIResource.HFileChooser_OK_TO_CREATE_DIRECTORY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+dismissDialog("Customize IP"); // p:g (cd:JFrame)
+// TclEventType: CREATE_IP_CORE
+// bt:g (cd:JFrame):  Customize IP : addNotify
+// Tcl Message: create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.3 -module_name clk_nuevo -dir c:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.srcs/sources_1/ip 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.USE_MIN_POWER {false} CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT3_USED {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {5.000} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {6.500} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {4.7} CONFIG.JITTER_SEL {No_Jitter} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {30.875} CONFIG.MMCM_CLKOUT0_DIVIDE_F {123.500} CONFIG.MMCM_CLKOUT0_DUTY_CYCLE {0.500} CONFIG.MMCM_CLKOUT1_DIVIDE {95} CONFIG.MMCM_CLKOUT2_DIVIDE {128} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT1_JITTER {632.852} CONFIG.CLKOUT1_PHASE_ERROR {359.151} CONFIG.CLKOUT2_JITTER {604.509} CONFIG.CLKOUT2_PHASE_ERROR {359.151} CONFIG.CLKOUT3_JITTER {636.798} CONFIG.CLKOUT3_PHASE_ERROR {359.151}] [get_ips clk_nuevo] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.srcs/sources_1/ip/clk_nuevo/clk_nuevo.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_nuevo'... 
+// at:q (cd:JFrame): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bt:g (cd:JFrame)
+// [Engine Memory]: 717 MB (+2804kb) [00:07:32]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 717 MB. GUI used memory: 47 MB. Current time: 5/30/17 5:48:44 PM CLT
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, at:q)
+// bt:g (cd:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  c:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.srcs/sources_1/ip/clk_nuevo/clk_nuevo.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_nuevo'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_nuevo'... 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_nuevo'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_nuevo'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.srcs/sources_1/ip/clk_nuevo/clk_nuevo.xci] -no_script -sync -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.srcs/sources_1/ip/clk_nuevo/clk_nuevo.xci] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs -jobs 4 clk_nuevo_synth_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue May 30 16:48:54 2017] Launched clk_nuevo_synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.runs/clk_nuevo_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 48 MB. Current time: 5/30/17 5:49:04 PM CLT
+// Elapsed time: 33 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// PAPropertyPanels.initPanels (clk_nuevo.xci) elapsed time: 0.2s
+// Elapsed time: 52 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_nuevo (clk_nuevo.xci)]", 2, false); // y:i (D:JPanel, cd:JFrame)
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // ab:aE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Boton_LED (Boton_LED.v)]", 1, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Boton_LED (Boton_LED.v)]", 1, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// [Engine Memory]: 754 MB (+1251kb) [00:09:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 780 MB. GUI used memory: 54 MB. Current time: 5/30/17 5:51:39 PM CLT
+// Elapsed time: 79 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_nuevo (clk_nuevo.xci)]", 2); // y:i (D:JPanel, cd:JFrame)
+// y:aO (cd:JFrame): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // y:aO (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_nuevo (clk_nuevo.xci), clk_nuevo (clk_nuevo.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+applyEnter(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_nuevo (clk_nuevo.xci), clk_nuevo (clk_nuevo.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_nuevo (clk_nuevo.xci), clk_nuevo (clk_nuevo.v)]", 2, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Elapsed time: 108 seconds
+selectCodeEditor("clk_nuevo.v", 12, 56); // D:bF (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "clk_nuevo.v", 'c'); // D:bF (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_nuevo.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 225, 129); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 199, 144); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Boton_LED.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 43 seconds
+selectCodeEditor("Boton_LED.v", 275, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 194, 218); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("Boton_LED.v", 130, 164); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 39 seconds
+selectCodeEditor("Boton_LED.v", 131, 245); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 131, 245, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Boton_LED.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Boton_LED.v", 149, 41); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 149, 41, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Boton_LED.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 107, 112); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 108, 114, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Boton_LED.v", 115, 115); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 115, 114, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Boton_LED.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 116, 59); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 131, 74); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 110, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 110, 179, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Boton_LED.v", 113, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 113, 198, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Boton_LED.v", 199, 187); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 96 MB (+194kb) [00:16:40]
+// Elapsed time: 142 seconds
+selectCodeEditor("Boton_LED.v", 156, 156); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 72 seconds
+selectCodeEditor("Boton_LED.v", 134, 16); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 134, 15, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Boton_LED.v", 132, 28); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 132, 29, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("Boton_LED.v", 99, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 99, 162, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 17 seconds
+typeControlKey((HResource) null, "Boton_LED.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Boton_LED.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "Boton_LED.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Boton_LED.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 52, 200); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 35, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Boton_LED.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 73, 197); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 102 MB (+969kb) [00:20:40]
+// Elapsed time: 68 seconds
+selectCodeEditor("Boton_LED.v", 147, 64); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 21, 146); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 27, 149); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 21, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Tue May 30 17:02:55 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.runs/synth_1/runme.log [Tue May 30 17:02:55 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_FAILED
+// ah:y (cd:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 20 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:y (cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'clk_nuevo_clk_wiz' not found [C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.srcs/sources_1/new/Boton_LED.v:46]. ]", 2, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Diego\LabDigitales2017\Lab_Saleae_1.0\Lab_Saleae_1.0.srcs\sources_1\new\Boton_LED.v;-;;-;16;-;line;-;46;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-285] failed synthesizing module 'Boton_LED' [C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.srcs/sources_1/new/Boton_LED.v:23]. ]", 3, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Diego\LabDigitales2017\Lab_Saleae_1.0\Lab_Saleae_1.0.srcs\sources_1\new\Boton_LED.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'clk_nuevo_clk_wiz' not found [C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.srcs/sources_1/new/Boton_LED.v:46]. ]", 2, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Diego\LabDigitales2017\Lab_Saleae_1.0\Lab_Saleae_1.0.srcs\sources_1\new\Boton_LED.v;-;;-;16;-;line;-;46;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("Boton_LED.v", 85, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 133, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 133, 182, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Boton_LED.v", 85, 178); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 91, 183); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 21, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Tue May 30 17:03:55 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.runs/synth_1/runme.log [Tue May 30 17:03:55 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 107 MB (+398kb) [00:23:45]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Implementation Completed: addNotify
+// Elapsed time: 183 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a:JRadioButton (JPanel:JComponent, ah:y)
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g:JCheckBox (JPanel:JComponent, ah:y): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ah:y (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue May 30 17:07:02 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah:y (cd:JFrame): Bitstream Generation Failed: addNotify
+// Elapsed time: 68 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah:y (cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, The Final Alcachofita.xdc]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, The Final Alcachofita.xdc]", 4, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+floatView(PAResourceOtoP.PAViews_CODE, "The Final Alcachofita.xdc"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "The Final Alcachofita.xdc"); // as:DockableFrame (aA:FrameContainer, FrameFloatingContainer:ResizableFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("The Final Alcachofita.xdc", 51, 385); // bF:I (JPanel:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 33 seconds
+closeFrame(PAResourceOtoP.PAViews_CODE, "The Final Alcachofita.xdc"); // as:DockableFrame (aA:FrameContainer, FrameFloatingContainer:ResizableFrame)
+dockFrame(PAResourceOtoP.PAViews_CODE, "The Final Alcachofita.xdc"); // as:DockableFrame (aA:FrameContainer, FrameFloatingContainer:ResizableFrame)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "The Final Alcachofita.xdc"); // as:DockableFrame (aA:FrameContainer, FrameFloatingContainer:ResizableFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue May 30 17:09:19 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 61 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a:JRadioButton (JPanel:JComponent, ah:y)
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // a:JRadioButton (JPanel:JComponent, ah:y)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Tue May 30 17:10:26 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 172 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue May 30 17:13:19 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 87 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26); // u:K (t:D, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 27, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 113 MB (+141kb) [00:33:44]
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bt:g (cd:JFrame):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2016.4   **** Build date : Jan 23 2017-19:37:29     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1029.223 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FFD8A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.runs/impl_1/Boton_LED.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bt:g (cd:JFrame)
+// [GUI Memory]: 122 MB (+3629kb) [00:33:56]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.runs/impl_1/Boton_LED.bit"); // ah:ak (ag:JPanel, be:aj)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Diego/LabDigitales2017/Lab_Saleae_1.0/Lab_Saleae_1.0.runs/impl_1/Boton_LED.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// Elapsed time: 132 seconds
+selectCodeEditor("Boton_LED.v", 309, 155); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Boton_LED.v", 306, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("Boton_LED.v", 148, 147); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_nuevo.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 205 seconds
+selectCodeEditor("clk_nuevo.v", 209, 199); // D:bF (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Boton_LED.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 780 MB. GUI used memory: 70 MB. Current time: 5/30/17 6:21:42 PM CLT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FFD8A 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify

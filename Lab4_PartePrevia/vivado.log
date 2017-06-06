@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jun 05 19:19:57 2017
+# Process ID: 1488
+# Current directory: C:/Users/Diego/LabDigitales2017/Lab4_PartePrevia
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4928 C:\Users\Diego\LabDigitales2017\Lab4_PartePrevia\Lab4_PartePrevia.xpr
+# Log file: C:/Users/Diego/LabDigitales2017/Lab4_PartePrevia/vivado.log
+# Journal file: C:/Users/Diego/LabDigitales2017/Lab4_PartePrevia\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Diego/LabDigitales2017/Lab4_PartePrevia/Lab4_PartePrevia.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Diego/Downloads/Lab4_PartePrevia' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 722.930 ; gain = 112.699
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 05 19:23:39 2017...
+

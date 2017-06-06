@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 30 16:06:46 2017
+# Process ID: 11600
+# Current directory: C:/Users/Diego/LabDigitales2017/Lab5_UART_master_endpoint
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13868 C:\Users\Diego\LabDigitales2017\Lab5_UART_master_endpoint\Lab5_UART_master_endpoint.xpr
+# Log file: C:/Users/Diego/LabDigitales2017/Lab5_UART_master_endpoint/vivado.log
+# Journal file: C:/Users/Diego/LabDigitales2017/Lab5_UART_master_endpoint\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Diego/LabDigitales2017/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.xpr
