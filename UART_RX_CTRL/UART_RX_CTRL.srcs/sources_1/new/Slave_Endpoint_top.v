@@ -22,11 +22,15 @@
 
 module Slave_Endpoint_top(
     input rx, CLK100MHZ, rst,
-    output [3:0] LED
+    output [7:0] AN,
+    output CA, CB, CC, CD, CE, CF, CG, DP
     );
     
     wire [7:0] rx_data, tx_data;
     wire rx_ready,tx_start,trigger;
+    wire [15:0] operador1, operador2;
+    wire [2:0] ALU_ctrl;
+    wire [1:0] state_ALU;
     //uart
         uart_basic #(
             .CLK_FREQUENCY(100_000_000),
@@ -48,12 +52,28 @@ module Slave_Endpoint_top(
             .rx_ready(rx_ready),
             .rst(rst),
             .clk(CLK100MHZ),
-            .tx_notice_me(tx_start),
-            .tx_operador1(),
-            .tx_operador2(),
-            .tx_ALU_ctrl(),
-            .LED(LED),
-            .trigger(trigger)
+            .tx_operador1(operador1),
+            .tx_operador2(operador2),
+            .tx_ALU_ctrl(ALU_ctrl),
+            .state_alu(state_ALU)
+            );
+            
+        lab_4 ALU_DISPLAY(
+            .operando1(operador1),
+            .operando2(operador2),
+            .ALU_ctrl(ALU_ctrl),
+            .CLK100MHZ(CLK100MHZ),
+            .CPU_RESETN(rst),
+            .state(state_ALU),
+            .AN(AN),
+            .CA(CA),
+            .CB(CB),
+            .CC(CC),
+            .CD(CD), 
+            .CE(CE),
+            .CF(CF), 
+            .CG(CG), 
+            .DP(DP)
             );
             
 endmodule

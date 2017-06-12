@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1496785842">
-  <File Type="PWROPT-DRC" Name="Slave_Endpoint_top_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Slave_Endpoint_top_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Slave_Endpoint_top_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="Slave_Endpoint_top_power_routed.rpx"/>
   <File Type="PA-TCL" Name="Slave_Endpoint_top.tcl"/>
-  <File Type="OPT-HWDEF" Name="Slave_Endpoint_top.hwdef"/>
+  <File Type="INIT-TIMING" Name="Slave_Endpoint_top_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Slave_Endpoint_top_methodology_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Slave_Endpoint_top_drc_pwropted.rpt"/>
   <File Type="RDI-RDI" Name="Slave_Endpoint_top.vdi"/>
   <File Type="OPT-DCP" Name="Slave_Endpoint_top_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="Slave_Endpoint_top.hwdef"/>
   <File Type="OPT-DRC" Name="Slave_Endpoint_top_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="Slave_Endpoint_top_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="Slave_Endpoint_top_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="Slave_Endpoint_top_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Slave_Endpoint_top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Slave_Endpoint_top_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="Slave_Endpoint_top.bin"/>
   <File Type="ROUTE-DRC-RPX" Name="Slave_Endpoint_top_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="Slave_Endpoint_top.drc"/>
+  <File Type="BG-BIN" Name="Slave_Endpoint_top.bin"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Slave_Endpoint_top_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="Slave_Endpoint_top.msk"/>
+  <File Type="BG-DRC" Name="Slave_Endpoint_top.drc"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Slave_Endpoint_top_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="Slave_Endpoint_top.bgn"/>
+  <File Type="BITSTR-MSK" Name="Slave_Endpoint_top.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Slave_Endpoint_top_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="Slave_Endpoint_top.bgn"/>
   <File Type="ROUTE-PWR" Name="Slave_Endpoint_top_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="Slave_Endpoint_top_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="Slave_Endpoint_top_route_status.rpt"/>
