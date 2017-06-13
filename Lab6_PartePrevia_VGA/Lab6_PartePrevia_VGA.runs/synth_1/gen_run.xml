@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1497384876">
+  <File Type="RDS-PROPCONSTRS" Name="test_pattern_previo_640x480_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="test_pattern_previo_640x480.tcl"/>
+  <File Type="RDS-RDS" Name="test_pattern_previo_640x480.vds"/>
+  <File Type="RDS-UTIL" Name="test_pattern_previo_640x480_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="test_pattern_previo_640x480_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="test_pattern_previo_640x480.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="test_pattern_previo_640x480_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="test_pattern_previo_640x480_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Lab6_PS2_VGA_reference/video_testpattern.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/GitHub/ELO212-example-modules/Lab6_PS2_VGA_reference/video_testpattern.v"/>
+        <Attr Name="ImportTime" Val="1497381582"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/GitHub/ELO212-example-modules/Lab6_PS2_VGA_reference/driver_vga.v"/>
+        <Attr Name="ImportTime" Val="1497381582"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab6_PS2_VGA_reference/test_pattern_previo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/GitHub/ELO212-example-modules/Lab6_PS2_VGA_reference/test_pattern_previo.v"/>
+        <Attr Name="ImportTime" Val="1497381582"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Lab6_Prev_VGA.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="test_pattern_previo_640x480"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../The Final Alcachofita.xdc"/>
+        <Attr Name="ImportTime" Val="1491924669"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
