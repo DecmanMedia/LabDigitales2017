@@ -127,6 +127,5 @@ module UART_RX_CTRL(
         else
             state <= next_state;
     end
-    
-    assign LED = state;                            
+                              
 endmodule

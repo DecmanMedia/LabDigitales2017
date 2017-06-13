@@ -64,7 +64,7 @@ module Slave_Endpoint_top(
             .operando2(operador2),
             .ALU_ctrl(ALU_ctrl),
             .CLK100MHZ(CLK100MHZ),
-            .CPU_RESETN(rst),
+            .CPU_RESETN(~rst),
             .state(state_ALU),
             .result(resultado),
             .AN(AN),
