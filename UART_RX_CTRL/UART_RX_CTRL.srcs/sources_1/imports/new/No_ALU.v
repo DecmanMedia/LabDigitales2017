@@ -25,7 +25,7 @@ module lab_4(
     input [15:0] operando2,
     input [2:0] ALU_ctrl,
     input CLK100MHZ,CPU_RESETN,
-    input [1:0] state,
+    input state,
     output [15:0] result,
     output DP, CA, CB, CC, CD, CE, CF, CG,
     output [7:0] AN
@@ -40,9 +40,6 @@ module lab_4(
     reg [2:0] estado_actual, estado_sig;
     
         
-    localparam OP1  = 2'd1;
-    localparam OP2  = 2'd2;
-    localparam OP_CTRL  = 2'd3;
     
     localparam ESPERANDO_OPERADOR1 = 3'b001;
     localparam ESPERANDO_OPERADOR2 = 3'b011;
@@ -53,10 +50,10 @@ module lab_4(
     begin
         //estado_sig = estado_actual;
         case(estado_actual)
-            ESPERANDO_OPERADOR1: estado_sig = (state == OP1)? ESPERANDO_OPERADOR2:ESPERANDO_OPERADOR1;
-            ESPERANDO_OPERADOR2: estado_sig = (state == OP2)? ESPERANDO_OPERACION: ESPERANDO_OPERADOR2;
-            ESPERANDO_OPERACION: estado_sig = (state == OP_CTRL)? MOSTRAR_RESULTADO: ESPERANDO_OPERACION;
-            MOSTRAR_RESULTADO: estado_sig = (state == 2'd0)? ESPERANDO_OPERADOR1: MOSTRAR_RESULTADO;
+            ESPERANDO_OPERADOR1: estado_sig = (state)? ESPERANDO_OPERADOR2:ESPERANDO_OPERADOR1;
+            ESPERANDO_OPERADOR2: estado_sig = (state)? ESPERANDO_OPERACION: ESPERANDO_OPERADOR2;
+            ESPERANDO_OPERACION: estado_sig = (state)? MOSTRAR_RESULTADO: ESPERANDO_OPERACION;
+            MOSTRAR_RESULTADO: estado_sig = (state)? ESPERANDO_OPERADOR1: MOSTRAR_RESULTADO;
             default: estado_sig = ESPERANDO_OPERADOR1;          
         endcase
     end
