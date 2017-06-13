@@ -26,15 +26,16 @@ module lab_4(
     input [2:0] ALU_ctrl,
     input CLK100MHZ,CPU_RESETN,
     input [1:0] state,
-    output [7:0] AN,
-    output CA, CB, CC, CD, CE, CF, CG, DP
+    output [15:0] result,
+    output DP, CA, CB, CC, CD, CE, CF, CG,
+    output [7:0] AN
     );
     //Creacion de Reloj 200 Hz
     wire clk;
     clock_divider clockcito(CLK100MHZ,1'b0,clk);
+
         
     wire [31:0] result_bcd;
-    wire [15:0] result;
     reg [2:0] LED_RGB;
     reg [2:0] estado_actual, estado_sig;
     
@@ -131,5 +132,7 @@ module lab_4(
         A <= A_next;
         B <= B_next;
         operador <= operador_next;      
-    end      
+    end
+    
+          
 endmodule

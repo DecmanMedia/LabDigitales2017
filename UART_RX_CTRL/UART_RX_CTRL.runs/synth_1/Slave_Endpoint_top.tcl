@@ -16,13 +16,22 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/imports/5.2.3/ssdec.v
   C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/uart/data_sync.v
+  C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/imports/Downloads/unsigned_to_bcd.v
+  C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/imports/new/pwm.v
+  C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/imports/5.2.3/display.v
+  C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/imports/Downloads/clockuru.v
+  C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/new/ALU.v
   C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/uart/uart_tx.v
   C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/uart/uart_rx.v
   C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/uart/uart_baud_tick_gen.v
+  C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/new/No_ALU.v
+  C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/imports/new/ejem_01.v
   C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/new/UART_RX_CTRL.v
   C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/uart/uart_basic.v
   C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/new/Slave_Endpoint_top.v
+  C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/imports/Downloads/TX_CTRL.v
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp

@@ -23,12 +23,13 @@
 module Slave_Endpoint_top(
     input rx, CLK100MHZ, rst,
     output [7:0] AN,
-    output CA, CB, CC, CD, CE, CF, CG, DP
+    output CA, CB, CC, CD, CE, CF, CG, DP,
+    output tx
     );
     
     wire [7:0] rx_data, tx_data;
-    wire rx_ready,tx_start,trigger;
-    wire [15:0] operador1, operador2;
+    wire rx_ready,tx_start,trigger, tx_busy;
+    wire [15:0] operador1, operador2, resultado;
     wire [2:0] ALU_ctrl;
     wire [1:0] state_ALU;
     //uart
@@ -41,10 +42,10 @@ module Slave_Endpoint_top(
             .rx(rx),
             .rx_data(rx_data),
             .rx_ready(rx_ready),
-            .tx(),
-            .tx_start(),
+            .tx(tx),
+            .tx_start(tx_start),
             .tx_data(tx_data),
-            .tx_busy()
+            .tx_busy(tx_busy)
         );
         
         UART_RX_CTRL UART_RX_CTRL_inst(
@@ -65,6 +66,7 @@ module Slave_Endpoint_top(
             .CLK100MHZ(CLK100MHZ),
             .CPU_RESETN(rst),
             .state(state_ALU),
+            .result(resultado),
             .AN(AN),
             .CA(CA),
             .CB(CB),
@@ -73,7 +75,14 @@ module Slave_Endpoint_top(
             .CE(CE),
             .CF(CF), 
             .CG(CG), 
-            .DP(DP)
+            .DP(DP)           
             );
+                
+    TX_CTRL TX_CTRL_inst(
+        .resultOut16(resultado),
+        .clk(CLK100MHZ),
+        .tx_data(tx_data),
+        .tx_start(tx_start)
+        );
             
 endmodule

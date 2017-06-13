@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1496785842">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1497380460">
+  <File Type="PWROPT-DRC" Name="Slave_Endpoint_top_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Slave_Endpoint_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Slave_Endpoint_top_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="Slave_Endpoint_top_power_routed.rpx"/>
   <File Type="PA-TCL" Name="Slave_Endpoint_top.tcl"/>
-  <File Type="INIT-TIMING" Name="Slave_Endpoint_top_timing_summary_init.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Slave_Endpoint_top_methodology_drc_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="Slave_Endpoint_top_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Slave_Endpoint_top.hwdef"/>
   <File Type="RDI-RDI" Name="Slave_Endpoint_top.vdi"/>
   <File Type="OPT-DCP" Name="Slave_Endpoint_top_opt.dcp"/>
-  <File Type="OPT-HWDEF" Name="Slave_Endpoint_top.hwdef"/>
   <File Type="OPT-DRC" Name="Slave_Endpoint_top_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="Slave_Endpoint_top_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="Slave_Endpoint_top_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="Slave_Endpoint_top_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Slave_Endpoint_top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Slave_Endpoint_top_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Slave_Endpoint_top_drc_routed.rpx"/>
   <File Type="BG-BIN" Name="Slave_Endpoint_top.bin"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Slave_Endpoint_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="Slave_Endpoint_top_drc_routed.rpx"/>
   <File Type="BG-DRC" Name="Slave_Endpoint_top.drc"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Slave_Endpoint_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Slave_Endpoint_top_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MSK" Name="Slave_Endpoint_top.msk"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Slave_Endpoint_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Slave_Endpoint_top_methodology_drc_routed.rpx"/>
   <File Type="BG-BGN" Name="Slave_Endpoint_top.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Slave_Endpoint_top_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="Slave_Endpoint_top_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="Slave_Endpoint_top_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="Slave_Endpoint_top_route_status.rpt"/>
@@ -62,10 +62,64 @@
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/imports/5.2.3/ssdec.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab4_PartePrevia/Lab4_PartePrevia.srcs/sources_1/imports/5.2.3/ssdec.v"/>
+        <Attr Name="ImportTime" Val="1495564760"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/uart/data_sync.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/uart/data_sync.v"/>
         <Attr Name="ImportTime" Val="1496785705"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/Downloads/unsigned_to_bcd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab4_PartePrevia/Lab4_PartePrevia.srcs/sources_1/imports/Downloads/unsigned_to_bcd.v"/>
+        <Attr Name="ImportTime" Val="1493747258"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/new/pwm.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab4_PartePrevia/Lab4_PartePrevia.srcs/sources_1/imports/new/pwm.v"/>
+        <Attr Name="ImportTime" Val="1494348316"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/5.2.3/display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab4_PartePrevia/Lab4_PartePrevia.srcs/sources_1/imports/5.2.3/display.v"/>
+        <Attr Name="ImportTime" Val="1494188986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/Downloads/clockuru.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab4_PartePrevia/Lab4_PartePrevia.srcs/sources_1/imports/Downloads/clockuru.v"/>
+        <Attr Name="ImportTime" Val="1493056456"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab4_PartePrevia/Lab4_PartePrevia.srcs/sources_1/new/ALU.v"/>
+        <Attr Name="ImportTime" Val="1495239499"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -98,6 +152,24 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/No_ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab4_PartePrevia/Lab4_PartePrevia.srcs/sources_1/new/No_ALU.v"/>
+        <Attr Name="ImportTime" Val="1495575514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/new/ejem_01.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab4_PartePrevia/Lab4_PartePrevia.srcs/sources_1/imports/new/ejem_01.v"/>
+        <Attr Name="ImportTime" Val="1495564063"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/UART_RX_CTRL.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -116,6 +188,15 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Slave_Endpoint_top.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/TX_CTRL.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/TX_CTRL.v"/>
+        <Attr Name="ImportTime" Val="1497377231"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

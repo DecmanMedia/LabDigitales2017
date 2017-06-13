@@ -123,10 +123,6 @@ module UART_RX_CTRL(
         if(rst)
             begin
             state <= WAIT_OP1_LSB;
-            operador1 <= 16'd0;
-            operador2 <= 16'd0;
-            operando <= 3'd0;
-            state_alu_actual <= 2'd0;
             end
         else
             state <= next_state;

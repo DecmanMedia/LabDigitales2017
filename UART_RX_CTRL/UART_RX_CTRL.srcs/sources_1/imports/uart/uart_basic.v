@@ -14,9 +14,11 @@ module uart_basic
 )(
 	input clk,
 	input reset,
+	//Entrada
 	input rx,
 	output [7:0] rx_data,
 	output reg rx_ready,
+	//Salida
 	output tx,
 	input tx_start,
 	input [7:0] tx_data,
