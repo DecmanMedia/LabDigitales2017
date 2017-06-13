@@ -25,7 +25,7 @@ module UART_RX_CTRL(
     output reg [15:0] tx_operador1,
     output reg [15:0] tx_operador2,
     output reg [2:0] tx_ALU_ctrl,
-    output reg [1:0] state_alu
+    output reg state_alu
     );
     
     localparam OP1  = 2'd1;
@@ -46,17 +46,17 @@ module UART_RX_CTRL(
     localparam TRIGGER_TX_RESULT    = 4'd12;
     
     reg [3:0] state, next_state;
+    reg [15:0] tx_operador1_next,tx_operador2_next;
     reg [15:0] operador1, operador2;
-    reg [2:0] operando;
-    reg [1:0] state_alu_actual = 2'd0;
+    reg [2:0] tx_ALU_ctrl_next, operando;
     
     always@(*)
     begin
         next_state = state;
-        tx_operador1 = operador1;
-        tx_operador2 = operador2;
-        tx_ALU_ctrl = operando;
-        state_alu = state_alu_actual;
+        tx_operador1_next = operador1;
+        tx_operador2_next = operador2;
+        tx_ALU_ctrl_next = operando;
+        state_alu = 1'b0;
         case(state)
             WAIT_OP1_LSB: if(rx_ready)
                             next_state= STORE_OP1_LSB;
@@ -75,7 +75,7 @@ module UART_RX_CTRL(
             STORE_OP1_MSB:  begin
                             next_state = WAIT_OP2_LSB;
                             operador1[15:8] = rx_data;
-                            state_alu_actual = 2'd1;
+                            state_alu = 1'b1;
                             end
             
             WAIT_OP2_LSB: if(rx_ready)
@@ -95,7 +95,7 @@ module UART_RX_CTRL(
             STORE_OP2_MSB:  begin
                             next_state = WAIT_CMD;
                             operador2[15:8] = rx_data;
-                            state_alu_actual = 2'd2;
+                            state_alu = 1'b1;
                             end
                             
             WAIT_CMD:   if(rx_ready)
@@ -105,7 +105,7 @@ module UART_RX_CTRL(
         
             STORE_CMD:  begin
                         next_state = DELAY_1_CYCLE;
-                        state_alu_actual = 2'd3;
+                        state_alu = 1'b1;
                         operando = rx_data[2:0];
                         end
             
@@ -113,7 +113,7 @@ module UART_RX_CTRL(
             
             TRIGGER_TX_RESULT:  begin
                                 next_state = WAIT_OP1_LSB;
-                                state_alu_actual = 2'd0;
+                                state_alu = 1'b1;
                                 end
         endcase
     end
@@ -123,9 +123,17 @@ module UART_RX_CTRL(
         if(rst)
             begin
             state <= WAIT_OP1_LSB;
+            tx_ALU_ctrl <= 3'd0;
+            tx_operador1 <= 16'd0;
+            tx_operador2 <= 16'd0;
             end
         else
+            begin
+            tx_operador1 <= tx_operador1_next;
+            tx_operador2 <= tx_operador2_next;
+            tx_ALU_ctrl <= tx_ALU_ctrl_next;
             state <= next_state;
+            end
     end
                               
 endmodule

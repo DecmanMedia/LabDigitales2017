@@ -1,0 +1,604 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+Process ID: 9764
+
+Current time: 	6/13/17 6:36:38 PM CLT
+Time zone: 	Chile Time (America/Santiago)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	Sebastián Quiroz
+User home directory: C:/Users/Sebastián Quiroz
+User working directory: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL
+User country: 	CL
+User language: 	es
+User locale: 	es_CL
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Sebastián Quiroz/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Sebastián Quiroz/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	223 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 411 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Sebastián Quiroz\Documents\GitHub\LabDigitales2017\UART_RX_CTRL\UART_RX_CTRL.xpr. Version: Vivado v2016.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project {C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.xpr} 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 33 MB (+31736kb) [00:00:05]
+// [Engine Memory]: 405 MB (+272755kb) [00:00:05]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Diego/LabDigitales2017/UART_RX_CTRL' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 422 MB. GUI used memory: 26 MB. Current time: 6/13/17 6:36:40 PM CLT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+14660kb) [00:00:21]
+// [Engine Memory]: 461 MB (+38027kb) [00:00:21]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 482 MB. GUI used memory: 33 MB. Current time: 6/13/17 6:36:57 PM CLT
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 752.688 ; gain = 88.699 
+// Project name: UART_RX_CTRL; location: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL; part: xc7a100tcsg324-1
+// [GUI Memory]: 52 MB (+1162kb) [00:00:25]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 485 MB (+1374kb) [00:00:26]
+// PAPropertyPanels.initPanels (Slave_Endpoint_top.v) elapsed time: 0.2s
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v)]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// [GUI Memory]: 55 MB (+872kb) [00:00:36]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), ALU_DISPLAY - lab_4 (No_ALU.v)]", 4, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), ALU_DISPLAY - lab_4 (No_ALU.v), green - pwm (pwm.v)]", 8, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// [GUI Memory]: 60 MB (+1652kb) [00:00:44]
+// Elapsed time: 12 seconds
+selectCodeEditor("No_ALU.v", 148, 99); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 64 MB (+1423kb) [00:01:05]
+selectCodeEditor("No_ALU.v", 204, 102); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("No_ALU.v", 411, 163); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("No_ALU.v", 414, 183); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("No_ALU.v", 431, 227); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 68 MB (+808kb) [00:01:39]
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), UART_RX_CTRL_inst - UART_RX_CTRL (UART_RX_CTRL.v)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), UART_RX_CTRL_inst - UART_RX_CTRL (UART_RX_CTRL.v)]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 502 MB. GUI used memory: 35 MB. Current time: 6/13/17 6:38:31 PM CLT
+// Elapsed time: 11 seconds
+selectCodeEditor("UART_RX_CTRL.v", 140, 90); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 145, 91); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 252, 205); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 252, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 296, 80); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 173, 71); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 72 MB (+696kb) [00:02:28]
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 367, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 278, 245); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 198, 230); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 280, 105); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 399, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 303, 165); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 311, 208); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// [Engine Memory]: 521 MB (+11990kb) [00:04:24]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Jun 13 17:40:56 2017] Launched synth_1... Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/synth_1/runme.log [Tue Jun 13 17:40:56 2017] Launched impl_1... Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// [GUI Memory]: 77 MB (+1660kb) [00:04:27]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), UART_RX_CTRL_inst - UART_RX_CTRL (UART_RX_CTRL.v)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), UART_RX_CTRL_inst - UART_RX_CTRL (UART_RX_CTRL.v)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+// [GUI Memory]: 82 MB (+780kb) [00:04:28]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), UART_RX_CTRL_inst - UART_RX_CTRL (UART_RX_CTRL.v)]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 528 MB. GUI used memory: 36 MB. Current time: 6/13/17 6:41:01 PM CLT
+selectCodeEditor("UART_RX_CTRL.v", 138, 77); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: RUN_FAILED
+// ah:y (cd:JFrame): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:y (cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 144, 81); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g:JCheckBox (JPanel:JComponent, cd:JFrame): TRUE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-689] width (2) of port connection 'state_alu' does not match port width (1) of module 'UART_RX_CTRL' [C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/new/Slave_Endpoint_top.v:59]. ]", 4, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Sebastián Quiroz\Documents\GitHub\LabDigitales2017\UART_RX_CTRL\UART_RX_CTRL.srcs\sources_1\new\Slave_Endpoint_top.v;-;;-;16;-;line;-;59;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 101, 93); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 278, 72); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 262, 95); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 130, 117); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("UART_RX_CTRL.v", 246, 112); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 196, 77); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 188, 117); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 193, 97); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 193, 81); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 161, 76); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 161, 76, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 261, 59); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 130, 59); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 259, 60); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 106, 57); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 106, 57); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 312, 62); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 351, 60); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 389, 111); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 167, 199); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 116, 77); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 116, 77, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 276, 108); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 142, 137); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 116, 143); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 116, 143, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 259, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 262, 193); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 103, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 322, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("UART_RX_CTRL.v", 238, 176); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 244, 176); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 259, 178); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 217, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 260, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 70 seconds
+selectCodeEditor("UART_RX_CTRL.v", 198, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 259, 191); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 234, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 251, 253); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("UART_RX_CTRL.v", 386, 191); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 383, 202); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 87 MB (+1333kb) [00:10:19]
+// Elapsed time: 48 seconds
+selectCodeEditor("UART_RX_CTRL.v", 365, 62); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("UART_RX_CTRL.v", 211, 159); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 211, 159, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("UART_RX_CTRL.v", 230, 160); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// HMemoryUtils.trashcanNow. Engine heap size: 544 MB. GUI used memory: 35 MB. Current time: 6/13/17 6:47:36 PM CLT
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("UART_RX_CTRL.v", 349, 55); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 177 seconds
+selectCodeEditor("UART_RX_CTRL.v", 430, 75); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 528, 76); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 379, 73); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 533, 77); // bF:I (JPanel:JComponent, cd:JFrame)
+// [Engine Memory]: 561 MB (+13942kb) [00:14:35]
+// Elapsed time: 34 seconds
+selectCodeEditor("UART_RX_CTRL.v", 211, 110); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("UART_RX_CTRL.v", 226, 41); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 34 seconds
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("UART_RX_CTRL.v", 170, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 322, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 322, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("UART_RX_CTRL.v", 105, 107); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 105, 107, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 158, 187); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 158, 186, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("UART_RX_CTRL.v", 158, 186); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 149, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 281, 71); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 155, 186); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 149, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 149, 182, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 103, 110); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 242, 245); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("No_ALU.v", 239, 160); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 59 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 219, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 219, 185, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("UART_RX_CTRL.v", 116, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 116, 180, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 232, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 232, 180, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("UART_RX_CTRL.v", 216, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 216, 194, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 206, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 206, 216, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("UART_RX_CTRL.v", 87, 213); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 87, 213, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 231, 222); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 230, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 230, 217, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 307, 218); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("UART_RX_CTRL.v", 251, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 251, 130, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 239, 131); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 239, 131, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("UART_RX_CTRL.v", 239, 131); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 239, 131); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 239, 131); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 239, 131, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("UART_RX_CTRL.v", 527, 102); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Jun 13 17:57:03 2017] Launched synth_1... Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/synth_1/runme.log [Tue Jun 13 17:57:03 2017] Launched impl_1... Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah:y (cd:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 14 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages", true); // g:JCheckBox (JPanel:JComponent, ah:y): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:y (cd:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g:JCheckBox (JPanel:JComponent, cd:JFrame): TRUE
+// Elapsed time: 17 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-5788] Register tx_ALU_ctrl_reg in module UART_RX_CTRL is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/new/UART_RX_CTRL.v:134]. ]", 4, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Sebastián Quiroz\Documents\GitHub\LabDigitales2017\UART_RX_CTRL\UART_RX_CTRL.srcs\sources_1\new\UART_RX_CTRL.v;-;;-;16;-;line;-;134;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Jun 13 17:58:10 2017] Launched synth_1... Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_FAILED
+// ah:y (cd:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Failed"); // ah:y (cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 120, 175); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 120, 175, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 59 seconds
+selectCodeEditor("UART_RX_CTRL.v", 194, 113); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 306, 178); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Jun 13 17:59:39 2017] Launched synth_1... Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_FAILED
+// ah:y (cd:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:y (cd:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g:JCheckBox (JPanel:JComponent, cd:JFrame): TRUE
+// Elapsed time: 21 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)

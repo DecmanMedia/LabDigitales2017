@@ -31,7 +31,7 @@ module Slave_Endpoint_top(
     wire rx_ready,tx_start,trigger, tx_busy;
     wire [15:0] operador1, operador2, resultado;
     wire [2:0] ALU_ctrl;
-    wire [1:0] state_ALU;
+    wire state_ALU;
     //uart
         uart_basic #(
             .CLK_FREQUENCY(100_000_000),

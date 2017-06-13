@@ -2,20 +2,40 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Tue Jun 06 19:48:36 2017
-# Process ID: 912
-# Current directory: C:/Users/Diego/LabDigitales2017/UART_RX_CTRL
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6744 C:\Users\Diego\LabDigitales2017\UART_RX_CTRL\UART_RX_CTRL.xpr
-# Log file: C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/vivado.log
-# Journal file: C:/Users/Diego/LabDigitales2017/UART_RX_CTRL\vivado.jou
+# Start of session at: Tue Jun 13 17:36:28 2017
+# Process ID: 9764
+# Current directory: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5736 C:\Users\Sebastián Quiroz\Documents\GitHub\LabDigitales2017\UART_RX_CTRL\UART_RX_CTRL.xpr
+# Log file: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/vivado.log
+# Journal file: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.xpr
+open_project {C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Diego/LabDigitales2017/UART_RX_CTRL' since last save.
 Scanning sources...
 Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.ip_user_files', nor could it be found using path 'C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 772.148 ; gain = 146.391
-exit
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 06 19:49:21 2017...
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 752.688 ; gain = 88.699
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jun 13 17:40:56 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/synth_1/runme.log
+[Tue Jun 13 17:40:56 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jun 13 17:57:03 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/synth_1/runme.log
+[Tue Jun 13 17:57:03 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Jun 13 17:58:10 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Jun 13 17:59:39 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/synth_1/runme.log
