@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Tue Jun 13 18:06:41 2017
+| Date             : Wed Jun 14 15:25:58 2017
 | Host             : LaptopDiewo running 64-bit major release  (build 9200)
 | Command          : report_power -file Slave_Endpoint_top_power_routed.rpt -pb Slave_Endpoint_top_power_summary_routed.pb -rpx Slave_Endpoint_top_power_routed.rpx
 | Design           : Slave_Endpoint_top
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 3.606 |
-| Dynamic (W)              | 3.494 |
-| Device Static (W)        | 0.113 |
+| Total On-Chip Power (W)  | 1.488 |
+| Dynamic (W)              | 1.386 |
+| Device Static (W)        | 0.102 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 68.5  |
-| Junction Temperature (C) | 41.5  |
+| Max Ambient (C)          | 78.2  |
+| Junction Temperature (C) | 31.8  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,18 +49,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     1.317 |      807 |       --- |             --- |
-|   LUT as Logic |     1.129 |      348 |     63400 |            0.55 |
-|   CARRY4       |     0.104 |       39 |     15850 |            0.25 |
-|   Register     |     0.072 |      332 |    126800 |            0.26 |
-|   F7/F8 Muxes  |     0.007 |       13 |     63400 |            0.02 |
+| Slice Logic    |     0.500 |      341 |       --- |             --- |
+|   LUT as Logic |     0.405 |      108 |     63400 |            0.17 |
+|   CARRY4       |     0.050 |       21 |     15850 |            0.13 |
+|   Register     |     0.039 |      172 |    126800 |            0.14 |
 |   BUFG         |     0.006 |        2 |        32 |            6.25 |
-|   Others       |     0.000 |       30 |       --- |             --- |
-| Signals        |     1.294 |      628 |       --- |             --- |
-| DSPs           |     0.389 |        1 |       240 |            0.42 |
-| I/O            |     0.493 |       20 |       210 |            9.52 |
-| Static Power   |     0.113 |          |           |                 |
-| Total          |     3.606 |          |           |                 |
+|   Others       |     0.000 |       13 |       --- |             --- |
+| Signals        |     0.436 |      263 |       --- |             --- |
+| I/O            |     0.451 |       19 |       210 |            9.05 |
+| Static Power   |     0.102 |          |           |                 |
+| Total          |     1.488 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,9 +68,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     3.036 |       3.008 |      0.028 |
-| Vccaux    |       1.800 |     0.037 |       0.018 |      0.019 |
-| Vcco33    |       3.300 |     0.141 |       0.137 |      0.004 |
+| Vccint    |       1.000 |     0.959 |       0.940 |      0.019 |
+| Vccaux    |       1.800 |     0.035 |       0.016 |      0.019 |
+| Vcco33    |       3.300 |     0.130 |       0.126 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -134,23 +132,18 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------------+-----------+
-| Name                | Power (W) |
-+---------------------+-----------+
-| Slave_Endpoint_top  |     3.494 |
-|   ALU_DISPLAY       |     2.097 |
-|     alucito         |     0.838 |
-|     clockcito       |     0.141 |
-|     displaycito     |    <0.001 |
-|     doublecito      |     0.736 |
-|   TX_CTRL_inst      |     0.131 |
-|   UART_RX_CTRL_inst |     0.441 |
-|   uart_basic_inst   |     0.305 |
-|     baud8_tick_blk  |     0.076 |
-|     baud_tick_blk   |     0.090 |
-|     uart_rx_blk     |     0.133 |
-|       rx_sync_inst  |     0.035 |
-|     uart_tx_blk     |     0.003 |
-+---------------------+-----------+
++--------------------+-----------+
+| Name               | Power (W) |
++--------------------+-----------+
+| Slave_Endpoint_top |     1.386 |
+|   ALU_DISPLAY      |     0.724 |
+|     clockcito      |     0.141 |
+|     displaycito    |     0.000 |
+|     doublecito     |     0.583 |
+|   TX_CTRL_inst     |     0.108 |
+|   uart_basic_inst  |     0.088 |
+|     baud_tick_blk  |     0.075 |
+|     uart_tx_blk    |     0.013 |
++--------------------+-----------+
 
 

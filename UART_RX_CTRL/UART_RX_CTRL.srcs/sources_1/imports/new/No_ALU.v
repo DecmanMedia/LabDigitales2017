@@ -102,17 +102,20 @@ module lab_4(
     wire V,C,N,Z;
     wire LED16_R_temp,LED16_B_temp,LED16_G_temp;
     //ALU
-    ALU alucito(A, B, operador, result, {V,C,Z,N});
+    ALU alucito(operador1, operador2, ALU_ctrl, result, {V,C,Z,N});
+    //ALU alucito(A, B, operador, result, {V,C,Z,N});
     //Salida LED RGB con pwm  
-    pwm red(CLK100MHZ,1,LED16_R_temp);
-    pwm green(CLK100MHZ,1,LED16_G_temp);
-    pwm blue(CLK100MHZ,1,LED16_B_temp);
+    //pwm red(CLK100MHZ,1,LED16_R_temp);
+    //pwm green(CLK100MHZ,1,LED16_G_temp);
+    //pwm blue(CLK100MHZ,1,LED16_B_temp);
     //Asignacion salida LEDs RGB finales segun estado actual
-    assign {LED16_R,LED16_B,LED16_G} = (estado_actual == ESPERANDO_OPERACION)? ({LED16_R_temp,LED16_B_temp,LED16_G_temp}&LED_RGB): 3'b000;
+    //assign {LED16_R,LED16_B,LED16_G} = (estado_actual == ESPERANDO_OPERACION)? ({LED16_R_temp,LED16_B_temp,LED16_G_temp}&LED_RGB): 3'b000;
     //Tranforma Hex a Dec.
-    double_dabble doublecito(clk,1'b1,input_display,led_idle,result_bcd);
+    double_dabble doublecito(clk,1'b1,result,led_idle,result_bcd);
+    //double_dabble doublecito(clk,1'b1,input_display,led_idle,result_bcd);
     //Dec se muestra en display
-    display displaycito(clk,{(estado_actual == MOSTRAR_RESULTADO)? N: result_bcd[31],result_bcd[30:0]},1'b0,7'b000000,{DP, CA, CB, CC, CD, CE, CF, CG},AN);
+    display displaycito(clk,result_bcd,1'b0,7'b000000,{DP, CA, CB, CC, CD, CE, CF, CG},AN);
+    //display displaycito(clk,{(estado_actual == MOSTRAR_RESULTADO)? N: result_bcd[31],result_bcd[30:0]},1'b0,7'b000000,{DP, CA, CB, CC, CD, CE, CF, CG},AN);
     
     //Secuencial
     always@(posedge CLK100MHZ or posedge CPU_RESETN)
