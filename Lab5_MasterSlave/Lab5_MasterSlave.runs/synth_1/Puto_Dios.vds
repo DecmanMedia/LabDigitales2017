@@ -2,12 +2,12 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Wed Jun 14 18:56:25 2017
-# Process ID: 2512
-# Current directory: C:/Xilinx/lab_5/lab_5.runs/synth_1
+# Start of session at: Wed Jun 14 19:25:48 2017
+# Process ID: 13300
+# Current directory: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1
 # Command line: vivado.exe -log Puto_Dios.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Puto_Dios.tcl
-# Log file: C:/Xilinx/lab_5/lab_5.runs/synth_1/Puto_Dios.vds
-# Journal file: C:/Xilinx/lab_5/lab_5.runs/synth_1\vivado.jou
+# Log file: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/Puto_Dios.vds
+# Journal file: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Puto_Dios.tcl -notrace
 Command: synth_design -top Puto_Dios -part xc7a100tcsg324-1
@@ -15,13 +15,13 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3532 
+INFO: Helper process launched with PID 9632 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 282.293 ; gain = 71.926
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 282.531 ; gain = 72.473
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Puto_Dios' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/new/Puto_Dios.v:23]
-INFO: [Synth 8-638] synthesizing module 'master_endpoint_top' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/master_endpoint_top.v:3]
-INFO: [Synth 8-638] synthesizing module 'pb_debouncer' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/pb_debouncer.v:3]
+INFO: [Synth 8-638] synthesizing module 'Puto_Dios' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/new/Puto_Dios.v:23]
+INFO: [Synth 8-638] synthesizing module 'master_endpoint_top' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/master_endpoint_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'pb_debouncer' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/pb_debouncer.v:3]
 	Parameter COUNTER_WIDTH bound to: 16 - type: integer 
 	Parameter PB_IDLE bound to: 3'b000 
 	Parameter PB_COUNT bound to: 3'b001 
@@ -29,12 +29,12 @@ INFO: [Synth 8-638] synthesizing module 'pb_debouncer' [C:/Xilinx/lab_5/lab_5.sr
 	Parameter PB_STABLE bound to: 3'b011 
 	Parameter PB_NE bound to: 3'b100 
 	Parameter COUNTER_MSB bound to: 15 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/pb_debouncer.v:66]
-INFO: [Synth 8-256] done synthesizing module 'pb_debouncer' (1#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/pb_debouncer.v:3]
-INFO: [Synth 8-638] synthesizing module 'UART_tx_control_wrapper' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/UART_tx_control_wrapper.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/pb_debouncer.v:66]
+INFO: [Synth 8-256] done synthesizing module 'pb_debouncer' (1#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/pb_debouncer.v:3]
+INFO: [Synth 8-638] synthesizing module 'UART_tx_control_wrapper' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/UART_tx_control_wrapper.v:1]
 	Parameter INTER_BYTE_DELAY bound to: 100000 - type: integer 
 	Parameter WAIT_FOR_REGISTER_DELAY bound to: 100 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'TX_control' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/TX_control.v:1]
+INFO: [Synth 8-638] synthesizing module 'TX_control' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/TX_control.v:1]
 	Parameter INTER_BYTE_DELAY bound to: 100000 - type: integer 
 	Parameter WAIT_FOR_REGISTER_DELAY bound to: 100 - type: integer 
 	Parameter IDLE bound to: 3'b000 
@@ -43,63 +43,63 @@ INFO: [Synth 8-638] synthesizing module 'TX_control' [C:/Xilinx/lab_5/lab_5.srcs
 	Parameter DELAY_BYTE_0 bound to: 3'b011 
 	Parameter SEND_BYTE_1 bound to: 3'b100 
 	Parameter DELAY_BYTE_1 bound to: 3'b101 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/TX_control.v:35]
-INFO: [Synth 8-256] done synthesizing module 'TX_control' (2#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/TX_control.v:1]
-INFO: [Synth 8-638] synthesizing module 'TX_sequence' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/TX_sequence.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/TX_control.v:35]
+INFO: [Synth 8-256] done synthesizing module 'TX_control' (2#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/TX_control.v:1]
+INFO: [Synth 8-638] synthesizing module 'TX_sequence' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/TX_sequence.v:1]
 	Parameter IDLE bound to: 2'b00 
 	Parameter TX_OPERAND01 bound to: 2'b01 
 	Parameter TX_OPERAND02 bound to: 2'b10 
 	Parameter TX_ALU_CTRL bound to: 2'b11 
-INFO: [Synth 8-256] done synthesizing module 'TX_sequence' (3#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/TX_sequence.v:1]
-INFO: [Synth 8-256] done synthesizing module 'UART_tx_control_wrapper' (4#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/UART_tx_control_wrapper.v:1]
-INFO: [Synth 8-638] synthesizing module 'uart_basic' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_basic.v:10]
+INFO: [Synth 8-256] done synthesizing module 'TX_sequence' (3#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/TX_sequence.v:1]
+INFO: [Synth 8-256] done synthesizing module 'UART_tx_control_wrapper' (4#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/UART_tx_control_wrapper.v:1]
+INFO: [Synth 8-638] synthesizing module 'uart_basic' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_basic.v:10]
 	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:11]
 	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
 	Parameter OVERSAMPLING bound to: 8 - type: integer 
 	Parameter ACC_WIDTH bound to: 18 - type: integer 
 	Parameter SHIFT_LIMITER bound to: 7 - type: integer 
 	Parameter INCREMENT bound to: 2416 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:38]
-INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen' (5#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:11]
-INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_rx.v:10]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:38]
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen' (5#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_rx.v:10]
 	Parameter RX_IDLE bound to: 0 - type: integer 
 	Parameter RX_START bound to: 1 - type: integer 
 	Parameter RX_RECV bound to: 2 - type: integer 
 	Parameter RX_STOP bound to: 3 - type: integer 
 	Parameter RX_READY bound to: 4 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'data_sync' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/data_sync.v:11]
-INFO: [Synth 8-256] done synthesizing module 'data_sync' (6#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/data_sync.v:11]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_rx.v:78]
-INFO: [Synth 8-256] done synthesizing module 'uart_rx' (7#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_rx.v:10]
-INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen__parameterized0' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'data_sync' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/data_sync.v:11]
+INFO: [Synth 8-256] done synthesizing module 'data_sync' (6#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/data_sync.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_rx.v:78]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (7#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_rx.v:10]
+INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen__parameterized0' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:11]
 	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
 	Parameter OVERSAMPLING bound to: 1 - type: integer 
 	Parameter ACC_WIDTH bound to: 18 - type: integer 
 	Parameter SHIFT_LIMITER bound to: 4 - type: integer 
 	Parameter INCREMENT bound to: 302 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen__parameterized0' (7#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:11]
-INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_tx.v:10]
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen__parameterized0' (7#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_tx.v:10]
 	Parameter TX_IDLE bound to: 2'b00 
 	Parameter TX_START bound to: 2'b01 
 	Parameter TX_SEND bound to: 2'b10 
 	Parameter TX_STOP bound to: 2'b11 
-INFO: [Synth 8-256] done synthesizing module 'uart_tx' (8#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_tx.v:10]
-INFO: [Synth 8-256] done synthesizing module 'uart_basic' (9#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_basic.v:10]
-INFO: [Synth 8-638] synthesizing module 'unsigned_to_bcd' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/unsigned_to_bcd.v:22]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (8#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_tx.v:10]
+INFO: [Synth 8-256] done synthesizing module 'uart_basic' (9#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_basic.v:10]
+INFO: [Synth 8-638] synthesizing module 'unsigned_to_bcd' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/unsigned_to_bcd.v:22]
 	Parameter S_IDLE bound to: 1 - type: integer 
 	Parameter S_SHIFT bound to: 2 - type: integer 
 	Parameter S_ADD3 bound to: 4 - type: integer 
 	Parameter COUNTER_MAX bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'unsigned_to_bcd' (10#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/unsigned_to_bcd.v:22]
-INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/clk_divider.v:19]
+INFO: [Synth 8-256] done synthesizing module 'unsigned_to_bcd' (10#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/unsigned_to_bcd.v:22]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/clk_divider.v:19]
 	Parameter O_CLK_FREQ bound to: 480 - type: integer 
 	Parameter COUNTER_MAX bound to: 104165 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clk_divider' (11#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/clk_divider.v:19]
-INFO: [Synth 8-638] synthesizing module 'display_mux' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/display_mux.v:10]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (11#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/clk_divider.v:19]
+INFO: [Synth 8-638] synthesizing module 'display_mux' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/display_mux.v:10]
 	Parameter DIG_0 bound to: 8'b00000001 
 	Parameter DIG_1 bound to: 8'b00000010 
 	Parameter DIG_2 bound to: 8'b00000100 
@@ -108,12 +108,12 @@ INFO: [Synth 8-638] synthesizing module 'display_mux' [C:/Xilinx/lab_5/lab_5.src
 	Parameter DIG_5 bound to: 8'b00100000 
 	Parameter DIG_6 bound to: 8'b01000000 
 	Parameter DIG_7 bound to: 8'b10000000 
-INFO: [Synth 8-638] synthesizing module 'bcd_to_ss' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/bcd_to_ss.v:9]
-INFO: [Synth 8-256] done synthesizing module 'bcd_to_ss' (12#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/bcd_to_ss.v:9]
-INFO: [Synth 8-256] done synthesizing module 'display_mux' (13#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/display_mux.v:10]
-INFO: [Synth 8-256] done synthesizing module 'master_endpoint_top' (14#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/master_endpoint_top.v:3]
-INFO: [Synth 8-638] synthesizing module 'Slave_Endpoint_top' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/new/Slave_Endpoint_top.v:23]
-INFO: [Synth 8-638] synthesizing module 'UART_RX_CTRL' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:22]
+INFO: [Synth 8-638] synthesizing module 'bcd_to_ss' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/bcd_to_ss.v:9]
+INFO: [Synth 8-256] done synthesizing module 'bcd_to_ss' (12#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/bcd_to_ss.v:9]
+INFO: [Synth 8-256] done synthesizing module 'display_mux' (13#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/display_mux.v:10]
+INFO: [Synth 8-256] done synthesizing module 'master_endpoint_top' (14#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/master_endpoint_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'Slave_Endpoint_top' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/Slave_Endpoint_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'UART_RX_CTRL' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:22]
 	Parameter OP1 bound to: 2'b01 
 	Parameter OP2 bound to: 2'b10 
 	Parameter OP_CTRL bound to: 2'b11 
@@ -129,34 +129,33 @@ INFO: [Synth 8-638] synthesizing module 'UART_RX_CTRL' [C:/Xilinx/lab_5/lab_5.sr
 	Parameter STORE_CMD bound to: 4'b1010 
 	Parameter DELAY_1_CYCLE bound to: 4'b1011 
 	Parameter TRIGGER_TX_RESULT bound to: 4'b1100 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:60]
-INFO: [Synth 8-256] done synthesizing module 'UART_RX_CTRL' (15#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:22]
-INFO: [Synth 8-638] synthesizing module 'lab_4' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:60]
+INFO: [Synth 8-256] done synthesizing module 'UART_RX_CTRL' (15#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:22]
+INFO: [Synth 8-638] synthesizing module 'lab_4' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:23]
 	Parameter ESPERANDO_OPERADOR1 bound to: 3'b001 
 	Parameter ESPERANDO_OPERADOR2 bound to: 3'b011 
 	Parameter ESPERANDO_OPERACION bound to: 3'b101 
 	Parameter MOSTRAR_RESULTADO bound to: 3'b111 
-INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/Downloads/clockuru.v:1]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/imports/Downloads/clockuru.v:1]
 	Parameter CONSTANT bound to: 50000 - type: integer 
 	Parameter constantNumber bound to: 50000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clock_divider' (16#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/Downloads/clockuru.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:74]
-INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (16#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/imports/Downloads/clockuru.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:74]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/new/ALU.v:23]
 	Parameter width bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'ALU' (17#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/ALU.v:23]
-WARNING: [Synth 8-689] width (1) of port connection 'result' does not match port width (16) of module 'ALU' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:107]
-INFO: [Synth 8-638] synthesizing module 'double_dabble' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/Downloads/unsigned_to_bcd.v:22]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (17#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'double_dabble' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/imports/Downloads/unsigned_to_bcd.v:22]
 	Parameter S_IDLE bound to: 1 - type: integer 
 	Parameter S_SHIFT bound to: 2 - type: integer 
 	Parameter S_ADD3 bound to: 4 - type: integer 
 	Parameter COUNTER_MAX bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'double_dabble' (18#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/Downloads/unsigned_to_bcd.v:22]
-INFO: [Synth 8-638] synthesizing module 'display' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/5.2.3/display.v:34]
-INFO: [Synth 8-638] synthesizing module 'ssdec' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/5.2.3/ssdec.v:7]
-INFO: [Synth 8-256] done synthesizing module 'ssdec' (19#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/5.2.3/ssdec.v:7]
-INFO: [Synth 8-256] done synthesizing module 'display' (20#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/5.2.3/display.v:34]
-INFO: [Synth 8-256] done synthesizing module 'lab_4' (21#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:23]
-INFO: [Synth 8-638] synthesizing module 'TX_CTRL' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/Downloads/TX_CTRL.v:1]
+INFO: [Synth 8-256] done synthesizing module 'double_dabble' (18#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/imports/Downloads/unsigned_to_bcd.v:22]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/imports/5.2.3/display.v:34]
+INFO: [Synth 8-638] synthesizing module 'ssdec' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/imports/5.2.3/ssdec.v:7]
+INFO: [Synth 8-256] done synthesizing module 'ssdec' (19#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/imports/5.2.3/ssdec.v:7]
+INFO: [Synth 8-256] done synthesizing module 'display' (20#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/imports/5.2.3/display.v:34]
+INFO: [Synth 8-256] done synthesizing module 'lab_4' (21#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'TX_CTRL' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/Downloads/TX_CTRL.v:1]
 	Parameter INTER_BYTE_DELAY bound to: 1000000 - type: integer 
 	Parameter WAIT_FOR_REGISTER_DELAY bound to: 100 - type: integer 
 	Parameter REGISTRAR bound to: 3'b001 
@@ -164,12 +163,12 @@ INFO: [Synth 8-638] synthesizing module 'TX_CTRL' [C:/Xilinx/lab_5/lab_5.srcs/so
 	Parameter DELAY_0 bound to: 3'b011 
 	Parameter SEND_BYTE_1 bound to: 3'b100 
 	Parameter DELAY_1 bound to: 3'b101 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/Downloads/TX_CTRL.v:26]
-INFO: [Synth 8-256] done synthesizing module 'TX_CTRL' (22#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/Downloads/TX_CTRL.v:1]
-INFO: [Synth 8-256] done synthesizing module 'Slave_Endpoint_top' (23#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/new/Slave_Endpoint_top.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Puto_Dios' (24#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/new/Puto_Dios.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/Downloads/TX_CTRL.v:26]
+INFO: [Synth 8-256] done synthesizing module 'TX_CTRL' (22#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/Downloads/TX_CTRL.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Slave_Endpoint_top' (23#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/Slave_Endpoint_top.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Puto_Dios' (24#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/new/Puto_Dios.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 319.676 ; gain = 109.309
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 319.957 ; gain = 109.898
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -179,38 +178,38 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 319.676 ; gain = 109.309
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 319.957 ; gain = 109.898
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Xilinx/lab_5/lab_5.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc]
-Finished Parsing XDC File [C:/Xilinx/lab_5/lab_5.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/lab_5/lab_5.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Puto_Dios_propImpl.xdc].
+Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc]
+Finished Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Puto_Dios_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Puto_Dios_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 635.680 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 636.895 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 635.680 ; gain = 425.313
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 636.895 ; gain = 426.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 635.680 ; gain = 425.313
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 636.895 ; gain = 426.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 635.680 ; gain = 425.313
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 636.895 ; gain = 426.836
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'button_state_reg' in module 'pb_debouncer'
 INFO: [Synth 8-5544] ROM "pb_posedge" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -333,9 +332,9 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
        MOSTRAR_RESULTADO |                               11 |                              111
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_reg' using encoding 'sequential' in module 'lab_4'
-WARNING: [Synth 8-327] inferring latch for variable 'result_t_reg' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:79]
+WARNING: [Synth 8-327] inferring latch for variable 'result_t_reg' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:79]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 635.680 ; gain = 425.313
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 636.895 ; gain = 426.836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -733,7 +732,7 @@ WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[2]) is u
 WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[1]) is unused and will be removed from module Puto_Dios.
 WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[0]) is unused and will be removed from module Puto_Dios.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 635.680 ; gain = 425.313
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 636.895 ; gain = 426.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -763,10 +762,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 635.680 ; gain = 425.313
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 636.895 ; gain = 426.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 642.785 ; gain = 432.418
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 645.426 ; gain = 435.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -778,7 +777,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 658.055 ; gain = 447.996
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -802,7 +801,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 658.055 ; gain = 447.996
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -815,7 +814,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 658.055 ; gain = 447.996
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -827,25 +826,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 658.055 ; gain = 447.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 658.055 ; gain = 447.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 658.055 ; gain = 447.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 658.055 ; gain = 447.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -862,19 +861,19 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     2|
-|2     |CARRY4  |    53|
+|2     |CARRY4  |    67|
 |3     |DSP48E1 |     1|
-|4     |LUT1    |   206|
-|5     |LUT2    |    13|
+|4     |LUT1    |   222|
+|5     |LUT2    |    45|
 |6     |LUT3    |    33|
-|7     |LUT4    |   126|
-|8     |LUT5    |    80|
-|9     |LUT6    |    79|
+|7     |LUT4    |   127|
+|8     |LUT5    |   126|
+|9     |LUT6    |    94|
 |10    |MUXF7   |     2|
 |11    |FDCE    |    41|
 |12    |FDRE    |   418|
 |13    |FDSE    |    14|
-|14    |LD      |     1|
+|14    |LD      |    16|
 |15    |IBUF    |    19|
 |16    |OBUF    |    18|
 +------+--------+------+
@@ -883,7 +882,7 @@ Report Instance Areas:
 +------+------------------------+-------------------------------------+------+
 |      |Instance                |Module                               |Cells |
 +------+------------------------+-------------------------------------+------+
-|1     |top                     |                                     |  1106|
+|1     |top                     |                                     |  1245|
 |2     |  masterchefcito        |master_endpoint_top                  |   402|
 |3     |    UART_control_inst   |UART_tx_control_wrapper              |   123|
 |4     |      TX_control_inst0  |TX_control                           |   119|
@@ -897,9 +896,9 @@ Report Instance Areas:
 |12    |      uart_rx_blk       |uart_rx_3                            |    31|
 |13    |        rx_sync_inst    |data_sync_5                          |     9|
 |14    |      uart_tx_blk       |uart_tx_4                            |    23|
-|15    |  slavecito             |Slave_Endpoint_top                   |   665|
-|16    |    ALU_DISPLAY         |lab_4                                |   334|
-|17    |      alucito           |ALU                                  |     4|
+|15    |  slavecito             |Slave_Endpoint_top                   |   804|
+|16    |    ALU_DISPLAY         |lab_4                                |   473|
+|17    |      alucito           |ALU                                  |    41|
 |18    |      clockcito         |clock_divider                        |    83|
 |19    |      displaycito       |display                              |    28|
 |20    |      doublecito        |double_dabble                        |   162|
@@ -913,24 +912,24 @@ Report Instance Areas:
 |28    |      uart_tx_blk       |uart_tx                              |    23|
 +------+------------------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 658.055 ; gain = 447.996
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 100 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 656.473 ; gain = 130.102
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:51 . Memory (MB): peak = 658.055 ; gain = 131.059
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 658.055 ; gain = 447.996
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  LD => LDCE: 1 instances
+  A total of 16 instances were transformed.
+  LD => LDCE: 16 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-153 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+153 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 656.473 ; gain = 446.105
-INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/lab_5/lab_5.runs/synth_1/Puto_Dios.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 656.473 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Jun 14 18:57:02 2017...
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 658.055 ; gain = 447.996
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/Puto_Dios.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 658.055 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 14 19:26:59 2017...
