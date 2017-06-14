@@ -23,10 +23,14 @@
 module Slave_Endpoint_top(
     input rx, CLK100MHZ, rst,
     output [7:0] AN,
-    output CA, CB, CC, CD, CE, CF, CG, DP,
+    output [7:0] SEG,
     output tx
+    //output [5:0] LED
     );
     
+    wire CA, CB, CC, CD, CE, CF, CG, DP;
+    assign SEG = {CA, CB, CC, CD, CE, CF, CG, DP};
+       
     wire [7:0] rx_data, tx_data;
     wire rx_ready,tx_start,trigger, tx_busy;
     wire [15:0] operador1, operador2, resultado;
@@ -84,5 +88,7 @@ module Slave_Endpoint_top(
         .tx_data(tx_data),
         .tx_start(tx_start)
         );
+        
+   
             
 endmodule

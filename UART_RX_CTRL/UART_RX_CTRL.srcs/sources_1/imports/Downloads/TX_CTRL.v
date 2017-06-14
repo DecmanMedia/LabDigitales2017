@@ -22,6 +22,7 @@ module TX_CTRL
 	always@(*)begin
 		state_next = state;
 		tx_data = resultOut16[7:0];
+		tx_start = 1'b0;
 		case(state)
 			REGISTRAR: begin
 				if (hold_state_timer >= WAIT_FOR_REGISTER_DELAY)

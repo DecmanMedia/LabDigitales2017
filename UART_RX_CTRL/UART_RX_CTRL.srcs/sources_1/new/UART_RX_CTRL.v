@@ -53,9 +53,9 @@ module UART_RX_CTRL(
     always@(*)
     begin
         next_state = state;
-        tx_operador1_next = operador1;
-        tx_operador2_next = operador2;
-        tx_ALU_ctrl_next = operando;
+        tx_operador1_next = tx_operador1;
+        tx_operador2_next = tx_operador2;
+        tx_ALU_ctrl_next = tx_ALU_ctrl;
         state_alu = 1'b0;
         case(state)
             WAIT_OP1_LSB: if(rx_ready)
@@ -65,7 +65,7 @@ module UART_RX_CTRL(
             
             STORE_OP1_LSB:  begin
                             next_state= WAIT_OP1_MSB;
-                            operador1[7:0] = rx_data;
+                            tx_operador1_next = {tx_operador1[15:8],rx_data};
                             end
             
             WAIT_OP1_MSB:   if(rx_ready)
@@ -74,7 +74,7 @@ module UART_RX_CTRL(
                                 next_state = state;
             STORE_OP1_MSB:  begin
                             next_state = WAIT_OP2_LSB;
-                            operador1[15:8] = rx_data;
+                            tx_operador1_next = {rx_data,tx_operador1[7:0]};
                             state_alu = 1'b1;
                             end
             
@@ -84,7 +84,7 @@ module UART_RX_CTRL(
                                 next_state = state;
             STORE_OP2_LSB:  begin
                             next_state = WAIT_OP2_MSB;
-                            operador2[7:0] = rx_data;
+                            tx_operador2_next = {tx_operador2[15:8],rx_data};
                             end
             
             WAIT_OP2_MSB: if(rx_ready)
@@ -94,7 +94,7 @@ module UART_RX_CTRL(
                                 
             STORE_OP2_MSB:  begin
                             next_state = WAIT_CMD;
-                            operador2[15:8] = rx_data;
+                            tx_operador2_next = {rx_data,tx_operador2[7:0]};
                             state_alu = 1'b1;
                             end
                             
@@ -106,7 +106,7 @@ module UART_RX_CTRL(
             STORE_CMD:  begin
                         next_state = DELAY_1_CYCLE;
                         state_alu = 1'b1;
-                        operando = rx_data[2:0];
+                        tx_ALU_ctrl_next = rx_data[2:0];
                         end
             
             DELAY_1_CYCLE: next_state = TRIGGER_TX_RESULT;
