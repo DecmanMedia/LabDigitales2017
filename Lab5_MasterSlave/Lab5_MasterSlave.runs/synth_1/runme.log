@@ -1,0 +1,935 @@
+
+*** Running vivado
+    with args -log Puto_Dios.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Puto_Dios.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Puto_Dios.tcl -notrace
+Command: synth_design -top Puto_Dios -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3532 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 282.293 ; gain = 71.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Puto_Dios' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/new/Puto_Dios.v:23]
+INFO: [Synth 8-638] synthesizing module 'master_endpoint_top' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/master_endpoint_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'pb_debouncer' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/pb_debouncer.v:3]
+	Parameter COUNTER_WIDTH bound to: 16 - type: integer 
+	Parameter PB_IDLE bound to: 3'b000 
+	Parameter PB_COUNT bound to: 3'b001 
+	Parameter PB_PE bound to: 3'b010 
+	Parameter PB_STABLE bound to: 3'b011 
+	Parameter PB_NE bound to: 3'b100 
+	Parameter COUNTER_MSB bound to: 15 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/pb_debouncer.v:66]
+INFO: [Synth 8-256] done synthesizing module 'pb_debouncer' (1#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/pb_debouncer.v:3]
+INFO: [Synth 8-638] synthesizing module 'UART_tx_control_wrapper' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/UART_tx_control_wrapper.v:1]
+	Parameter INTER_BYTE_DELAY bound to: 100000 - type: integer 
+	Parameter WAIT_FOR_REGISTER_DELAY bound to: 100 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'TX_control' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/TX_control.v:1]
+	Parameter INTER_BYTE_DELAY bound to: 100000 - type: integer 
+	Parameter WAIT_FOR_REGISTER_DELAY bound to: 100 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter REGISTER_DATAIN16 bound to: 3'b001 
+	Parameter SEND_BYTE_0 bound to: 3'b010 
+	Parameter DELAY_BYTE_0 bound to: 3'b011 
+	Parameter SEND_BYTE_1 bound to: 3'b100 
+	Parameter DELAY_BYTE_1 bound to: 3'b101 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/TX_control.v:35]
+INFO: [Synth 8-256] done synthesizing module 'TX_control' (2#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/TX_control.v:1]
+INFO: [Synth 8-638] synthesizing module 'TX_sequence' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/TX_sequence.v:1]
+	Parameter IDLE bound to: 2'b00 
+	Parameter TX_OPERAND01 bound to: 2'b01 
+	Parameter TX_OPERAND02 bound to: 2'b10 
+	Parameter TX_ALU_CTRL bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'TX_sequence' (3#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/TX_sequence.v:1]
+INFO: [Synth 8-256] done synthesizing module 'UART_tx_control_wrapper' (4#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/UART_tx_control_wrapper.v:1]
+INFO: [Synth 8-638] synthesizing module 'uart_basic' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_basic.v:10]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:11]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 8 - type: integer 
+	Parameter ACC_WIDTH bound to: 18 - type: integer 
+	Parameter SHIFT_LIMITER bound to: 7 - type: integer 
+	Parameter INCREMENT bound to: 2416 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:38]
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen' (5#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_rx.v:10]
+	Parameter RX_IDLE bound to: 0 - type: integer 
+	Parameter RX_START bound to: 1 - type: integer 
+	Parameter RX_RECV bound to: 2 - type: integer 
+	Parameter RX_STOP bound to: 3 - type: integer 
+	Parameter RX_READY bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'data_sync' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/data_sync.v:11]
+INFO: [Synth 8-256] done synthesizing module 'data_sync' (6#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/data_sync.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_rx.v:78]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (7#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_rx.v:10]
+INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen__parameterized0' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:11]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 1 - type: integer 
+	Parameter ACC_WIDTH bound to: 18 - type: integer 
+	Parameter SHIFT_LIMITER bound to: 4 - type: integer 
+	Parameter INCREMENT bound to: 302 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen__parameterized0' (7#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_tx.v:10]
+	Parameter TX_IDLE bound to: 2'b00 
+	Parameter TX_START bound to: 2'b01 
+	Parameter TX_SEND bound to: 2'b10 
+	Parameter TX_STOP bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (8#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_tx.v:10]
+INFO: [Synth 8-256] done synthesizing module 'uart_basic' (9#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/uart/uart_basic.v:10]
+INFO: [Synth 8-638] synthesizing module 'unsigned_to_bcd' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/unsigned_to_bcd.v:22]
+	Parameter S_IDLE bound to: 1 - type: integer 
+	Parameter S_SHIFT bound to: 2 - type: integer 
+	Parameter S_ADD3 bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'unsigned_to_bcd' (10#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/unsigned_to_bcd.v:22]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/clk_divider.v:19]
+	Parameter O_CLK_FREQ bound to: 480 - type: integer 
+	Parameter COUNTER_MAX bound to: 104165 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (11#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/clk_divider.v:19]
+INFO: [Synth 8-638] synthesizing module 'display_mux' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/display_mux.v:10]
+	Parameter DIG_0 bound to: 8'b00000001 
+	Parameter DIG_1 bound to: 8'b00000010 
+	Parameter DIG_2 bound to: 8'b00000100 
+	Parameter DIG_3 bound to: 8'b00001000 
+	Parameter DIG_4 bound to: 8'b00010000 
+	Parameter DIG_5 bound to: 8'b00100000 
+	Parameter DIG_6 bound to: 8'b01000000 
+	Parameter DIG_7 bound to: 8'b10000000 
+INFO: [Synth 8-638] synthesizing module 'bcd_to_ss' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/bcd_to_ss.v:9]
+INFO: [Synth 8-256] done synthesizing module 'bcd_to_ss' (12#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/bcd_to_ss.v:9]
+INFO: [Synth 8-256] done synthesizing module 'display_mux' (13#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/display_mux.v:10]
+INFO: [Synth 8-256] done synthesizing module 'master_endpoint_top' (14#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/new/master_endpoint_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'Slave_Endpoint_top' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/new/Slave_Endpoint_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'UART_RX_CTRL' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:22]
+	Parameter OP1 bound to: 2'b01 
+	Parameter OP2 bound to: 2'b10 
+	Parameter OP_CTRL bound to: 2'b11 
+	Parameter WAIT_OP1_LSB bound to: 4'b0001 
+	Parameter STORE_OP1_LSB bound to: 4'b0010 
+	Parameter WAIT_OP1_MSB bound to: 4'b0011 
+	Parameter STORE_OP1_MSB bound to: 4'b0100 
+	Parameter WAIT_OP2_LSB bound to: 4'b0101 
+	Parameter STORE_OP2_LSB bound to: 4'b0110 
+	Parameter WAIT_OP2_MSB bound to: 4'b0111 
+	Parameter STORE_OP2_MSB bound to: 4'b1000 
+	Parameter WAIT_CMD bound to: 4'b1001 
+	Parameter STORE_CMD bound to: 4'b1010 
+	Parameter DELAY_1_CYCLE bound to: 4'b1011 
+	Parameter TRIGGER_TX_RESULT bound to: 4'b1100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:60]
+INFO: [Synth 8-256] done synthesizing module 'UART_RX_CTRL' (15#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:22]
+INFO: [Synth 8-638] synthesizing module 'lab_4' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:23]
+	Parameter ESPERANDO_OPERADOR1 bound to: 3'b001 
+	Parameter ESPERANDO_OPERADOR2 bound to: 3'b011 
+	Parameter ESPERANDO_OPERACION bound to: 3'b101 
+	Parameter MOSTRAR_RESULTADO bound to: 3'b111 
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/Downloads/clockuru.v:1]
+	Parameter CONSTANT bound to: 50000 - type: integer 
+	Parameter constantNumber bound to: 50000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (16#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/Downloads/clockuru.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:74]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/ALU.v:23]
+	Parameter width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ALU' (17#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/ALU.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'result' does not match port width (16) of module 'ALU' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:107]
+INFO: [Synth 8-638] synthesizing module 'double_dabble' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/Downloads/unsigned_to_bcd.v:22]
+	Parameter S_IDLE bound to: 1 - type: integer 
+	Parameter S_SHIFT bound to: 2 - type: integer 
+	Parameter S_ADD3 bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'double_dabble' (18#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/Downloads/unsigned_to_bcd.v:22]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/5.2.3/display.v:34]
+INFO: [Synth 8-638] synthesizing module 'ssdec' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/5.2.3/ssdec.v:7]
+INFO: [Synth 8-256] done synthesizing module 'ssdec' (19#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/5.2.3/ssdec.v:7]
+INFO: [Synth 8-256] done synthesizing module 'display' (20#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/imports/5.2.3/display.v:34]
+INFO: [Synth 8-256] done synthesizing module 'lab_4' (21#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'TX_CTRL' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/Downloads/TX_CTRL.v:1]
+	Parameter INTER_BYTE_DELAY bound to: 1000000 - type: integer 
+	Parameter WAIT_FOR_REGISTER_DELAY bound to: 100 - type: integer 
+	Parameter REGISTRAR bound to: 3'b001 
+	Parameter SEND_BYTE_0 bound to: 3'b010 
+	Parameter DELAY_0 bound to: 3'b011 
+	Parameter SEND_BYTE_1 bound to: 3'b100 
+	Parameter DELAY_1 bound to: 3'b101 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/Downloads/TX_CTRL.v:26]
+INFO: [Synth 8-256] done synthesizing module 'TX_CTRL' (22#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/Downloads/TX_CTRL.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Slave_Endpoint_top' (23#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/new/Slave_Endpoint_top.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Puto_Dios' (24#1) [C:/Xilinx/lab_5/lab_5.srcs/sources_1/new/Puto_Dios.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 319.676 ; gain = 109.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 319.676 ; gain = 109.309
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/lab_5/lab_5.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc]
+Finished Parsing XDC File [C:/Xilinx/lab_5/lab_5.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/lab_5/lab_5.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Puto_Dios_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Puto_Dios_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 635.680 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 635.680 ; gain = 425.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 635.680 ; gain = 425.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 635.680 ; gain = 425.313
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'button_state_reg' in module 'pb_debouncer'
+INFO: [Synth 8-5544] ROM "pb_posedge" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pb_negedge" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pb_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "button_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TX_control'
+INFO: [Synth 8-5544] ROM "busy" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_start" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_data16" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-5544] ROM "rx_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "idle" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bcd_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "counter_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clk_out" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "out13" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'ss_select_q_reg' in module 'display_mux'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_RX_CTRL'
+INFO: [Synth 8-5544] ROM "tx_operador2_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_operador1_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_ALU_ctrl_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_alu" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "idle" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bcd_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "counter_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "anodos_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'estado_actual_reg' in module 'lab_4'
+INFO: [Synth 8-5544] ROM "operador_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "B_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "A_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "result_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado_sig0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado_sig0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado_sig0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado_sig0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PB_IDLE |                              000 |                              000
+                PB_COUNT |                              001 |                              001
+                   PB_PE |                              010 |                              010
+               PB_STABLE |                              011 |                              011
+                   PB_NE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'button_state_reg' using encoding 'sequential' in module 'pb_debouncer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+       REGISTER_DATAIN16 |                              001 |                              001
+             SEND_BYTE_0 |                              010 |                              010
+            DELAY_BYTE_0 |                              011 |                              011
+             SEND_BYTE_1 |                              100 |                              100
+            DELAY_BYTE_1 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'TX_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RX_IDLE |                              000 |                              000
+                RX_START |                              001 |                              001
+                 RX_RECV |                              010 |                              010
+                 RX_STOP |                              011 |                              011
+                RX_READY |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                             0000 |                         00000000
+*
+                  iSTATE |                             0001 |                         00000001
+                 iSTATE0 |                             0010 |                         00000010
+                 iSTATE1 |                             0011 |                         00000100
+                 iSTATE2 |                             0100 |                         00001000
+                 iSTATE3 |                             0101 |                         00010000
+                 iSTATE4 |                             0110 |                         00100000
+                 iSTATE5 |                             0111 |                         01000000
+                 iSTATE7 |                             1000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ss_select_q_reg' using encoding 'sequential' in module 'display_mux'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            WAIT_OP1_LSB |                             0000 |                             0001
+           STORE_OP1_LSB |                             0001 |                             0010
+            WAIT_OP1_MSB |                             0010 |                             0011
+           STORE_OP1_MSB |                             0011 |                             0100
+            WAIT_OP2_LSB |                             0100 |                             0101
+           STORE_OP2_LSB |                             0101 |                             0110
+            WAIT_OP2_MSB |                             0110 |                             0111
+           STORE_OP2_MSB |                             0111 |                             1000
+                WAIT_CMD |                             1000 |                             1001
+               STORE_CMD |                             1001 |                             1010
+           DELAY_1_CYCLE |                             1010 |                             1011
+       TRIGGER_TX_RESULT |                             1011 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'UART_RX_CTRL'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+     ESPERANDO_OPERADOR1 |                               00 |                              001
+     ESPERANDO_OPERADOR2 |                               01 |                              011
+     ESPERANDO_OPERACION |                               10 |                              101
+       MOSTRAR_RESULTADO |                               11 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_reg' using encoding 'sequential' in module 'lab_4'
+WARNING: [Synth 8-327] inferring latch for variable 'result_t_reg' [C:/Xilinx/lab_5/lab_5.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:79]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 635.680 ; gain = 425.313
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 4     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 16    
+	   2 Input      3 Bit       Adders := 6     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               27 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
+	               16 Bit    Registers := 7     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 11    
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 2     
+	   8 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 2     
+	  17 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 3     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 3     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   5 Input      2 Bit        Muxes := 2     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 8     
+	   6 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 25    
+	   3 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pb_debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+Module TX_control 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module TX_sequence 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module uart_baud_tick_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+Module data_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module uart_baud_tick_gen__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module uart_basic 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module unsigned_to_bcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 8     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module clk_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bcd_to_ss 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module display_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 2     
+Module master_endpoint_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+Module UART_RX_CTRL 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	  12 Input     16 Bit        Muxes := 4     
+	  17 Input      4 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 3     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+Module double_dabble 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 8     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module ssdec 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module display 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+Module lab_4 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module TX_CTRL 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "masterchefcito/clk_div_ss_display/clk_out" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "slavecito/ALU_DISPLAY/clockcito/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "slavecito/ALU_DISPLAY/clockcito/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "slavecito/ALU_DISPLAY/alucito/Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slavecito/ALU_DISPLAY/displaycito/anodos_sig" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP slavecito/ALU_DISPLAY/alucito/result_temp0, operation Mode is: A2*B2.
+DSP Report: register slavecito/ALU_DISPLAY/B_reg is absorbed into DSP slavecito/ALU_DISPLAY/alucito/result_temp0.
+DSP Report: register slavecito/ALU_DISPLAY/A_reg is absorbed into DSP slavecito/ALU_DISPLAY/alucito/result_temp0.
+DSP Report: operator slavecito/ALU_DISPLAY/alucito/result_temp0 is absorbed into DSP slavecito/ALU_DISPLAY/alucito/result_temp0.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/uart_basic_inst/rx_ready_sync_reg) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/counter_reg[5]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/counter_reg[4]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/counter_reg[3]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/counter_reg[2]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/counter_reg[1]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/counter_reg[0]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/state_reg[2]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/state_reg[1]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/state_reg[0]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[31]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[30]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[29]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[28]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[27]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[26]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[25]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[24]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[23]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[22]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[21]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[20]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[19]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[18]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[17]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[16]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[15]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[14]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[13]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[12]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[11]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[10]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[9]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[8]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[7]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[6]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[5]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[4]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[3]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[2]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[1]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/shift_reg[0]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[31]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[30]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[29]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[28]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[27]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[26]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[25]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[24]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[23]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[22]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[21]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[20]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[19]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[18]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[17]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[16]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[15]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[14]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[13]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[12]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[11]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[10]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[9]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[8]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[7]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[6]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[5]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[4]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[3]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[2]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[1]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/u32_to_bcd_inst/bcd_reg[0]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/uart_basic_inst/rx_ready_reg) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/uart_basic_inst/uart_rx_blk/rx_data_reg[7]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/uart_basic_inst/uart_rx_blk/rx_data_reg[6]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/uart_basic_inst/uart_rx_blk/rx_data_reg[5]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/uart_basic_inst/uart_rx_blk/rx_data_reg[4]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/uart_basic_inst/uart_rx_blk/rx_data_reg[3]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/uart_basic_inst/uart_rx_blk/rx_data_reg[2]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/uart_basic_inst/uart_rx_blk/rx_data_reg[1]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/uart_basic_inst/uart_rx_blk/rx_data_reg[0]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[15]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[14]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[13]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[12]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[11]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[10]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[9]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[8]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[7]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[6]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[5]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[4]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[3]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[2]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[1]) is unused and will be removed from module Puto_Dios.
+WARNING: [Synth 8-3332] Sequential element (masterchefcito/result16_reg[0]) is unused and will be removed from module Puto_Dios.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 635.680 ; gain = 425.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Puto_Dios   | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 635.680 ; gain = 425.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 642.785 ; gain = 432.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    53|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |   206|
+|5     |LUT2    |    13|
+|6     |LUT3    |    33|
+|7     |LUT4    |   126|
+|8     |LUT5    |    80|
+|9     |LUT6    |    79|
+|10    |MUXF7   |     2|
+|11    |FDCE    |    41|
+|12    |FDRE    |   418|
+|13    |FDSE    |    14|
+|14    |LD      |     1|
+|15    |IBUF    |    19|
+|16    |OBUF    |    18|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------------------------+------+
+|      |Instance                |Module                               |Cells |
++------+------------------------+-------------------------------------+------+
+|1     |top                     |                                     |  1106|
+|2     |  masterchefcito        |master_endpoint_top                  |   402|
+|3     |    UART_control_inst   |UART_tx_control_wrapper              |   123|
+|4     |      TX_control_inst0  |TX_control                           |   119|
+|5     |      TX_sequence_inst0 |TX_sequence                          |     4|
+|6     |    clk_div_ss_display  |clk_divider                          |    71|
+|7     |    display_mux_inst    |display_mux                          |     8|
+|8     |    pb_deb0             |pb_debouncer                         |    63|
+|9     |    uart_basic_inst     |uart_basic_0                         |   135|
+|10    |      baud8_tick_blk    |uart_baud_tick_gen_1                 |    39|
+|11    |      baud_tick_blk     |uart_baud_tick_gen__parameterized0_2 |    42|
+|12    |      uart_rx_blk       |uart_rx_3                            |    31|
+|13    |        rx_sync_inst    |data_sync_5                          |     9|
+|14    |      uart_tx_blk       |uart_tx_4                            |    23|
+|15    |  slavecito             |Slave_Endpoint_top                   |   665|
+|16    |    ALU_DISPLAY         |lab_4                                |   334|
+|17    |      alucito           |ALU                                  |     4|
+|18    |      clockcito         |clock_divider                        |    83|
+|19    |      displaycito       |display                              |    28|
+|20    |      doublecito        |double_dabble                        |   162|
+|21    |    TX_CTRL_inst        |TX_CTRL                              |    98|
+|22    |    UART_RX_CTRL_inst   |UART_RX_CTRL                         |    84|
+|23    |    uart_basic_inst     |uart_basic                           |   149|
+|24    |      baud8_tick_blk    |uart_baud_tick_gen                   |    39|
+|25    |      baud_tick_blk     |uart_baud_tick_gen__parameterized0   |    42|
+|26    |      uart_rx_blk       |uart_rx                              |    43|
+|27    |        rx_sync_inst    |data_sync                            |     9|
+|28    |      uart_tx_blk       |uart_tx                              |    23|
++------+------------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 100 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 656.473 ; gain = 130.102
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 656.473 ; gain = 446.105
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LD => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+153 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 656.473 ; gain = 446.105
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/lab_5/lab_5.runs/synth_1/Puto_Dios.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 656.473 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 14 18:57:02 2017...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jun 14 18:38:00 2017
+# Process ID: 2328
+# Current directory: C:/Xilinx/lab_5/lab_5.runs/impl_1
+# Command line: vivado.exe -log Puto_Dios.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Puto_Dios.tcl -notrace
+# Log file: C:/Xilinx/lab_5/lab_5.runs/impl_1/Puto_Dios.vdi
+# Journal file: C:/Xilinx/lab_5/lab_5.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Puto_Dios.tcl -notrace

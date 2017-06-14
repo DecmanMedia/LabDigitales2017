@@ -3,17 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<<<<<<< HEAD
-<application name="pa" timeStamp="Wed Jun 14 14:54:11 2017">
+<application name="pa" timeStamp="Wed Jun 14 16:23:06 2017">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="4d39420ccf794da4b2f7a5bf09ea402c" type="ProjectID"/>
+<property name="ProjectID" value="1af1f53c2d59409a8b7c08405d47d08b" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
-=======
-<application name="pa" timeStamp="Wed Jun 14 15:22:45 2017">
-<section name="Project Information" visible="false">
-<property name="ProjectID" value="6b67cca5454f4fedba367fd62ae889e2" type="ProjectID"/>
-<property name="ProjectIteration" value="5" type="ProjectIteration"/>
->>>>>>> 96164c8d41bbd001368fd40cfeb155fd04a7feaa
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -23,32 +16,19 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
-<<<<<<< HEAD
+<item name="Java Command Handlers">
+<property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
+</item>
 <item name="Gui Resources Info">
-<property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="3" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="9" type="GuiResourceData"/>
-<property name="PAViews_PROJECT_SUMMARY" value="1" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="5" type="GuiResourceData"/>
+<property name="PACommandNames_PROJECT_SETTINGS" value="2" type="GuiResourceData"/>
+<property name="PAViews_CODE" value="1" type="GuiResourceData"/>
+<property name="ProjectSettingsGeneralPage_DEFAULT_LIBRARY" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="33" type="GuiMode"/>
+<property name="GuiMode" value="36" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="24" type="TclMode"/>
-=======
-<item name="Java Command Handlers">
-<property name="RunImplementation" value="4" type="JavaHandler"/>
-</item>
-<item name="Gui Resources Info">
-<property name="BaseDialog_YES" value="4" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="21" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="4" type="GuiResourceData"/>
-<property name="GettingStartedView_RECENT_PROJECTS" value="1" type="GuiResourceData"/>
-<property name="MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN" value="4" type="GuiResourceData"/>
-<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="8" type="GuiResourceData"/>
-<property name="MsgView_INFORMATION_MESSAGES" value="1" type="GuiResourceData"/>
-<property name="PACommandNames_AUTO_UPDATE_HIER" value="2" type="GuiResourceData"/>
-<property name="SaveProjectUtils_SAVE" value="1" type="GuiResourceData"/>
-<property name="SrcMenu_IP_HIERARCHY" value="2" type="GuiResourceData"/>
->>>>>>> 96164c8d41bbd001368fd40cfeb155fd04a7feaa
+<property name="TclMode" value="26" type="TclMode"/>
 </item>
 </section>
 </application>
