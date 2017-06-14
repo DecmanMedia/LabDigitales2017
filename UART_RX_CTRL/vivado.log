@@ -39,6 +39,7 @@ launch_runs impl_1 -to_step write_bitstream -jobs 4
 Run output will be captured here: C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/impl_1/runme.log
 reset_run impl_1 -prev_step 
 launch_runs impl_1 -to_step write_bitstream -jobs 4
+<<<<<<< HEAD
 [Tue Jun 13 18:07:33 2017] Launched impl_1...
 Run output will be captured here: C:/Users/Diego/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/impl_1/runme.log
 open_hw
@@ -88,3 +89,19 @@ ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
 ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FFD8A
 exit
 INFO: [Common 17-206] Exiting Vivado at Tue Jun 13 18:13:48 2017...
+=======
+[Tue Jun 13 17:57:03 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/synth_1/runme.log
+[Tue Jun 13 17:57:03 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Jun 13 17:58:10 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Jun 13 17:59:39 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Sebastián Quiroz/Documents/GitHub/LabDigitales2017/UART_RX_CTRL/UART_RX_CTRL.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 13 18:04:32 2017...
+>>>>>>> e45e814896325fa98bbae82e172d577cf5ac2a71
