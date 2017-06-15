@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jun 15 13:31:05 2017
+# Process ID: 12084
+# Current directory: C:/Users/Sebastián Quiroz/Desktop/LAB_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5304 C:\Users\Sebastián Quiroz\Desktop\LAB_5\LAB_5.xpr
+# Log file: C:/Users/Sebastián Quiroz/Desktop/LAB_5/vivado.log
+# Journal file: C:/Users/Sebastián Quiroz/Desktop/LAB_5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Sebastián Quiroz/Desktop/LAB_5/LAB_5.xpr}

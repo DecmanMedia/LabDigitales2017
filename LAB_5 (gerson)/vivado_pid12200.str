@@ -1,0 +1,1003 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+Process ID: 12200
+
+Current time: 	6/14/17 12:37:13 PM CLT
+Time zone: 	Chile Time (America/Santiago)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	E:/xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	Luis
+User home directory: C:/Users/Luis
+User working directory: C:/Users/Luis/Desktop/LAB_5/LAB_5
+User country: 	CL
+User language: 	es
+User locale: 	es_CL
+
+RDI base root directory: E:/xilinx/Vivado
+RDI data directory: E:/xilinx/Vivado/2016.4/data
+RDI bin directory: E:/xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Luis/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Luis/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	169 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 391 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Luis\Desktop\LAB_5\LAB_5\LAB_5.xpr. Version: Vivado v2016.4 
+// [GUI Memory]: 31 MB (+29824kb) [00:00:13]
+// [Engine Memory]: 380 MB (+246512kb) [00:00:13]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 411 MB. GUI used memory: 26 MB. Current time: 6/14/17 12:37:15 PM CLT
+// [Engine Memory]: 412 MB (+13907kb) [00:00:18]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+15925kb) [00:00:22]
+// [Engine Memory]: 451 MB (+19322kb) [00:00:23]
+// [Engine Memory]: 487 MB (+14264kb) [00:00:24]
+// [GUI Memory]: 50 MB (+462kb) [00:00:25]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2016.4/data/ip'. 
+// Project name: LAB_5; location: C:/Users/Luis/Desktop/LAB_5/LAB_5; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 738.047 ; gain = 142.023 
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// [GUI Memory]: 57 MB (+4538kb) [00:00:27]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// PAPropertyPanels.initPanels (module UART_tx_control_wrapper.v) elapsed time: 0.5s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_UART_tx_control_wrapper (module UART_tx_control_wrapper.v)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_UART_tx_control_wrapper (module UART_tx_control_wrapper.v)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_UART_tx_control_wrapper (module UART_tx_control_wrapper.v)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_UART_tx_control_wrapper (module UART_tx_control_wrapper.v)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// [GUI Memory]: 60 MB (+283kb) [00:00:36]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_UART_tx_control_wrapper (module UART_tx_control_wrapper.v)]", 5, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// ar:g (cd:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ar:g)
+// TclEventType: DG_GRAPH_STALE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+dismissDialog("Remove Sources"); // ar:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 65 MB (+2034kb) [00:00:43]
+// Tcl Message: remove_files  {{C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/module UART_tx_control_wrapper.v}} 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_TX_sequence (module TX_sequence.v)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1); // y:i (D:JPanel, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1); // y:i (D:JPanel, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_TX_sequence (module TX_sequence.v)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, module_TX_sequence (module TX_sequence.v)]", 4, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// ar:g (cd:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ar:g)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Remove Sources"); // ar:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/module TX_sequence.v}} 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_modulept2 (top_modulept2.v)]", 1); // y:i (D:JPanel, cd:JFrame)
+// [Engine Memory]: 514 MB (+2406kb) [00:00:57]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_modulept2 (top_modulept2.v), UART_TX_CTRL - UART_TX_CTRL (UART_TX_CTRL.v)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_modulept2 (top_modulept2.v), r50 - ALU (ALU.v)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_modulept2 (top_modulept2.v), r50 - ALU (ALU.v)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_modulept2 (top_modulept2.v), UART_TX_CTRL - UART_TX_CTRL (UART_TX_CTRL.v)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_modulept2 (top_modulept2.v), UART_TX_CTRL - UART_TX_CTRL (UART_TX_CTRL.v)]", 4, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectCodeEditor("UART_TX_CTRL.v", 70, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 531 MB. GUI used memory: 35 MB. Current time: 6/14/17 12:38:25 PM CLT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 14 11:38:30 2017] Launched synth_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/synth_1/runme.log [Wed Jun 14 11:38:30 2017] Launched impl_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// [GUI Memory]: 69 MB (+240kb) [00:02:17]
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// [Engine Memory]: 543 MB (+3326kb) [00:03:19]
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 193 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26); // u:K (t:D, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 27, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bt:g (cd:JFrame):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2016.4   **** Build date : Jan 23 2017-19:37:29     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A40071A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/top_modulept2.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 624 MB (+57305kb) [00:05:00]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bt:g (cd:JFrame)
+// [GUI Memory]: 75 MB (+2895kb) [00:05:01]
+// HMemoryUtils.trashcanNow. Engine heap size: 640 MB. GUI used memory: 39 MB. Current time: 6/14/17 12:42:00 PM CLT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/top_modulept2.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 98 seconds
+selectCodeEditor("UART_TX_CTRL.v", 102, 93); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 56 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g:JCheckBox (JPanel:JComponent, cd:JFrame): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.xpr. , [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2016.4/data/ip'.. ]", 4, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, connect_hw_server. ]", 5, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, connect_hw_server. , [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121. ]", 6, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, connect_hw_server. , [Labtools 27-2222] Launching hw_server.... ]", 7, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, connect_hw_server. , [Labtools 27-2221] Launch Output:. . ****** Xilinx hw_server v2016.4.   **** Build date : Jan 23 2017-19:37:29.     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.. . . ]", 8, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_hw_target. ]", 9, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_hw_target. , [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A40071A. ]", 10, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]. ]", 11, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]. , [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.. ]", 12, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]. ]", 13, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]. , [Labtools 27-3164] End of startup status: HIGH. ]", 14, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]. ]", 15, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]. , [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.. ]", 16, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 17, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'. ]", 18, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [HDL 9-2216] Analyzing Verilog file C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v into library work [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:1]. ]", 19, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-638] synthesizing module 'top_modulept2' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:23]. ]", 20, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-5534] Detected attribute (* keep = true *) [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/Desktop/uart_baud_tick_gen.v:38]. ]", 21, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-638] synthesizing module 'top_modulept2' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:23]. ]", 20, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [HDL 9-2216] Analyzing Verilog file C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v into library work [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:1]. ]", 19, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'. ]", 18, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [HDL 9-2216] Analyzing Verilog file C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v into library work [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:1]. ]", 19, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-638] synthesizing module 'top_modulept2' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:23]. ]", 20, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-5534] Detected attribute (* keep = true *) [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/Desktop/uart_baud_tick_gen.v:38]. ]", 21, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'uart_baud_tick_gen' (1#1) [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/Desktop/uart_baud_tick_gen.v:11]. ]", 22, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-155] case statement is not full and has no default [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/uart_rx.v:91]. ]", 23, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'uart_baud_tick_gen' (1#1) [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/Desktop/uart_baud_tick_gen.v:11]. ]", 22, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-5534] Detected attribute (* keep = true *) [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/Desktop/uart_baud_tick_gen.v:38]. ]", 21, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'uart_baud_tick_gen' (1#1) [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/Desktop/uart_baud_tick_gen.v:11]. ]", 22, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-155] case statement is not full and has no default [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/uart_rx.v:91]. ]", 23, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-226] default block is never used [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/driver_display7seg.v:46]. ]", 24, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Device 21-403] Loading part xc7a100tcsg324-1. ]", 25, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-226] default block is never used [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/driver_display7seg.v:46]. ]", 24, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-155] case statement is not full and has no default [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/uart_rx.v:91]. ]", 23, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-155] case statement is not full and has no default [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/uart_rx.v:91]. ]", 23, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Luis\Desktop\LAB_5\LAB_5\LAB_5.srcs\sources_1\new\uart_rx.v;-;;-;16;-;line;-;91;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_TX_CTRL.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 35 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-155] case statement is not full and has no default [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/uart_rx.v:91]. ]", 23); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-155] case statement is not full and has no default [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/uart_rx.v:91]. , [Synth 8-155] case statement is not full and has no default [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_TX_CTRL.v:57]. ]", 24, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Luis\Desktop\LAB_5\LAB_5\LAB_5.srcs\sources_1\new\UART_TX_CTRL.v;-;;-;16;-;line;-;57;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// [GUI Memory]: 85 MB (+6760kb) [00:08:57]
+// Elapsed time: 14 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-638] synthesizing module 'top_modulept2' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:23]. ]", 20, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Luis\Desktop\LAB_5\LAB_5\LAB_5.srcs\sources_1\new\top_modulept2.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-638] synthesizing module 'top_modulept2' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:23]. ]", 20); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-155] case statement is not full and has no default [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/uart_rx.v:91]. , [Synth 8-155] case statement is not full and has no default [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_TX_CTRL.v:57]. ]", 36, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-226] default block is never used [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/driver_display7seg.v:46]. ]", 37, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-155] case statement is not full and has no default [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/uart_rx.v:91]. , [Synth 8-155] case statement is not full and has no default [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_TX_CTRL.v:57]. ]", 36, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCodeEditor("top_modulept2.v", 169, 57); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ai:r (cd:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ai:r)
+dismissDialog("Save Project"); // ai:r (cd:JFrame)
+selectCodeEditor("top_modulept2.v", 207, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cn' command handler elapsed time: 4 seconds
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Jun 14 11:47:29 2017] Launched synth_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/synth_1/runme.log [Wed Jun 14 11:47:30 2017] Launched impl_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah:y (cd:JFrame): Implementation Failed: addNotify
+// [GUI Memory]: 90 MB (+793kb) [00:11:42]
+// Elapsed time: 73 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah:y (cd:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net tx_busy with 1st driver pin 'i_397/O' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:23]. ]", 2); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net tx_busy with 1st driver pin 'i_397/O' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:23]. , [Synth 8-3352] multi-driven net tx_busy with 2nd driver pin 'i_57/O' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/Desktop/uart_tx.v:43]. ]", 3, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Luis\Desktop\LAB_5\LAB_5\LAB_5.srcs\sources_1\imports\Desktop\uart_tx.v;-;;-;16;-;line;-;43;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// [Engine Memory]: 660 MB (+4363kb) [00:12:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 660 MB. GUI used memory: 43 MB. Current time: 6/14/17 12:49:05 PM CLT
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net tx_busy with 1st driver pin 'i_397/O' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:23]. ]", 2, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Luis\Desktop\LAB_5\LAB_5\LAB_5.srcs\sources_1\new\top_modulept2.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net tx_busy with 1st driver pin 'i_397/O' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:23]. , [Synth 8-3352] multi-driven net tx_busy with 2nd driver pin 'i_57/O' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/Desktop/uart_tx.v:43]. ]", 3, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Luis\Desktop\LAB_5\LAB_5\LAB_5.srcs\sources_1\imports\Desktop\uart_tx.v;-;;-;16;-;line;-;43;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_modulept2.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_modulept2.v", 239, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 51 seconds
+closeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_modulept2 (top_modulept2.v), r1 - uart_basic (uart_basic.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_modulept2 (top_modulept2.v), r1 - uart_basic (uart_basic.v)]", 2, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Elapsed time: 221 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_TX_CTRL.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("UART_TX_CTRL.v", 126, 131); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_basic.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_TX_CTRL.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("UART_TX_CTRL.v", 96, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 49 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Jun 14 11:55:07 2017] Launched synth_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/synth_1/runme.log [Wed Jun 14 11:55:07 2017] Launched impl_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 180 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+// aH:aO (cd:JFrame): Feedback Request: addNotify
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a:JButton (JPanel:JComponent, aH:aO)
+dismissDialog("Feedback Request"); // aH:aO (cd:JFrame)
+selectButton("PAResourceTtoZ.TouchpointSurveyDialog_USE_TOOLS_OPTIONS_WINDOWS_BEHAVIOR_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/top_modulept2.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 21 seconds
+selectCodeEditor("top_modulept2.v", 216, 260); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_TX_CTRL.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("UART_TX_CTRL.v", 174, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 119 seconds
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g:JCheckBox (JPanel:JComponent, cd:JFrame): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g:JCheckBox (JPanel:JComponent, cd:JFrame): TRUE
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands]", 0); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3848] Net tx_result in module/entity top_modulept2 does not have driver. [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:64]. ]", 4, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Luis\Desktop\LAB_5\LAB_5\LAB_5.srcs\sources_1\new\top_modulept2.v;-;;-;16;-;line;-;64;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_TX_CTRL.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_rx.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_TX_CTRL.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_modulept2.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_modulept2.v", 61, 139); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 19 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_modulept2.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+// [GUI Memory]: 95 MB (+405kb) [00:24:47]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_modulept2 (top_modulept2.v), UART_RX_CTRL - UART_RX_CTRL (UART_RX_CTRL.v)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_modulept2 (top_modulept2.v), UART_RX_CTRL - UART_RX_CTRL (UART_RX_CTRL.v)]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_modulept2 (top_modulept2.v), r1 - uart_basic (uart_basic.v)]", 2); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_modulept2 (top_modulept2.v), r1 - uart_basic (uart_basic.v)]", 2); // y:i (D:JPanel, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 120, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_modulept2.v", 182, 131); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cn' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Jun 14 12:02:32 2017] Launched synth_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/synth_1/runme.log [Wed Jun 14 12:02:32 2017] Launched impl_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/runme.log 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 177 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/top_modulept2.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 147 seconds
+setText(PAResourceEtoH.HardwareDevicePropPanels_SPECIFY_BITSTREAM_FILE, "C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/top_modulept2.bit"); // ah:ak (P:ag, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("UART_RX_CTRL.v", 229, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_TX_CTRL.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_modulept2.v", 207, 146); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 27 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// HMemoryUtils.trashcanNow. Engine heap size: 692 MB. GUI used memory: 46 MB. Current time: 6/14/17 1:10:20 PM CLT
+// Elapsed time: 74 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_modulept2.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 118 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_modulept2.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 268, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 67 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cn' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Jun 14 12:14:25 2017] Launched synth_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/synth_1/runme.log [Wed Jun 14 12:14:25 2017] Launched impl_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 50 seconds
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands]", 0); // ah:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_TX_CTRL.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 118 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectCodeEditor("top_modulept2.v", 159, 224); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 64 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_modulept2.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("UART_TX_CTRL.v", 193, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 78 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Jun 14 12:20:11 2017] Launched synth_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/synth_1/runme.log [Wed Jun 14 12:20:11 2017] Launched impl_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah:y (cd:JFrame): Implementation Failed: addNotify
+// Elapsed time: 75 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah:y (cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net tx_busy with 1st driver pin 'i_397/O' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:23]. ]", 2, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Luis\Desktop\LAB_5\LAB_5\LAB_5.srcs\sources_1\new\top_modulept2.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net tx_busy with 1st driver pin 'i_397/O' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:23]. ]", 2); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net tx_busy with 1st driver pin 'i_397/O' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:23]. , [Synth 8-3352] multi-driven net tx_busy with 2nd driver pin 'i_57/O' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/Desktop/uart_tx.v:43]. ]", 3, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Luis\Desktop\LAB_5\LAB_5\LAB_5.srcs\sources_1\imports\Desktop\uart_tx.v;-;;-;16;-;line;-;43;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 44 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_tx.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_TX_CTRL.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Jun 14 12:22:40 2017] Launched synth_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/synth_1/runme.log [Wed Jun 14 12:22:40 2017] Launched impl_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 101 MB (+575kb) [00:47:00]
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 147 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectCodeEditor("top_modulept2.v", 125, 274); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_modulept2.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Jun 14 12:25:25 2017] Launched impl_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/runme.log 
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (p:JPanel, cd:JFrame)
+// bt:g (cd:JFrame):  Reset to Previous Step : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+dismissDialog("Reset to Previous Step"); // bt:g (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// HOptionPane Error: "The file 'C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/top_modulept2.bit' does<br>not exist.<br>Please specify a valid file name. (Invalid File Name)"
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, be:aj)
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Elapsed time: 95 seconds
+selectCodeEditor("UART_TX_CTRL.v", 154, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_TX_CTRL.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_modulept2.v", 202, 212); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_modulept2.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("UART_TX_CTRL.v", 143, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 25 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (p:JPanel, cd:JFrame)
+// bt:g (cd:JFrame):  Reset to Previous Step : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset to Previous Step"); // bt:g (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// HOptionPane Error: "The file 'C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/top_modulept2.bit' does<br>not exist.<br>Please specify a valid file name. (Invalid File Name)"
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, be:aj)
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 27, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 27, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// HOptionPane Error: "The file 'C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/top_modulept2.bit' does<br>not exist.<br>Please specify a valid file name. (Invalid File Name)"
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, be:aj)
+// 'B' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Jun 14 12:28:30 2017] Launched impl_1... Run output will be captured here: C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/runme.log 
+selectCodeEditor("UART_TX_CTRL.v", 216, 270); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_TX_CTRL.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_modulept2.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_TX_CTRL.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_modulept2.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 27 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 0); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g:JCheckBox (JPanel:JComponent, cd:JFrame): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g:JCheckBox (JPanel:JComponent, cd:JFrame): TRUE
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands]", 0); // ah:i (JViewport:JComponent, cd:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. ]", 7); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'waitcmd_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:127]. ]", 8, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'lsb_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:71]. ]", 9, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'msb_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:85]. ]", 10, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'N_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 11, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'Z_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 12, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'C_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 13, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'V_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 14, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'numeroh_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:85]. ]", 15, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (r50/N_reg) is unused and will be removed from module top_modulept2.. ]", 16, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'numeroh_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:85]. ]", 15, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'V_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 14, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'C_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 13, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'Z_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 12, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'N_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 11, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'msb_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:85]. ]", 10, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'N_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 11, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'Z_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 12, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'C_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 13, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'V_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 14, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'numeroh_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/top_modulept2.v:85]. ]", 15, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'V_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 14, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'C_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 13, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'Z_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 12, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'N_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/imports/new/ALU.v:40]. ]", 11, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'msb_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:85]. ]", 10, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'lsb_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:71]. ]", 9, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. , [Synth 8-327] inferring latch for variable 'waitcmd_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:127]. ]", 8, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. ]", 7, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:33]. ]", 6, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'cmd_next_reg' [C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:66]. ]", 7); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Luis/Desktop/LAB_5/LAB_5/LAB_5.runs/impl_1/top_modulept2.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
