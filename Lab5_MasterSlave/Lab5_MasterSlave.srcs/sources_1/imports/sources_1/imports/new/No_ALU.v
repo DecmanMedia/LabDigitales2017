@@ -102,6 +102,7 @@ module lab_4(
     
     wire V,C,N,Z;
     wire LED16_R_temp,LED16_B_temp,LED16_G_temp;
+    wire [15:0] result;
     //ALU
     //ALU alucito(operando1, operando2, ALU_ctrl, result, {V,C,Z,N});
     ALU alucito(A, B, operador, result, {V,C,Z,N});
@@ -124,17 +125,19 @@ module lab_4(
         if (~CPU_RESETN)
         begin
             estado_actual <= ESPERANDO_OPERADOR1;
+            A <= 16'd0;
+            B <= 16'd0;
+            operador <= 3'd0;   
         end
         
         else
+        begin
             estado_actual <= estado_sig;
+            A <= A_next;
+            B <= B_next;
+            operador <= operador_next;   
+        end
    
-    always@(posedge CLK100MHZ)
-    begin      
-        A <= A_next;
-        B <= B_next;
-        operador <= operador_next;      
-    end
     
           
 endmodule
