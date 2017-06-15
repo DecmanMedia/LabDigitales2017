@@ -47,10 +47,12 @@ module TX_CTRL
 				tx_start = 1'b1;
 				state_next = DELAY_1;
 			end
-			DELAY_1:begin
-				if (hold_state_timer >= WAIT_FOR_REGISTER_DELAY)
+			DELAY_1:
+			begin
+			     tx_data = resultOut16[15:8];
+		         if (hold_state_timer >= WAIT_FOR_REGISTER_DELAY)
 					state_next = REGISTRAR;
-				else
+				 else
 					state_next = state;
 			
 			end

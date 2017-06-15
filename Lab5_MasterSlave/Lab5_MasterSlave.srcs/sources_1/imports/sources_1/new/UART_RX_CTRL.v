@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module UART_RX_CTRL(
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 module UART_RX_CTRL(
     input [7:0] rx_data,
     input rx_ready, rst, clk,
     output reg [15:0] tx_operador1,

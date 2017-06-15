@@ -24,8 +24,9 @@ module Slave_Endpoint_top(
     input rx, CLK100MHZ, rst,
     output [7:0] AN,
     output [7:0] SEG,
-    output tx
-    //output [5:0] LED
+    output tx,
+    output [8:0] LED,
+    output ld
     );
     
     wire CA, CB, CC, CD, CE, CF, CG, DP;
@@ -49,8 +50,8 @@ module Slave_Endpoint_top(
             .tx(tx),
             .tx_start(tx_start),
             .tx_data(tx_data),
-            .tx_busy(tx_busy)
-        );
+            .tx_busy()
+        ); 
         
         UART_RX_CTRL UART_RX_CTRL_inst(
             .rx_data(rx_data),
@@ -81,14 +82,17 @@ module Slave_Endpoint_top(
             .CG(CG), 
             .DP(DP)           
             );
-                
+       
+    reg [15:0] resultado_p = 16'h8;        
     TX_CTRL TX_CTRL_inst(
         .resultOut16(resultado),
         .clk(CLK100MHZ),
         .tx_data(tx_data),
         .tx_start(tx_start)
         );
-        
+    
+    assign LED = tx_data; 
+    assign ld = tx;
    
             
 endmodule
