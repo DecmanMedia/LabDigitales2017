@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1497466809">
+  <File Type="PWROPT-DRC" Name="top_modulept2_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="top_modulept2_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="top_modulept2_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="top_modulept2_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="top_modulept2.tcl"/>
+  <File Type="OPT-HWDEF" Name="top_modulept2.hwdef"/>
+  <File Type="RDI-RDI" Name="top_modulept2.vdi"/>
+  <File Type="OPT-DCP" Name="top_modulept2_opt.dcp"/>
+  <File Type="OPT-DRC" Name="top_modulept2_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="top_modulept2_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="top_modulept2_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="top_modulept2_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="top_modulept2_placed.dcp"/>
+  <File Type="PLACE-IO" Name="top_modulept2_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="top_modulept2_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="top_modulept2_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="top_modulept2_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="top_modulept2_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="top_modulept2_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="top_modulept2_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="top_modulept2_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_modulept2_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="top_modulept2_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="top_modulept2_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="top_modulept2_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="top_modulept2_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="top_modulept2_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="top_modulept2_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="top_modulept2_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="top_modulept2_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="top_modulept2_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="top_modulept2.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="top_modulept2_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="top_modulept2.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_modulept2_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="top_modulept2.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_modulept2_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="top_modulept2.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_modulept2_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="top_modulept2_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="top_modulept2_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="top_modulept2_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="top_modulept2_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="top_modulept2_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="top_modulept2_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="top_modulept2_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="top_modulept2_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="top_modulept2_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_modulept2_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_modulept2_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_modulept2_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_modulept2_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_modulept2_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="top_modulept2.bit"/>
+  <File Type="BITSTR-RBT" Name="top_modulept2.rbt"/>
+  <File Type="BITSTR-NKY" Name="top_modulept2.nky"/>
+  <File Type="BITSTR-BMM" Name="top_modulept2_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="top_modulept2.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="top_modulept2.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/data_sync.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/decodificador_7s.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Documents/ELO212/LAB4/LAB4.srcs/sources_1/imports/new/decodificador_7s.v"/>
+        <Attr Name="ImportTime" Val="1494339364"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/uart_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/uart_tx.v"/>
+        <Attr Name="ImportTime" Val="1496810388"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/uart_baud_tick_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/uart_baud_tick_gen.v"/>
+        <Attr Name="ImportTime" Val="1496810370"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Documents/ELO212/LAB4/LAB4.srcs/sources_1/imports/new/ALU.v"/>
+        <Attr Name="ImportTime" Val="1495490840"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/unsigned_to_bcd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Documents/ELO212/LAB4/LAB4.srcs/sources_1/imports/Downloads/unsigned_to_bcd.v"/>
+        <Attr Name="ImportTime" Val="1493247842"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UART_TX_CTRL.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/driver_display7seg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Documents/ELO212/LAB4/LAB4.srcs/sources_1/imports/new/driver_display7seg.v"/>
+        <Attr Name="ImportTime" Val="1495051434"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/uart_basic.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/uart_basic.v"/>
+        <Attr Name="ImportTime" Val="1496810364"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UART_RX_CTRL.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_modulept2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Top_modulept1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PushButton_Debouncer.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_modulept2"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Documents/ELO212/LAB4/LAB4.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1495075208"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
