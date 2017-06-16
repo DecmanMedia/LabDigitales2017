@@ -2,29 +2,21 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Thu Jun 15 14:36:07 2017
-# Process ID: 5808
+# Start of session at: Fri Jun 16 15:33:38 2017
+# Process ID: 11500
 # Current directory: C:/Users/Diego/LabDigitales2017/LAB_5(gerson)
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9516 C:\Users\Diego\LabDigitales2017\LAB_5(gerson)\LAB_5.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5224 C:\Users\Diego\LabDigitales2017\LAB_5(gerson)\LAB_5.xpr
 # Log file: C:/Users/Diego/LabDigitales2017/LAB_5(gerson)/vivado.log
 # Journal file: C:/Users/Diego/LabDigitales2017/LAB_5(gerson)\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Diego/LabDigitales2017/LAB_5(gerson)/LAB_5.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/Gerson/Documents/ELO212/LAB_5/LAB_5' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Diego/LabDigitales2017/LAB_5(gerson)/LAB_5.ip_user_files', nor could it be found using path 'C:/Users/Gerson/Documents/ELO212/LAB_5/LAB_5/LAB_5.ip_user_files'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Diego/LabDigitales2017/LAB_5(gerson)/LAB_5.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 769.258 ; gain = 131.598
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Thu Jun 15 15:37:40 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/LAB_5(gerson)/LAB_5.runs/synth_1/runme.log
-[Thu Jun 15 15:37:40 2017] Launched impl_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/LAB_5(gerson)/LAB_5.runs/impl_1/runme.log
-reset_run synth_1
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 780.484 ; gain = 130.508
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 15 16:02:12 2017...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 16 18:15:37 2017...
