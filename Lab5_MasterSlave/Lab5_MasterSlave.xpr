@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.xpr">
+<Project Version="7" Minor="17" Path="C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="7e7aaf25c48f4755b0ad92e2a622fb30"/>
@@ -132,33 +132,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/TX_sequence.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/TX_sequence.v"/>
-          <Attr Name="ImportTime" Val="1497466525"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/TX_control.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/TX_control.v"/>
-          <Attr Name="ImportTime" Val="1497466525"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/bcd_to_ss.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/bcd_to_ss.v"/>
-          <Attr Name="ImportTime" Val="1497466525"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/new/UART_RX_CTRL.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../UART_RX_CTRL/UART_RX_CTRL.srcs/sources_1/new/UART_RX_CTRL.v"/>
@@ -186,54 +159,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/unsigned_to_bcd.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/unsigned_to_bcd.v"/>
-          <Attr Name="ImportTime" Val="1497466525"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/UART_tx_control_wrapper.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/UART_tx_control_wrapper.v"/>
-          <Attr Name="ImportTime" Val="1497466525"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/new/uart/uart_basic.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/uart/uart_basic.v"/>
-          <Attr Name="ImportTime" Val="1497466525"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/pb_debouncer.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/pb_debouncer.v"/>
-          <Attr Name="ImportTime" Val="1497466525"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/display_mux.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/display_mux.v"/>
-          <Attr Name="ImportTime" Val="1497466525"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/clk_divider.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/clk_divider.v"/>
           <Attr Name="ImportTime" Val="1497466525"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -249,19 +177,100 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/master_endpoint_top.v">
+      <File Path="$PSRCDIR/sources_1/new/Puto_Dios.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/master_endpoint_top.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Xilinx/lab_5/lab_5.srcs/sources_1/new/Puto_Dios.v"/>
+          <Attr Name="ImportTime" Val="1497470236"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/TX_sequence.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/TX_sequence.v"/>
           <Attr Name="ImportTime" Val="1497466525"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/Puto_Dios.v">
+      <File Path="$PSRCDIR/sources_1/imports/new/TX_control.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Xilinx/lab_5/lab_5.srcs/sources_1/new/Puto_Dios.v"/>
-          <Attr Name="ImportTime" Val="1497470236"/>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/TX_control.v"/>
+          <Attr Name="ImportTime" Val="1497466525"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/bcd_to_ss.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/bcd_to_ss.v"/>
+          <Attr Name="ImportTime" Val="1497466525"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/unsigned_to_bcd.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/unsigned_to_bcd.v"/>
+          <Attr Name="ImportTime" Val="1497466525"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/UART_tx_control_wrapper.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/UART_tx_control_wrapper.v"/>
+          <Attr Name="ImportTime" Val="1497466525"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/pb_debouncer.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/pb_debouncer.v"/>
+          <Attr Name="ImportTime" Val="1497466525"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/display_mux.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/display_mux.v"/>
+          <Attr Name="ImportTime" Val="1497466525"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/clk_divider.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/clk_divider.v"/>
+          <Attr Name="ImportTime" Val="1497466525"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/master_endpoint_top.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../ELO212-example-modules/Lab5_UART_master_endpoint/Lab5_UART_master_endpoint.srcs/sources_1/new/master_endpoint_top.v"/>
+          <Attr Name="ImportTime" Val="1497466525"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

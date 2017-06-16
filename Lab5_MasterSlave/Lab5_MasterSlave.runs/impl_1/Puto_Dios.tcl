@@ -49,15 +49,14 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.xpr [current_project]
-  set_property ip_output_repo C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.cache/wt [current_project]
+  set_property parent.project_path C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.xpr [current_project]
+  set_property ip_output_repo C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/Puto_Dios.dcp
-  read_xdc C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc
+  add_files -quiet C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/Puto_Dios.dcp
+  read_xdc C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc
   link_design -top Puto_Dios -part xc7a100tcsg324-1
   write_hwdef -file Puto_Dios.hwdef
   close_msg_db -file init_design.pb
