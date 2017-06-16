@@ -24,20 +24,23 @@ module Puto_Dios(
     input              clk_100M,
 	input              reset_n,	
 	
-	input              button_c,
-	input  [15:0]      switches,
-	output [1:0]       leds,
+	//input              button_c,
+	//input  [15:0]      switches,
+	input              uart_rx, 
+	//output [1:0]       leds,
 	
 	output [7:0]       ss_value,
     output [7:0]       ss_select,
     
-    output [7:0] LED
+    output [3:0] leds,
+    output ld,
+    output              uart_tx
     );
     
-    wire uart_rx, uart_tx, uart_tx_busy;
+  //  wire uart_rx, uart_tx, uart_tx_busy;
     wire [7:0] AN, SEG;
     
-    master_endpoint_top masterchefcito (
+   /* master_endpoint_top masterchefcito (
     .clk_100M(clk_100M),
     .reset_n(reset_n),
     .uart_rx(uart_rx),
@@ -49,16 +52,18 @@ module Puto_Dios(
     .leds(leds),
     .ss_select(ss_select),
     .ss_value(ss_value)
-);
+);*/
     
     Slave_Endpoint_top slavecito(
-    .rx(uart_tx),
+    .rx(uart_rx),
     .CLK100MHZ(clk_100M),
     .rst(~reset_n),
-    .AN(AN),
-    .SEG(SEG),
-    .tx(uart_rx),
-    .LED(LED)
+    .AN(ss_select),
+    .SEG(ss_value),
+    .tx(uart_tx),
+    .LED(LED),
+    .ld,
+    .leds(leds)
 );
 
 endmodule

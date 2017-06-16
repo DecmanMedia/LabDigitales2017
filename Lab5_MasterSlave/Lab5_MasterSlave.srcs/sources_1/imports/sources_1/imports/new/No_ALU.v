@@ -73,6 +73,7 @@ module lab_4(
         A_next = A;
         B_next = B;
         ready = 1'b0;
+        result_t = 16'b0;
         case(estado_actual)
             ESPERANDO_OPERADOR1: 
             begin
