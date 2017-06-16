@@ -27,6 +27,7 @@ module lab_4(
     input CLK100MHZ,CPU_RESETN,
     input state,
     output [15:0] salida,
+    output reg ready,
     output DP, CA, CB, CC, CD, CE, CF, CG,
     output [7:0] AN
     );
@@ -71,24 +72,28 @@ module lab_4(
         LED_RGB = 3'd0;
         A_next = A;
         B_next = B;
+        ready = 1'b0;
         case(estado_actual)
             ESPERANDO_OPERADOR1: 
             begin
                 //B_next = 16'd0;
                 A_next = operando1;
                 input_display = {16'd0,result_t};
+                ready = 1'b1;
             end
             
             ESPERANDO_OPERADOR2:
             begin
                 B_next=operando2;
                 input_display = {16'd0,A};
+                ready = 1'b1;
             end
             
             ESPERANDO_OPERACION: 
             begin
                 operador_next = ALU_ctrl;
                 input_display = {16'd0,B};
+                ready = 1'b1;
             end
             
             MOSTRAR_RESULTADO: 

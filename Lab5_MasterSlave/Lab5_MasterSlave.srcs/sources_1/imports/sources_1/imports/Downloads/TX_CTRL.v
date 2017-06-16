@@ -4,8 +4,9 @@ module TX_CTRL
 )(
 	input [15:0] resultOut16,
 	input clk,
+	input rst, ready,
 	output reg [7:0] tx_data,
-	output reg tx_start
+	output reg tx_start, tx_busy
 );
 	reg [2:0] state, state_next;
 	reg [15:0] tx_data16;
@@ -18,12 +19,19 @@ module TX_CTRL
 	localparam DELAY_0 = 3'd3;
 	localparam SEND_BYTE_1 = 3'd4;
 	localparam DELAY_1 = 3'd5;
+	localparam IDLE = 3'd6;
 	
 	always@(*)begin
 		state_next = state;
-		tx_data = resultOut16[7:0];
+		tx_data = tx_data16[7:0];
 		tx_start = 1'b0;
+		tx_busy = 1'b1;
 		case(state)
+		    IDLE:
+		    begin
+		          tx_busy = 1'b0;
+		          state_next = (ready)? REGISTRAR: state;
+		    end
 			REGISTRAR: begin
 				if (hold_state_timer >= WAIT_FOR_REGISTER_DELAY)
 					state_next = SEND_BYTE_0;
@@ -35,7 +43,7 @@ module TX_CTRL
 				state_next = DELAY_0;
 			end
 			DELAY_0: begin
-				tx_data = resultOut16[15:8];
+				tx_data = tx_data16[15:8];
 				if(hold_state_timer >= INTER_BYTE_DELAY)
 					state_next = SEND_BYTE_1;
 				else
@@ -43,15 +51,15 @@ module TX_CTRL
 
 			end
 			SEND_BYTE_1: begin
-				tx_data = resultOut16[15:8];
+				tx_data = tx_data16[15:8];
 				tx_start = 1'b1;
 				state_next = DELAY_1;
 			end
 			DELAY_1:
 			begin
-			     tx_data = resultOut16[15:8];
+			     tx_data = tx_data16[15:8];
 		         if (hold_state_timer >= WAIT_FOR_REGISTER_DELAY)
-					state_next = REGISTRAR;
+					state_next = IDLE;
 				 else
 					state_next = state;
 			
@@ -60,9 +68,16 @@ module TX_CTRL
 	end
 	
 	always@(posedge clk)
+	   if(state == REGISTRAR)
+	       tx_data16 = resultOut16;
+	       
+	
+	always@(posedge clk)
 	begin
-		
-		state <= state_next;
+	   if(rst)
+	       state <= IDLE;
+	   else
+		   state <= state_next;
 	
 	end
 	

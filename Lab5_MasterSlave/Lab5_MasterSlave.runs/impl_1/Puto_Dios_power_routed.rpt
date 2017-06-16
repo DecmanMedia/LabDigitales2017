@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Thu Jun 15 02:14:04 2017
+| Date             : Thu Jun 15 15:42:17 2017
 | Host             : LaptopDiewo running 64-bit major release  (build 9200)
 | Command          : report_power -file Puto_Dios_power_routed.rpt -pb Puto_Dios_power_summary_routed.pb -rpx Puto_Dios_power_routed.rpx
 | Design           : Puto_Dios
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.125 |
-| Dynamic (W)              | 0.021 |
+| Total On-Chip Power (W)  | 0.122 |
+| Dynamic (W)              | 0.018 |
 | Device Static (W)        | 0.104 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 84.4  |
@@ -49,18 +49,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |     1021 |       --- |             --- |
-|   LUT as Logic |     0.001 |      403 |     63400 |            0.64 |
+| Clocks         |     0.003 |        3 |       --- |             --- |
+| Slice Logic    |     0.002 |     1045 |       --- |             --- |
+|   LUT as Logic |     0.001 |      420 |     63400 |            0.66 |
 |   CARRY4       |    <0.001 |       59 |     15850 |            0.37 |
-|   Register     |    <0.001 |      468 |    126800 |            0.37 |
-|   F7/F8 Muxes  |    <0.001 |        8 |     63400 |            0.01 |
+|   Register     |    <0.001 |      484 |    126800 |            0.38 |
 |   Others       |     0.000 |       48 |       --- |             --- |
-| Signals        |     0.002 |      792 |       --- |             --- |
+| Signals        |     0.002 |      818 |       --- |             --- |
 | DSPs           |    <0.001 |        1 |       240 |            0.42 |
-| I/O            |     0.014 |       45 |       210 |           21.43 |
+| I/O            |     0.011 |       45 |       210 |           21.43 |
 | Static Power   |     0.104 |          |           |                 |
-| Total          |     0.125 |          |           |                 |
+| Total          |     0.122 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,8 +70,8 @@ Table of Contents
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.022 |       0.007 |      0.015 |
-| Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |
-| Vcco33    |       3.300 |     0.008 |       0.004 |      0.004 |
+| Vccaux    |       1.800 |     0.019 |       0.000 |      0.018 |
+| Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.004 |       0.000 |      0.004 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -139,7 +138,7 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| Puto_Dios               |     0.021 |
+| Puto_Dios               |     0.018 |
 |   masterchefcito        |     0.004 |
 |     UART_control_inst   |    <0.001 |
 |       TX_control_inst0  |    <0.001 |

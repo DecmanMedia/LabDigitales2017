@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Thu Jun 15 02:14:02 2017
+| Date         : Thu Jun 15 15:42:16 2017
 | Host         : LaptopDiewo running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Puto_Dios_methodology_drc_routed.rpt -rpx Puto_Dios_methodology_drc_routed.rpx
 | Design       : Puto_Dios
@@ -202,42 +202,42 @@ Related violations: <none>
 
 TIMING-18#29 Warning
 Missing input or output delay  
-An output delay is missing on ss_select[0] relative to clock(s) sys_clk_pin 
+An output delay is missing on ss_value[0] relative to clock(s) sys_clk_pin 
 Related violations: <none>
 
 TIMING-18#30 Warning
 Missing input or output delay  
-An output delay is missing on ss_select[1] relative to clock(s) sys_clk_pin 
+An output delay is missing on ss_value[1] relative to clock(s) sys_clk_pin 
 Related violations: <none>
 
 TIMING-18#31 Warning
 Missing input or output delay  
-An output delay is missing on ss_select[2] relative to clock(s) sys_clk_pin 
+An output delay is missing on ss_value[2] relative to clock(s) sys_clk_pin 
 Related violations: <none>
 
 TIMING-18#32 Warning
 Missing input or output delay  
-An output delay is missing on ss_select[3] relative to clock(s) sys_clk_pin 
+An output delay is missing on ss_value[3] relative to clock(s) sys_clk_pin 
 Related violations: <none>
 
 TIMING-18#33 Warning
 Missing input or output delay  
-An output delay is missing on ss_select[4] relative to clock(s) sys_clk_pin 
+An output delay is missing on ss_value[4] relative to clock(s) sys_clk_pin 
 Related violations: <none>
 
 TIMING-18#34 Warning
 Missing input or output delay  
-An output delay is missing on ss_select[5] relative to clock(s) sys_clk_pin 
+An output delay is missing on ss_value[5] relative to clock(s) sys_clk_pin 
 Related violations: <none>
 
 TIMING-18#35 Warning
 Missing input or output delay  
-An output delay is missing on ss_select[6] relative to clock(s) sys_clk_pin 
+An output delay is missing on ss_value[6] relative to clock(s) sys_clk_pin 
 Related violations: <none>
 
 TIMING-18#36 Warning
 Missing input or output delay  
-An output delay is missing on ss_select[7] relative to clock(s) sys_clk_pin 
+An output delay is missing on ss_value[7] relative to clock(s) sys_clk_pin 
 Related violations: <none>
 
 TIMING-20#1 Warning

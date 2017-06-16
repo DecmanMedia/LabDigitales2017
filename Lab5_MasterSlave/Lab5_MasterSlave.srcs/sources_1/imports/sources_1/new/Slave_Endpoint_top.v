@@ -33,7 +33,7 @@ module Slave_Endpoint_top(
     assign SEG = {DP, CG, CF, CE, CD, CC, CB, CA};
        
     wire [7:0] rx_data, tx_data;
-    wire rx_ready,tx_start,trigger, tx_busy;
+    wire rx_ready,tx_start,trigger, tx_busy, ready;
     wire [15:0] operador1, operador2, resultado;
     wire [2:0] ALU_ctrl;
     wire state_ALU;
@@ -72,6 +72,7 @@ module Slave_Endpoint_top(
             .CPU_RESETN(~rst),
             .state(state_ALU),
             .salida(resultado),
+            .ready(ready),
             .AN(AN),
             .CA(CA),
             .CB(CB),
@@ -85,10 +86,14 @@ module Slave_Endpoint_top(
        
     reg [15:0] resultado_p = 16'h8;        
     TX_CTRL TX_CTRL_inst(
+        .rst(~rst),
         .resultOut16(resultado),
+        .ready(ready),
         .clk(CLK100MHZ),
         .tx_data(tx_data),
-        .tx_start(tx_start)
+        .tx_start(tx_start),
+        .tx_busy(tx_busy)
+        
         );
     
     assign LED = tx_data; 
