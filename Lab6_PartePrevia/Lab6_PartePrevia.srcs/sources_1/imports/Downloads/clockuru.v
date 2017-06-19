@@ -1,4 +1,4 @@
-module clock_divider #(parameter CONSTANT = 100_000) 
+module clock_divider #(parameter CONSTANT = 100) 
 (   input clk_in,
     input rst,
     output reg clk_out

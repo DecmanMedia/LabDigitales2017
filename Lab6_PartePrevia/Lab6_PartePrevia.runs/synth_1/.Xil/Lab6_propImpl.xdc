@@ -1,6 +1,10 @@
 set_property SRC_FILE_INFO {cfile:{C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc} rfile:{../../../Lab6_PartePrevia.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc} id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { CLK100MHZ }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
+set_property src_info {type:XDC file:1 line:33 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN H17   IOSTANDARD LVCMOS33 } [get_ports { make_code }]; #IO_L18P_T2_A24_15 Sch=led[0]
+set_property src_info {type:XDC file:1 line:84 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN N17   IOSTANDARD LVCMOS33 } [get_ports { rst }]; #IO_L9P_T1_DQS_14 Sch=btnc
 set_property src_info {type:XDC file:1 line:96 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN C17   IOSTANDARD LVCMOS33 } [get_ports { kc }]; #IO_L20N_T3_A19_15 Sch=ja[1]
 set_property src_info {type:XDC file:1 line:97 export:INPUT save:INPUT read:READ} [current_design]

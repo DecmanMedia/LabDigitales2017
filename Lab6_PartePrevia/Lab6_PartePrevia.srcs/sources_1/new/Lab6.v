@@ -24,7 +24,7 @@
 `define BRAKE_CODE_E0	3'b100
 
 module Lab6(
-    input CLK100MHZ,
+    input CLK100MHZ, rst,
     input PS2_CLK,
     input PS2_DATA,
     output kbs_tot,
@@ -40,13 +40,13 @@ module Lab6(
     
     clock_divider clock_divider_inst(
         .clk_in(CLK100MHZ),
-        .rst(),
+        .rst(rst),
         .clk_out(clk)
         );
     
     kbd_ms kbd_ms_inst(
         .clk(clk),
-        .rst(),
+        .rst(rst),
         .kd(PS2_DATA),
         .kc(PS2_CLK),
         .new_data(data_new),
@@ -55,8 +55,8 @@ module Lab6(
         .parity_error()
         );
     
-    assign make_code = ((data == `MAKE_CODE) || (data == `MAKE_CODE_E0));
+    assign make_code = data == 3'b001;
     assign break_code = ((data == `BRAKE_CODE) || (data == `BRAKE_CODE_E0));
     assign is_enter = (data_new == 8'h5A);
-        
+    
 endmodule

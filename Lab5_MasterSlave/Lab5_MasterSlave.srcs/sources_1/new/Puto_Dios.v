@@ -61,9 +61,9 @@ module Puto_Dios(
     .AN(ss_select),
     .SEG(ss_value),
     .tx(uart_tx),
-    .LED(LED),
-    .ld,
-    .leds(leds)
+    .LED(),
+    .ld
+    //.state_rx(leds)
 );
 
 endmodule

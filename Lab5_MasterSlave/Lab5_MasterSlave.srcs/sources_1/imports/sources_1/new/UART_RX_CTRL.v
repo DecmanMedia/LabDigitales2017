@@ -26,8 +26,8 @@ module UART_RX_CTRL(
     output reg [15:0] tx_operador1,
     output reg [15:0] tx_operador2,
     output reg [2:0] tx_ALU_ctrl,
-    output reg state_alu,
-    output reg [3:0] state
+    output reg state_alu
+    //output reg [3:0] state
     );
     
     localparam OP1  = 2'd1;
@@ -47,10 +47,9 @@ module UART_RX_CTRL(
     localparam DELAY_1_CYCLE        = 4'd11;
     localparam TRIGGER_TX_RESULT    = 4'd12;
     
-    reg [3:0] next_state;
+    reg [3:0] state, next_state;
     reg [15:0] tx_operador1_next,tx_operador2_next;
-    reg [15:0] operador1, operador2;
-    reg [2:0] tx_ALU_ctrl_next, operando;
+    reg [2:0] tx_ALU_ctrl_next;
     
     always@(*)
     begin
@@ -108,7 +107,7 @@ module UART_RX_CTRL(
             STORE_CMD:  begin
                         next_state = DELAY_1_CYCLE;
                         state_alu = 1'b1;
-                        tx_ALU_ctrl_next = rx_data[2:0];
+                        tx_ALU_ctrl_next = rx_data;
                         end
             
             DELAY_1_CYCLE: next_state = TRIGGER_TX_RESULT;
@@ -131,9 +130,10 @@ module UART_RX_CTRL(
             end
         else
             begin
+            tx_ALU_ctrl <= tx_ALU_ctrl_next;
             tx_operador1 <= tx_operador1_next;
             tx_operador2 <= tx_operador2_next;
-            tx_ALU_ctrl <= tx_ALU_ctrl_next;
+            
             state <= next_state;
             end
     end

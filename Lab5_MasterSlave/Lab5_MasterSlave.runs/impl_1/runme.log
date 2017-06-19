@@ -1,0 +1,23 @@
+
+*** Running vivado
+    with args -log Puto_Dios.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Puto_Dios.tcl -notrace
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Puto_Dios.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step init_design"
+    (file "Puto_Dios.tcl" line 48)
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 16 18:43:46 2017...
+
+*** Halting run - EA reset detected ***
+

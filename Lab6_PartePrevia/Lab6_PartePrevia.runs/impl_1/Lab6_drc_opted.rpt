@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Tue Jun 13 16:06:18 2017
+| Date         : Mon Jun 19 17:48:07 2017
 | Host         : LaptopDiewo running 64-bit major release  (build 9200)
 | Command      : report_drc -file Lab6_drc_opted.rpt
 | Design       : Lab6

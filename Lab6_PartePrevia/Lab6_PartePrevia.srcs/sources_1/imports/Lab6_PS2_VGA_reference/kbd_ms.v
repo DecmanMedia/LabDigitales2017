@@ -38,7 +38,7 @@
 module kbd_ms(clk,rst,kd,kc,new_data,data_type,kbs_tot,parity_error);
 	input clk,rst,kd,kc;
 	output reg[7:0] new_data;
-	output reg[2:0]data_type;
+	output reg[2:0] data_type;
 	output reg kbs_tot;
 	output parity_error;
 	

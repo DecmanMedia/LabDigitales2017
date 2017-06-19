@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Tue Jun 13 16:07:39 2017
+| Date             : Mon Jun 19 17:49:27 2017
 | Host             : LaptopDiewo running 64-bit major release  (build 9200)
 | Command          : report_power -file Lab6_power_routed.rpt -pb Lab6_power_summary_routed.pb -rpx Lab6_power_routed.rpx
 | Design           : Lab6
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.931 |
-| Dynamic (W)              | 1.827 |
+| Total On-Chip Power (W)  | 1.944 |
+| Dynamic (W)              | 1.840 |
 | Device Static (W)        | 0.104 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 76.2  |
-| Junction Temperature (C) | 33.8  |
+| Max Ambient (C)          | 76.1  |
+| Junction Temperature (C) | 33.9  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,16 +49,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.153 |      162 |       --- |             --- |
-|   LUT as Logic |     0.112 |       65 |     63400 |            0.10 |
+| Slice Logic    |     0.163 |      167 |       --- |             --- |
+|   LUT as Logic |     0.122 |       69 |     63400 |            0.11 |
 |   CARRY4       |     0.019 |        8 |     15850 |            0.05 |
 |   Register     |     0.015 |       77 |    126800 |            0.06 |
 |   BUFG         |     0.006 |        2 |        32 |            6.25 |
 |   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |     0.205 |      144 |       --- |             --- |
-| I/O            |     1.469 |        9 |       210 |            4.29 |
+| Signals        |     0.208 |      149 |       --- |             --- |
+| I/O            |     1.469 |       10 |       210 |            4.76 |
 | Static Power   |     0.104 |          |           |                 |
-| Total          |     1.931 |          |           |                 |
+| Total          |     1.944 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,7 +68,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.391 |       0.370 |      0.021 |
+| Vccint    |       1.000 |     0.404 |       0.383 |      0.021 |
 | Vccaux    |       1.800 |     0.072 |       0.053 |      0.019 |
 | Vcco33    |       3.300 |     0.416 |       0.412 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -135,10 +135,10 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| Lab6                 |     1.827 |
-|   clock_divider_inst |     0.310 |
-|   kbd_ms_inst        |     0.005 |
-|     m_ps2read        |     0.005 |
+| Lab6                 |     1.840 |
+|   clock_divider_inst |     0.319 |
+|   kbd_ms_inst        |     0.009 |
+|     m_ps2read        |     0.009 |
 +----------------------+-----------+
 
 

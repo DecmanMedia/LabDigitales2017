@@ -26,8 +26,8 @@ module Slave_Endpoint_top(
     output [7:0] SEG,
     output tx,
     output [7:0] LED,
-    output ld,
-    output [3:0] state_rx
+    output ld
+    //output [3:0] state_rx
     );
     
     wire CA, CB, CC, CD, CE, CF, CG, DP;
@@ -62,8 +62,8 @@ module Slave_Endpoint_top(
             .tx_operador1(operador1),
             .tx_operador2(operador2),
             .tx_ALU_ctrl(ALU_ctrl),
-            .state_alu(state_ALU),
-            .state(state_rx)
+            .state_alu(state_ALU)
+            //.state(state_rx)
             );
             
         lab_4 ALU_DISPLAY(
