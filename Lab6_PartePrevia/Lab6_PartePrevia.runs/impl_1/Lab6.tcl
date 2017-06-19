@@ -42,24 +42,21 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
+  create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.xpr [current_project]
-  set_property ip_output_repo C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.cache/wt [current_project]
+  set_property parent.project_path C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.xpr [current_project]
+  set_property ip_output_repo C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/synth_1/Lab6.dcp
-  read_xdc {{C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc}}
+  add_files -quiet C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/synth_1/Lab6.dcp
+  read_xdc {{C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc}}
   link_design -top Lab6 -part xc7a100tcsg324-1
-  write_hwdef -file Lab6.hwdef
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -115,10 +112,10 @@ set rc [catch {
   write_checkpoint -force Lab6_routed.dcp
   catch { report_drc -file Lab6_drc_routed.rpt -pb Lab6_drc_routed.pb -rpx Lab6_drc_routed.rpx }
   catch { report_methodology -file Lab6_methodology_drc_routed.rpt -rpx Lab6_methodology_drc_routed.rpx }
-  catch { report_timing_summary -warn_on_violation -max_paths 10 -file Lab6_timing_summary_routed.rpt -rpx Lab6_timing_summary_routed.rpx }
   catch { report_power -file Lab6_power_routed.rpt -pb Lab6_power_summary_routed.pb -rpx Lab6_power_routed.rpx }
   catch { report_route_status -file Lab6_route_status.rpt -pb Lab6_route_status.pb }
   catch { report_clock_utilization -file Lab6_clock_utilization_routed.rpt }
+  catch { report_timing_summary -warn_on_violation -max_paths 10 -file Lab6_timing_summary_routed.rpt -rpx Lab6_timing_summary_routed.rpx }
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
@@ -135,9 +132,9 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   catch { write_mem_info -force Lab6.mmi }
-  write_bitstream -force -no_partial_bitfile Lab6.bit 
-  catch { write_sysdef -hwdef Lab6.hwdef -bitfile Lab6.bit -meminfo Lab6.mmi -file Lab6.sysdef }
-  catch {write_debug_probes -quiet -force debug_nets}
+  write_bitstream -force Lab6.bit 
+  catch {write_debug_probes -no_partial_ltxfile -quiet -force debug_nets}
+  catch {file copy -force debug_nets.ltx Lab6.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {

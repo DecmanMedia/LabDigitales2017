@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jun 19 01:34:25 2017
+# Process ID: 192
+# Current directory: C:/GitHub/LabDigitales2017/Lab5_MasterSlave
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8516 C:\GitHub\LabDigitales2017\Lab5_MasterSlave\Lab5_MasterSlave.xpr
+# Log file: C:/GitHub/LabDigitales2017/Lab5_MasterSlave/vivado.log
+# Journal file: C:/GitHub/LabDigitales2017/Lab5_MasterSlave\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

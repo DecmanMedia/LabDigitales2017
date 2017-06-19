@@ -1,36 +1,36 @@
 #-----------------------------------------------------------
-# Vivado v2016.4 (64-bit)
-# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
-# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Tue Jun 13 16:04:32 2017
-# Process ID: 2692
-# Current directory: C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/synth_1
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jun 19 16:57:10 2017
+# Process ID: 5276
+# Current directory: C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/synth_1
 # Command line: vivado.exe -log Lab6.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab6.tcl
-# Log file: C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/synth_1/Lab6.vds
-# Journal file: C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/synth_1\vivado.jou
+# Log file: C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/synth_1/Lab6.vds
+# Journal file: C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Lab6.tcl -notrace
 Command: synth_design -top Lab6 -part xc7a100tcsg324-1
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1960 
+INFO: Helper process launched with PID 2052 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 282.762 ; gain = 73.313
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 307.094 ; gain = 81.754
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Lab6' [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/new/Lab6.v:26]
-INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/imports/Downloads/clockuru.v:1]
+INFO: [Synth 8-638] synthesizing module 'Lab6' [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/new/Lab6.v:26]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/imports/Downloads/clockuru.v:1]
 	Parameter CONSTANT bound to: 100000 - type: integer 
 	Parameter constantNumber bound to: 100000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/imports/Downloads/clockuru.v:1]
-INFO: [Synth 8-638] synthesizing module 'kbd_ms' [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:38]
-INFO: [Synth 8-638] synthesizing module 'ps2_read_ms' [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:174]
-INFO: [Synth 8-256] done synthesizing module 'ps2_read_ms' (2#1) [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:174]
-INFO: [Synth 8-256] done synthesizing module 'kbd_ms' (3#1) [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:38]
-INFO: [Synth 8-256] done synthesizing module 'Lab6' (4#1) [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/new/Lab6.v:26]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/imports/Downloads/clockuru.v:1]
+INFO: [Synth 8-638] synthesizing module 'kbd_ms' [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:38]
+INFO: [Synth 8-638] synthesizing module 'ps2_read_ms' [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:174]
+INFO: [Synth 8-256] done synthesizing module 'ps2_read_ms' (2#1) [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:174]
+INFO: [Synth 8-256] done synthesizing module 'kbd_ms' (3#1) [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:38]
+INFO: [Synth 8-256] done synthesizing module 'Lab6' (4#1) [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/new/Lab6.v:26]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 319.188 ; gain = 109.738
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 346.172 ; gain = 120.832
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -39,41 +39,41 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin clock_divider_inst:rst to constant 0 [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/new/Lab6.v:41]
-WARNING: [Synth 8-3295] tying undriven pin kbd_ms_inst:rst to constant 0 [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/new/Lab6.v:47]
+WARNING: [Synth 8-3295] tying undriven pin clock_divider_inst:rst to constant 0 [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/new/Lab6.v:41]
+WARNING: [Synth 8-3295] tying undriven pin kbd_ms_inst:rst to constant 0 [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/sources_1/new/Lab6.v:47]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 319.188 ; gain = 109.738
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 346.172 ; gain = 120.832
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
-Finished Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Lab6_propImpl.xdc].
+Parsing XDC File [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
+Finished Parsing XDC File [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Lab6_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Lab6_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 625.398 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 653.039 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -85,7 +85,7 @@ INFO: [Synth 8-5544] ROM "new_data_next" won't be mapped to Block RAM because ad
 INFO: [Synth 8-5544] ROM "data_type_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "kbs_tot_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -188,7 +188,7 @@ INFO: [Synth 8-5545] ROM "clock_divider_inst/count" won't be mapped to RAM becau
 INFO: [Synth 8-5545] ROM "clock_divider_inst/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "kbd_ms_inst/kds_state_machine_next0" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -197,16 +197,16 @@ Report RTL Partitions:
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 625.398 ; gain = 415.949
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -218,7 +218,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -242,7 +242,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -255,7 +255,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -267,25 +267,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -326,11 +326,11 @@ Report Instance Areas:
 |4     |    m_ps2read        |ps2_read_ms   |    47|
 +------+---------------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 625.398 ; gain = 415.949
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 653.039 ; gain = 427.699
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 625.398 ; gain = 109.738
-Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 625.398 ; gain = 415.949
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 653.039 ; gain = 120.832
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 653.039 ; gain = 427.699
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -339,10 +339,9 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-INFO: [Common 17-83] Releasing license: Synthesis
-35 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+31 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 625.398 ; gain = 415.949
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/synth_1/Lab6.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 625.398 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 13 16:05:29 2017...
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 653.039 ; gain = 430.492
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/synth_1/Lab6.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 653.039 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 19 16:57:49 2017...

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1497384876">
-  <File Type="PWROPT-DRC" Name="test_pattern_previo_640x480_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="test_pattern_previo_640x480_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="test_pattern_previo_640x480_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="test_pattern_previo_640x480_power_routed.rpx"/>
   <File Type="PA-TCL" Name="test_pattern_previo_640x480.tcl"/>
-  <File Type="OPT-HWDEF" Name="test_pattern_previo_640x480.hwdef"/>
+  <File Type="INIT-TIMING" Name="test_pattern_previo_640x480_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="test_pattern_previo_640x480_methodology_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="test_pattern_previo_640x480_drc_pwropted.rpt"/>
   <File Type="RDI-RDI" Name="test_pattern_previo_640x480.vdi"/>
   <File Type="OPT-DCP" Name="test_pattern_previo_640x480_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="test_pattern_previo_640x480.hwdef"/>
   <File Type="OPT-DRC" Name="test_pattern_previo_640x480_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="test_pattern_previo_640x480_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="test_pattern_previo_640x480_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="test_pattern_previo_640x480_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="test_pattern_previo_640x480_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="test_pattern_previo_640x480_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="test_pattern_previo_640x480.bin"/>
   <File Type="ROUTE-DRC-RPX" Name="test_pattern_previo_640x480_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="test_pattern_previo_640x480.drc"/>
+  <File Type="BG-BIN" Name="test_pattern_previo_640x480.bin"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="test_pattern_previo_640x480_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="test_pattern_previo_640x480.msk"/>
+  <File Type="BG-DRC" Name="test_pattern_previo_640x480.drc"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="test_pattern_previo_640x480_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="test_pattern_previo_640x480.bgn"/>
+  <File Type="BITSTR-MSK" Name="test_pattern_previo_640x480.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="test_pattern_previo_640x480_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="test_pattern_previo_640x480.bgn"/>
   <File Type="ROUTE-PWR" Name="test_pattern_previo_640x480_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="test_pattern_previo_640x480_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="test_pattern_previo_640x480_route_status.rpt"/>
@@ -118,9 +118,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

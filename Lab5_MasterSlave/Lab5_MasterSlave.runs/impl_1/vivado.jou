@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jun 19 15:42:40 2017
+# Process ID: 7040
+# Current directory: C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1
+# Command line: vivado.exe -log Puto_Dios.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Puto_Dios.tcl -notrace
+# Log file: C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Puto_Dios.vdi
+# Journal file: C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Puto_Dios.tcl -notrace

@@ -42,13 +42,12 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.cache/wt [current_project]
@@ -58,7 +57,6 @@ set rc [catch {
   add_files -quiet C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/Puto_Dios.dcp
   read_xdc C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc
   link_design -top Puto_Dios -part xc7a100tcsg324-1
-  write_hwdef -file Puto_Dios.hwdef
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -114,10 +112,10 @@ set rc [catch {
   write_checkpoint -force Puto_Dios_routed.dcp
   catch { report_drc -file Puto_Dios_drc_routed.rpt -pb Puto_Dios_drc_routed.pb -rpx Puto_Dios_drc_routed.rpx }
   catch { report_methodology -file Puto_Dios_methodology_drc_routed.rpt -rpx Puto_Dios_methodology_drc_routed.rpx }
-  catch { report_timing_summary -warn_on_violation -max_paths 10 -file Puto_Dios_timing_summary_routed.rpt -rpx Puto_Dios_timing_summary_routed.rpx }
   catch { report_power -file Puto_Dios_power_routed.rpt -pb Puto_Dios_power_summary_routed.pb -rpx Puto_Dios_power_routed.rpx }
   catch { report_route_status -file Puto_Dios_route_status.rpt -pb Puto_Dios_route_status.pb }
   catch { report_clock_utilization -file Puto_Dios_clock_utilization_routed.rpt }
+  catch { report_timing_summary -warn_on_violation -max_paths 10 -file Puto_Dios_timing_summary_routed.rpt -rpx Puto_Dios_timing_summary_routed.rpx }
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
@@ -134,9 +132,9 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   catch { write_mem_info -force Puto_Dios.mmi }
-  write_bitstream -force -no_partial_bitfile Puto_Dios.bit 
-  catch { write_sysdef -hwdef Puto_Dios.hwdef -bitfile Puto_Dios.bit -meminfo Puto_Dios.mmi -file Puto_Dios.sysdef }
-  catch {write_debug_probes -quiet -force debug_nets}
+  write_bitstream -force Puto_Dios.bit 
+  catch {write_debug_probes -no_partial_ltxfile -quiet -force debug_nets}
+  catch {file copy -force debug_nets.ltx Puto_Dios.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {

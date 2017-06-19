@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Jun 18 20:37:48 2017
+# Process ID: 10852
+# Current directory: C:/GitHub/LabDigitales2017/LAB_5(gerson)
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9284 C:\GitHub\LabDigitales2017\LAB_5(gerson)\LAB_5.xpr
+# Log file: C:/GitHub/LabDigitales2017/LAB_5(gerson)/vivado.log
+# Journal file: C:/GitHub/LabDigitales2017/LAB_5(gerson)\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Diego/LabDigitales2017/LAB_5(gerson)' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.ip_user_files', nor could it be found using path 'C:/Users/Diego/LabDigitales2017/LAB_5(gerson)/LAB_5.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 710.285 ; gain = 111.727
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/new/ALU.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/new/ALU.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/PushButton_Debouncer.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/PushButton_Debouncer.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/Top_modulept1.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/Top_modulept1.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/UART_TX_CTRL.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/UART_TX_CTRL.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/data_sync.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/data_sync.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/new/decodificador_7s.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/new/decodificador_7s.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/new/driver_display7seg.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/new/driver_display7seg.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/top_modulept2.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/top_modulept2.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Desktop/uart_basic.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Desktop/uart_basic.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Desktop/uart_baud_tick_gen.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Desktop/uart_baud_tick_gen.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/uart_rx.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/uart_rx.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Desktop/uart_tx.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Desktop/uart_tx.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Downloads/unsigned_to_bcd.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Downloads/unsigned_to_bcd.v:1]
+[Sun Jun 18 20:38:40 2017] Launched synth_1...
+Run output will be captured here: C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jun 18 20:40:14 2017] Launched synth_1...
+Run output will be captured here: C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.runs/synth_1/runme.log
+[Sun Jun 18 20:40:14 2017] Launched impl_1...
+Run output will be captured here: C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/new/ALU.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/new/ALU.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/PushButton_Debouncer.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/PushButton_Debouncer.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/Top_modulept1.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/Top_modulept1.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/UART_RX_CTRL.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/UART_TX_CTRL.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/UART_TX_CTRL.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/data_sync.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/data_sync.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/new/decodificador_7s.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/new/decodificador_7s.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/new/driver_display7seg.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/new/driver_display7seg.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/top_modulept2.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/top_modulept2.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Desktop/uart_basic.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Desktop/uart_basic.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Desktop/uart_baud_tick_gen.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Desktop/uart_baud_tick_gen.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/uart_rx.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/new/uart_rx.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Desktop/uart_tx.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Desktop/uart_tx.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Downloads/unsigned_to_bcd.v" into library work [C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.srcs/sources_1/imports/Downloads/unsigned_to_bcd.v:1]
+[Sun Jun 18 20:41:27 2017] Launched synth_1...
+Run output will be captured here: C:/GitHub/LabDigitales2017/LAB_5(gerson)/LAB_5.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 18 20:41:51 2017...

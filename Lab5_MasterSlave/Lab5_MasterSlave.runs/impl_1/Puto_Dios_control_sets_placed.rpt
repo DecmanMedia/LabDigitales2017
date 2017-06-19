@@ -1,0 +1,92 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Mon Jun 19 15:43:25 2017
+| Host         : LAPTOP-LB22AJFN running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Puto_Dios_control_sets_placed.rpt
+| Design       : Puto_Dios
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    27 |
+| Unused register locations in slices containing registers |    61 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              41 |           15 |
+| No           | No                    | Yes                    |               2 |            1 |
+| No           | Yes                   | No                     |              95 |           28 |
+| Yes          | No                    | No                     |              85 |           19 |
+| Yes          | No                    | Yes                    |              76 |           25 |
+| Yes          | Yes                   | No                     |              16 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+----------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+|     Clock Signal    |                       Enable Signal                      |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++---------------------+----------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+|  clk_BUFG           |                                                          | slavecito/ALU_DISPLAY/displaycito/anodos_tmp[7]_i_1_n_0 |                1 |              4 |
+|  clk_BUFG           | slavecito/ALU_DISPLAY/doublecito/shift[11]_i_1_n_0       |                                                         |                1 |              4 |
+|  clk_BUFG           | slavecito/ALU_DISPLAY/doublecito/shift[15]_i_1_n_0       |                                                         |                1 |              4 |
+|  clk_BUFG           | slavecito/ALU_DISPLAY/doublecito/shift[19]_i_1_n_0       |                                                         |                1 |              4 |
+|  clk_BUFG           | slavecito/ALU_DISPLAY/doublecito/shift[23]_i_1_n_0       |                                                         |                1 |              4 |
+|  clk_BUFG           | slavecito/ALU_DISPLAY/doublecito/shift[27]_i_1_n_0       |                                                         |                1 |              4 |
+|  clk_BUFG           | slavecito/ALU_DISPLAY/doublecito/shift[31]_i_1_n_0       |                                                         |                1 |              4 |
+|  clk_BUFG           | slavecito/ALU_DISPLAY/doublecito/shift[3]_i_1_n_0        |                                                         |                1 |              4 |
+|  clk_BUFG           | slavecito/ALU_DISPLAY/doublecito/shift[7]_i_1_n_0        |                                                         |                1 |              4 |
+|  clk_BUFG           | slavecito/ALU_DISPLAY/doublecito/counter[5]_i_1_n_0      |                                                         |                2 |              5 |
+|  clk_100M_IBUF_BUFG | slavecito/TX_CTRL_inst/E[0]                              | slavecito/UART_RX_CTRL_inst/FSM_onehot_state_reg[1]_0   |                4 |              8 |
+|  clk_100M_IBUF_BUFG | slavecito/UART_RX_CTRL_inst/FSM_onehot_state_reg_n_0_[1] | slavecito/UART_RX_CTRL_inst/FSM_onehot_state_reg[1]_0   |                2 |              8 |
+|  clk_100M_IBUF_BUFG | slavecito/UART_RX_CTRL_inst/FSM_onehot_state_reg_n_0_[5] | slavecito/UART_RX_CTRL_inst/FSM_onehot_state_reg[1]_0   |                4 |              8 |
+|  clk_100M_IBUF_BUFG | slavecito/UART_RX_CTRL_inst/out[1]                       | slavecito/UART_RX_CTRL_inst/FSM_onehot_state_reg[1]_0   |                2 |              8 |
+|  clk_100M_IBUF_BUFG | slavecito/UART_RX_CTRL_inst/out[2]                       | slavecito/UART_RX_CTRL_inst/FSM_onehot_state_reg[1]_0   |                5 |              8 |
+|  clk_100M_IBUF_BUFG | slavecito/uart_basic_inst/uart_rx_blk/rx_data[7]_i_1_n_0 | slavecito/UART_RX_CTRL_inst/FSM_onehot_state_reg[1]_0   |                1 |              8 |
+|  clk_BUFG           |                                                          |                                                         |                3 |              8 |
+|  clk_100M_IBUF_BUFG |                                                          | slavecito/UART_RX_CTRL_inst/FSM_onehot_state_reg[1]_0   |                7 |             11 |
+|  clk_100M_IBUF_BUFG | slavecito/UART_RX_CTRL_inst/FSM_onehot_state[11]_i_1_n_0 | slavecito/UART_RX_CTRL_inst/FSM_onehot_state_reg[1]_0   |                5 |             12 |
+|  clk_100M_IBUF_BUFG | slavecito/TX_CTRL_inst/tx_data16                         |                                                         |                3 |             16 |
+|  clk_100M_IBUF_BUFG | slavecito/ALU_DISPLAY/A_next                             | slavecito/UART_RX_CTRL_inst/FSM_onehot_state_reg[1]_0   |                3 |             16 |
+|  clk_100M_IBUF_BUFG | slavecito/ALU_DISPLAY/B[15]_i_1_n_0                      | slavecito/UART_RX_CTRL_inst/FSM_onehot_state_reg[1]_0   |                4 |             16 |
+|  clk_100M_IBUF_BUFG |                                                          | slavecito/uart_basic_inst/uart_tx_blk/SR[0]             |                5 |             19 |
+|  clk_100M_IBUF_BUFG |                                                          | slavecito/ALU_DISPLAY/clockcito/clk_out                 |                8 |             31 |
+|  clk_100M_IBUF_BUFG |                                                          | slavecito/TX_CTRL_inst/hold_state_timer[0]_i_1_n_0      |                8 |             32 |
+|  clk_BUFG           | slavecito/ALU_DISPLAY/doublecito/bcd0                    |                                                         |                6 |             32 |
+|  clk_100M_IBUF_BUFG |                                                          |                                                         |               12 |             33 |
++---------------------+----------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 4      |                     9 |
+| 5      |                     1 |
+| 8      |                     7 |
+| 11     |                     1 |
+| 12     |                     1 |
+| 16+    |                     8 |
++--------+-----------------------+
+
+

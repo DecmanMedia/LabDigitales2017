@@ -38,7 +38,7 @@ module Puto_Dios(
     );
     
   //  wire uart_rx, uart_tx, uart_tx_busy;
-    wire [7:0] AN, SEG;
+    wire [7:0] AN, SEG, LED;
     
    /* master_endpoint_top masterchefcito (
     .clk_100M(clk_100M),
@@ -62,8 +62,8 @@ module Puto_Dios(
     .SEG(ss_value),
     .tx(uart_tx),
     .LED(LED),
-    .ld,
-    .leds(leds)
+    .ld(ld),
+    .state_rx(leds)
 );
 
 endmodule

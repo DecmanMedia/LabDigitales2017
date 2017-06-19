@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jun 19 16:54:18 2017
+# Process ID: 4128
+# Current directory: C:/GitHub/LabDigitales2017/Lab6_PartePrevia
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8616 C:\GitHub\LabDigitales2017\Lab6_PartePrevia\Lab6_PartePrevia.xpr
+# Log file: C:/GitHub/LabDigitales2017/Lab6_PartePrevia/vivado.log
+# Journal file: C:/GitHub/LabDigitales2017/Lab6_PartePrevia\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.ip_user_files', nor could it be found using path 'C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.ip_user_files'.
+INFO: [Project 1-230] Project 'Lab6_PartePrevia.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 837.352 ; gain = 122.820
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 19 16:55:36 2017...
