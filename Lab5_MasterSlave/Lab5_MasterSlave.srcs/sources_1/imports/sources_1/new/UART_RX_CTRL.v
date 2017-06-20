@@ -73,7 +73,7 @@ module UART_RX_CTRL(
             STORE_OP1_MSB:  begin
                             next_state = WAIT_OP2_LSB;
                             tx_operador1_next = { rx_data,primer};
-                            state_alu = 1'b1;
+                            
                             end
             
             WAIT_OP2_LSB: 
@@ -83,6 +83,7 @@ module UART_RX_CTRL(
                 
             end
             STORE_OP2_LSB:  begin
+                            state_alu = 1'b1;
                             next_state = WAIT_OP2_MSB;
                             primer_next = rx_data;
                             end
@@ -95,7 +96,7 @@ module UART_RX_CTRL(
             STORE_OP2_MSB:  begin
                             next_state = WAIT_CMD;
                             tx_operador2_next = {rx_data, primer};
-                            state_alu = 1'b1;
+                            
                             end
                             
             WAIT_CMD:   
@@ -116,7 +117,7 @@ module UART_RX_CTRL(
             DELAY_1_CYCLE: 
             begin
                 next_state = TRIGGER_TX_RESULT;
-                
+                state_alu = 1'b1;
             end
             
             TRIGGER_TX_RESULT:  begin
@@ -140,7 +141,7 @@ module UART_RX_CTRL(
             end
         else
             begin
-            tx_ALU_ctrl <= 3'd1;
+            tx_ALU_ctrl <= tx_ALU_ctrl_next;
             tx_operador1 <= tx_operador1_next;
             tx_operador2 <= tx_operador2_next;
             primer <= primer_next;

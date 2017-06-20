@@ -80,27 +80,27 @@ module lab_4(
             begin
                 //B_next = 16'd0;
                 A_next = operando1;
-                input_display = {16'd0,16'hAAAA};
-                ready = 1'b1;
+                input_display = {16'd0,result};
+                //ready = 1'b1;
             end
             
             ESPERANDO_OPERADOR2:
             begin
                 B_next=operando2;
                 input_display = {16'd0,A};
-                ready = 1'b1;
+                //ready = 1'b1;
             end
             
             ESPERANDO_OPERACION: 
             begin
                 operador_next = ALU_ctrl;
                 input_display = {16'd0,B};
-                ready = 1'b1;
+                
             end
             
             MOSTRAR_RESULTADO: 
             begin
-               //operador_next = ALU_ctrl;
+               ready = 1'b1;
             end
             endcase
     end

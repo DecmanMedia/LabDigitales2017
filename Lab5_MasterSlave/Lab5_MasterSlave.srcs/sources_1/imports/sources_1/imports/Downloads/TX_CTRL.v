@@ -30,7 +30,10 @@ module TX_CTRL
 		    IDLE:
 		    begin
 		          tx_busy = 1'b0;
-		          state_next = (ready)? REGISTRAR: state;
+		          if(ready)
+		              state_next = REGISTRAR;
+		          else
+		              state_next = state;
 		    end
 			REGISTRAR: begin
 				if (hold_state_timer >= WAIT_FOR_REGISTER_DELAY)
