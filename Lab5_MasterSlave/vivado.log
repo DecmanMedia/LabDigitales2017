@@ -2,87 +2,20 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri Jun 16 18:16:45 2017
-# Process ID: 5076
-# Current directory: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1912 C:\Users\Diego\LabDigitales2017\Lab5_MasterSlave\Lab5_MasterSlave.xpr
-# Log file: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/vivado.log
-# Journal file: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave\vivado.jou
+# Start of session at: Tue Jun 20 17:21:04 2017
+# Process ID: 5876
+# Current directory: C:/GitHub/LabDigitales2017/Lab5_MasterSlave
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13800 C:\GitHub\LabDigitales2017\Lab5_MasterSlave\Lab5_MasterSlave.xpr
+# Log file: C:/GitHub/LabDigitales2017/Lab5_MasterSlave/vivado.log
+# Journal file: C:/GitHub/LabDigitales2017/Lab5_MasterSlave\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.xpr
-INFO: [Project 1-313] Project file moved from 'C:/GitHub/LabDigitales2017/Lab5_MasterSlave' since last save.
+open_project C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.ip_user_files', nor could it be found using path 'C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 801.594 ; gain = 159.723
-reset_run synth_1
-launch_runs impl_1 -jobs 4
-[Fri Jun 16 18:17:27 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log
-[Fri Jun 16 18:17:27 2017] Launched impl_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -jobs 4
-[Fri Jun 16 18:19:51 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log
-[Fri Jun 16 18:19:51 2017] Launched impl_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -jobs 4
-[Fri Jun 16 18:22:59 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log
-[Fri Jun 16 18:22:59 2017] Launched impl_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v" into library work [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:1]
-[Fri Jun 16 18:28:42 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -jobs 4
-[Fri Jun 16 18:36:18 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log
-[Fri Jun 16 18:36:18 2017] Launched impl_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log
-reset_run impl_1
-reset_run impl_1
-launch_runs impl_1 -jobs 4
-[Fri Jun 16 18:43:30 2017] Launched impl_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. PID not specified
-2. Failed to delete one or more files in run directory C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1
-
-launch_runs synth_1 -jobs 4
-INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v" into library work [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:1]
-[Fri Jun 16 18:43:38 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/Slave_Endpoint_top.v" into library work [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/Slave_Endpoint_top.v:1]
-[Fri Jun 16 18:47:01 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/Slave_Endpoint_top.v" into library work [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/Slave_Endpoint_top.v:1]
-[Fri Jun 16 18:47:20 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/new/Puto_Dios.v" into library work [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/new/Puto_Dios.v:1]
-[Fri Jun 16 18:49:49 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 4
-[Fri Jun 16 18:52:41 2017] Launched impl_1...
-Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log
-reset_run impl_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. PID not specified
-
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Jun 17 04:39:27 2017...
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 20 17:21:30 2017...

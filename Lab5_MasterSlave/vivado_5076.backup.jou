@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Jun 16 18:16:45 2017
+# Process ID: 5076
+# Current directory: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1912 C:\Users\Diego\LabDigitales2017\Lab5_MasterSlave\Lab5_MasterSlave.xpr
+# Log file: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/vivado.log
+# Journal file: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.xpr
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1
