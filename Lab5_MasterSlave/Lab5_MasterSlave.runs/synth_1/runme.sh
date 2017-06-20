@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Puto_Dios.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Puto_Dios.tcl
+EAStep vivado -log Slave_Endpoint_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Slave_Endpoint_top.tcl

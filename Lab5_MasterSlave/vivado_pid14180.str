@@ -1,0 +1,1511 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+Process ID: 14180
+
+Current time: 	6/20/17 4:10:05 PM CLT
+Time zone: 	Chile Time (America/Santiago)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	Diego
+User home directory: C:/Users/Diego
+User working directory: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave
+User country: 	MX
+User language: 	es
+User locale: 	es_MX
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Diego/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Diego/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	215 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 410 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Diego\LabDigitales2017\Lab5_MasterSlave\Lab5_MasterSlave.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// [GUI Memory]: 34 MB (+32856kb) [00:00:07]
+// [Engine Memory]: 393 MB (+261069kb) [00:00:07]
+// Tcl Message: open_project C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 38 MB (+2267kb) [00:00:10]
+// [Engine Memory]: 451 MB (+39729kb) [00:00:10]
+// [GUI Memory]: 55 MB (+16420kb) [00:00:11]
+// [Engine Memory]: 477 MB (+3840kb) [00:00:13]
+// [Engine Memory]: 502 MB (+699kb) [00:00:13]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 504 MB. GUI used memory: 33 MB. Current time: 6/20/17 4:10:11 PM CLT
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 785.438 ; gain = 135.750 
+// [GUI Memory]: 59 MB (+1575kb) [00:00:15]
+// Project name: Lab5_MasterSlave; location: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 366 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // y:i (D:JPanel, cd:JFrame)
+// PAPropertyPanels.initPanels (Slave_Endpoint_top.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v)]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), uart_basic_inst - uart_basic (uart_basic.v)]", 4, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g:JCheckBox (JPanel:JComponent, cd:JFrame): FALSE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), UART_RX_CTRL_inst - UART_RX_CTRL (UART_RX_CTRL.v)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v)]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v)]", 3, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v)]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, UART_master_endpoint_constraints.xdc]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, UART_master_endpoint_constraints.xdc]", 7, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// [GUI Memory]: 64 MB (+1434kb) [00:06:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 531 MB. GUI used memory: 35 MB. Current time: 6/20/17 4:16:53 PM CLT
+// [Engine Memory]: 531 MB (+4187kb) [00:06:57]
+selectCodeEditor("UART_master_endpoint_constraints.xdc", 1, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_master_endpoint_constraints.xdc", 1, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("UART_master_endpoint_constraints.xdc", 1, 62, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("UART_master_endpoint_constraints.xdc", 560, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_master_endpoint_constraints.xdc", 482, 158); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_master_endpoint_constraints.xdc", 502, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_master_endpoint_constraints.xdc", 491, 164); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_master_endpoint_constraints.xdc", 530, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_master_endpoint_constraints.xdc", 524, 160); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_master_endpoint_constraints.xdc", 516, 145); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 68 MB (+1410kb) [00:07:45]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_master_endpoint_constraints.xdc", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_master_endpoint_constraints.xdc", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// [GUI Memory]: 73 MB (+1069kb) [00:08:14]
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, UART_master_endpoint_constraints.xdc]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, UART_master_endpoint_constraints.xdc]", 7, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// ar:g (cd:JFrame): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", false); // g:JCheckBox (JPanel:JComponent, ar:g): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ar:g)
+// k:y (cd:JFrame): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b (k:TdiGroup, cd:JFrame)
+dismissDialog("Remove Sources"); // ar:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset constrs_1 C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc 
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a:JButton (JPanel:JComponent, k:y)
+dismissDialog("Text Changed"); // k:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a:JRadioButton (JPanel:JComponent, b:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 554 MB. GUI used memory: 37 MB. Current time: 6/20/17 4:18:23 PM CLT
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// Elapsed time: 10 seconds
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a:JButton (C:JPanel, b:g)
+// [Engine Memory]: 570 MB (+12627kb) [00:08:43]
+// Elapsed time: 23 seconds
+setFileChooser("C:/Users/Diego/LabDigitales2017/The Final Alcachofita.xdc");
+selectTable(PAResourceAtoD.ConstraintsChooserPanel_FILE_TABLE, "The Final Alcachofita.xdc ; C:\\Users\\Diego\\LabDigitales2017", 0, "C:\\Users\\Diego\\LabDigitales2017", 1); // s:r (JViewport:JComponent, b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 44 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse {{C:/Users/Diego/LabDigitales2017/The Final Alcachofita.xdc}} 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset constrs_1 {{C:/Users/Diego/LabDigitales2017/The Final Alcachofita.xdc}} 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 6); // y:i (D:JPanel, cd:JFrame)
+// [GUI Memory]: 77 MB (+685kb) [00:09:16]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, The Final Alcachofita.xdc]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, The Final Alcachofita.xdc]", 7, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("The Final Alcachofita.xdc", 9, 113); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("The Final Alcachofita.xdc", 534, 156); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 533, 156, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("The Final Alcachofita.xdc", 5, 166); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 525, 166); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 525, 166, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// [GUI Memory]: 82 MB (+1261kb) [00:09:47]
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 5, 23); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 522, 25); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 25, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 44); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 44, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 56); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 58, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 72); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 73, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 96); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 97, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 109); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 109, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 126); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 523, 126, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 548, 21); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "The Final Alcachofita.xdc", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 528, 244); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 528, 245, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("The Final Alcachofita.xdc", 528, 246); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 528, 246, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "The Final Alcachofita.xdc", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("Slave_Endpoint_top.v", 27, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 8, 82); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("The Final Alcachofita.xdc", 553, 243); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 553, 264); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "The Final Alcachofita.xdc", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 1, false, true); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // H:a (Workspace:JPanel, cd:JFrame)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame
+selectCodeEditor("Slave_Endpoint_top.v", 149, 429); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("Slave_Endpoint_top.v", 217, 196); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 436, 257); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v)]", 3); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), UART_RX_CTRL_inst - UART_RX_CTRL (UART_RX_CTRL.v)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), UART_RX_CTRL_inst - UART_RX_CTRL (UART_RX_CTRL.v)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// ai:r (cd:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ai:r)
+// bt:g (cd:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // ai:r (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Jun 20 15:22:47 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+// [GUI Memory]: 87 MB (+1179kb) [00:12:51]
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 580 MB. GUI used memory: 41 MB. Current time: 6/20/17 4:22:48 PM CLT
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 65 seconds
+selectCodeEditor("UART_RX_CTRL.v", 139, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 4); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), ALU_DISPLAY - lab_4 (No_ALU.v)]", 6, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), ALU_DISPLAY - lab_4 (No_ALU.v)]", 6, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), ALU_DISPLAY - lab_4 (No_ALU.v)]", 6, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Elapsed time: 29 seconds
+selectCodeEditor("No_ALU.v", 28, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 47 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 52 seconds
+selectCodeEditor("UART_RX_CTRL.v", 305, 129); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 34 seconds
+selectCodeEditor("UART_RX_CTRL.v", 125, 229); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 125, 230, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("UART_RX_CTRL.v", 125, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 125, 231, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("UART_RX_CTRL.v", 277, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 277, 182, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// ai:r (cd:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ai:r)
+// bt:g (cd:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // ai:r (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Jun 20 15:27:57 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 37 seconds
+selectCodeEditor("UART_RX_CTRL.v", 135, 93); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 135, 93, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("UART_RX_CTRL.v", 134, 132); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 4); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 51 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), ALU_DISPLAY - lab_4 (No_ALU.v)]", 6, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), ALU_DISPLAY - lab_4 (No_ALU.v)]", 6, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Elapsed time: 131 seconds
+selectCodeEditor("No_ALU.v", 228, 187); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), ALU_DISPLAY - lab_4 (No_ALU.v), alucito - ALU (ALU.v)]", 8, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), ALU_DISPLAY - lab_4 (No_ALU.v), alucito - ALU (ALU.v)]", 8, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("No_ALU.v", 172, 60); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 172, 60, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("No_ALU.v", 172, 59); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 172, 58, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("No_ALU.v", 109, 61); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 135, 61); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 167, 62); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// [GUI Memory]: 93 MB (+1458kb) [00:23:48]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("No_ALU.v", 113, 62); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("No_ALU.v", 345, 65); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("No_ALU.v", 114, 59); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("No_ALU.v", 176, 112); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("No_ALU.v", 105, 135); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("No_ALU.v", 238, 126); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectCodeEditor("No_ALU.v", 139, 105); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 139, 105, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("No_ALU.v", 241, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectCodeEditor("No_ALU.v", 226, 80); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("No_ALU.v", 252, 191); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Jun 20 15:37:32 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 160 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 4); // ah:i (JViewport:JComponent, cd:JFrame)
+// [GUI Memory]: 99 MB (+994kb) [00:30:20]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 103, 135); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl", true); // l:ak (au:e, cd:JFrame)
+// Elapsed time: 11 seconds
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+// Elapsed time: 22 seconds
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("UART_RX_CTRL.v", 235, 170); // bF:I (JPanel:JComponent, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx_alu_ctrl"); // l:ak (au:e, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("No_ALU.v", 128, 92); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador", true); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+// Elapsed time: 22 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador", true); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+// Elapsed time: 11 seconds
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+// Elapsed time: 13 seconds
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "operador"); // l:ak (au:e, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("ALU.v", 104, 251); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "control", true); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "control"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "control"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "control"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "control"); // l:ak (au:e, cd:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "control"); // l:ak (au:e, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 21 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 4, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 4, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. , [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[1]) is unused and will be removed from module Slave_Endpoint_top.. ]", 5, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. , [Synth 8-3332] Sequential element (ALU_DISPLAY/operador_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 7, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. , [Synth 8-3332] Sequential element (ALU_DISPLAY/operador_reg[1]) is unused and will be removed from module Slave_Endpoint_top.. ]", 8, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. , [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[0]) is unused and will be removed from module Slave_Endpoint_top.. ]", 6, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. , [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[0]) is unused and will be removed from module Slave_Endpoint_top.. ]", 6, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 4, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. , [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[1]) is unused and will be removed from module Slave_Endpoint_top.. ]", 5, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. , [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[1]) is unused and will be removed from module Slave_Endpoint_top.. ]", 5, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. , [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[0]) is unused and will be removed from module Slave_Endpoint_top.. ]", 6, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 4, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. , [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[1]) is unused and will be removed from module Slave_Endpoint_top.. ]", 5, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 4, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+// Elapsed time: 45 seconds
+selectCodeEditor("UART_RX_CTRL.v", 223, 63); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 61 seconds
+selectCodeEditor("No_ALU.v", 317, 11); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 317, 11, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("No_ALU.v", 231, 12); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 231, 11); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 354, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 333, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 333, 181, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("No_ALU.v", 333, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 333, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 360, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 359, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Jun 20 15:48:48 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 266, 43); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (p:JPanel, cd:JFrame)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_YOU_ABOUT_TO_CANCEL_YOUR_RUNNING_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Jun 20 15:49:23 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 65 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 4); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("UART_RX_CTRL.v", 250, 207); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("UART_RX_CTRL.v", 143, 91); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 143, 91, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("UART_RX_CTRL.v", 401, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 586 MB. GUI used memory: 45 MB. Current time: 6/20/17 4:52:51 PM CLT
+// Elapsed time: 78 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("No_ALU.v", 258, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 195 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("No_ALU.v", 104, 160); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("No_ALU.v", 81, 77); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "No_ALU.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Jun 20 15:57:46 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 73 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+// Elapsed time: 87 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 4); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. , [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[0]) is unused and will be removed from module Slave_Endpoint_top.. ]", 6, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), UART_RX_CTRL_inst - UART_RX_CTRL (UART_RX_CTRL.v)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), UART_RX_CTRL_inst - UART_RX_CTRL (UART_RX_CTRL.v)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), UART_RX_CTRL_inst - UART_RX_CTRL (UART_RX_CTRL.v)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 67 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 57 seconds
+selectCodeEditor("No_ALU.v", 291, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 265, 177); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 292, 177); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 105, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Jun 20 16:02:53 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 63 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 4); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 124 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// y:aO (cd:JFrame): No Implementation Results Available: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g:JCheckBox (JPanel:JComponent, y:aO): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // y:aO (cd:JFrame)
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Jun 20 16:06:38 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log 
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 108 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 127 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("The Final Alcachofita.xdc", 11, 142); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 11, 144); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 8, 145); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 574, 142); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 574, 142, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("The Final Alcachofita.xdc", 297, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 298, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 298, 162, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g:JCheckBox (JPanel:JComponent, y:aO): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Jun 20 16:11:51 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log [Tue Jun 20 16:11:51 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "The Final Alcachofita.xdc", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "The Final Alcachofita.xdc", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 237 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26); // u:K (t:D, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 27, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bt:g (cd:JFrame):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2016.4   **** Build date : Jan 23 2017-19:37:29     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FFD8A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bt:g (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit"); // ah:ak (ag:JPanel, be:aj)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// Elapsed time: 87 seconds
+selectCodeEditor("Slave_Endpoint_top.v", 151, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 139, 184); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 151, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("Slave_Endpoint_top.v", 184, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "The Final Alcachofita.xdc", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 91 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "The Final Alcachofita.xdc", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("The Final Alcachofita.xdc", 1, 98); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "The Final Alcachofita.xdc", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 9, 94); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 65, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 274, 159); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 75, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 64, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Slave_Endpoint_top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Slave_Endpoint_top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 128, 110); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 141, 96); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Slave_Endpoint_top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 80, 96); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 133, 126); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 365, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 326, 154); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 176, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ai:r (cd:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ai:r)
+// bt:g (cd:JFrame):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // ai:r (cd:JFrame)
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g:JCheckBox (JPanel:JComponent, y:aO): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Jun 20 16:21:17 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log [Tue Jun 20 16:21:17 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 586 MB. GUI used memory: 50 MB. Current time: 6/20/17 5:22:53 PM CLT
+// Elapsed time: 167 seconds
+selectCodeEditor("Slave_Endpoint_top.v", 137, 117); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 45 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit"); // ah:ak (ag:JPanel, be:aj)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// Elapsed time: 58 seconds
+selectCodeEditor("No_ALU.v", 140, 200); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("No_ALU.v", 76, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 118, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 118, 231, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("No_ALU.v", 154, 77); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "No_ALU.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 154, 56); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 111, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 279, 244); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 175, 80); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 176, 80, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "No_ALU.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "No_ALU.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "No_ALU.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "No_ALU.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 136, 160); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 138, 160); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 138, 160); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 129, 168); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 136, 168); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 137, 167); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 131, 165); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 131, 163); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Slave_Endpoint_top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("Slave_Endpoint_top.v", 42, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 99, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "The Final Alcachofita.xdc", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 10, 56); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 172, 139); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("No_ALU.v", 258, 212); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ai:r (cd:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ai:r)
+// bt:g (cd:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Project"); // ai:r (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g:JCheckBox (JPanel:JComponent, y:aO): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Jun 20 16:27:53 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log [Tue Jun 20 16:27:53 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log 
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 169 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 131 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("UART_RX_CTRL.v", 160, 11); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 222, 92); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 112, 183); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 336, 93); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 553, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 37 seconds
+selectCodeEditor("UART_RX_CTRL.v", 84, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("UART_RX_CTRL.v", 187, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 357, 197); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g:JCheckBox (JPanel:JComponent, y:aO): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Jun 20 16:35:15 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log [Tue Jun 20 16:35:15 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log 
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 97 seconds
+selectCodeEditor("No_ALU.v", 268, 211); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// [GUI Memory]: 104 MB (+434kb) [01:29:01]
+// Elapsed time: 88 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit"); // ah:ak (ag:JPanel, be:aj)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 115 seconds
+selectCodeEditor("UART_RX_CTRL.v", 43, 75); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("UART_RX_CTRL.v", 183, 83); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 178, 58); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 199, 82); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 89, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "The Final Alcachofita.xdc", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 552, 109); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 551, 129); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 552, 151); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 552, 163); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 552, 184); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 101, 200); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 189, 199); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 33 seconds
+selectCodeEditor("Slave_Endpoint_top.v", 209, 230); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 273, 223); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "The Final Alcachofita.xdc", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("The Final Alcachofita.xdc", 10, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Slave_Endpoint_top.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 234, 99); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Slave_Endpoint_top.v", 342, 146); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ai:r (cd:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ai:r)
+// bt:g (cd:JFrame):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // ai:r (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g:JCheckBox (JPanel:JComponent, y:aO): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Jun 20 16:44:10 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log [Tue Jun 20 16:44:10 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("UART_RX_CTRL.v", 309, 248); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 222, 213); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 225, 219); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 239, 87); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 238, 90, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("UART_RX_CTRL.v", 220, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 240, 212); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 436, 129); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 473, 169); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 78 seconds
+selectCodeEditor("UART_RX_CTRL.v", 377, 90); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 113, 51); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("UART_RX_CTRL.v", 399, 159); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 363, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 171, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 287, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 346, 215); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 265, 186); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 80, 199); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 84, 199); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2654] second declaration of state ignored [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:46]. ]", 11, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Diego\LabDigitales2017\Lab5_MasterSlave\Lab5_MasterSlave.srcs\sources_1\imports\sources_1\new\UART_RX_CTRL.v;-;;-;16;-;line;-;46;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 131, 126); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 400, 148); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 400, 148); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Add Configuration Memory Device]", 29, false); // u:K (t:D, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit"); // ah:ak (ag:JPanel, be:aj)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g:JCheckBox (JPanel:JComponent, y:aO): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Jun 20 16:48:14 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log [Tue Jun 20 16:48:14 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 269 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit"); // ah:ak (ag:JPanel, be:aj)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 586 MB. GUI used memory: 51 MB. Current time: 6/20/17 5:52:56 PM CLT
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 53 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 175 seconds
+selectCodeEditor("UART_RX_CTRL.v", 248, 214); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 141, 210); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 225, 224); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 240, 214); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 45 seconds
+selectCodeEditor("UART_RX_CTRL.v", 285, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 433, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 385, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 385, 181, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 440, 199); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 305, 200); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("UART_RX_CTRL.v", 231, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("UART_RX_CTRL.v", 281, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 336, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 394, 201); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 461, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 305, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 203, 129); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "UART_RX_CTRL.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("UART_RX_CTRL.v", 450, 141); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g:JCheckBox (JPanel:JComponent, y:aO): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Jun 20 16:59:54 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log [Tue Jun 20 16:59:54 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log 
+// Elapsed time: 44 seconds
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.xpr. ]", 1); // ah:i (JViewport:JComponent, cd:JFrame)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]. ]", 2); // ah:i (JViewport:JComponent, cd:JFrame)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]. ]", 3); // ah:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 178 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit"); // ah:ak (ag:JPanel, be:aj)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/Slave_Endpoint_top.bit} [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// Elapsed time: 127 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.. ]", 9); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("No_ALU.v", 183, 143); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("No_ALU.v", 311, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Project Settings]", 1, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SETTINGS
+// Project Settings: addNotify
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), ALU_DISPLAY - lab_4 (No_ALU.v), clockcito - clock_divider (clockuru.v)]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), ALU_DISPLAY - lab_4 (No_ALU.v), clockcito - clock_divider (clockuru.v)]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Slave_Endpoint_top (Slave_Endpoint_top.v), ALU_DISPLAY - lab_4 (No_ALU.v), clockcito - clock_divider (clockuru.v)]", 7, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 87 seconds
+selectCodeEditor("No_ALU.v", 275, 227); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 64 seconds
+selectCodeEditor("No_ALU.v", 204, 28); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 246, 53); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("No_ALU.v", 327, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("No_ALU.v", 279, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 52 seconds
+selectCodeEditor("No_ALU.v", 164, 95); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 160, 93); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 160, 93, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_RX_CTRL.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "No_ALU.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 41 seconds
+selectCodeEditor("No_ALU.v", 278, 197); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("No_ALU.v", 298, 112); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 329, 112); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("No_ALU.v", 347, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("No_ALU.v", 364, 159); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Bitstream Settings]", 24, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS
+// Project Settings: addNotify
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g:JCheckBox (JPanel:JComponent, y:aO): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Jun 20 17:14:12 2017] Launched synth_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/runme.log [Tue Jun 20 17:14:12 2017] Launched impl_1... Run output will be captured here: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/impl_1/runme.log 
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED

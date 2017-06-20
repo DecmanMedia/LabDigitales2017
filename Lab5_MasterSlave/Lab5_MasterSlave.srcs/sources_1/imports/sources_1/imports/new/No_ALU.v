@@ -29,7 +29,8 @@ module lab_4(
     output [15:0] salida,
     output reg ready,
     output DP, CA, CB, CC, CD, CE, CF, CG,
-    output [7:0] AN
+    output [7:0] AN,
+    output reg [2:0] estado_actual
     );
     //Creacion de Reloj 200 Hz
     wire clk;
@@ -38,7 +39,7 @@ module lab_4(
         
     wire [31:0] result_bcd;
     reg [2:0] LED_RGB;
-    reg [2:0] estado_actual, estado_sig;
+    reg [2:0] estado_sig;
     
         
     
@@ -67,7 +68,7 @@ module lab_4(
     always@(*)
     begin
         //Default
-        input_display = 32'd0;
+        input_display = 32'hFFFFFFFF;
         operador_next = operador;
         LED_RGB = 3'd0;
         A_next = A;
@@ -79,7 +80,7 @@ module lab_4(
             begin
                 //B_next = 16'd0;
                 A_next = operando1;
-                input_display = {16'd0,result_t};
+                input_display = {16'd0,16'hAAAA};
                 ready = 1'b1;
             end
             
@@ -99,11 +100,27 @@ module lab_4(
             
             MOSTRAR_RESULTADO: 
             begin
-               operador_next = ALU_ctrl;
-               result_t = result;
+               //operador_next = ALU_ctrl;
             end
             endcase
     end
+    
+       always@(posedge CLK100MHZ)
+         if (~CPU_RESETN)
+         begin
+             estado_actual <= ESPERANDO_OPERADOR1;
+             A <= 16'd0;
+             B <= 16'd0;
+             operador <= 3'd0;   
+         end    
+         else
+         begin
+             estado_actual <= estado_sig;
+             A <= A_next;
+             B <= B_next;
+             operador <= operador_next;   
+         end
+    
     
     
     wire V,C,N,Z;
@@ -111,7 +128,13 @@ module lab_4(
     wire [15:0] result;
     //ALU
     //ALU alucito(operando1, operando2, ALU_ctrl, result, {V,C,Z,N});
-    ALU alucito(A, B, operador, result, {V,C,Z,N});
+    ALU alucito(
+        .operador1(A),
+        .operador2(B),
+        .control(operador),
+        .result(result),
+        .flags()
+        );
     //Salida LED RGB con pwm  
     //pwm red(CLK100MHZ,1,LED16_R_temp);
     //pwm green(CLK100MHZ,1,LED16_G_temp);
@@ -119,6 +142,7 @@ module lab_4(
     //Asignacion salida LEDs RGB finales segun estado actual
     //assign {LED16_R,LED16_B,LED16_G} = (estado_actual == ESPERANDO_OPERACION)? ({LED16_R_temp,LED16_B_temp,LED16_G_temp}&LED_RGB): 3'b000;
     //Tranforma Hex a Dec.
+    wire led_idle;
     double_dabble doublecito(clk,1'b1,input_display,led_idle,result_bcd);
     //double_dabble doublecito(clk,1'b1,{29'd0,estado_actual},led_idle,result_bcd);
     //Dec se muestra en display
@@ -127,23 +151,7 @@ module lab_4(
     
     assign salida = input_display;
     //Secuencial
-    always@(posedge CLK100MHZ or posedge CPU_RESETN)
-        if (~CPU_RESETN)
-        begin
-            estado_actual <= ESPERANDO_OPERADOR1;
-            A <= 16'd0;
-            B <= 16'd0;
-            operador <= 3'd0;   
-        end
-        
-        else
-        begin
-            estado_actual <= estado_sig;
-            A <= A_next;
-            B <= B_next;
-            operador <= operador_next;   
-        end
-   
+ 
     
           
 endmodule

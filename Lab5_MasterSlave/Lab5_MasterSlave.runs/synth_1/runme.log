@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log Puto_Dios.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Puto_Dios.tcl
+    with args -log Slave_Endpoint_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Slave_Endpoint_top.tcl
 
 
 ****** Vivado v2016.4 (64-bit)
@@ -8,17 +8,16 @@
   **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
-source Puto_Dios.tcl -notrace
-Command: synth_design -top Puto_Dios -part xc7a100tcsg324-1
+source Slave_Endpoint_top.tcl -notrace
+Command: synth_design -top Slave_Endpoint_top -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4196 
+INFO: Helper process launched with PID 7772 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 281.980 ; gain = 72.570
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 282.047 ; gain = 72.152
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Puto_Dios' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/new/Puto_Dios.v:23]
 INFO: [Synth 8-638] synthesizing module 'Slave_Endpoint_top' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/Slave_Endpoint_top.v:23]
 INFO: [Synth 8-638] synthesizing module 'uart_basic' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_basic.v:10]
 	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
@@ -58,9 +57,6 @@ INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/Diego/LabDigitales20
 INFO: [Synth 8-256] done synthesizing module 'uart_tx' (4#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_tx.v:10]
 INFO: [Synth 8-256] done synthesizing module 'uart_basic' (5#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/new/uart/uart_basic.v:10]
 INFO: [Synth 8-638] synthesizing module 'UART_RX_CTRL' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/UART_RX_CTRL.v:23]
-	Parameter OP1 bound to: 2'b01 
-	Parameter OP2 bound to: 2'b10 
-	Parameter OP_CTRL bound to: 2'b11 
 	Parameter WAIT_OP1_LSB bound to: 4'b0001 
 	Parameter STORE_OP1_LSB bound to: 4'b0010 
 	Parameter WAIT_OP1_MSB bound to: 4'b0011 
@@ -84,7 +80,7 @@ INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/Diego/LabDigit
 	Parameter CONSTANT bound to: 50000 - type: integer 
 	Parameter constantNumber bound to: 50000 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'clock_divider' (7#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/imports/Downloads/clockuru.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/new/No_ALU.v:78]
 INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/new/ALU.v:23]
 	Parameter width bound to: 16 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'ALU' (8#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/new/ALU.v:23]
@@ -111,14 +107,9 @@ INFO: [Synth 8-638] synthesizing module 'TX_CTRL' [C:/Users/Diego/LabDigitales20
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/Downloads/TX_CTRL.v:29]
 INFO: [Synth 8-256] done synthesizing module 'TX_CTRL' (13#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/imports/Downloads/TX_CTRL.v:1]
 INFO: [Synth 8-256] done synthesizing module 'Slave_Endpoint_top' (14#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/imports/sources_1/new/Slave_Endpoint_top.v:23]
-WARNING: [Synth 8-3848] Net leds in module/entity Puto_Dios does not have driver. [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/new/Puto_Dios.v:35]
-INFO: [Synth 8-256] done synthesizing module 'Puto_Dios' (15#1) [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/sources_1/new/Puto_Dios.v:23]
-WARNING: [Synth 8-3331] design Puto_Dios has unconnected port leds[3]
-WARNING: [Synth 8-3331] design Puto_Dios has unconnected port leds[2]
-WARNING: [Synth 8-3331] design Puto_Dios has unconnected port leds[1]
-WARNING: [Synth 8-3331] design Puto_Dios has unconnected port leds[0]
+WARNING: [Synth 8-3331] design Slave_Endpoint_top has unconnected port LED[3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 319.332 ; gain = 109.922
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 319.410 ; gain = 109.516
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -128,52 +119,52 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 319.332 ; gain = 109.922
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 319.410 ; gain = 109.516
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc]
-Finished Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/new/UART_master_endpoint_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Puto_Dios_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/Puto_Dios_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
+Finished Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Slave_Endpoint_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Slave_Endpoint_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 633.371 ; gain = 0.004
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 628.680 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
 INFO: [Synth 8-5544] ROM "rx_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_next0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_RX_CTRL'
+INFO: [Synth 8-5544] ROM "primer_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "tx_operador2_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "tx_operador1_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tx_ALU_ctrl_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_alu" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -232,12 +223,12 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-     ESPERANDO_OPERADOR1 |                               00 |                              001
-     ESPERANDO_OPERADOR2 |                               01 |                              011
-     ESPERANDO_OPERACION |                               10 |                              101
-       MOSTRAR_RESULTADO |                               11 |                              111
+     ESPERANDO_OPERADOR1 |                             0001 |                              001
+     ESPERANDO_OPERADOR2 |                             0010 |                              011
+     ESPERANDO_OPERACION |                             0100 |                              101
+       MOSTRAR_RESULTADO |                             1000 |                              111
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_reg' using encoding 'sequential' in module 'lab_4'
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_reg' using encoding 'one-hot' in module 'lab_4'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -250,7 +241,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'TX_CTRL'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -278,37 +269,37 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 3     
 	               19 Bit    Registers := 2     
 	               16 Bit    Registers := 5     
-	                8 Bit    Registers := 3     
+	                8 Bit    Registers := 4     
 	                6 Bit    Registers := 1     
 	                3 Bit    Registers := 6     
 	                2 Bit    Registers := 3     
 	                1 Bit    Registers := 4     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
-	   4 Input     32 Bit        Muxes := 2     
-	  12 Input     16 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 3     
 	   2 Input     16 Bit        Muxes := 1     
-	   4 Input     16 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 4     
 	   8 Input      8 Bit        Muxes := 1     
 	   6 Input      8 Bit        Muxes := 1     
 	   4 Input      6 Bit        Muxes := 1     
 	   8 Input      6 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
 	  17 Input      4 Bit        Muxes := 1     
-	   4 Input      3 Bit        Muxes := 3     
+	   8 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 4     
 	   6 Input      3 Bit        Muxes := 1     
 	   5 Input      3 Bit        Muxes := 1     
 	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
 	  11 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 3     
 	   5 Input      2 Bit        Muxes := 1     
-	   8 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 7     
 	   3 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 11    
 	   5 Input      1 Bit        Muxes := 2     
-	  12 Input      1 Bit        Muxes := 3     
+	  12 Input      1 Bit        Muxes := 5     
 	   6 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -373,11 +364,12 @@ Module UART_RX_CTRL
 Detailed RTL Component Info : 
 +---Registers : 
 	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 +---Muxes : 
-	  12 Input     16 Bit        Muxes := 4     
+	  12 Input      4 Bit        Muxes := 1     
 	  17 Input      4 Bit        Muxes := 1     
-	  12 Input      1 Bit        Muxes := 3     
+	  12 Input      1 Bit        Muxes := 5     
 Module clock_divider 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -435,9 +427,11 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 +---Muxes : 
-	   4 Input     16 Bit        Muxes := 1     
-	   8 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
 Module TX_CTRL 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -462,35 +456,34 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "slavecito/ALU_DISPLAY/clockcito/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "slavecito/ALU_DISPLAY/clockcito/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "slavecito/ALU_DISPLAY/alucito/Z" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "slavecito/ALU_DISPLAY/displaycito/anodos_sig" won't be mapped to RAM because it is too sparse
-DSP Report: Generating DSP slavecito/ALU_DISPLAY/alucito/result_temp0, operation Mode is: A*B.
-DSP Report: operator slavecito/ALU_DISPLAY/alucito/result_temp0 is absorbed into DSP slavecito/ALU_DISPLAY/alucito/result_temp0.
-WARNING: [Synth 8-3331] design Puto_Dios has unconnected port leds[3]
-WARNING: [Synth 8-3331] design Puto_Dios has unconnected port leds[2]
-WARNING: [Synth 8-3331] design Puto_Dios has unconnected port leds[1]
-WARNING: [Synth 8-3331] design Puto_Dios has unconnected port leds[0]
-WARNING: [Synth 8-3332] Sequential element (slavecito/UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Puto_Dios.
-WARNING: [Synth 8-3332] Sequential element (slavecito/UART_RX_CTRL_inst/tx_ALU_ctrl_reg[1]) is unused and will be removed from module Puto_Dios.
-WARNING: [Synth 8-3332] Sequential element (slavecito/UART_RX_CTRL_inst/tx_ALU_ctrl_reg[0]) is unused and will be removed from module Puto_Dios.
-WARNING: [Synth 8-3332] Sequential element (slavecito/ALU_DISPLAY/operador_reg[2]) is unused and will be removed from module Puto_Dios.
-WARNING: [Synth 8-3332] Sequential element (slavecito/ALU_DISPLAY/operador_reg[1]) is unused and will be removed from module Puto_Dios.
-WARNING: [Synth 8-3332] Sequential element (slavecito/ALU_DISPLAY/operador_reg[0]) is unused and will be removed from module Puto_Dios.
+INFO: [Synth 8-5545] ROM "ALU_DISPLAY/clockcito/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ALU_DISPLAY/clockcito/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ALU_DISPLAY/alucito/Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALU_DISPLAY/displaycito/anodos_sig" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP ALU_DISPLAY/alucito/result_temp0, operation Mode is: A2*B2.
+DSP Report: register ALU_DISPLAY/B_reg is absorbed into DSP ALU_DISPLAY/alucito/result_temp0.
+DSP Report: register ALU_DISPLAY/A_reg is absorbed into DSP ALU_DISPLAY/alucito/result_temp0.
+DSP Report: operator ALU_DISPLAY/alucito/result_temp0 is absorbed into DSP ALU_DISPLAY/alucito/result_temp0.
+WARNING: [Synth 8-3331] design Slave_Endpoint_top has unconnected port LED[3]
+WARNING: [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[2]) is unused and will be removed from module Slave_Endpoint_top.
+WARNING: [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[1]) is unused and will be removed from module Slave_Endpoint_top.
+WARNING: [Synth 8-3332] Sequential element (UART_RX_CTRL_inst/tx_ALU_ctrl_reg[0]) is unused and will be removed from module Slave_Endpoint_top.
+WARNING: [Synth 8-3332] Sequential element (ALU_DISPLAY/operador_reg[2]) is unused and will be removed from module Slave_Endpoint_top.
+WARNING: [Synth 8-3332] Sequential element (ALU_DISPLAY/operador_reg[1]) is unused and will be removed from module Slave_Endpoint_top.
+WARNING: [Synth 8-3332] Sequential element (ALU_DISPLAY/operador_reg[0]) is unused and will be removed from module Slave_Endpoint_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping  Report (see note below)
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Slave_Endpoint_top | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -509,10 +502,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -524,7 +517,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -548,7 +541,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -561,7 +554,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -573,25 +566,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -609,45 +602,43 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     2|
 |2     |CARRY4 |    25|
-|3     |LUT1   |    98|
-|4     |LUT2   |    10|
-|5     |LUT3   |    18|
-|6     |LUT4   |   100|
-|7     |LUT5   |    50|
-|8     |LUT6   |    56|
-|9     |FDCE   |    70|
-|10    |FDRE   |   231|
-|11    |FDSE   |     9|
-|12    |IBUF   |     3|
-|13    |OBUF   |    18|
-|14    |OBUFT  |     4|
+|3     |LUT1   |    97|
+|4     |LUT2   |    21|
+|5     |LUT3   |    20|
+|6     |LUT4   |    69|
+|7     |LUT5   |    54|
+|8     |LUT6   |    61|
+|9     |FDRE   |   294|
+|10    |FDSE   |    26|
+|11    |IBUF   |     3|
+|12    |OBUF   |    24|
+|13    |OBUFT  |     1|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+----------------------+-----------------------------------+------+
-|      |Instance              |Module                             |Cells |
-+------+----------------------+-----------------------------------+------+
-|1     |top                   |                                   |   694|
-|2     |  slavecito           |Slave_Endpoint_top                 |   667|
-|3     |    ALU_DISPLAY       |lab_4                              |   319|
-|4     |      clockcito       |clock_divider                      |    83|
-|5     |      displaycito     |display                            |    28|
-|6     |      doublecito      |double_dabble                      |   154|
-|7     |    TX_CTRL_inst      |TX_CTRL                            |   121|
-|8     |    UART_RX_CTRL_inst |UART_RX_CTRL                       |    78|
-|9     |    uart_basic_inst   |uart_basic                         |   149|
-|10    |      baud8_tick_blk  |uart_baud_tick_gen                 |    39|
-|11    |      baud_tick_blk   |uart_baud_tick_gen__parameterized0 |    42|
-|12    |      uart_rx_blk     |uart_rx                            |    43|
-|13    |        rx_sync_inst  |data_sync                          |     9|
-|14    |      uart_tx_blk     |uart_tx                            |    23|
-+------+----------------------+-----------------------------------+------+
++------+--------------------+-----------------------------------+------+
+|      |Instance            |Module                             |Cells |
++------+--------------------+-----------------------------------+------+
+|1     |top                 |                                   |   697|
+|2     |  ALU_DISPLAY       |lab_4                              |   339|
+|3     |    clockcito       |clock_divider                      |    83|
+|4     |    displaycito     |display                            |    28|
+|5     |    doublecito      |double_dabble                      |   168|
+|6     |  TX_CTRL_inst      |TX_CTRL                            |   123|
+|7     |  UART_RX_CTRL_inst |UART_RX_CTRL                       |    56|
+|8     |  uart_basic_inst   |uart_basic                         |   149|
+|9     |    baud8_tick_blk  |uart_baud_tick_gen                 |    39|
+|10    |    baud_tick_blk   |uart_baud_tick_gen__parameterized0 |    42|
+|11    |    uart_rx_blk     |uart_rx                            |    43|
+|12    |      rx_sync_inst  |data_sync                          |     9|
+|13    |    uart_tx_blk     |uart_tx                            |    23|
++------+--------------------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 633.371 ; gain = 423.961
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 628.680 ; gain = 418.785
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 633.371 ; gain = 109.922
-Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 633.371 ; gain = 423.961
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 628.680 ; gain = 109.516
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 628.680 ; gain = 418.785
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -657,9 +648,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-113 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+110 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 633.371 ; gain = 423.961
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/Puto_Dios.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.048 . Memory (MB): peak = 633.371 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 16 18:50:50 2017...
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 628.680 ; gain = 418.785
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.runs/synth_1/Slave_Endpoint_top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 628.680 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 20 17:15:10 2017...

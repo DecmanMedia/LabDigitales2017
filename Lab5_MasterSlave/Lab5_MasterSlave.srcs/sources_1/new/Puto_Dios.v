@@ -53,17 +53,6 @@ module Puto_Dios(
     .ss_select(ss_select),
     .ss_value(ss_value)
 );*/
-    
-    Slave_Endpoint_top slavecito(
-    .rx(uart_rx),
-    .CLK100MHZ(clk_100M),
-    .rst(~reset_n),
-    .AN(ss_select),
-    .SEG(ss_value),
-    .tx(uart_tx),
-    .LED(),
-    .ld
-    //.state_rx(leds)
-);
+
 
 endmodule

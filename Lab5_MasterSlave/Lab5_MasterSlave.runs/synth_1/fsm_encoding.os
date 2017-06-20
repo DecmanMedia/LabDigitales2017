@@ -12,7 +12,7 @@
  add_fsm_encoding \
        {lab_4.estado_actual} \
        { }  \
-       {{001 00} {011 01} {101 10} {111 11} }
+       {{001 0001} {011 0010} {101 0100} {111 1000} }
 
  add_fsm_encoding \
        {TX_CTRL.state} \
