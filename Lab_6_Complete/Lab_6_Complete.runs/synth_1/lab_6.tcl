@@ -10,28 +10,31 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.cache/wt [current_project]
-set_property parent.project_path C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.xpr [current_project]
+set_property webtalk.parent_dir C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.cache/wt [current_project]
+set_property parent.project_path C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.cache/ip [current_project]
+set_property ip_output_repo c:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files -quiet c:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
-set_property used_in_implementation false [get_files c:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
+add_files -quiet C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
+set_property used_in_implementation false [get_files C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
 read_verilog -library xil_defaultlib {
-  C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v
-  C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v
-  C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v
-  C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v
-  C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v
-  C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v
+  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v
+  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v
+  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Downloads/numba_to_string.v
+  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v
+  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v
+  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v
+  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v
+  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v
+  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc}}]
+read_xdc {{C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc}}
+set_property used_in_implementation false [get_files {{C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc}}]
 
 
 synth_design -top lab_6 -part xc7a100tcsg324-1

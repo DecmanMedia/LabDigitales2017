@@ -2,22 +2,22 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Mon Jun 19 20:24:09 2017
-# Process ID: 524
-# Current directory: C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2456 C:\Users\Diego\LabDigitales2017\Lab6_PartePrevia\Lab6_PartePrevia.xpr
-# Log file: C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/vivado.log
-# Journal file: C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia\vivado.jou
+# Start of session at: Tue Jun 27 14:30:07 2017
+# Process ID: 8392
+# Current directory: C:/GitHub/LabDigitales2017/Lab6_PartePrevia
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9988 C:\GitHub\LabDigitales2017\Lab6_PartePrevia\Lab6_PartePrevia.xpr
+# Log file: C:/GitHub/LabDigitales2017/Lab6_PartePrevia/vivado.log
+# Journal file: C:/GitHub/LabDigitales2017/Lab6_PartePrevia\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.xpr
+open_project C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.xpr
 open_hw
 connect_hw_server
 open_hw_target
-set_property PROGRAM.FILE {C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/impl_1/Lab6.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/impl_1/Lab6.bit} [lindex [get_hw_devices xc7a100t_0] 0]
 current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROGRAM.FILE {C:/Users/Diego/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/impl_1/Lab6.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/GitHub/LabDigitales2017/Lab6_PartePrevia/Lab6_PartePrevia.runs/impl_1/Lab6.bit} [lindex [get_hw_devices xc7a100t_0] 0]
 program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
