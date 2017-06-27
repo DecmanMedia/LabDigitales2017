@@ -67,3 +67,4 @@ set_property PROGRAM.FILE {C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_Mast
 program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 update_compile_order -fileset sim_1
+reset_run impl_1 -prev_step 
