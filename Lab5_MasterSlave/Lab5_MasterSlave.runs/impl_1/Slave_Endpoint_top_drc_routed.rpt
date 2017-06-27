@@ -1,8 +1,13 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+<<<<<<< HEAD
 | Date         : Tue Jun 20 18:12:36 2017
 | Host         : LAPTOP-LB22AJFN running 64-bit major release  (build 9200)
+=======
+| Date         : Tue Jun 20 17:25:19 2017
+| Host         : LaptopDiewo running 64-bit major release  (build 9200)
+>>>>>>> aa489a11a4d33a010fdff90a8de7d3afb440969a
 | Command      : report_drc -file Slave_Endpoint_top_drc_routed.rpt -pb Slave_Endpoint_top_drc_routed.pb -rpx Slave_Endpoint_top_drc_routed.rpx
 | Design       : Slave_Endpoint_top
 | Device       : xc7a100tcsg324-1
