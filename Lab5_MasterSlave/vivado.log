@@ -170,3 +170,9 @@ WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
 WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
 WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
 update_compile_order -fileset sim_1
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Couldn't access process for termination
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 20 18:16:01 2017...
