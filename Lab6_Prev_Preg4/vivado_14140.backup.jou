@@ -2,10 +2,10 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Tue Jun 27 14:24:09 2017
-# Process ID: 7904
+# Start of session at: Tue Jun 27 01:42:09 2017
+# Process ID: 14140
 # Current directory: C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg4
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15568 C:\Users\Diego\LabDigitales2017\Lab6_Prev_Preg4\Lab6_Prev_Preg4.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10152 C:\Users\Diego\LabDigitales2017\Lab6_Prev_Preg4\Lab6_Prev_Preg4.xpr
 # Log file: C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg4/vivado.log
 # Journal file: C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg4\vivado.jou
 #-----------------------------------------------------------
