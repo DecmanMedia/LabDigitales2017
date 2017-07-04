@@ -85,7 +85,7 @@ module Slave_Endpoint_top(
        
     reg [15:0] resultado_p = 16'h8;        
     TX_CTRL TX_CTRL_inst(
-        .rst(~rst),
+        .rst(rst),
         .resultOut16(resultado),
         .ready(ready),
         .clk(CLK100MHZ),

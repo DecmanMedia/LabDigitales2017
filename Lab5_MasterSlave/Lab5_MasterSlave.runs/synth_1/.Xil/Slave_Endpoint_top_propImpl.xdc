@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc} rfile:{../../../Lab5_MasterSlave.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc} id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc} rfile:{../../../Lab5_MasterSlave.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc} id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { CLK100MHZ }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
 set_property src_info {type:XDC file:1 line:33 export:INPUT save:INPUT read:READ} [current_design]
@@ -55,7 +55,3 @@ set_property src_info {type:XDC file:1 line:107 export:INPUT save:INPUT read:REA
 set_property -dict { PACKAGE_PIN D14   IOSTANDARD LVCMOS33 } [get_ports { rx }]; #IO_L1P_T0_AD0P_15 Sch=jb[1]
 set_property src_info {type:XDC file:1 line:108 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN F16   IOSTANDARD LVCMOS33 } [get_ports { tx }]; #IO_L14N_T2_SRCC_15 Sch=jb[2]
-set_property src_info {type:XDC file:1 line:218 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN C4    IOSTANDARD LVCMOS33 } [get_ports { rx }]; #IO_L7P_T1_AD6P_35 Sch=uart_txd_in
-set_property src_info {type:XDC file:1 line:219 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN D4    IOSTANDARD LVCMOS33 } [get_ports { tx }]; #IO_L11N_T1_SRCC_35 Sch=uart_rxd_out

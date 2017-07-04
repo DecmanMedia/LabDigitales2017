@@ -52,21 +52,21 @@ set rc [catch {
   set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.xpr [current_project]
-  set_property ip_output_repo C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.cache/wt [current_project]
+  set_property parent.project_path C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.xpr [current_project]
+  set_property ip_output_repo C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.runs/synth_1/lab_6.dcp
-  add_files -quiet c:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
-  set_property netlist_only true [get_files c:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
-  read_xdc -mode out_of_context -ref clk_wiz_0 -cells inst c:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
-  read_xdc -prop_thru_buffers -ref clk_wiz_0 -cells inst c:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc
-  set_property processing_order EARLY [get_files c:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-  read_xdc -ref clk_wiz_0 -cells inst c:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc
-  set_property processing_order EARLY [get_files c:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-  read_xdc {{C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc}}
+  add_files -quiet C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/lab_6.dcp
+  add_files -quiet C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
+  set_property netlist_only true [get_files C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
+  read_xdc -mode out_of_context -ref clk_wiz_0 -cells inst c:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc
+  set_property processing_order EARLY [get_files c:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+  read_xdc -prop_thru_buffers -ref clk_wiz_0 -cells inst c:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc
+  set_property processing_order EARLY [get_files c:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+  read_xdc -ref clk_wiz_0 -cells inst c:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc
+  set_property processing_order EARLY [get_files c:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+  read_xdc {{C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc}}
   link_design -top lab_6 -part xc7a100tcsg324-1
   write_hwdef -file lab_6.hwdef
   close_msg_db -file init_design.pb

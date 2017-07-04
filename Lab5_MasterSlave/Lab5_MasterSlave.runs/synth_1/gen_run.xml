@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1497996652">
+=======
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1497993733">
+>>>>>>> aa489a11a4d33a010fdff90a8de7d3afb440969a
   <File Type="RDS-PROPCONSTRS" Name="Slave_Endpoint_top_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="Slave_Endpoint_top.tcl"/>
   <File Type="RDS-RDS" Name="Slave_Endpoint_top.vds"/>

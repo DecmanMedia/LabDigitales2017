@@ -1,8 +1,13 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+<<<<<<< HEAD
+| Date         : Tue Jun 20 18:12:37 2017
+| Host         : LAPTOP-LB22AJFN running 64-bit major release  (build 9200)
+=======
 | Date         : Tue Jun 20 17:25:20 2017
 | Host         : LaptopDiewo running 64-bit major release  (build 9200)
+>>>>>>> aa489a11a4d33a010fdff90a8de7d3afb440969a
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file Slave_Endpoint_top_timing_summary_routed.rpt -rpx Slave_Endpoint_top_timing_summary_routed.rpx
 | Design       : Slave_Endpoint_top
 | Device       : 7a100t-csg324
@@ -52,7 +57,11 @@ Table of Contents
 
 1. checking no_clock
 --------------------
+<<<<<<< HEAD
+ There are 241 register/latch pins with no clock driven by root clock pin: CLK100MHZ (HIGH)
+=======
  There are 236 register/latch pins with no clock driven by root clock pin: CLK100MHZ (HIGH)
+>>>>>>> aa489a11a4d33a010fdff90a8de7d3afb440969a
 
  There are 81 register/latch pins with no clock driven by root clock pin: ALU_DISPLAY/clockcito/clk_out_reg/Q (HIGH)
 
@@ -69,7 +78,11 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
+<<<<<<< HEAD
+ There are 731 pins that are not constrained for maximum delay. (HIGH)
+=======
  There are 704 pins that are not constrained for maximum delay. (HIGH)
+>>>>>>> aa489a11a4d33a010fdff90a8de7d3afb440969a
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -83,7 +96,11 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
+<<<<<<< HEAD
+ There are 22 ports with no output delay specified. (HIGH)
+=======
  There are 23 ports with no output delay specified. (HIGH)
+>>>>>>> aa489a11a4d33a010fdff90a8de7d3afb440969a
 
  There are 0 ports with no output delay but user has a false path constraint
 

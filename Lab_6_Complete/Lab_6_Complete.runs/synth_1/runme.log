@@ -14,23 +14,27 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4004 
-WARNING: [Synth 8-2292] literal value truncated to fit in 12 bits [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:93]
+INFO: Helper process launched with PID 6608 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 292.793 ; gain = 82.398
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 282.754 ; gain = 73.254
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'lab_6' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:1]
+INFO: [Synth 8-638] synthesizing module 'lab_6' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:1]
+	Parameter NUMERO_DIGITOS bound to: 8 - type: integer 
 	Parameter CUADRILLA_XI bound to: 212 - type: integer 
 	Parameter CUADRILLA_XF bound to: 812 - type: integer 
 	Parameter CUADRILLA_YI bound to: 184 - type: integer 
 	Parameter CUADRILLA_YF bound to: 584 - type: integer 
-	Parameter digito_x bound to: 11'b00100000110 
+	Parameter OPERADOR1_STATE bound to: 3'b001 
+	Parameter OPERADOR2_STATE bound to: 3'b010 
+	Parameter CONTROL_STATE bound to: 3'b011 
+	Parameter RESULTADO_STATE bound to: 3'b100 
+	Parameter digito_x bound to: 11'b00011110111 
 	Parameter digito_y bound to: 11'b00011010010 
 	Parameter length bound to: 11'b00001100100 
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.runs/synth_1/.Xil/Vivado-2688-LaptopDiewo/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.runs/synth_1/.Xil/Vivado-2688-LaptopDiewo/realtime/clk_wiz_0_stub.v:5]
-WARNING: [Synth 8-350] instance 'inst' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:23]
-INFO: [Synth 8-638] synthesizing module 'driver_vga_640x480' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v:15]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-8960-LAPTOP-LB22AJFN/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-8960-LAPTOP-LB22AJFN/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'inst' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:26]
+INFO: [Synth 8-638] synthesizing module 'driver_vga_640x480' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v:15]
 	Parameter hpixels bound to: 11'b10101010000 
 	Parameter vlines bound to: 11'b01100100101 
 	Parameter hfp bound to: 11'b00001000000 
@@ -39,12 +43,30 @@ INFO: [Synth 8-638] synthesizing module 'driver_vga_640x480' [C:/Users/Diego/Lab
 	Parameter vfp bound to: 11'b00000000011 
 	Parameter vsc bound to: 11'b00000000100 
 	Parameter vbp bound to: 11'b00000011110 
-INFO: [Synth 8-256] done synthesizing module 'driver_vga_640x480' (2#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v:15]
-INFO: [Synth 8-638] synthesizing module 'kbd_ms' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:38]
-INFO: [Synth 8-638] synthesizing module 'ps2_read_ms' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:174]
-INFO: [Synth 8-256] done synthesizing module 'ps2_read_ms' (3#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:174]
-INFO: [Synth 8-256] done synthesizing module 'kbd_ms' (4#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:38]
-INFO: [Synth 8-638] synthesizing module 'template_6x4_600x400' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v:29]
+INFO: [Synth 8-256] done synthesizing module 'driver_vga_640x480' (2#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v:15]
+INFO: [Synth 8-638] synthesizing module 'kbd_ms' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:38]
+INFO: [Synth 8-638] synthesizing module 'ps2_read_ms' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:174]
+INFO: [Synth 8-256] done synthesizing module 'ps2_read_ms' (3#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:174]
+INFO: [Synth 8-256] done synthesizing module 'kbd_ms' (4#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:38]
+INFO: [Synth 8-638] synthesizing module 'cursor' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v:23]
+	Parameter MAX_NUMBER bound to: 8 - type: integer 
+	Parameter IDLE bound to: 3'b001 
+	Parameter STATE_RIGHT bound to: 3'b010 
+	Parameter STATE_LEFT bound to: 3'b011 
+	Parameter STATE_DOWN bound to: 3'b100 
+	Parameter STATE_UP bound to: 3'b101 
+	Parameter STATE_ENTER bound to: 3'b110 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v:57]
+INFO: [Synth 8-638] synthesizing module 'translate' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v:23]
+INFO: [Synth 8-256] done synthesizing module 'translate' (5#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v:93]
+INFO: [Synth 8-256] done synthesizing module 'cursor' (6#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v:23]
+INFO: [Synth 8-638] synthesizing module 'numba_to_string' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Downloads/numba_to_string.v:23]
+	Parameter MAX_CHARACTER_LINE bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'numba_to_string' (7#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Downloads/numba_to_string.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:70]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:85]
+INFO: [Synth 8-638] synthesizing module 'template_6x4_600x400' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v:29]
 	Parameter d_col bound to: 8'b00011001 
 	Parameter d_row bound to: 7'b0011001 
 	Parameter zeros_col bound to: 2'b00 
@@ -53,11 +75,11 @@ INFO: [Synth 8-638] synthesizing module 'template_6x4_600x400' [C:/Users/Diego/L
 	Parameter CUADRILLA_XF bound to: 812 - type: integer 
 	Parameter CUADRILLA_YI bound to: 184 - type: integer 
 	Parameter CUADRILLA_YF bound to: 584 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'template_6x4_600x400' (5#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v:29]
-INFO: [Synth 8-638] synthesizing module 'show_one_char' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'template_6x4_600x400' (8#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v:29]
+INFO: [Synth 8-638] synthesizing module 'show_one_char' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 11'b00100000110 
+	Parameter MENU_X_LOCATION bound to: 11'b00011110111 
 	Parameter MENU_Y_LOCATION bound to: 11'b00011010010 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -65,18 +87,18 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char' [C:/Users/Diego/LabDigit
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 304 - type: integer 
+	Parameter MENU_X_TOP bound to: 289 - type: integer 
 	Parameter MENU_Y_TOP bound to: 266 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'characters' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:21]
-WARNING: [Synth 8-3848] Net vect_num_p in module/entity characters does not have driver. [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:69]
-WARNING: [Synth 8-3848] Net vect_char_space in module/entity characters does not have driver. [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:52]
-WARNING: [Synth 8-3848] Net vect_char_nn in module/entity characters does not have driver. [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:51]
-INFO: [Synth 8-256] done synthesizing module 'characters' (6#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:21]
-INFO: [Synth 8-256] done synthesizing module 'show_one_char' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized0' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-638] synthesizing module 'characters' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:21]
+WARNING: [Synth 8-3848] Net vect_num_p in module/entity characters does not have driver. [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:69]
+WARNING: [Synth 8-3848] Net vect_char_space in module/entity characters does not have driver. [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:52]
+WARNING: [Synth 8-3848] Net vect_char_nn in module/entity characters does not have driver. [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:51]
+INFO: [Synth 8-256] done synthesizing module 'characters' (9#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:21]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized0' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 11'b00101101010 
+	Parameter MENU_X_LOCATION bound to: 11'b00101011011 
 	Parameter MENU_Y_LOCATION bound to: 11'b00011010010 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -84,13 +106,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized0' [C:/User
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 404 - type: integer 
+	Parameter MENU_X_TOP bound to: 389 - type: integer 
 	Parameter MENU_Y_TOP bound to: 266 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized0' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized1' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized0' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized1' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 462 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 447 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 11'b00011010010 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -98,13 +120,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized1' [C:/User
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 504 - type: integer 
+	Parameter MENU_X_TOP bound to: 489 - type: integer 
 	Parameter MENU_Y_TOP bound to: 266 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized1' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized2' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized1' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized2' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 562 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 547 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 11'b00011010010 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -112,13 +134,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized2' [C:/User
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 604 - type: integer 
+	Parameter MENU_X_TOP bound to: 589 - type: integer 
 	Parameter MENU_Y_TOP bound to: 266 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized2' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized3' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized2' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized3' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 662 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 647 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 11'b00011010010 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -126,13 +148,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized3' [C:/User
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 704 - type: integer 
+	Parameter MENU_X_TOP bound to: 689 - type: integer 
 	Parameter MENU_Y_TOP bound to: 266 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized3' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized4' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized3' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized4' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 762 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 747 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 11'b00011010010 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -140,13 +162,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized4' [C:/User
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 804 - type: integer 
+	Parameter MENU_X_TOP bound to: 789 - type: integer 
 	Parameter MENU_Y_TOP bound to: 266 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized4' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized5' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized4' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized5' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 11'b00100000110 
+	Parameter MENU_X_LOCATION bound to: 11'b00011110111 
 	Parameter MENU_Y_LOCATION bound to: 11'b00100110110 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -154,13 +176,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized5' [C:/User
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 304 - type: integer 
+	Parameter MENU_X_TOP bound to: 289 - type: integer 
 	Parameter MENU_Y_TOP bound to: 366 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized5' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized6' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized5' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized6' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 11'b00101101010 
+	Parameter MENU_X_LOCATION bound to: 11'b00101011011 
 	Parameter MENU_Y_LOCATION bound to: 11'b00100110110 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -168,13 +190,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized6' [C:/User
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 404 - type: integer 
+	Parameter MENU_X_TOP bound to: 389 - type: integer 
 	Parameter MENU_Y_TOP bound to: 366 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized6' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized7' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized6' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized7' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 462 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 447 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 11'b00100110110 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -182,13 +204,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized7' [C:/User
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 504 - type: integer 
+	Parameter MENU_X_TOP bound to: 489 - type: integer 
 	Parameter MENU_Y_TOP bound to: 366 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized7' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized8' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized7' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized8' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 562 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 547 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 11'b00100110110 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -196,13 +218,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized8' [C:/User
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 604 - type: integer 
+	Parameter MENU_X_TOP bound to: 589 - type: integer 
 	Parameter MENU_Y_TOP bound to: 366 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized8' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized9' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized8' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized9' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 662 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 647 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 11'b00100110110 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -210,13 +232,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized9' [C:/User
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 704 - type: integer 
+	Parameter MENU_X_TOP bound to: 689 - type: integer 
 	Parameter MENU_Y_TOP bound to: 366 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized9' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized10' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized9' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized10' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 762 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 747 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 11'b00100110110 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -224,13 +246,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized10' [C:/Use
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 804 - type: integer 
+	Parameter MENU_X_TOP bound to: 789 - type: integer 
 	Parameter MENU_Y_TOP bound to: 366 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized10' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized11' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized10' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized11' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 11'b00100000110 
+	Parameter MENU_X_LOCATION bound to: 11'b00011110111 
 	Parameter MENU_Y_LOCATION bound to: 410 - type: integer 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -238,13 +260,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized11' [C:/Use
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 304 - type: integer 
+	Parameter MENU_X_TOP bound to: 289 - type: integer 
 	Parameter MENU_Y_TOP bound to: 466 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized11' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized12' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized11' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized12' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 11'b00101101010 
+	Parameter MENU_X_LOCATION bound to: 11'b00101011011 
 	Parameter MENU_Y_LOCATION bound to: 410 - type: integer 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -252,13 +274,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized12' [C:/Use
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 404 - type: integer 
+	Parameter MENU_X_TOP bound to: 389 - type: integer 
 	Parameter MENU_Y_TOP bound to: 466 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized12' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized13' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized12' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized13' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 462 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 447 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 410 - type: integer 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -266,13 +288,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized13' [C:/Use
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 504 - type: integer 
+	Parameter MENU_X_TOP bound to: 489 - type: integer 
 	Parameter MENU_Y_TOP bound to: 466 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized13' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized14' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized13' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized14' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 562 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 547 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 410 - type: integer 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -280,13 +302,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized14' [C:/Use
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 604 - type: integer 
+	Parameter MENU_X_TOP bound to: 589 - type: integer 
 	Parameter MENU_Y_TOP bound to: 466 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized14' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized15' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized14' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized15' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 662 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 647 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 410 - type: integer 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -294,26 +316,27 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized15' [C:/Use
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 704 - type: integer 
+	Parameter MENU_X_TOP bound to: 689 - type: integer 
 	Parameter MENU_Y_TOP bound to: 466 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized15' (7#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_line' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:429]
-	Parameter ancho_pixel bound to: 3'b111 
-	Parameter MENU_X_LOCATION bound to: 762 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized15' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_line' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:433]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 5 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 747 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 410 - type: integer 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
 	Parameter MAX_CHARACTER_LINE bound to: 2 - type: integer 
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
-	Parameter MENU_WIDTH bound to: 84 - type: integer 
-	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 846 - type: integer 
-	Parameter MENU_Y_TOP bound to: 466 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_line' (8#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:429]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized16' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+	Parameter MENU_WIDTH bound to: 60 - type: integer 
+	Parameter MENU_HEIGHT bound to: 40 - type: integer 
+	Parameter MENU_X_TOP bound to: 807 - type: integer 
+	Parameter MENU_Y_TOP bound to: 450 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'show_one_line' (11#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:433]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized16' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 11'b00100000110 
+	Parameter MENU_X_LOCATION bound to: 11'b00011110111 
 	Parameter MENU_Y_LOCATION bound to: 510 - type: integer 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -321,13 +344,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized16' [C:/Use
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 304 - type: integer 
+	Parameter MENU_X_TOP bound to: 289 - type: integer 
 	Parameter MENU_Y_TOP bound to: 566 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized16' (8#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized17' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized16' (11#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized17' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 11'b00101101010 
+	Parameter MENU_X_LOCATION bound to: 11'b00101011011 
 	Parameter MENU_Y_LOCATION bound to: 510 - type: integer 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -335,13 +358,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized17' [C:/Use
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 404 - type: integer 
+	Parameter MENU_X_TOP bound to: 389 - type: integer 
 	Parameter MENU_Y_TOP bound to: 566 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized17' (8#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized18' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized17' (11#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized18' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 462 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 447 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 510 - type: integer 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -349,13 +372,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized18' [C:/Use
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 504 - type: integer 
+	Parameter MENU_X_TOP bound to: 489 - type: integer 
 	Parameter MENU_Y_TOP bound to: 566 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized18' (8#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized19' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized18' (11#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized19' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 562 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 547 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 510 - type: integer 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
@@ -363,37 +386,52 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized19' [C:/Use
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
 	Parameter MENU_WIDTH bound to: 42 - type: integer 
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 604 - type: integer 
+	Parameter MENU_X_TOP bound to: 589 - type: integer 
 	Parameter MENU_Y_TOP bound to: 566 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized19' (8#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:232]
-INFO: [Synth 8-638] synthesizing module 'show_one_line__parameterized0' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:429]
-	Parameter ancho_pixel bound to: 3'b111 
-	Parameter MENU_X_LOCATION bound to: 616 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized19' (11#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_line__parameterized0' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:433]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 5 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 627 - type: integer 
 	Parameter MENU_Y_LOCATION bound to: 510 - type: integer 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
 	Parameter MAX_CHARACTER_LINE bound to: 3 - type: integer 
 	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
-	Parameter MENU_WIDTH bound to: 126 - type: integer 
-	Parameter MENU_HEIGHT bound to: 56 - type: integer 
-	Parameter MENU_X_TOP bound to: 742 - type: integer 
-	Parameter MENU_Y_TOP bound to: 566 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_line__parameterized0' (8#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:429]
-INFO: [Synth 8-638] synthesizing module 'hello_world_text_square' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+	Parameter MENU_WIDTH bound to: 90 - type: integer 
+	Parameter MENU_HEIGHT bound to: 40 - type: integer 
+	Parameter MENU_X_TOP bound to: 717 - type: integer 
+	Parameter MENU_Y_TOP bound to: 550 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'show_one_line__parameterized0' (11#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:433]
+INFO: [Synth 8-638] synthesizing module 'hello_world_text_square' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
 	Parameter n bound to: 4 - type: integer 
 	Parameter ancho_pixel bound to: 6 - type: integer 
-	Parameter MENU_X_LOCATION bound to: 11'b00010111000 
-	Parameter MENU_Y_LOCATION bound to: 11'b00001010000 
+	Parameter MENU_X_LOCATION bound to: 11'b01011111010 
+	Parameter MENU_Y_LOCATION bound to: 11'b00000011110 
 	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
 	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
-	Parameter MAX_CHARACTER_LINE bound to: 10 - type: integer 
-	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
-	Parameter MENU_WIDTH bound to: 360 - type: integer 
-	Parameter MENU_HEIGHT bound to: 48 - type: integer 
-	Parameter MENU_X_TOP bound to: 544 - type: integer 
-	Parameter MENU_Y_TOP bound to: 128 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'hello_world_text_square' (9#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
-INFO: [Synth 8-256] done synthesizing module 'lab_6' (10#1) [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:1]
+	Parameter MAX_CHARACTER_LINE bound to: 4 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 3 - type: integer 
+	Parameter MENU_WIDTH bound to: 144 - type: integer 
+	Parameter MENU_HEIGHT bound to: 144 - type: integer 
+	Parameter MENU_X_TOP bound to: 906 - type: integer 
+	Parameter MENU_Y_TOP bound to: 174 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hello_world_text_square' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+INFO: [Synth 8-638] synthesizing module 'hello_world_text_square__parameterized0' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+	Parameter n bound to: 4 - type: integer 
+	Parameter ancho_pixel bound to: 6 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 11'b00101101100 
+	Parameter MENU_Y_LOCATION bound to: 11'b00000011110 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 12 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 3 - type: integer 
+	Parameter MENU_WIDTH bound to: 432 - type: integer 
+	Parameter MENU_HEIGHT bound to: 144 - type: integer 
+	Parameter MENU_X_TOP bound to: 796 - type: integer 
+	Parameter MENU_Y_TOP bound to: 174 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hello_world_text_square__parameterized0' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+INFO: [Synth 8-256] done synthesizing module 'lab_6' (13#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:1]
 WARNING: [Synth 8-3331] design lab_6 has unconnected port SW[15]
 WARNING: [Synth 8-3331] design lab_6 has unconnected port SW[14]
 WARNING: [Synth 8-3331] design lab_6 has unconnected port SW[13]
@@ -411,7 +449,7 @@ WARNING: [Synth 8-3331] design lab_6 has unconnected port SW[2]
 WARNING: [Synth 8-3331] design lab_6 has unconnected port SW[1]
 WARNING: [Synth 8-3331] design lab_6 has unconnected port SW[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 330.340 ; gain = 119.945
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 332.715 ; gain = 123.215
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -421,43 +459,43 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 330.340 ; gain = 119.945
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 332.715 ; gain = 123.215
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'inst' [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:23]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'inst' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:26]
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.runs/synth_1/.Xil/Vivado-2688-LaptopDiewo/dcp/clk_wiz_0_in_context.xdc] for cell 'inst'
-Finished Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.runs/synth_1/.Xil/Vivado-2688-LaptopDiewo/dcp/clk_wiz_0_in_context.xdc] for cell 'inst'
-Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
-Finished Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab_6_propImpl.xdc].
+Parsing XDC File [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-8960-LAPTOP-LB22AJFN/dcp/clk_wiz_0_in_context.xdc] for cell 'inst'
+Finished Parsing XDC File [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-8960-LAPTOP-LB22AJFN/dcp/clk_wiz_0_in_context.xdc] for cell 'inst'
+Parsing XDC File [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
+Finished Parsing XDC File [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab_6_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/lab_6_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 655.324 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 657.555 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 655.324 ; gain = 444.930
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 657.555 ; gain = 448.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 655.324 ; gain = 444.930
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 657.555 ; gain = 448.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.runs/synth_1/.Xil/Vivado-2688-LaptopDiewo/dcp/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.runs/synth_1/.Xil/Vivado-2688-LaptopDiewo/dcp/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-8960-LAPTOP-LB22AJFN/dcp/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-8960-LAPTOP-LB22AJFN/dcp/clk_wiz_0_in_context.xdc, line 4).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 655.324 ; gain = 444.930
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 657.555 ; gain = 448.055
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "data_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "kds_state_machine_next0" won't be mapped to RAM because it is too sparse
@@ -466,6 +504,10 @@ INFO: [Synth 8-5544] ROM "kds_state_machine_next" won't be mapped to Block RAM b
 INFO: [Synth 8-5544] ROM "new_data_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "data_type_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "kbs_tot_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cursor'
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -541,66 +583,116 @@ INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RA
 INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lab_6'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'hex_reg' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'control_reg' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v:59]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              001
+                STATE_UP |                           000010 |                              101
+              STATE_DOWN |                           000100 |                              100
+             STATE_RIGHT |                           001000 |                              010
+              STATE_LEFT |                           010000 |                              011
+             STATE_ENTER |                           100000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'cursor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         OPERADOR1_STATE |                               00 |                              001
+         OPERADOR2_STATE |                               01 |                              010
+           CONTROL_STATE |                               10 |                              011
+         RESULTADO_STATE |                               11 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'lab_6'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 655.324 ; gain = 444.930
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 657.555 ; gain = 448.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+--------------+------------+----------+
 |      |RTL Partition |Replication |Instances |
 +------+--------------+------------+----------+
-|1     |lab_6__GB0    |           1|     55622|
-|2     |lab_6__GB1    |           1|     16383|
+|1     |lab_6__GB0    |           1|     46670|
+|2     |lab_6__GB1    |           1|     15076|
+|3     |lab_6__GB2    |           1|     15531|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 3     
-	   2 Input     11 Bit       Adders := 54    
-	   2 Input      8 Bit       Adders := 49    
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 56    
+	   2 Input      8 Bit       Adders := 51    
 	   2 Input      7 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 3     
-	   2 Input      5 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 4     
 	   2 Input      4 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 95    
-	   2 Input      2 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 99    
+	   2 Input      2 Bit       Adders := 3     
 +---XORs : 
 	                9 Bit    Wide XORs := 1     
 +---Registers : 
+	               32 Bit    Registers := 1     
 	               11 Bit    Registers := 2     
 	                9 Bit    Registers := 1     
-	                8 Bit    Registers := 51    
+	                8 Bit    Registers := 53    
 	                7 Bit    Registers := 1     
-	                6 Bit    Registers := 3     
-	                5 Bit    Registers := 2     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 4     
 	                4 Bit    Registers := 2     
-	                3 Bit    Registers := 96    
-	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 6     
+	                3 Bit    Registers := 100   
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
 +---Muxes : 
-	  45 Input     40 Bit        Muxes := 24    
+	   3 Input     96 Bit        Muxes := 1     
+	  45 Input     40 Bit        Muxes := 25    
+	   3 Input     32 Bit        Muxes := 1     
 	   4 Input     12 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 2     
-	   2 Input     11 Bit        Muxes := 29    
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 30    
 	   2 Input      9 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 50    
-	   4 Input      8 Bit        Muxes := 48    
+	   2 Input      8 Bit        Muxes := 52    
+	   4 Input      8 Bit        Muxes := 50    
 	   2 Input      7 Bit        Muxes := 2     
-	   2 Input      6 Bit        Muxes := 3     
-	   4 Input      6 Bit        Muxes := 3     
-	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 6     
+	   4 Input      6 Bit        Muxes := 6     
+	  12 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 8     
 	   2 Input      4 Bit        Muxes := 2     
 	   7 Input      4 Bit        Muxes := 1     
 	   5 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 143   
-	   4 Input      3 Bit        Muxes := 48    
+	   2 Input      3 Bit        Muxes := 145   
+	   4 Input      3 Bit        Muxes := 51    
+	  22 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
 	   5 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 63    
-	   4 Input      1 Bit        Muxes := 51    
-	   3 Input      1 Bit        Muxes := 24    
+	   6 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 70    
+	   4 Input      1 Bit        Muxes := 56    
+	   3 Input      1 Bit        Muxes := 25    
+	  22 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 7     
 	   9 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -616,91 +708,14 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit       Adders := 1     
 +---Muxes : 
 	   4 Input     12 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 2     
-Module driver_vga_640x480 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 4     
-+---Registers : 
-	               11 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 5     
-Module characters__19 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_line__parameterized0 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      6 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                6 Bit    Registers := 1     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      6 Bit        Muxes := 1     
-	   4 Input      6 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 3     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__18 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized19 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__17 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized18 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
 Module characters__16 
 Detailed RTL Component Info : 
 +---Muxes : 
 	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized17 
+Module show_one_char__parameterized14 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     11 Bit       Adders := 2     
@@ -722,7 +737,7 @@ Module characters__15
 Detailed RTL Component Info : 
 +---Muxes : 
 	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized16 
+Module show_one_char__parameterized18 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     11 Bit       Adders := 2     
@@ -741,6 +756,380 @@ Detailed RTL Component Info :
 	   4 Input      1 Bit        Muxes := 2     
 	   3 Input      1 Bit        Muxes := 1     
 Module characters__14 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized17 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__21 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__20 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__19 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__18 
 Detailed RTL Component Info : 
 +---Muxes : 
 	  45 Input     40 Bit        Muxes := 1     
@@ -767,363 +1156,19 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit        Muxes := 3     
 	   4 Input      1 Bit        Muxes := 3     
 	   3 Input      1 Bit        Muxes := 1     
-Module characters__13 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized3 
+Module driver_vga_640x480 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 4     
 +---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
+	               11 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__12 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized4 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__11 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized5 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__10 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized6 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__9 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized7 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__8 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized8 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__7 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized9 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__6 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized10 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__5 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized11 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__4 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized12 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__3 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized13 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__2 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized14 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__1 
+	   2 Input     11 Bit        Muxes := 5     
+Module characters__17 
 Detailed RTL Component Info : 
 +---Muxes : 
 	  45 Input     40 Bit        Muxes := 1     
 Module show_one_char__parameterized15 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized2 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__23 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized1 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__22 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char__parameterized0 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 4     
-+---Registers : 
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 6     
-	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-Module characters__21 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  45 Input     40 Bit        Muxes := 1     
-Module show_one_char 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     11 Bit       Adders := 2     
@@ -1161,6 +1206,27 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 3     
+Module translate 
+Detailed RTL Component Info : 
++---Muxes : 
+	  22 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  22 Input      1 Bit        Muxes := 1     
+Module cursor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  12 Input      6 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 7     
 Module ps2_read_ms 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1192,7 +1258,56 @@ Detailed RTL Component Info :
 	   9 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
 	   5 Input      1 Bit        Muxes := 1     
-Module characters__20 
+Module characters 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_char__parameterized19 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__24 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module show_one_line__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__23 
 Detailed RTL Component Info : 
 +---Muxes : 
 	  45 Input     40 Bit        Muxes := 1     
@@ -1202,25 +1317,57 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 2     
-	   2 Input      6 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
 	   2 Input      5 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 2     
 +---Registers : 
 	                8 Bit    Registers := 2     
-	                6 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
 	                5 Bit    Registers := 2     
 	                3 Bit    Registers := 2     
 +---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 2     
 	   4 Input      8 Bit        Muxes := 2     
-	   2 Input      6 Bit        Muxes := 1     
-	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 2     
 	   2 Input      5 Bit        Muxes := 4     
 	   2 Input      3 Bit        Muxes := 2     
 	   4 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module characters__22 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module hello_world_text_square__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     96 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
 	   3 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -1237,49 +1384,32 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5544] ROM "exe/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "exe/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "exe/menu_character_position_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "f/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "f/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "b/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "b/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "e/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "e/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "d/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "d/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "c/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "c/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "ce/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "ce/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "ce/menu_character_position_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "a/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "a/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cero/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cero/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uno/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uno/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dos/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dos/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tres/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tres/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "mas/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "mas/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "menos/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "menos/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nueve/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nueve/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cuatro/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cuatro/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cinco/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cinco/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "seis/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "seis/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "siete/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "siete/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "multp/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "multp/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "_or/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "_or/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "ocho/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "ocho/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "nueve/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "nueve/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "a/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "a/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "b/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "b/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "_and/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "_and/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tres/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tres/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "dos/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5546] ROM "kds_state_machine_next0" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3331] design lab_6 has unconnected port SW[15]
@@ -1298,16 +1428,49 @@ WARNING: [Synth 8-3331] design lab_6 has unconnected port SW[3]
 WARNING: [Synth 8-3331] design lab_6 has unconnected port SW[2]
 WARNING: [Synth 8-3331] design lab_6 has unconnected port SW[1]
 WARNING: [Synth 8-3331] design lab_6 has unconnected port SW[0]
+WARNING: [Synth 8-3332] Sequential element (translate_inst/control_reg[2]) is unused and will be removed from module cursor.
+WARNING: [Synth 8-3332] Sequential element (translate_inst/control_reg[1]) is unused and will be removed from module cursor.
+WARNING: [Synth 8-3332] Sequential element (translate_inst/control_reg[0]) is unused and will be removed from module cursor.
+WARNING: [Synth 8-3332] Sequential element (control_reg[2]) is unused and will be removed from module cursor.
+WARNING: [Synth 8-3332] Sequential element (control_reg[1]) is unused and will be removed from module cursor.
+WARNING: [Synth 8-3332] Sequential element (control_reg[0]) is unused and will be removed from module cursor.
+WARNING: [Synth 8-3332] Sequential element (ce_reg) is unused and will be removed from module cursor.
+WARNING: [Synth 8-3332] Sequential element (menu_character_position_y_reg[5]) is unused and will be removed from module hello_world_text_square.
+WARNING: [Synth 8-3332] Sequential element (menu_character_position_y_reg[4]) is unused and will be removed from module hello_world_text_square.
+WARNING: [Synth 8-3332] Sequential element (menu_character_position_y_reg[3]) is unused and will be removed from module hello_world_text_square.
+WARNING: [Synth 8-3332] Sequential element (menu_character_position_y_reg[2]) is unused and will be removed from module hello_world_text_square.
+WARNING: [Synth 8-3332] Sequential element (menu_character_position_y_reg[5]) is unused and will be removed from module hello_world_text_square__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (menu_character_position_y_reg[4]) is unused and will be removed from module hello_world_text_square__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (menu_character_position_y_reg[3]) is unused and will be removed from module hello_world_text_square__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (menu_character_position_y_reg[2]) is unused and will be removed from module hello_world_text_square__parameterized0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:16 . Memory (MB): peak = 655.324 ; gain = 444.930
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 657.555 ; gain = 448.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------------------+---------------+----------------+
+|Module Name | RTL Object             | Depth x Width | Implemented As | 
++------------+------------------------+---------------+----------------+
+|translate   | hex                    | 32x4          | LUT            | 
+|translate   | control                | 32x1          | LUT            | 
+|cursor      | translate_inst/hex     | 32x4          | LUT            | 
+|cursor      | translate_inst/control | 32x1          | LUT            | 
++------------+------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+--------------+------------+----------+
 |      |RTL Partition |Replication |Instances |
 +------+--------------+------------+----------+
-|1     |lab_6__GB0    |           1|      3690|
-|2     |lab_6__GB1    |           1|      1495|
+|1     |lab_6__GB0    |           1|      2554|
+|2     |lab_6__GB1    |           1|      1326|
+|3     |lab_6__GB2    |           1|      3055|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1318,23 +1481,24 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/clk_out1' to pin 'inst/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:35 . Memory (MB): peak = 673.129 ; gain = 462.734
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 686.539 ; gain = 477.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:48 . Memory (MB): peak = 722.891 ; gain = 512.496
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 742.980 ; gain = 533.480
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+--------------+------------+----------+
 |      |RTL Partition |Replication |Instances |
 +------+--------------+------------+----------+
-|1     |lab_6_GT0     |           1|      5166|
+|1     |lab_6__GB0    |           1|      2549|
+|2     |lab_6_GT0     |           1|      4282|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:01:51 . Memory (MB): peak = 722.891 ; gain = 512.496
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 742.980 ; gain = 533.480
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1358,7 +1522,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:44 ; elapsed = 00:01:52 . Memory (MB): peak = 722.891 ; gain = 512.496
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 742.980 ; gain = 533.480
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1371,7 +1535,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:44 ; elapsed = 00:01:52 . Memory (MB): peak = 722.891 ; gain = 512.496
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 742.980 ; gain = 533.480
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1383,25 +1547,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:44 ; elapsed = 00:01:53 . Memory (MB): peak = 722.891 ; gain = 512.496
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 742.980 ; gain = 533.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:44 ; elapsed = 00:01:53 . Memory (MB): peak = 722.891 ; gain = 512.496
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 742.980 ; gain = 533.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:44 ; elapsed = 00:01:53 . Memory (MB): peak = 722.891 ; gain = 512.496
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 742.980 ; gain = 533.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:44 ; elapsed = 00:01:53 . Memory (MB): peak = 722.891 ; gain = 512.496
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 742.980 ; gain = 533.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1420,68 +1584,79 @@ Report Cell Usage:
 +------+----------+------+
 |1     |clk_wiz_0 |     1|
 |2     |CARRY4    |     6|
-|3     |LUT1      |   105|
-|4     |LUT2      |   173|
-|5     |LUT3      |   187|
-|6     |LUT4      |   196|
-|7     |LUT5      |   314|
-|8     |LUT6      |   392|
-|9     |FDCE      |   138|
-|10    |FDRE      |   600|
-|11    |IBUF      |     1|
-|12    |OBUF      |    14|
+|3     |LUT1      |   110|
+|4     |LUT2      |   205|
+|5     |LUT3      |   218|
+|6     |LUT4      |   197|
+|7     |LUT5      |   444|
+|8     |LUT6      |   578|
+|9     |MUXF7     |    25|
+|10    |MUXF8     |     7|
+|11    |FDCE      |   141|
+|12    |FDPE      |     1|
+|13    |FDRE      |   725|
+|14    |FDSE      |     3|
+|15    |LD        |     4|
+|16    |IBUF      |     3|
+|17    |OBUF      |    17|
 +------+----------+------+
 
 Report Instance Areas: 
-+------+-------------+-------------------------------+------+
-|      |Instance     |Module                         |Cells |
-+------+-------------+-------------------------------+------+
-|1     |top          |                               |  2128|
-|2     |  _and       |show_one_char__parameterized15 |    66|
-|3     |  _or        |show_one_char__parameterized10 |    66|
-|4     |  a          |show_one_char__parameterized13 |    66|
-|5     |  b          |show_one_char__parameterized14 |    66|
-|6     |  c          |show_one_char__parameterized16 |    66|
-|7     |  ce         |show_one_line                  |    83|
-|8     |  cero       |show_one_char                  |    65|
-|9     |  cinco      |show_one_char__parameterized6  |    67|
-|10    |  cuatro     |show_one_char__parameterized5  |    66|
-|11    |  d          |show_one_char__parameterized17 |    66|
-|12    |  dos        |show_one_char__parameterized1  |    67|
-|13    |  e          |show_one_char__parameterized18 |    66|
-|14    |  exe        |show_one_line__parameterized0  |    94|
-|15    |  f          |show_one_char__parameterized19 |    68|
-|16    |  m_driver   |driver_vga_640x480             |   395|
-|17    |  m_hw       |hello_world_text_square        |    91|
-|18    |  mas        |show_one_char__parameterized3  |    66|
-|19    |  menos      |show_one_char__parameterized4  |    66|
-|20    |  multp      |show_one_char__parameterized9  |    67|
-|21    |  nueve      |show_one_char__parameterized12 |    66|
-|22    |  ocho       |show_one_char__parameterized11 |    66|
-|23    |  seis       |show_one_char__parameterized7  |    66|
-|24    |  siete      |show_one_char__parameterized8  |    66|
-|25    |  template_1 |template_6x4_600x400           |    57|
-|26    |  tres       |show_one_char__parameterized2  |    66|
-|27    |  uno        |show_one_char__parameterized0  |    67|
-+------+-------------+-------------------------------+------+
++------+-------------------+----------------------------------------+------+
+|      |Instance           |Module                                  |Cells |
++------+-------------------+----------------------------------------+------+
+|1     |top                |                                        |  2686|
+|2     |  _and             |show_one_char__parameterized15          |    65|
+|3     |  _ce              |show_one_line                           |    83|
+|4     |  _exe             |show_one_line__parameterized0           |    84|
+|5     |  _or              |show_one_char__parameterized10          |    67|
+|6     |  a                |show_one_char__parameterized13          |    66|
+|7     |  b                |show_one_char__parameterized14          |    66|
+|8     |  c                |show_one_char__parameterized16          |    66|
+|9     |  cero             |show_one_char                           |    66|
+|10    |  cinco            |show_one_char__parameterized6           |    66|
+|11    |  cuatro           |show_one_char__parameterized5           |    66|
+|12    |  cursor_inst      |cursor                                  |   122|
+|13    |    translate_inst |translate                               |     9|
+|14    |  d                |show_one_char__parameterized17          |    66|
+|15    |  dos              |show_one_char__parameterized1           |    66|
+|16    |  e                |show_one_char__parameterized18          |    66|
+|17    |  f                |show_one_char__parameterized19          |    64|
+|18    |  m_driver         |driver_vga_640x480                      |   468|
+|19    |  m_hexdec         |hello_world_text_square                 |   125|
+|20    |  m_hw             |hello_world_text_square__parameterized0 |   252|
+|21    |  m_kd             |kbd_ms                                  |    84|
+|22    |    m_ps2read      |ps2_read_ms                             |    47|
+|23    |  mas              |show_one_char__parameterized3           |    66|
+|24    |  menos            |show_one_char__parameterized4           |    67|
+|25    |  multp            |show_one_char__parameterized9           |    67|
+|26    |  nueve            |show_one_char__parameterized12          |    66|
+|27    |  ocho             |show_one_char__parameterized11          |    66|
+|28    |  seis             |show_one_char__parameterized7           |    66|
+|29    |  siete            |show_one_char__parameterized8           |    66|
+|30    |  template_1       |template_6x4_600x400                    |    54|
+|31    |  tres             |show_one_char__parameterized2           |    67|
+|32    |  uno              |show_one_char__parameterized0           |    66|
++------+-------------------+----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:44 ; elapsed = 00:01:53 . Memory (MB): peak = 722.891 ; gain = 512.496
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 742.980 ; gain = 533.480
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:01:32 . Memory (MB): peak = 722.891 ; gain = 187.512
-Synthesis Optimization Complete : Time (s): cpu = 00:01:44 ; elapsed = 00:01:53 . Memory (MB): peak = 722.891 ; gain = 512.496
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 742.980 ; gain = 207.906
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 742.980 ; gain = 533.480
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-209 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+230 Infos, 54 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 722.891 ; gain = 512.496
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Diego/LabDigitales2017/Lab6_Prev_Preg9/Lab6_Prev_Preg9.runs/synth_1/lab_6.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 722.891 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Jun 26 23:40:04 2017...
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 742.980 ; gain = 533.480
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/lab_6.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 742.980 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 27 18:03:50 2017...
