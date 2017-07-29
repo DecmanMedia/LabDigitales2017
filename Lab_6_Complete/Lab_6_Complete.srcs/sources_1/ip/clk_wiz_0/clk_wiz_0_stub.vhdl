@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
 -- Date        : Tue Jun 27 13:01:14 2017
 -- Host        : LAPTOP-LB22AJFN running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top clk_wiz_0 -prefix
+--               clk_wiz_0_ clk_wiz_0_stub.vhdl
 -- Design      : clk_wiz_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1

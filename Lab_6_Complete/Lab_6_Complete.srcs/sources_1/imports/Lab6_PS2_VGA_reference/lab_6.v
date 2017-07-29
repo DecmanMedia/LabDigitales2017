@@ -1,6 +1,6 @@
 module lab_6(
 	input CLK100MHZ,
-	input [15:0]SW,
+	input SW,
 	input PS2_CLK,
 	input PS2_DATA,
 	input rst,
@@ -38,8 +38,8 @@ module lab_6(
     wire [2:0] data_type;
     wire parity_error;	
     
-    wire [(NUMERO_DIGITOS*8)-1:0] char_op1;
-    
+    wire [(NUMERO_DIGITOS*8)-1:0] char, char_resultado;
+    reg [(NUMERO_DIGITOS*8)-1:0] char_op1, char_op2;
     
     
 	driver_vga_640x480 m_driver(CLK82MHZ, VGA_HS, VGA_VS,hc_visible,vc_visible);
@@ -59,11 +59,14 @@ module lab_6(
     wire [1:0] position_y;
     wire [4*NUMERO_DIGITOS - 1:0] hex;
     wire [2:0] control;
+    reg hexdec, next_hexdec; //hex=0, dec = 1;
+    
+    
     
 	//assign exe = kbs_tot && (data == 8'h5A) && (data_type == 3'b001) && ((position_x == 3'd4) && (position_y == 2'd3));
 	cursor cursor_inst(CLK82MHZ, rst, kbs_tot, data, data_type, position_x, position_y, hex, control, exe , ce);
 	
-	numba_to_string numba_to_string_inst(hex, char_op1);
+	
 	always@(*)
 	begin
 	   next_state = state;
@@ -75,17 +78,42 @@ module lab_6(
 	   endcase
     end
     
-        reg [31:0] operador1, operador1_next, operador2, operador2_next;
+        reg [31:0] operador1, operador1_next, operador2, operador2_next, resultado, resultado_next;
         reg [2:0] ALU_ctrl, ALU_ctrl_next; 
+        
+        wire [31:0] result_hex, result_dec;
+        wire [3:0] flags;
+        ALU inst_ALU(operador1, operador2, ALU_ctrl, result_hex, flags);
+        
+        double_dabble inst_double_dabble(
+            .clk(CLK82MHZ),
+            .trigger(),
+            .in(result_hex),
+            .idle(),
+            .bcd(result_dec)
+            );
+                     
         always@(*)
         begin
            operador1_next = operador1;
            operador2_next = operador2;
            ALU_ctrl_next = ALU_ctrl;
+           resultado_next = resultado;
+           next_hexdec = hexdec;
            case(state)
-               OPERADOR1_STATE: operador1_next = hex; 
-               OPERADOR2_STATE: operador2_next = hex;
+               OPERADOR1_STATE: 
+               begin
+                operador1_next = hex; 
+                next_hexdec = SW;
+                char_op1 = char;
+               end
+               OPERADOR2_STATE: 
+               begin
+                operador2_next = hex;
+                char_op2 = char;
+               end
                CONTROL_STATE: ALU_ctrl_next = control;
+               RESULTADO_STATE: resultado_next = (hexdec)? result_dec: result_hex;
            endcase
         end
         
@@ -96,6 +124,8 @@ module lab_6(
                 operador2 <= 'd0;
                 ALU_ctrl <= 'd0;
                 state <= OPERADOR1_STATE;
+                hexdec <= 1'b1;
+                resultado <= 'd0;
             end
             else
             begin
@@ -103,8 +133,12 @@ module lab_6(
                 operador2 <= operador2_next;
                 ALU_ctrl <= ALU_ctrl_next;
                 state <= next_state;
+                hexdec <= next_hexdec;
+                resultado <= resultado_next;
             end
-            
+    
+    numba_to_string char_inst(hex, char);
+    numba_to_string result_char_inst(resultado, char_resultado);  
         
 	wire [10:0]hc_template, vc_template;
 	wire [2:0]matrix_x;
@@ -143,11 +177,11 @@ module lab_6(
     show_one_line #(.MENU_X_LOCATION(digito_x + 4*length - 11'd20), .MENU_Y_LOCATION(digito_y + 3*length), .MAX_CHARACTER_LINE(3), .ancho_pixel('d5)) _exe(CLK82MHZ, rst, hc_visible, vc_visible, "exe", in_square_n[22], in_character_n[22]);
    
     wire in_sq, dr,in_sq_h, dr_h;  
-    hello_world_text_square #(.MENU_X_LOCATION(11'd762), .MENU_Y_LOCATION(11'd30), .MAX_CHARACTER_LINE(4)) m_hexdec(CLK82MHZ, 1'b0,"hex","dec","vcnz", hc_visible, vc_visible, in_sq_h, dr_h);
+    hello_world_text_square #(.MENU_X_LOCATION(11'd762), .MENU_Y_LOCATION(11'd30), .MAX_CHARACTER_LINE(6)) m_hexdec(CLK82MHZ, 1'b0,{"hex",((hexdec)? " ":"*")},{"dec",((hexdec)? "*":" ")},{(flags[0])?"v":" ",(flags[1])?"c":" ",(flags[2])?"n":" ",(flags[3])?"z":" "}, hc_visible, vc_visible, in_sq_h, dr_h);
     //show_one_line #(.MENU_X_LOCATION(11'd762), .MENU_Y_LOCATION(11'd134), .MAX_CHARACTER_LINE(3), .ancho_pixel('d5)) hex_char(CLK82MHZ, rst, hc_visible, vc_visible, "hex", , in_character_hex);     	
 	reg [11:0]VGA_COLOR;
 	
-	hello_world_text_square #(.MENU_X_LOCATION(11'd364), .MENU_Y_LOCATION(11'd30)) m_hw(CLK82MHZ, 1'b0,{char_op1," op1"},{"00000000","op2"},{"11111111","res"}, hc_visible, vc_visible, in_sq, dr);
+	hello_world_text_square #(.MENU_X_LOCATION(11'd364), .MENU_Y_LOCATION(11'd30)) m_hw(CLK82MHZ, 1'b0,{(state==OPERADOR1_STATE)?char:char_op1," op1"},{(state==OPERADOR2_STATE)?char:char_op1,"op2"},{char_resultado,"res"}, hc_visible, vc_visible, in_sq, dr);
 	
 	always@(*)
 		if((hc_visible != 0) && (vc_visible != 0))
