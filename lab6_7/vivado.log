@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Jun 27 14:19:51 2017
+# Process ID: 7212
+# Current directory: C:/Users/Diego/LabDigitales2017/lab6_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11324 C:\Users\Diego\LabDigitales2017\lab6_7\lab6_7.xpr
+# Log file: C:/Users/Diego/LabDigitales2017/lab6_7/vivado.log
+# Journal file: C:/Users/Diego/LabDigitales2017/lab6_7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Diego/LabDigitales2017/lab6_7/lab6_7.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 763.574 ; gain = 131.086
+eexit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 27 14:20:45 2017...

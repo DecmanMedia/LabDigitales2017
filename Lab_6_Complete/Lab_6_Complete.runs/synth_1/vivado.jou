@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Jul 28 20:05:49 2017
+# Process ID: 9788
+# Current directory: C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1
+# Command line: vivado.exe -log lab_6.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_6.tcl
+# Log file: C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/lab_6.vds
+# Journal file: C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab_6.tcl -notrace

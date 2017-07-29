@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Mon Jun 19 19:33:01 2017
+| Date         : Mon Jun 26 23:41:15 2017
 | Host         : LaptopDiewo running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file lab_6_control_sets_placed.rpt
 | Design       : lab_6
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     9 |
-| Unused register locations in slices containing registers |    27 |
+| Number of unique control sets                            |    85 |
+| Unused register locations in slices containing registers |   270 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,43 +33,120 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              25 |           15 |
-| No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              19 |            8 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | No                    | No                     |              55 |           34 |
+| No           | No                    | Yes                    |             138 |           47 |
+| No           | Yes                   | No                     |              14 |            6 |
+| Yes          | No                    | No                     |               5 |            2 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              33 |           13 |
+| Yes          | Yes                   | No                     |             526 |          179 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+---------------------+-------------------------------------+-------------------------------------------+------------------+----------------+
-|     Clock Signal    |            Enable Signal            |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
-+---------------------+-------------------------------------+-------------------------------------------+------------------+----------------+
-|  inst/inst/clk_out1 | m_driver/push_menu_minimat_y_reg[7] | m_hw/push_menu_minimat_y[3]_i_1_n_0       |                3 |              4 |
-|  inst/inst/clk_out1 |                                     | m_driver/hc[10]_i_1_n_0                   |                2 |              5 |
-|  inst/inst/clk_out1 | m_driver/vc[9]_i_2_n_0              | m_driver/vc[9]_i_1_n_0                    |                2 |              5 |
-|  inst/inst/clk_out1 |                                     | m_driver/row_reg[6]                       |                3 |              6 |
-|  inst/inst/clk_out1 | m_hw/push_menu_minimat_x[7]_i_1_n_0 | m_driver/menu_character_position_x_reg[0] |                2 |              6 |
-|  inst/inst/clk_out1 | m_driver/push_menu_minimat_y_reg[7] | m_driver/push_menu_minimat_y_reg[0]       |                2 |              7 |
-|  inst/inst/clk_out1 |                                     | m_driver/col_reg[7]                       |                3 |              8 |
-|  inst/inst/clk_out1 | m_hw/push_menu_minimat_x[7]_i_2_n_0 | m_hw/push_menu_minimat_x[7]_i_1_n_0       |                4 |             11 |
-|  inst/inst/clk_out1 |                                     |                                           |               15 |             25 |
-+---------------------+-------------------------------------+-------------------------------------------+------------------+----------------+
++---------------------+--------------------------------------------+----------------------------------------------+------------------+----------------+
+|     Clock Signal    |                Enable Signal               |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++---------------------+--------------------------------------------+----------------------------------------------+------------------+----------------+
+|  inst/inst/clk_out1 | e/push_menu_minimat_y[7]_i_1__8_n_0        | e/push_menu_minimat_y[3]_i_1__8_n_0          |                1 |              4 |
+|  inst/inst/clk_out1 | nueve/push_menu_minimat_y[7]_i_2__4_n_0    | nueve/push_menu_minimat_y[3]_i_1__16_n_0     |                2 |              4 |
+|  inst/inst/clk_out1 | f/push_menu_minimat_y[7]_i_1__20_n_0       | f/push_menu_minimat_y[3]_i_1__20_n_0         |                2 |              4 |
+|  inst/inst/clk_out1 | _and/push_menu_minimat_y[7]_i_1__11_n_0    | _and/push_menu_minimat_y[3]_i_1__11_n_0      |                2 |              4 |
+|  inst/inst/clk_out1 | ce/push_menu_minimat_y[7]_i_1__4_n_0       | ce/push_menu_minimat_y[3]_i_1__19_n_0        |                3 |              4 |
+|  inst/inst/clk_out1 | c/push_menu_minimat_y[7]_i_2__19_n_0       | c/push_menu_minimat_y[3]_i_1__5_n_0          |                2 |              4 |
+|  inst/inst/clk_out1 | dos/push_menu_minimat_y[7]_i_2__2_n_0      | dos/push_menu_minimat_y[3]_i_1__3_n_0        |                2 |              4 |
+|  inst/inst/clk_out1 | exe/push_menu_minimat_y[7]_i_2__6_n_0      | exe/push_menu_minimat_y[3]_i_1__18_n_0       |                2 |              4 |
+|  inst/inst/clk_out1 | seis/seis/                                 | m_driver/push_menu_minimat_x_reg[0]_14       |                1 |              4 |
+|  inst/inst/clk_out1 | multp/push_menu_minimat_y[7]_i_1__12_n_0   | multp/push_menu_minimat_y[3]_i_1__12_n_0     |                2 |              4 |
+|  inst/inst/clk_out1 | b/push_menu_minimat_y[7]_i_1__21_n_0       | b/push_menu_minimat_y[3]_i_1__21_n_0         |                1 |              4 |
+|  inst/inst/clk_out1 | siete/siete/                               | m_driver/push_menu_minimat_x_reg[5]_0        |                2 |              4 |
+|  inst/inst/clk_out1 | seis/push_menu_minimat_y[7]_i_1__10_n_0    | seis/push_menu_minimat_y[3]_i_1__10_n_0      |                2 |              4 |
+|  inst/inst/clk_out1 | uno/push_menu_minimat_y[7]_i_2__0_n_0      | uno/push_menu_minimat_y[3]_i_1__0_n_0        |                1 |              4 |
+|  inst/inst/clk_out1 | m_driver/push_menu_minimat_y_reg[7]        | tres/push_menu_minimat_y[3]_i_1_n_0          |                2 |              4 |
+|  inst/inst/clk_out1 | m_driver/push_menu_minimat_y_reg[7]_1      | cero/push_menu_minimat_y[3]_i_1__1_n_0       |                1 |              4 |
+|  inst/inst/clk_out1 | m_driver/push_menu_minimat_y_reg[7]_7      | m_hw/push_menu_minimat_y[3]_i_1__2_n_0       |                1 |              4 |
+|  inst/inst/clk_out1 | ocho/push_menu_minimat_y[7]_i_2__20_n_0    | ocho/push_menu_minimat_y[3]_i_1__6_n_0       |                2 |              4 |
+|  inst/inst/clk_out1 | cuatro/push_menu_minimat_y[7]_i_2__21_n_0  | cuatro/push_menu_minimat_y[3]_i_1__7_n_0     |                2 |              4 |
+|  inst/inst/clk_out1 | a/push_menu_minimat_y[7]_i_1__9_n_0        | a/push_menu_minimat_y[3]_i_1__9_n_0          |                2 |              4 |
+|  inst/inst/clk_out1 | _or/push_menu_minimat_y[7]_i_1__14_n_0     | _or/push_menu_minimat_y[3]_i_1__14_n_0       |                2 |              4 |
+|  inst/inst/clk_out1 | cinco/push_menu_minimat_y[7]_i_2__5_n_0    | cinco/push_menu_minimat_y[3]_i_1__17_n_0     |                1 |              4 |
+|  inst/inst/clk_out1 | d/push_menu_minimat_y[7]_i_2__3_n_0        | d/push_menu_minimat_y[3]_i_1__15_n_0         |                1 |              4 |
+|  inst/inst/clk_out1 | siete/push_menu_minimat_y[7]_i_1__22_n_0   | siete/push_menu_minimat_y[3]_i_1__22_n_0     |                2 |              4 |
+|  inst/inst/clk_out1 | m_driver/contador_pixels_verticales0       |                                              |                2 |              5 |
+|  inst/inst/clk_out1 | ce/ce/                                     | ce/push_menu_minimat_x[2]_i_1__22_n_0        |                2 |              5 |
+|  inst/inst/clk_out1 | menos/push_menu_minimat_y[7]_i_1__15_n_0   | menos/push_menu_minimat_y[5]_i_1__22_n_0     |                1 |              5 |
+|  inst/inst/clk_out1 | mas/push_menu_minimat_y[7]_i_2__22_n_0     | mas/push_menu_minimat_y[3]_i_1__13_n_0       |                2 |              5 |
+|  inst/inst/clk_out1 | m_driver/vc[9]_i_2_n_0                     | m_driver/vc[9]_i_1_n_0                       |                3 |              5 |
+|  inst/inst/clk_out1 | m_hw/push_menu_minimat_x[7]_i_2__1_n_0     | m_hw/push_menu_minimat_x[2]_i_1_n_0          |                2 |              5 |
+|  inst/inst/clk_out1 |                                            | m_driver/row_reg[6]_0                        |                2 |              6 |
+|  inst/inst/clk_out1 | ce/ce/                                     | m_driver/push_menu_minimat_x_reg[7]_0        |                1 |              6 |
+|  inst/inst/clk_out1 | ce/menu_character_position_x[5]_i_2__1_n_0 | m_driver/menu_character_position_x_reg[0]_0  |                2 |              6 |
+|  inst/inst/clk_out1 | exe/push_menu_minimat_x[7]_i_1__2_n_0      | m_driver/menu_character_position_x_reg[0]_1  |                2 |              6 |
+|  inst/inst/clk_out1 | menos/push_menu_minimat_y[7]_i_1__15_n_0   | m_driver/n_0_1312                            |                2 |              6 |
+|  inst/inst/clk_out1 | mas/push_menu_minimat_y[7]_i_2__22_n_0     | m_driver/n_0_1312                            |                2 |              6 |
+|  inst/inst/clk_out1 | m_hw/push_menu_minimat_x[2]_i_1_n_0        | m_hw/menu_character_position_x[5]_i_1__1_n_0 |                2 |              6 |
+|  inst/inst/clk_out1 | m_hw/push_menu_minimat_x[7]_i_2__1_n_0     | m_driver/push_menu_minimat_x_reg[0]_15       |                2 |              6 |
+|  inst/inst/clk_out1 | seis/push_menu_minimat_y[7]_i_1__10_n_0    | m_driver/n_0_1252                            |                2 |              7 |
+|  inst/inst/clk_out1 | seis/seis/                                 | seis/push_menu_minimat_x[7]_i_1__1_n_0       |                2 |              7 |
+|  inst/inst/clk_out1 | f/push_menu_minimat_y[7]_i_1__20_n_0       | m_driver/n_0_1240                            |                2 |              7 |
+|  inst/inst/clk_out1 | _and/push_menu_minimat_y[7]_i_1__11_n_0    | m_driver/n_0_1246                            |                2 |              7 |
+|  inst/inst/clk_out1 | m_driver/push_menu_minimat_y_reg[7]_1      | m_driver/push_menu_minimat_y_reg[0]_4        |                2 |              7 |
+|  inst/inst/clk_out1 | c/push_menu_minimat_y[7]_i_2__19_n_0       | m_driver/n_0_1240                            |                2 |              7 |
+|  inst/inst/clk_out1 | e/push_menu_minimat_y[7]_i_1__8_n_0        | m_driver/n_0_1240                            |                2 |              7 |
+|  inst/inst/clk_out1 | d/push_menu_minimat_y[7]_i_2__3_n_0        | m_driver/push_menu_minimat_y_reg[0]_7        |                2 |              7 |
+|  inst/inst/clk_out1 | b/push_menu_minimat_y[7]_i_1__21_n_0       | m_driver/n_0_1246                            |                2 |              7 |
+|  inst/inst/clk_out1 | _or/push_menu_minimat_y[7]_i_1__14_n_0     | m_driver/n_0_1252                            |                2 |              7 |
+|  inst/inst/clk_out1 | ocho/push_menu_minimat_y[7]_i_2__20_n_0    | m_driver/n_0_1246                            |                2 |              7 |
+|  inst/inst/clk_out1 | dos/push_menu_minimat_y[7]_i_2__2_n_0      | dos/push_menu_minimat_y[7]_i_1__3_n_0        |                2 |              7 |
+|  inst/inst/clk_out1 | nueve/push_menu_minimat_y[7]_i_2__4_n_0    | m_driver/push_menu_minimat_y_reg[0]_9        |                3 |              7 |
+|  inst/inst/clk_out1 | multp/push_menu_minimat_y[7]_i_1__12_n_0   | m_driver/n_0_1252                            |                2 |              7 |
+|  inst/inst/clk_out1 | uno/push_menu_minimat_y[7]_i_2__0_n_0      | uno/push_menu_minimat_y[7]_i_1__0_n_0        |                3 |              7 |
+|  inst/inst/clk_out1 | ce/push_menu_minimat_y[7]_i_1__4_n_0       | m_driver/n_0_1246                            |                2 |              7 |
+|  inst/inst/clk_out1 | m_driver/push_menu_minimat_y_reg[7]        | m_driver/push_menu_minimat_y_reg[0]_3        |                3 |              7 |
+|  inst/inst/clk_out1 | exe/push_menu_minimat_y[7]_i_2__6_n_0      | m_driver/push_menu_minimat_y_reg[0]_13       |                2 |              7 |
+|  inst/inst/clk_out1 | a/push_menu_minimat_y[7]_i_1__9_n_0        | m_driver/n_0_1246                            |                2 |              7 |
+|  inst/inst/clk_out1 | m_driver/push_menu_minimat_y_reg[7]_7      | m_driver/push_menu_minimat_y_reg[0]_5        |                2 |              7 |
+|  inst/inst/clk_out1 | cuatro/push_menu_minimat_y[7]_i_2__21_n_0  | m_driver/n_0_1252                            |                3 |              7 |
+|  inst/inst/clk_out1 | cinco/push_menu_minimat_y[7]_i_2__5_n_0    | m_driver/push_menu_minimat_y_reg[0]_11       |                2 |              7 |
+|  inst/inst/clk_out1 | siete/push_menu_minimat_y[7]_i_1__22_n_0   | m_driver/n_0_1252                            |                2 |              7 |
+|  inst/inst/clk_out1 | siete/siete/                               | siete/push_menu_minimat_x[7]_i_1__5_n_0      |                2 |              7 |
+|  inst/inst/clk_out1 | f/f/                                       | f/push_menu_minimat_x[7]_i_1__3_n_0          |                3 |              8 |
+|  inst/inst/clk_out1 |                                            | m_driver/col_reg[7]                          |                4 |              8 |
+|  inst/inst/clk_out1 | cinco/cinco/                               | cinco/push_menu_minimat_x[7]_i_1__15_n_0     |                4 |              8 |
+|  inst/inst/clk_out1 | multp/multp/                               | multp/push_menu_minimat_x[7]_i_1__11_n_0     |                3 |              9 |
+|  inst/inst/clk_out1 | exe/exe/                                   | exe/push_menu_minimat_x[7]_i_1__2_n_0        |                4 |             10 |
+|  inst/inst/clk_out1 | nueve/nueve/                               | nueve/push_menu_minimat_x[7]_i_1__22_n_0     |                3 |             10 |
+|  inst/inst/clk_out1 | e/e/                                       | e/push_menu_minimat_x[7]_i_1__20_n_0         |                3 |             10 |
+|  inst/inst/clk_out1 | a/a/                                       | a/push_menu_minimat_x[7]_i_1__0_n_0          |                3 |             10 |
+|  inst/inst/clk_out1 | menos/menos/                               | menos/push_menu_minimat_x[7]_i_1__21_n_0     |                3 |             10 |
+|  inst/inst/clk_out1 | c/c/                                       | c/push_menu_minimat_x[7]_i_1__18_n_0         |                4 |             10 |
+|  inst/inst/clk_out1 | b/b/                                       | b/push_menu_minimat_x[7]_i_1__4_n_0          |                3 |             10 |
+|  inst/inst/clk_out1 | tres/tres/                                 | tres/push_menu_minimat_x[7]_i_1__7_n_0       |                3 |             10 |
+|  inst/inst/clk_out1 | _and/_and/                                 | _and/push_menu_minimat_x[7]_i_1__10_n_0      |                3 |             10 |
+|  inst/inst/clk_out1 | _or/_or/                                   | _or/push_menu_minimat_x[7]_i_1__13_n_0       |                3 |             10 |
+|  inst/inst/clk_out1 | mas/mas/                                   | mas/push_menu_minimat_x[7]_i_1__12_n_0       |                3 |             10 |
+|  inst/inst/clk_out1 | cuatro/cuatro/                             | cuatro/push_menu_minimat_x[7]_i_1_n_0        |                3 |             10 |
+|  inst/inst/clk_out1 | d/d/                                       | d/push_menu_minimat_x[7]_i_1__14_n_0         |                3 |             10 |
+|  inst/inst/clk_out1 | cero/cero/                                 | cero/push_menu_minimat_x[7]_i_1__9_n_0       |                3 |             10 |
+|  inst/inst/clk_out1 | uno/uno/                                   | uno/push_menu_minimat_x[7]_i_1__8_n_0        |                3 |             10 |
+|  inst/inst/clk_out1 | dos/dos/                                   | dos/push_menu_minimat_x[7]_i_1__6_n_0        |                3 |             10 |
+|  inst/inst/clk_out1 | ocho/ocho/                                 | ocho/push_menu_minimat_x[7]_i_1__19_n_0      |                3 |             10 |
+|  inst/inst/clk_out1 |                                            |                                              |               34 |             55 |
+|  inst/inst/clk_out1 |                                            | rst_IBUF                                     |               47 |            138 |
++---------------------+--------------------------------------------+----------------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 4      |                     1 |
-| 5      |                     2 |
-| 6      |                     2 |
-| 7      |                     1 |
-| 8      |                     1 |
-| 11     |                     1 |
-| 16+    |                     1 |
+| 4      |                    24 |
+| 5      |                     6 |
+| 6      |                     8 |
+| 7      |                    24 |
+| 8      |                     3 |
+| 9      |                     1 |
+| 10     |                    17 |
+| 16+    |                     2 |
 +--------+-----------------------+
 
 

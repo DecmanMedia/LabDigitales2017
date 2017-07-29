@@ -2,18 +2,28 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+<<<<<<< HEAD
 # Start of session at: Tue Jun 20 17:24:51 2017
 # Process ID: 10376
 # Current directory: C:/GitHub/LabDigitales2017/Lab5_MasterSlave
 # Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7536 C:\GitHub\LabDigitales2017\Lab5_MasterSlave\Lab5_MasterSlave.xpr
 # Log file: C:/GitHub/LabDigitales2017/Lab5_MasterSlave/vivado.log
 # Journal file: C:/GitHub/LabDigitales2017/Lab5_MasterSlave\vivado.jou
+=======
+# Start of session at: Fri Jul 28 19:43:51 2017
+# Process ID: 9836
+# Current directory: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7968 C:\Users\Diego\LabDigitales2017\Lab5_MasterSlave\Lab5_MasterSlave.xpr
+# Log file: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave/vivado.log
+# Journal file: C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave\vivado.jou
+>>>>>>> Pruebas
 #-----------------------------------------------------------
 start_gui
 open_project C:/GitHub/LabDigitales2017/Lab5_MasterSlave/Lab5_MasterSlave.xpr
 INFO: [Project 1-313] Project file moved from 'C:/Users/Diego/LabDigitales2017/Lab5_MasterSlave' since last save.
 Scanning sources...
 Finished scanning sources
+<<<<<<< HEAD
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
@@ -176,3 +186,7 @@ WARNING: [Vivado 12-1017] Problems encountered:
 
 exit
 INFO: [Common 17-206] Exiting Vivado at Tue Jun 20 18:16:01 2017...
+=======
+ERROR: [Project 1-510] Parsing generated run data failed
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 28 19:44:23 2017...
+>>>>>>> Pruebas

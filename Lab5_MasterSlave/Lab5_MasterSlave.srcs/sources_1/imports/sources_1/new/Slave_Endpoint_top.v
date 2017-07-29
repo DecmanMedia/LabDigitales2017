@@ -23,15 +23,11 @@
 module Slave_Endpoint_top(
     input rx, CLK100MHZ, rst,
     output [7:0] AN,
-    output [7:0] SEG,
+    output CA, CB, CC, CD, CE, CF, CG, DP,
     output tx,
-    output [7:0] LED,
-    output ld
-    //output [3:0] state_rx
+    output [7:0] LED
     );
     
-    wire CA, CB, CC, CD, CE, CF, CG, DP;
-    assign SEG = {DP, CG, CF, CE, CD, CC, CB, CA};
        
     wire [7:0] rx_data, tx_data;
     wire rx_ready,tx_start,trigger, tx_busy, ready;
@@ -62,8 +58,8 @@ module Slave_Endpoint_top(
             .tx_operador1(operador1),
             .tx_operador2(operador2),
             .tx_ALU_ctrl(ALU_ctrl),
-            .state_alu(state_ALU)
-            //.state(state_rx)
+            .state_alu(state_ALU),
+            .state(LED[7:4])
             );
             
         lab_4 ALU_DISPLAY(
@@ -83,12 +79,13 @@ module Slave_Endpoint_top(
             .CE(CE),
             .CF(CF), 
             .CG(CG), 
-            .DP(DP)           
+            .DP(DP),
+            .estado_actual(LED[2:0])           
             );
        
     reg [15:0] resultado_p = 16'h8;        
     TX_CTRL TX_CTRL_inst(
-        .rst(~rst),
+        .rst(rst),
         .resultOut16(resultado),
         .ready(ready),
         .clk(CLK100MHZ),
@@ -97,8 +94,5 @@ module Slave_Endpoint_top(
         .tx_busy(tx_busy)
         
         );
-    
-    assign LED = tx_data; 
-    assign ld = tx;  
             
 endmodule

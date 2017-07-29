@@ -34,20 +34,22 @@
 module hello_world_text_square(
 	input clk, 
 	input rst, 
+	input [(MAX_CHARACTER_LINE * 8) - 1 : 0] text,
 	input [10:0]hc_visible,
 	input [10:0]vc_visible,
 	output in_square,
 	output reg in_character
+	
 	);
 	
-	
-	localparam ancho_pixel = 			2'd3;			//ancho y alto de cada pixel que compone a un caracter.
-	localparam MENU_X_LOCATION =		11'd70;
-	localparam MENU_Y_LOCATION =		11'd50;
+	localparam n = 4;
+	localparam ancho_pixel = 			'd6;			//ancho y alto de cada pixel que compone a un caracter.
+	parameter MENU_X_LOCATION =		11'd70;
+	parameter MENU_Y_LOCATION =		11'd50;
 	localparam CHARACTER_WIDTH = 		8'd5;
 	localparam CHARACTER_HEIGHT = 		8'd8;
 	localparam MAX_CHARACTER_LINE = 	10;		//habran 10 caracteres por linea
-	localparam MAX_NUMBER_LINES = 		2;		//numero de lineas
+	localparam MAX_NUMBER_LINES = 		1;		//numero de lineas
 	localparam MENU_WIDTH = 			( CHARACTER_WIDTH + 8'd1 ) * MAX_CHARACTER_LINE * ancho_pixel;
 	localparam MENU_HEIGHT =			(CHARACTER_HEIGHT) * MAX_NUMBER_LINES * ancho_pixel;
 	localparam MENU_X_TOP = 			MENU_X_LOCATION + MENU_WIDTH;
@@ -77,11 +79,11 @@ module hello_world_text_square(
 	assign hc_visible_menu=( (hc_visible >= MENU_X_LOCATION) && (hc_visible <= MENU_X_TOP) )? hc_visible - MENU_X_LOCATION:11'd0;
 	assign vc_visible_menu=( (vc_visible >= MENU_Y_LOCATION) && (vc_visible <= MENU_Y_TOP) )? vc_visible - MENU_Y_LOCATION:11'd0;
 	
-	reg [1:0]contador_pixels_horizontales;	//este registro cuenta de 0 a 2
-	reg [1:0]contador_pixels_verticales;	//este registro cuenta de 0 a 2
+	reg [n:0]contador_pixels_horizontales;	//este registro cuenta de 0 a 2
+	reg [n:0]contador_pixels_verticales;	//este registro cuenta de 0 a 2
 	
-	reg [1:0]contador_pixels_horizontales_next;
-	reg [1:0]contador_pixels_verticales_next;
+	reg [n:0]contador_pixels_horizontales_next;
+	reg [n:0]contador_pixels_verticales_next;
 	//1 pixel por pixel de letra
 	
 	//contando cada 3 pixeles
@@ -195,8 +197,7 @@ module hello_world_text_square(
 	
 	wire [8 * MAX_CHARACTER_LINE - 1:0] textos[0:MAX_NUMBER_LINES - 1'd1];
 	
-	assign textos[0]="hola mundo";
-	assign textos[1]={"elo212 ", 8'd164, "am"};
+	assign textos[0]=text;
 	wire [8 * MAX_CHARACTER_LINE - 1:0] tex_row_tmp;
 	
 	wire [7:0]select;
@@ -440,7 +441,7 @@ module show_one_line(
 	parameter MENU_Y_LOCATION =			11'd50;
 	localparam CHARACTER_WIDTH = 		8'd5;
 	localparam CHARACTER_HEIGHT = 		8'd8;
-	localparam MAX_CHARACTER_LINE = 	10;		//habran 10 caracteres por linea
+	parameter MAX_CHARACTER_LINE = 	10;		//habran 10 caracteres por linea
 	localparam MAX_NUMBER_LINES = 		1;		//numero de lineas
 	localparam MENU_WIDTH = 			( CHARACTER_WIDTH + 8'd1 ) * MAX_CHARACTER_LINE * ancho_pixel;
 	localparam MENU_HEIGHT =			(CHARACTER_HEIGHT) * MAX_NUMBER_LINES * ancho_pixel;

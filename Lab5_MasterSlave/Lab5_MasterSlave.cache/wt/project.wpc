@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version:1
 00000000:0
 0000000000fff›0f0ffff›0f:0
@@ -5,3 +6,14 @@ version:1
 6d6f64655f636f756e7465727c4755494d6f6465:9
 fff›0f0ffff›fff›fff›fff›fff›0f0ffff›fff›0f0ffff›0f0ffff›fff›fff›0f0ffff›fff›fff›fff›fff›0f0f34316ffff›fff›0f0ffff›0f0ffff›fff›2efff›0f0ffff›fff›fff›fff›fff›fff›0f0f00fff›fff›fff›0f0f56fff›0f0ffff›fff›fff›0f0ffff›fff›fff›0f0ffff›fff›fff›fff›fff›0f0f:0
 eof:
+=======
+version:1
+00000000:0
+<<<<<<< HEAD
+57656254616c6b5472616e736d697373696f6e417474656d70746564:55
+=======
+57656254616c6b5472616e736d697373696f6e417474656d70746564:50
+>>>>>>> aa489a11a4d33a010fdff90a8de7d3afb440969a
+6d6f64655f636f756e7465727c4755494d6f6465:10
+eof:
+>>>>>>> Pruebas

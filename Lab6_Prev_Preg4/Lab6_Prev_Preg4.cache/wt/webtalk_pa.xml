@@ -4,12 +4,16 @@
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
 <<<<<<< HEAD
+<<<<<<< HEAD
 <application name="pa" timeStamp="Mon Jun 19 19:23:47 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="bf5f0c1bc1284c0fb592aa4e93b2a532" type="ProjectID"/>
 <property name="ProjectIteration" value="8" type="ProjectIteration"/>
 =======
 <application name="pa" timeStamp="Mon Jun 19 18:55:53 2017">
+=======
+<application name="pa" timeStamp="Tue Jun 27 14:24:42 2017">
+>>>>>>> Pruebas
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="267ded7a692d49fc845a767ba97eaa5c" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -74,6 +78,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="NewProject" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="10" type="GuiResourceData"/>
 <property name="MainMenuMgr_FILE" value="2" type="GuiResourceData"/>
 <property name="PACommandNames_NEW_PROJECT" value="1" type="GuiResourceData"/>
 <property name="PartChooser_PARTS" value="1" type="GuiResourceData"/>
@@ -81,10 +86,14 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="53" type="GuiMode"/>
+<property name="GuiMode" value="67" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
+<<<<<<< HEAD
 <property name="TclMode" value="38" type="TclMode"/>
 >>>>>>> d2e95e4104aacebf36f82675ecb8c5162f0d1049
+=======
+<property name="TclMode" value="46" type="TclMode"/>
+>>>>>>> Pruebas
 </item>
 </section>
 </application>
