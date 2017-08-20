@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1503267654">
+  <File Type="RDS-PROPCONSTRS" Name="ejemplo_sensor_de_temperatura_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="ejemplo_sensor_de_temperatura.tcl"/>
+  <File Type="RDS-RDS" Name="ejemplo_sensor_de_temperatura.vds"/>
+  <File Type="RDS-UTIL" Name="ejemplo_sensor_de_temperatura_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ejemplo_sensor_de_temperatura_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ejemplo_sensor_de_temperatura.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ejemplo_sensor_de_temperatura_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ejemplo_sensor_de_temperatura_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/Sebastián Quiroz/Desktop/ejemplo_temperatura_en_display/TWICtl.vhd"/>
+        <Attr Name="ImportTime" Val="1497132430"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ejemplo_temperatura_en_display/bcd_to_ss.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/Sebastián Quiroz/Desktop/ejemplo_temperatura_en_display/bcd_to_ss.v"/>
+        <Attr Name="ImportTime" Val="1492819698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ejemplo_temperatura_en_display/unsigned_to_bcd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/Sebastián Quiroz/Desktop/ejemplo_temperatura_en_display/unsigned_to_bcd.v"/>
+        <Attr Name="ImportTime" Val="1492674916"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ejemplo_temperatura_en_display/TempSensorCtl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/Sebastián Quiroz/Desktop/ejemplo_temperatura_en_display/TempSensorCtl.vhd"/>
+        <Attr Name="ImportTime" Val="1497132881"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ejemplo_temperatura_en_display/ss_mux.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/Sebastián Quiroz/Desktop/ejemplo_temperatura_en_display/ss_mux.v"/>
+        <Attr Name="ImportTime" Val="1492747830"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ejemplo_temperatura_en_display/clk_divider.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/Sebastián Quiroz/Desktop/ejemplo_temperatura_en_display/clk_divider.v"/>
+        <Attr Name="ImportTime" Val="1492810822"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ejemplo_temperatura_en_display/ejemplo_sensor_de_temperatura.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/Sebastián Quiroz/Desktop/ejemplo_temperatura_en_display/ejemplo_sensor_de_temperatura.v"/>
+        <Attr Name="ImportTime" Val="1498143940"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ejemplo_sensor_de_temperatura"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../The Final Alcachofita.xdc"/>
+        <Attr Name="ImportTime" Val="1497392452"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

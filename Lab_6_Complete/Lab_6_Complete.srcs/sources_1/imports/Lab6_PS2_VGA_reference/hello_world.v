@@ -51,7 +51,7 @@ module hello_world_text_square(
 	localparam CHARACTER_WIDTH = 		8'd5;
 	localparam CHARACTER_HEIGHT = 		8'd8;
 	parameter MAX_CHARACTER_LINE = 	12;		//habran 10 caracteres por linea
-	localparam MAX_NUMBER_LINES = 		3;		//numero de lineas
+	parameter MAX_NUMBER_LINES = 		3;		//numero de lineas
 	localparam MENU_WIDTH = 			( CHARACTER_WIDTH + 8'd1 ) * MAX_CHARACTER_LINE * ancho_pixel;
 	localparam MENU_HEIGHT =			(CHARACTER_HEIGHT) * MAX_NUMBER_LINES * ancho_pixel;
 	localparam MENU_X_TOP = 			MENU_X_LOCATION + MENU_WIDTH;

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Aug 16 16:25:42 2017
+# Process ID: 6604
+# Current directory: C:/GitHub/LabDigitales2017/Lab_6_Complete
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6336 C:\GitHub\LabDigitales2017\Lab_6_Complete\Lab_6_Complete.xpr
+# Log file: C:/GitHub/LabDigitales2017/Lab_6_Complete/vivado.log
+# Journal file: C:/GitHub/LabDigitales2017/Lab_6_Complete\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.xpr
