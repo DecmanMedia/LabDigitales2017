@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Aug 20 20:39:54 2017
+# Process ID: 8184
+# Current directory: C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/impl_1
+# Command line: vivado.exe -log Final_Project.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Final_Project.tcl -notrace
+# Log file: C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/impl_1/Final_Project.vdi
+# Journal file: C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Final_Project.tcl -notrace

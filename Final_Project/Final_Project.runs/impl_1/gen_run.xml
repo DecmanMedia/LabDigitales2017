@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1503272308">
+  <File Type="PWROPT-DRC" Name="Final_Project_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Final_Project_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Final_Project_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Final_Project_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="Final_Project.tcl"/>
+  <File Type="OPT-HWDEF" Name="Final_Project.hwdef"/>
+  <File Type="RDI-RDI" Name="Final_Project.vdi"/>
+  <File Type="OPT-DCP" Name="Final_Project_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Final_Project_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="Final_Project_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Final_Project_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="Final_Project_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Final_Project_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Final_Project_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Final_Project_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Final_Project_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Final_Project_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Final_Project_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Final_Project_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Final_Project_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Final_Project_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Final_Project_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Final_Project_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Final_Project_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Final_Project_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="Final_Project_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Final_Project_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Final_Project_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Final_Project_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Final_Project_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Final_Project_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="Final_Project.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="Final_Project_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="Final_Project.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Final_Project_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="Final_Project.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Final_Project_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="Final_Project.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Final_Project_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Final_Project_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Final_Project_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="Final_Project_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Final_Project_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Final_Project_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Final_Project_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Final_Project_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Final_Project_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Final_Project_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Final_Project_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Final_Project_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Final_Project_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Final_Project_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Final_Project_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="Final_Project.bit"/>
+  <File Type="BITSTR-RBT" Name="Final_Project.rbt"/>
+  <File Type="BITSTR-NKY" Name="Final_Project.nky"/>
+  <File Type="BITSTR-BMM" Name="Final_Project_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Final_Project.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Final_Project.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Final_Project.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Interfaz_Seba.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Grafico_Diego.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v"/>
+        <Attr Name="ImportTime" Val="1501287495"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab6_PS2_VGA_reference/templates.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v"/>
+        <Attr Name="ImportTime" Val="1501287495"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Final_Project"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../The Final Alcachofita.xdc"/>
+        <Attr Name="ImportTime" Val="1491924669"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

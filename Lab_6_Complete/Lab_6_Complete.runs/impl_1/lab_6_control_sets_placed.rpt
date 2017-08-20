@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Fri Jul 28 20:09:27 2017
+| Date         : Wed Aug 16 18:18:07 2017
 | Host         : LaptopDiewo running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file lab_6_control_sets_placed.rpt
 | Design       : lab_6
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |   112 |
-| Unused register locations in slices containing registers |   345 |
+| Number of unique control sets                            |   113 |
+| Unused register locations in slices containing registers |   361 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,149 +33,150 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             148 |           85 |
-| No           | No                    | Yes                    |             138 |           43 |
-| No           | Yes                   | No                     |              18 |            5 |
-| Yes          | No                    | No                     |             112 |           35 |
+| No           | No                    | No                     |             188 |          100 |
+| No           | No                    | Yes                    |             138 |           46 |
+| No           | Yes                   | No                     |              23 |           12 |
+| Yes          | No                    | No                     |             116 |           37 |
 | Yes          | No                    | Yes                    |               4 |            2 |
-| Yes          | Yes                   | No                     |             683 |          235 |
+| Yes          | Yes                   | No                     |             682 |          226 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------------------------------+-----------------------------------------------+-----------------------------------------------+------------------+----------------+
-|                    Clock Signal                    |                 Enable Signal                 |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
-+----------------------------------------------------+-----------------------------------------------+-----------------------------------------------+------------------+----------------+
-|  cursor_inst/position_x[2]                         |                                               |                                               |                1 |              3 |
-|  cursor_inst/translate_inst/hex_inferred__0/i__n_0 |                                               |                                               |                1 |              4 |
-|  inst/inst/clk_out1                                | seis/push_menu_minimat_y[7]_i_1__1_n_0        | seis/push_menu_minimat_y[3]_i_1__16_n_0       |                2 |              4 |
-|  inst/inst/clk_out1                                | cinco/push_menu_minimat_y[7]_i_2__20_n_0      | cinco/push_menu_minimat_y[3]_i_1__6_n_0       |                2 |              4 |
-|  inst/inst/clk_out1                                | uno/push_menu_minimat_y[7]_i_1__4_n_0         | uno/push_menu_minimat_y[3]_i_1__21_n_0        |                2 |              4 |
-|  inst/inst/clk_out1                                | uno/uno/                                      | m_driver/push_menu_minimat_x_reg[0]_9         |                2 |              4 |
-|  inst/inst/clk_out1                                | dos/push_menu_minimat_y[7]_i_1__3_n_0         | dos/push_menu_minimat_y[3]_i_1__20_n_0        |                2 |              4 |
-|  inst/inst/clk_out1                                | b/push_menu_minimat_y[7]_i_1__16_n_0          | b/push_menu_minimat_y[3]_i_1__13_n_0          |                1 |              4 |
-|  inst/inst/clk_out1                                | c/push_menu_minimat_y[7]_i_2__21_n_0          | c/push_menu_minimat_y[3]_i_1__11_n_0          |                2 |              4 |
-|  inst/inst/clk_out1                                | a/push_menu_minimat_y[7]_i_1__0_n_0           | a/push_menu_minimat_y[3]_i_1__15_n_0          |                2 |              4 |
-|  inst/inst/clk_out1                                | siete/push_menu_minimat_y[7]_i_1__22_n_0      | siete/push_menu_minimat_y[3]_i_1__23_n_0      |                2 |              4 |
-|  inst/inst/clk_out1                                | cuatro/cuatro/                                | m_driver/push_menu_minimat_x_reg[0]_8         |                2 |              4 |
-|  inst/inst/clk_out1                                | multp/push_menu_minimat_y[7]_i_1__12_n_0      | multp/push_menu_minimat_y[3]_i_1__9_n_0       |                2 |              4 |
-|  inst/inst/clk_out1                                | m_driver/push_menu_minimat_y_reg[7]_2         | m_driver/pixel_y_to_show_reg[0]_5             |                2 |              4 |
-|  inst/inst/clk_out1                                | nueve/push_menu_minimat_y[7]_i_1__8_n_0       | nueve/push_menu_minimat_y[3]_i_1__5_n_0       |                1 |              4 |
-|  inst/inst/clk_out1                                | m_driver/push_menu_minimat_y_reg[7]_5         | m_driver/pixel_y_to_show_reg[0]_4             |                2 |              4 |
-|  inst/inst/clk_out1                                | _ce/push_menu_minimat_y[7]_i_2__23_n_0        | _ce/push_menu_minimat_y[3]_i_1__17_n_0        |                2 |              4 |
-|  inst/inst/clk_out1                                | FSM_onehot_state[3]_i_1__0_n_0                | rst_IBUF                                      |                1 |              4 |
-|  inst/inst/clk_out1                                | m_hexdec/push_menu_minimat_x[7]_i_2__9_n_0    | m_driver/push_menu_minimat_x_reg[7]           |                2 |              4 |
-|  inst/inst/clk_out1                                | _and/push_menu_minimat_y[7]_i_1__11_n_0       | _and/push_menu_minimat_y[3]_i_1__8_n_0        |                1 |              4 |
-|  inst/inst/clk_out1                                | mas/push_menu_minimat_y[7]_i_2_n_0            | mas/push_menu_minimat_y[3]_i_1__10_n_0        |                2 |              4 |
-|  inst/inst/clk_out1                                | menos/push_menu_minimat_y[7]_i_1__10_n_0      | menos/push_menu_minimat_y[3]_i_1__7_n_0       |                1 |              4 |
-|  inst/inst/clk_out1                                | ocho/push_menu_minimat_y[7]_i_2__22_n_0       | ocho/push_menu_minimat_y[3]_i_1__12_n_0       |                1 |              4 |
-|  inst/inst/clk_out1                                | cero/push_menu_minimat_y[7]_i_2__2_n_0        | cero/push_menu_minimat_y[3]_i_1__19_n_0       |                2 |              4 |
-|  inst/inst/clk_out1                                | siete/siete/                                  | m_driver/push_menu_minimat_x_reg[6]_0         |                2 |              4 |
-|  inst/inst/clk_out1                                | m_kd/m_ps2read/data_in_counter[3]_i_1_n_0     |                                               |                2 |              4 |
-|  inst/inst/clk_out1                                | inst_double_dabble/shift[23]_i_1_n_0          |                                               |                1 |              4 |
-|  inst/inst/clk_out1                                | m_kd/m_ps2read/E[0]                           | m_kd/m_ps2read/AR[0]                          |                2 |              4 |
-|  inst/inst/clk_out1                                | tres/push_menu_minimat_y[7]_i_1__2_n_0        | tres/push_menu_minimat_y[3]_i_1__18_n_0       |                2 |              4 |
-|  inst/inst/clk_out1                                | inst_double_dabble/shift[11]_i_1_n_0          |                                               |                1 |              4 |
-|  inst/inst/clk_out1                                | inst_double_dabble/shift[15]_i_1_n_0          |                                               |                1 |              4 |
-|  inst/inst/clk_out1                                | inst_double_dabble/shift[19]_i_1_n_0          |                                               |                1 |              4 |
-|  inst/inst/clk_out1                                | inst_double_dabble/shift[27]_i_1_n_0          |                                               |                1 |              4 |
-|  inst/inst/clk_out1                                | inst_double_dabble/shift[31]_i_1_n_0          |                                               |                1 |              4 |
-|  inst/inst/clk_out1                                | inst_double_dabble/shift[3]_i_1_n_0           |                                               |                1 |              4 |
-|  inst/inst/clk_out1                                | inst_double_dabble/shift[7]_i_1_n_0           |                                               |                1 |              4 |
-|  inst/inst/clk_out1                                | e/push_menu_minimat_y[7]_i_1_n_0              | e/push_menu_minimat_y[3]_i_1__14_n_0          |                2 |              4 |
-|  inst/inst/clk_out1                                | d/push_menu_minimat_y[7]_i_1__7_n_0           | d/push_menu_minimat_y[3]_i_1__4_n_0           |                2 |              4 |
-|  inst/inst/clk_out1                                | _or/push_menu_minimat_y[7]_i_1__21_n_0        | _or/push_menu_minimat_y[3]_i_1__22_n_0        |                2 |              4 |
-|  inst/inst/clk_out1                                | m_driver/contador_pixels_verticales0_0        |                                               |                2 |              5 |
-|  inst/inst/clk_out1                                | m_driver/contador_pixels_verticales0_1        |                                               |                2 |              5 |
-|  inst/inst/clk_out1                                | cuatro/push_menu_minimat_y[7]_i_2__1_n_0      | cuatro/push_menu_minimat_y[7]_i_1__18_n_0     |                2 |              5 |
-|  inst/inst/clk_out1                                | m_driver/push_menu_minimat_y_reg[7]_6         | m_driver/pixel_y_to_show_reg[0]_7             |                2 |              5 |
-|  inst/inst/clk_out1                                |                                               | m_driver/col_reg[7]                           |                2 |              6 |
-|  inst/inst/clk_out1                                |                                               | m_driver/row_reg[6]                           |                1 |              6 |
-|  inst/inst/clk_out1                                | cuatro/push_menu_minimat_y[7]_i_2__1_n_0      | m_driver/push_menu_minimat_y_reg[0]_8         |                2 |              6 |
-|  inst/inst/clk_out1                                | m_hw/menu_character_position_x[5]_i_2__2_n_0  | m_driver/menu_character_position_x_reg[0]_3   |                2 |              6 |
-|  inst/inst/clk_out1                                | m_driver/push_menu_minimat_y_reg[7]_6         | m_driver/push_menu_minimat_y_reg[0]_9         |                2 |              6 |
-|  inst/inst/clk_out1                                | cursor_inst/FSM_onehot_state[5]_i_1_n_0       | rst_IBUF                                      |                1 |              6 |
-|  inst/inst/clk_out1                                | _ce/push_menu_minimat_x[7]_i_1__1_n_0         | m_driver/menu_character_position_x_reg[0]_1   |                2 |              6 |
-|  inst/inst/clk_out1                                | m_hexdec/menu_character_position_x[5]_i_2_n_0 | m_hexdec/menu_character_position_x[5]_i_1_n_0 |                3 |              6 |
-|  inst/inst/clk_out1                                | _exe/push_menu_minimat_x[7]_i_1__8_n_0        | m_driver/menu_character_position_x_reg[0]_2   |                2 |              6 |
-|  inst/inst/clk_out1                                | inst_double_dabble/counter[5]_i_1_n_0         |                                               |                4 |              6 |
-|  inst/inst/clk_out1                                | _or/push_menu_minimat_y[7]_i_1__21_n_0        | m_driver/n_0_2178                             |                2 |              7 |
-|  inst/inst/clk_out1                                | ocho/push_menu_minimat_y[7]_i_2__22_n_0       | m_driver/n_0_2115                             |                2 |              7 |
-|  inst/inst/clk_out1                                | nueve/push_menu_minimat_y[7]_i_1__8_n_0       | m_driver/n_0_2115                             |                2 |              7 |
-|  inst/inst/clk_out1                                | m_driver/push_menu_minimat_y_reg[7]_5         | m_driver/push_menu_minimat_y_reg[0]_2         |                2 |              7 |
-|  inst/inst/clk_out1                                | a/push_menu_minimat_y[7]_i_1__0_n_0           | m_driver/n_0_2115                             |                3 |              7 |
-|  inst/inst/clk_out1                                | b/push_menu_minimat_y[7]_i_1__16_n_0          | m_driver/n_0_2115                             |                2 |              7 |
-|  inst/inst/clk_out1                                | _and/push_menu_minimat_y[7]_i_1__11_n_0       | m_driver/n_0_2115                             |                3 |              7 |
-|  inst/inst/clk_out1                                | c/push_menu_minimat_y[7]_i_2__21_n_0          | m_driver/n_0_2109                             |                2 |              7 |
-|  inst/inst/clk_out1                                | d/push_menu_minimat_y[7]_i_1__7_n_0           | m_driver/n_0_2109                             |                2 |              7 |
-|  inst/inst/clk_out1                                | e/push_menu_minimat_y[7]_i_1_n_0              | m_driver/n_0_2109                             |                2 |              7 |
-|  inst/inst/clk_out1                                | tres/push_menu_minimat_y[7]_i_1__2_n_0        | m_driver/n_0_2274                             |                2 |              7 |
-|  inst/inst/clk_out1                                | mas/push_menu_minimat_y[7]_i_2_n_0            | m_driver/n_0_2141                             |                2 |              7 |
-|  inst/inst/clk_out1                                | cuatro/cuatro/                                | cuatro/push_menu_minimat_x[6]_i_1__21_n_0     |                2 |              7 |
-|  inst/inst/clk_out1                                | cinco/push_menu_minimat_y[7]_i_2__20_n_0      | m_driver/n_0_2178                             |                2 |              7 |
-|  inst/inst/clk_out1                                | seis/push_menu_minimat_y[7]_i_1__1_n_0        | m_driver/n_0_2178                             |                2 |              7 |
-|  inst/inst/clk_out1                                | siete/push_menu_minimat_y[7]_i_1__22_n_0      | m_driver/n_0_2178                             |                2 |              7 |
-|  inst/inst/clk_out1                                | m_driver/push_menu_minimat_y_reg[7]_2         | m_driver/push_menu_minimat_y_reg[0]_3         |                2 |              7 |
-|  inst/inst/clk_out1                                | menos/push_menu_minimat_y[7]_i_1__10_n_0      | m_driver/n_0_2141                             |                2 |              7 |
-|  inst/inst/clk_out1                                | siete/siete/                                  | siete/push_menu_minimat_x[7]_i_1__19_n_0      |                3 |              7 |
-|  inst/inst/clk_out1                                | multp/push_menu_minimat_y[7]_i_1__12_n_0      | m_driver/n_0_2178                             |                2 |              7 |
-|  inst/inst/clk_out1                                | m_hexdec/push_menu_minimat_x[7]_i_2__9_n_0    | m_hexdec/push_menu_minimat_x[5]_i_1__21_n_0   |                2 |              7 |
-|  inst/inst/clk_out1                                | cero/push_menu_minimat_y[7]_i_2__2_n_0        | m_driver/n_0_2274                             |                2 |              7 |
-|  inst/inst/clk_out1                                | _ce/push_menu_minimat_y[7]_i_2__23_n_0        | m_driver/push_menu_minimat_y_reg[0]_7         |                2 |              7 |
-|  inst/inst/clk_out1                                | uno/push_menu_minimat_y[7]_i_1__4_n_0         | m_driver/n_0_2274                             |                2 |              7 |
-|  inst/inst/clk_out1                                | uno/uno/                                      | uno/push_menu_minimat_x[5]_i_1__15_n_0        |                2 |              7 |
-|  inst/inst/clk_out1                                | dos/push_menu_minimat_y[7]_i_1__3_n_0         | m_driver/n_0_2274                             |                2 |              7 |
-|  inst/inst/clk_out1                                | m_driver/push_menu_minimat_y_reg[0]_5         | m_driver/push_menu_minimat_y_reg[7]_11        |                2 |              8 |
-|  inst/inst/clk_out1                                | _exe/_exe/                                    | _exe/push_menu_minimat_x[7]_i_1__8_n_0        |                3 |              8 |
-|  inst/inst/clk_out1                                | m_hw/push_menu_minimat_x[7]_i_2__10_n_0       | m_hw/push_menu_minimat_x[7]_i_1_n_0           |                3 |              8 |
-|  inst/inst/clk_out1                                | m_kd/m_ps2read/data[7]_i_1_n_0                |                                               |                2 |              8 |
-|  inst/inst/clk_out1                                | d/d/                                          | d/push_menu_minimat_x[7]_i_1__0_n_0           |                3 |              8 |
-|  inst/inst/clk_out1                                | m_kd/m_ps2read/shift[10]_i_1__0_n_0           |                                               |                2 |              9 |
-|  inst/inst/clk_out1                                | mas/mas/                                      | mas/push_menu_minimat_x[7]_i_1__17_n_0        |                3 |             10 |
-|  inst/inst/clk_out1                                | nueve/nueve/                                  | nueve/push_menu_minimat_x[7]_i_1__13_n_0      |                3 |             10 |
-|  inst/inst/clk_out1                                | menos/menos/                                  | menos/push_menu_minimat_x[7]_i_1__3_n_0       |                3 |             10 |
-|  inst/inst/clk_out1                                | cero/cero/                                    | cero/push_menu_minimat_x[7]_i_1__23_n_0       |                3 |             10 |
-|  inst/inst/clk_out1                                | _or/_or/                                      | _or/push_menu_minimat_x[7]_i_1__2_n_0         |                3 |             10 |
-|  inst/inst/clk_out1                                | tres/tres/                                    | tres/push_menu_minimat_x[7]_i_1__5_n_0        |                3 |             10 |
-|  inst/inst/clk_out1                                | cinco/cinco/                                  | cinco/push_menu_minimat_x[7]_i_1__14_n_0      |                3 |             10 |
-|  inst/inst/clk_out1                                | c/c/                                          | c/push_menu_minimat_x[7]_i_1__6_n_0           |                3 |             10 |
-|  inst/inst/clk_out1                                | b/b/                                          | b/push_menu_minimat_x[7]_i_1__18_n_0          |                3 |             10 |
-|  inst/inst/clk_out1                                | seis/seis/                                    | seis/push_menu_minimat_x[7]_i_1__22_n_0       |                3 |             10 |
-|  inst/inst/clk_out1                                | dos/dos/                                      | dos/push_menu_minimat_x[7]_i_1__9_n_0         |                3 |             10 |
-|  inst/inst/clk_out1                                | a/a/                                          | a/push_menu_minimat_x[7]_i_1__21_n_0          |                3 |             10 |
-|  inst/inst/clk_out1                                | multp/multp/                                  | multp/push_menu_minimat_x[7]_i_1__16_n_0      |                3 |             10 |
-|  inst/inst/clk_out1                                | e/e/                                          | e/push_menu_minimat_x[7]_i_1__20_n_0          |                3 |             10 |
-|  inst/inst/clk_out1                                | ocho/ocho/                                    | ocho/push_menu_minimat_x[7]_i_1__7_n_0        |                3 |             10 |
-|  inst/inst/clk_out1                                | _ce/_ce/                                      | _ce/push_menu_minimat_x[7]_i_1__1_n_0         |                4 |             10 |
-|  inst/inst/clk_out1                                | f/push_menu_minimat_x[7]_i_2__8_n_0           | f/push_menu_minimat_x[7]_i_1__4_n_0           |                3 |             10 |
-|  inst/inst/clk_out1                                | _and/_and/                                    | _and/push_menu_minimat_x[7]_i_1__15_n_0       |                4 |             10 |
-|  inst/inst/clk_out1                                | m_kd/new_data[7]_i_1_n_0                      |                                               |                3 |             11 |
-|  inst/inst/clk_out1                                | cursor_inst/hex_next                          | rst_IBUF                                      |               10 |             32 |
-|  inst/inst/clk_out1                                | inst_double_dabble/bcd0                       |                                               |               10 |             32 |
-|  inst/inst/clk_out1                                | operador2_next                                | rst_IBUF                                      |               15 |             32 |
-|  inst/inst/clk_out1                                | LED_OBUF[2]                                   | rst_IBUF                                      |                8 |             32 |
-|  inst/inst/clk_out1                                | FSM_onehot_state_reg_n_0_[0]_BUFG             | rst_IBUF                                      |               14 |             33 |
-|  FSM_onehot_state_reg_n_0_[0]_BUFG                 |                                               |                                               |               33 |             48 |
-|  inst/inst/clk_out1                                |                                               |                                               |               50 |             93 |
-|  inst/inst/clk_out1                                |                                               | rst_IBUF                                      |               45 |            144 |
-+----------------------------------------------------+-----------------------------------------------+-----------------------------------------------+------------------+----------------+
++----------------------------------------------------+-----------------------------------------------+--------------------------------------------------+------------------+----------------+
+|                    Clock Signal                    |                 Enable Signal                 |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++----------------------------------------------------+-----------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  cursor_inst/position_x[2]                         |                                               |                                                  |                1 |              3 |
+|  cursor_inst/translate_inst/hex_inferred__0/i__n_0 |                                               |                                                  |                2 |              4 |
+|  inst/inst/clk_out1                                | inst_double_dabble/shift[15]_i_1_n_0          |                                                  |                1 |              4 |
+|  inst/inst/clk_out1                                | inst_double_dabble/shift[19]_i_1_n_0          |                                                  |                1 |              4 |
+|  inst/inst/clk_out1                                | inst_double_dabble/shift[23]_i_1_n_0          |                                                  |                1 |              4 |
+|  inst/inst/clk_out1                                | inst_double_dabble/shift[27]_i_1_n_0          |                                                  |                1 |              4 |
+|  inst/inst/clk_out1                                | inst_double_dabble/shift[31]_i_1_n_0          |                                                  |                2 |              4 |
+|  inst/inst/clk_out1                                | inst_double_dabble/shift[3]_i_1_n_0           |                                                  |                1 |              4 |
+|  inst/inst/clk_out1                                | inst_double_dabble/shift[7]_i_1_n_0           |                                                  |                1 |              4 |
+|  inst/inst/clk_out1                                | tres/push_menu_minimat_y[7]_i_1__7_n_0        | tres/push_menu_minimat_y[3]_i_1__10_n_0          |                2 |              4 |
+|  inst/inst/clk_out1                                | a/push_menu_minimat_y[7]_i_1__0_n_0           | a/push_menu_minimat_y[3]_i_1__15_n_0             |                1 |              4 |
+|  inst/inst/clk_out1                                | mas/push_menu_minimat_y[7]_i_2_n_0            | mas/push_menu_minimat_y[3]_i_1__9_n_0            |                1 |              4 |
+|  inst/inst/clk_out1                                | dos/push_menu_minimat_y[7]_i_1_n_0            | dos/push_menu_minimat_y[3]_i_1__11_n_0           |                2 |              4 |
+|  inst/inst/clk_out1                                | menos/push_menu_minimat_y[7]_i_2__2_n_0       | menos/push_menu_minimat_y[3]_i_1__2_n_0          |                2 |              4 |
+|  inst/inst/clk_out1                                | uno/push_menu_minimat_y[7]_i_1__8_n_0         | uno/push_menu_minimat_y[3]_i_1__12_n_0           |                1 |              4 |
+|  inst/inst/clk_out1                                | _or/push_menu_minimat_y[7]_i_2__3_n_0         | _or/push_menu_minimat_y[3]_i_1__4_n_0            |                2 |              4 |
+|  inst/inst/clk_out1                                | cuatro/cuatro/                                | m_driver/push_menu_minimat_x_reg[6]_0            |                1 |              4 |
+|  inst/inst/clk_out1                                | cuatro/push_menu_minimat_y[7]_i_2__23_n_0     | cuatro/push_menu_minimat_y[3]_i_1__23_n_0        |                2 |              4 |
+|  inst/inst/clk_out1                                | cinco/push_menu_minimat_y[7]_i_1__15_n_0      | cinco/push_menu_minimat_y[3]_i_1__17_n_0         |                2 |              4 |
+|  inst/inst/clk_out1                                | m_kd/m_ps2read/E[0]                           | m_kd/m_ps2read/AR[0]                             |                2 |              4 |
+|  inst/inst/clk_out1                                | m_kd/m_ps2read/data_in_counter[3]_i_1_n_0     |                                                  |                2 |              4 |
+|  inst/inst/clk_out1                                | ocho/push_menu_minimat_y[7]_i_2__22_n_0       | ocho/push_menu_minimat_y[3]_i_1__21_n_0          |                1 |              4 |
+|  inst/inst/clk_out1                                | seis/push_menu_minimat_y[7]_i_1__12_n_0       | seis/push_menu_minimat_y[3]_i_1__16_n_0          |                2 |              4 |
+|  inst/inst/clk_out1                                | siete/push_menu_minimat_y[7]_i_1__17_n_0      | siete/push_menu_minimat_y[3]_i_1__19_n_0         |                2 |              4 |
+|  inst/inst/clk_out1                                | cero/push_menu_minimat_y[7]_i_2__18_n_0       | cero/push_menu_minimat_y[3]_i_1__13_n_0          |                2 |              4 |
+|  inst/inst/clk_out1                                | nueve/push_menu_minimat_y[7]_i_1__21_n_0      | nueve/push_menu_minimat_y[3]_i_1__22_n_0         |                2 |              4 |
+|  inst/inst/clk_out1                                | _exe/push_menu_minimat_y[7]_i_2__21_n_0       | _exe/push_menu_minimat_y[3]_i_1__20_n_0          |                2 |              4 |
+|  inst/inst/clk_out1                                | FSM_onehot_state[3]_i_1__0_n_0                | rst_IBUF                                         |                1 |              4 |
+|  inst/inst/clk_out1                                | e/push_menu_minimat_y[7]_i_2__0_n_0           | m_driver/n_0_2163                                |                1 |              4 |
+|  inst/inst/clk_out1                                | m_hexdec/push_menu_minimat_x[7]_i_2__11_n_0   | m_driver/push_menu_minimat_x_reg[7]_2            |                1 |              4 |
+|  inst/inst/clk_out1                                | b/push_menu_minimat_y[7]_i_1__10_n_0          | b/push_menu_minimat_y[3]_i_1__14_n_0             |                2 |              4 |
+|  inst/inst/clk_out1                                | _and/push_menu_minimat_y[4]_i_1__23_n_0       |                                                  |                1 |              4 |
+|  inst/inst/clk_out1                                | f/push_menu_minimat_y[7]_i_1__16_n_0          | f/push_menu_minimat_y[3]_i_1__18_n_0             |                2 |              4 |
+|  inst/inst/clk_out1                                | inst_double_dabble/shift[11]_i_1_n_0          |                                                  |                1 |              4 |
+|  inst/inst/clk_out1                                | m_driver/contador_pixels_verticales0_0        |                                                  |                2 |              5 |
+|  inst/inst/clk_out1                                | c/push_menu_minimat_y[7]_i_2__19_n_0          | m_driver/n_0_2163                                |                2 |              5 |
+|  inst/inst/clk_out1                                |                                               | m_driver/hc[10]_i_1_n_0                          |                4 |              5 |
+|  inst/inst/clk_out1                                | d/push_menu_minimat_y[7]_i_2__20_n_0          | m_driver/n_0_2163                                |                1 |              5 |
+|  inst/inst/clk_out1                                | m_driver/contador_pixels_verticales0_2        |                                                  |                2 |              5 |
+|  inst/inst/clk_out1                                | multp/push_menu_minimat_y[7]_i_2__4_n_0       | multp/push_menu_minimat_y[6]_i_1__21_n_0         |                3 |              5 |
+|  inst/inst/clk_out1                                | _ce/push_menu_minimat_y[7]_i_2__1_n_0         | _ce/push_menu_minimat_y[4]_i_1__16_n_0           |                1 |              5 |
+|  inst/inst/clk_out1                                | _ce/push_menu_minimat_x[7]_i_2__8_n_0         | m_driver/n_0_2303                                |                2 |              5 |
+|  inst/inst/clk_out1                                | m_driver/push_menu_minimat_y_reg[7]_3         | m_driver/pixel_y_to_show_reg[0]_1                |                2 |              5 |
+|  inst/inst/clk_out1                                | multp/push_menu_minimat_y[7]_i_2__4_n_0       | multp/push_menu_minimat_y[7]_i_1__3_n_0          |                2 |              6 |
+|  inst/inst/clk_out1                                |                                               | m_driver/col_reg[7]                              |                3 |              6 |
+|  inst/inst/clk_out1                                |                                               | m_driver/row_reg[6]                              |                3 |              6 |
+|  inst/inst/clk_out1                                | inst_double_dabble/counter[5]_i_1_n_0         |                                                  |                3 |              6 |
+|  inst/inst/clk_out1                                | m_hw/menu_character_position_x[5]_i_2__0_n_0  | m_driver/menu_character_position_x_reg[0]_1      |                2 |              6 |
+|  inst/inst/clk_out1                                | cursor_inst/FSM_onehot_state[5]_i_1_n_0       | rst_IBUF                                         |                2 |              6 |
+|  inst/inst/clk_out1                                | c/push_menu_minimat_y[7]_i_2__19_n_0          | c/push_menu_minimat_y[5]_i_1__23_n_0             |                2 |              6 |
+|  inst/inst/clk_out1                                | d/push_menu_minimat_y[7]_i_2__20_n_0          | d/push_menu_minimat_y[7]_i_1__14_n_0             |                2 |              6 |
+|  inst/inst/clk_out1                                | _exe/push_menu_minimat_x[7]_i_1__16_n_0       | m_driver/menu_character_position_x_reg[0]_0      |                2 |              6 |
+|  inst/inst/clk_out1                                | _ce/push_menu_minimat_y[7]_i_2__1_n_0         | _ce/push_menu_minimat_y[7]_i_1__1_n_0            |                2 |              6 |
+|  inst/inst/clk_out1                                | _ce/push_menu_minimat_x[7]_i_2__8_n_0         | _ce/push_menu_minimat_x[6]_i_1__20_n_0           |                2 |              6 |
+|  inst/inst/clk_out1                                | m_driver/push_menu_minimat_y_reg[7]_3         | m_driver/push_menu_minimat_y_reg[0]_9            |                2 |              6 |
+|  inst/inst/clk_out1                                | m_hexdec/menu_character_position_x[5]_i_2_n_0 | m_hexdec/menu_character_position_x[5]_i_1__0_n_0 |                2 |              6 |
+|  inst/inst/clk_out1                                | _ce/push_menu_minimat_x[6]_i_1__20_n_0        | m_driver/n_0_2303                                |                2 |              6 |
+|  inst/inst/clk_out1                                | cuatro/cuatro/                                | cuatro/push_menu_minimat_x[7]_i_1__8_n_0         |                2 |              7 |
+|  inst/inst/clk_out1                                | cuatro/push_menu_minimat_y[7]_i_2__23_n_0     | m_driver/n_0_2168                                |                2 |              7 |
+|  inst/inst/clk_out1                                | cinco/push_menu_minimat_y[7]_i_1__15_n_0      | m_driver/n_0_2168                                |                2 |              7 |
+|  inst/inst/clk_out1                                | seis/push_menu_minimat_y[7]_i_1__12_n_0       | m_driver/n_0_2168                                |                2 |              7 |
+|  inst/inst/clk_out1                                | cero/push_menu_minimat_y[7]_i_2__18_n_0       | m_driver/n_0_2109                                |                2 |              7 |
+|  inst/inst/clk_out1                                | uno/push_menu_minimat_y[7]_i_1__8_n_0         | m_driver/n_0_2109                                |                3 |              7 |
+|  inst/inst/clk_out1                                | siete/push_menu_minimat_y[7]_i_1__17_n_0      | m_driver/n_0_2168                                |                2 |              7 |
+|  inst/inst/clk_out1                                | _exe/push_menu_minimat_y[7]_i_2__21_n_0       | m_driver/push_menu_minimat_y_reg[0]_8            |                2 |              7 |
+|  inst/inst/clk_out1                                | m_hexdec/push_menu_minimat_x[7]_i_2__11_n_0   | m_hexdec/push_menu_minimat_x[5]_i_1__15_n_0      |                3 |              7 |
+|  inst/inst/clk_out1                                | dos/push_menu_minimat_y[7]_i_1_n_0            | m_driver/n_0_2109                                |                2 |              7 |
+|  inst/inst/clk_out1                                | _or/push_menu_minimat_y[7]_i_2__3_n_0         | _or/push_menu_minimat_y[7]_i_1__4_n_0            |                2 |              7 |
+|  inst/inst/clk_out1                                | f/push_menu_minimat_y[7]_i_1__16_n_0          | m_driver/n_0_2163                                |                3 |              7 |
+|  inst/inst/clk_out1                                | ocho/push_menu_minimat_y[7]_i_2__22_n_0       | m_driver/n_0_2142                                |                2 |              7 |
+|  inst/inst/clk_out1                                | nueve/push_menu_minimat_y[7]_i_1__21_n_0      | m_driver/n_0_2142                                |                2 |              7 |
+|  inst/inst/clk_out1                                | a/push_menu_minimat_y[7]_i_1__0_n_0           | m_driver/n_0_2142                                |                2 |              7 |
+|  inst/inst/clk_out1                                | e/push_menu_minimat_y[7]_i_2__0_n_0           | e/push_menu_minimat_y[7]_i_1__11_n_0             |                3 |              7 |
+|  inst/inst/clk_out1                                | _and/push_menu_minimat_y[4]_i_1__23_n_0       | _and/push_menu_minimat_y[7]_i_1__5_n_0           |                3 |              7 |
+|  inst/inst/clk_out1                                | tres/push_menu_minimat_y[7]_i_1__7_n_0        | m_driver/n_0_2109                                |                2 |              7 |
+|  inst/inst/clk_out1                                | mas/push_menu_minimat_y[7]_i_2_n_0            | m_driver/push_menu_minimat_y_reg[0]_6            |                2 |              7 |
+|  inst/inst/clk_out1                                | b/push_menu_minimat_y[7]_i_1__10_n_0          | m_driver/n_0_2142                                |                2 |              7 |
+|  inst/inst/clk_out1                                | menos/push_menu_minimat_y[7]_i_2__2_n_0       | menos/push_menu_minimat_y[7]_i_1__2_n_0          |                2 |              7 |
+|  inst/inst/clk_out1                                | m_hw/push_menu_minimat_x[7]_i_2__12_n_0       | m_hw/push_menu_minimat_x[7]_i_1_n_0              |                2 |              8 |
+|  inst/inst/clk_out1                                | m_driver/push_menu_minimat_y_reg[0]_5         | m_driver/push_menu_minimat_y_reg[7]_7            |                2 |              8 |
+|  inst/inst/clk_out1                                | m_kd/m_ps2read/data[7]_i_1_n_0                |                                                  |                1 |              8 |
+|  inst/inst/clk_out1                                | m_kd/m_ps2read/shift[10]_i_1__0_n_0           |                                                  |                2 |              9 |
+|  inst/inst/clk_out1                                | tres/tres/                                    | tres/push_menu_minimat_x[7]_i_1__2_n_0           |                4 |              9 |
+|  inst/inst/clk_out1                                | nueve/nueve/                                  | nueve/push_menu_minimat_x[7]_i_1__6_n_0          |                3 |             10 |
+|  inst/inst/clk_out1                                | multp/multp/                                  | multp/push_menu_minimat_x[7]_i_1__17_n_0         |                4 |             10 |
+|  inst/inst/clk_out1                                | siete/siete/                                  | siete/push_menu_minimat_x[7]_i_1__15_n_0         |                3 |             10 |
+|  inst/inst/clk_out1                                | uno/uno/                                      | uno/push_menu_minimat_x[7]_i_1__3_n_0            |                3 |             10 |
+|  inst/inst/clk_out1                                | dos/dos/                                      | dos/push_menu_minimat_x[7]_i_1__20_n_0           |                3 |             10 |
+|  inst/inst/clk_out1                                | c/c/                                          | c/push_menu_minimat_x[7]_i_1__9_n_0              |                3 |             10 |
+|  inst/inst/clk_out1                                | mas/mas/                                      | mas/push_menu_minimat_x[7]_i_1__1_n_0            |                3 |             10 |
+|  inst/inst/clk_out1                                | b/b/                                          | b/push_menu_minimat_x[7]_i_1__4_n_0              |                3 |             10 |
+|  inst/inst/clk_out1                                | f/f/                                          | f/push_menu_minimat_x[7]_i_1__14_n_0             |                3 |             10 |
+|  inst/inst/clk_out1                                | cinco/cinco/                                  | cinco/push_menu_minimat_x[7]_i_1__13_n_0         |                3 |             10 |
+|  inst/inst/clk_out1                                | _and/_and/                                    | _and/push_menu_minimat_x[7]_i_1__21_n_0          |                4 |             10 |
+|  inst/inst/clk_out1                                | a/a/                                          | a/push_menu_minimat_x[7]_i_1__5_n_0              |                3 |             10 |
+|  inst/inst/clk_out1                                | menos/menos/                                  | menos/push_menu_minimat_x[7]_i_1__23_n_0         |                3 |             10 |
+|  inst/inst/clk_out1                                | d/d/                                          | d/push_menu_minimat_x[7]_i_1__12_n_0             |                3 |             10 |
+|  inst/inst/clk_out1                                | seis/seis/                                    | seis/push_menu_minimat_x[7]_i_1__11_n_0          |                3 |             10 |
+|  inst/inst/clk_out1                                | _or/_or/                                      | _or/push_menu_minimat_x[7]_i_1__22_n_0           |                3 |             10 |
+|  inst/inst/clk_out1                                | cero/cero/                                    | cero/push_menu_minimat_x[7]_i_1__0_n_0           |                3 |             10 |
+|  inst/inst/clk_out1                                | ocho/ocho/                                    | ocho/push_menu_minimat_x[7]_i_1__7_n_0           |                3 |             10 |
+|  inst/inst/clk_out1                                | e/e/                                          | e/push_menu_minimat_x[7]_i_1__10_n_0             |                3 |             10 |
+|  inst/inst/clk_out1                                | m_kd/new_data[7]_i_1_n_0                      |                                                  |                3 |             11 |
+|  inst/inst/clk_out1                                | _exe/push_menu_minimat_x[7]_i_2__10_n_0       | _exe/push_menu_minimat_x[7]_i_1__16_n_0          |                4 |             11 |
+|  inst/inst/clk_out1                                | LED_OBUF[2]                                   | rst_IBUF                                         |                8 |             32 |
+|  inst/inst/clk_out1                                | cursor_inst/hex_next                          | rst_IBUF                                         |                8 |             32 |
+|  inst/inst/clk_out1                                | inst_double_dabble/bcd0                       |                                                  |               12 |             32 |
+|  inst/inst/clk_out1                                | FSM_onehot_state_reg_n_0_[1]_BUFG             | rst_IBUF                                         |               11 |             32 |
+|  inst/inst/clk_out1                                | FSM_onehot_state_reg_n_0_[0]_BUFG             | rst_IBUF                                         |               14 |             33 |
+|  FSM_onehot_state_reg_n_0_[0]_BUFG                 |                                               |                                                  |               21 |             48 |
+|  FSM_onehot_state_reg_n_0_[1]_BUFG                 |                                               |                                                  |               25 |             48 |
+|  inst/inst/clk_out1                                |                                               |                                                  |               51 |             85 |
+|  inst/inst/clk_out1                                |                                               | rst_IBUF                                         |               48 |            144 |
++----------------------------------------------------+-----------------------------------------------+--------------------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
 | 3      |                     1 |
-| 4      |                    38 |
-| 5      |                     4 |
-| 6      |                    10 |
-| 7      |                    26 |
-| 8      |                     5 |
-| 9      |                     1 |
-| 10     |                    18 |
-| 11     |                     1 |
-| 16+    |                     8 |
+| 4      |                    33 |
+| 5      |                     9 |
+| 6      |                    14 |
+| 7      |                    21 |
+| 8      |                     3 |
+| 9      |                     2 |
+| 10     |                    19 |
+| 11     |                     2 |
+| 16+    |                     9 |
 +--------+-----------------------+
 
 

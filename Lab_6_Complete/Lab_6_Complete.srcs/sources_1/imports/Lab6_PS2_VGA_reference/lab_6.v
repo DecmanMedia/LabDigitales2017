@@ -181,7 +181,7 @@ module lab_6(
     //show_one_line #(.MENU_X_LOCATION(11'd762), .MENU_Y_LOCATION(11'd134), .MAX_CHARACTER_LINE(3), .ancho_pixel('d5)) hex_char(CLK82MHZ, rst, hc_visible, vc_visible, "hex", , in_character_hex);     	
 	reg [11:0]VGA_COLOR;
 	
-	hello_world_text_square #(.MENU_X_LOCATION(11'd364), .MENU_Y_LOCATION(11'd30)) m_hw(CLK82MHZ, 1'b0,{(state==OPERADOR1_STATE)?char:char_op1," op1"},{(state==OPERADOR2_STATE)?char:char_op1,"op2"},{char_resultado,"res"}, hc_visible, vc_visible, in_sq, dr);
+	hello_world_text_square #(.MENU_X_LOCATION(11'd364), .MENU_Y_LOCATION(11'd30)) m_hw(CLK82MHZ, 1'b0,{(state==OPERADOR1_STATE)?char:char_op1," op1"},{char_op2," op2"},{char_resultado," res"}, hc_visible, vc_visible, in_sq, dr);
 	
 	always@(*)
 		if((hc_visible != 0) && (vc_visible != 0))

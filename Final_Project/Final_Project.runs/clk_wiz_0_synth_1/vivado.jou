@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri Aug 11 15:43:45 2017
-# Process ID: 10148
+# Start of session at: Sun Aug 20 20:38:31 2017
+# Process ID: 2588
 # Current directory: C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/clk_wiz_0_synth_1
 # Command line: vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
 # Log file: C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/clk_wiz_0_synth_1/clk_wiz_0.vds

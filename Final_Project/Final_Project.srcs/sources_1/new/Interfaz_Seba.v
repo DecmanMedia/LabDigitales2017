@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Interfaz_Seba(
+ module Interfaz_Seba(
     input CLK82MHZ,
     input PS2_CLK,
     input PS2_DATA,
@@ -42,10 +42,12 @@ module Interfaz_Seba(
     
     wire [2:0]matrix_x;
     wire [1:0]matrix_y;
+    
     wire hs, vs,hc_visible,vc_visible, lines;
     driver_vga_640x480 driver_vga(CLK82MHZ, hs, vs,hc_visible,vc_visible);
     template_6x4_600x400 template_30x20(CLK82MHZ, hc_visible, vc_visible, matrix_x, matrix_y, lines);
-
-
+    
+    
+    
     
 endmodule
