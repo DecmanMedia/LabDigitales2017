@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Aug 20 19:21:31 2017
+# Process ID: 14128
+# Current directory: C:/GitHub/LabDigitales2017/project_example/project_example.runs/impl_1
+# Command line: vivado.exe -log ejemplo_sensor_de_temperatura.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ejemplo_sensor_de_temperatura.tcl -notrace
+# Log file: C:/GitHub/LabDigitales2017/project_example/project_example.runs/impl_1/ejemplo_sensor_de_temperatura.vdi
+# Journal file: C:/GitHub/LabDigitales2017/project_example/project_example.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ejemplo_sensor_de_temperatura.tcl -notrace
