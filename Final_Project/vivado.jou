@@ -2,12 +2,70 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Tue Aug 22 12:11:03 2017
-# Process ID: 11708
+# Start of session at: Tue Aug 22 12:17:30 2017
+# Process ID: 12248
 # Current directory: C:/GitHub/LabDigitales2017/Final_Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3068 C:\GitHub\LabDigitales2017\Final_Project\Final_Project.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2704 C:\GitHub\LabDigitales2017\Final_Project\Final_Project.xpr
 # Log file: C:/GitHub/LabDigitales2017/Final_Project/vivado.log
 # Journal file: C:/GitHub/LabDigitales2017/Final_Project\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/GitHub/LabDigitales2017/Final_Project/Final_Project.xpr
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+import_files -norecurse {{C:/Users/Sebastián Quiroz/Downloads/take_sample.v}}
+import_files -norecurse {{C:/Users/Sebastián Quiroz/Desktop/ejemplo_temperatura_en_display/TWICtl.vhd} {C:/Users/Sebastián Quiroz/Desktop/ejemplo_temperatura_en_display/TempSensorCtl.vhd}}
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+close_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/impl_1/Final_Project.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/impl_1/Final_Project.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/impl_1/Final_Project.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/impl_1/Final_Project.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/impl_1/Final_Project.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/impl_1/Final_Project.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

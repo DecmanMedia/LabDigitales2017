@@ -2,12 +2,12 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Sun Aug 20 20:38:47 2017
-# Process ID: 8788
-# Current directory: C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/synth_1
+# Start of session at: Tue Aug 22 14:13:05 2017
+# Process ID: 8548
+# Current directory: C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/synth_1
 # Command line: vivado.exe -log Final_Project.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Final_Project.tcl
-# Log file: C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/Final_Project.vds
-# Journal file: C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/synth_1\vivado.jou
+# Log file: C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/Final_Project.vds
+# Journal file: C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Final_Project.tcl -notrace
 Command: synth_design -top Final_Project -part xc7a100tcsg324-1
@@ -15,40 +15,164 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12876 
+INFO: Helper process launched with PID 8992 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 282.793 ; gain = 72.445
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 282.949 ; gain = 72.516
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Final_Project' [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:23]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-8788-LaptopDiewo/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-8788-LaptopDiewo/realtime/clk_wiz_0_stub.v:5]
-WARNING: [Synth 8-350] instance 'inst' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:38]
-WARNING: [Synth 8-3848] Net VGA_HS in module/entity Final_Project does not have driver. [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:29]
-WARNING: [Synth 8-3848] Net VGA_VS in module/entity Final_Project does not have driver. [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:30]
-WARNING: [Synth 8-3848] Net VGA_R in module/entity Final_Project does not have driver. [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:31]
-WARNING: [Synth 8-3848] Net VGA_G in module/entity Final_Project does not have driver. [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:32]
-WARNING: [Synth 8-3848] Net VGA_B in module/entity Final_Project does not have driver. [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:33]
-INFO: [Synth 8-256] done synthesizing module 'Final_Project' (2#1) [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:23]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_HS
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_VS
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_R[3]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_R[2]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_R[1]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_R[0]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_G[3]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_G[2]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_G[1]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_G[0]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_B[3]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_B[2]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_B[1]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_B[0]
+INFO: [Synth 8-638] synthesizing module 'Final_Project' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-8548-PC-SEBAQ/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-8548-PC-SEBAQ/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'inst' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:38]
+INFO: [Synth 8-638] synthesizing module 'Interfaz_Seba' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Interfaz_Seba.v:23]
+	Parameter NUMERO_DIGITOS bound to: 8 - type: integer 
+	Parameter CUADRILLA_XI bound to: 212 - type: integer 
+	Parameter CUADRILLA_XF bound to: 812 - type: integer 
+	Parameter CUADRILLA_YI bound to: 200 - type: integer 
+	Parameter CUADRILLA_YF bound to: 500 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'driver_vga_640x480' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v:15]
+	Parameter hpixels bound to: 11'b10101010000 
+	Parameter vlines bound to: 11'b01100100101 
+	Parameter hfp bound to: 11'b00001000000 
+	Parameter hsc bound to: 11'b00001101000 
+	Parameter hbp bound to: 11'b00010101000 
+	Parameter vfp bound to: 11'b00000000011 
+	Parameter vsc bound to: 11'b00000000100 
+	Parameter vbp bound to: 11'b00000011110 
+INFO: [Synth 8-256] done synthesizing module 'driver_vga_640x480' (2#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v:15]
+INFO: [Synth 8-638] synthesizing module 'template_6x4_600x400' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v:29]
+	Parameter d_col bound to: 8'b00011001 
+	Parameter d_row bound to: 7'b0011001 
+	Parameter zeros_col bound to: 2'b00 
+	Parameter zeros_row bound to: 2'b00 
+	Parameter CUADRILLA_XI bound to: 212 - type: integer 
+	Parameter CUADRILLA_XF bound to: 812 - type: integer 
+	Parameter CUADRILLA_YI bound to: 200 - type: integer 
+	Parameter CUADRILLA_YF bound to: 500 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'template_6x4_600x400' (3#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v:29]
+WARNING: [Synth 8-689] width (3) of port connection 'matrix_x' does not match port width (6) of module 'template_6x4_600x400' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Interfaz_Seba.v:52]
+WARNING: [Synth 8-689] width (2) of port connection 'matrix_y' does not match port width (6) of module 'template_6x4_600x400' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Interfaz_Seba.v:52]
+INFO: [Synth 8-638] synthesizing module 'Take_sample' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Downloads/take_sample.v:6]
+	Parameter S_WAIT bound to: 1 - type: integer 
+	Parameter S_TAKE bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'TempSensorCtl' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TempSensorCtl.vhd:59]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'TWICtl' declared at 'C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:68' bound to instance 'Inst_TWICtl' of component 'TWICtl' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TempSensorCtl.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'TWICtl' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:132]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "gray" *) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:144]
+INFO: [Synth 8-226] default block is never used [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:357]
+INFO: [Synth 8-226] default block is never used [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:375]
+INFO: [Synth 8-226] default block is never used [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:393]
+INFO: [Synth 8-226] default block is never used [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:411]
+INFO: [Synth 8-226] default block is never used [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:429]
+INFO: [Synth 8-226] default block is never used [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:447]
+WARNING: [Synth 8-614] signal 'timeOutCnt' is read in the process but is not in the sensitivity list [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:500]
+WARNING: [Synth 8-3848] Net ERRTYPE_O in module/entity TWICtl does not have driver. [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'TWICtl' (4#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:132]
+INFO: [Synth 8-226] default block is never used [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TempSensorCtl.vhd:329]
+WARNING: [Synth 8-614] signal 'initA' is read in the process but is not in the sensitivity list [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TempSensorCtl.vhd:324]
+INFO: [Synth 8-256] done synthesizing module 'TempSensorCtl' (5#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TempSensorCtl.vhd:59]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Downloads/take_sample.v:42]
+WARNING: [Synth 8-3848] Net state in module/entity Take_sample does not have driver. [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Downloads/take_sample.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Take_sample' (6#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Downloads/take_sample.v:6]
+INFO: [Synth 8-638] synthesizing module 'Grafico_Diego' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Grafico_Diego.v:23]
+	Parameter CUADRILLA_XI bound to: 212 - type: integer 
+	Parameter CUADRILLA_XF bound to: 812 - type: integer 
+	Parameter CUADRILLA_YI bound to: 200 - type: integer 
+	Parameter CUADRILLA_YF bound to: 500 - type: integer 
+WARNING: [Synth 8-3848] Net grilla in module/entity Grafico_Diego does not have driver. [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Grafico_Diego.v:28]
+INFO: [Synth 8-256] done synthesizing module 'Grafico_Diego' (7#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Grafico_Diego.v:23]
+INFO: [Synth 8-638] synthesizing module 'hello_world_text_square' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+	Parameter n bound to: 4 - type: integer 
+	Parameter ancho_pixel bound to: 6 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 11'b00000101000 
+	Parameter MENU_Y_LOCATION bound to: 11'b00000101000 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 6 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 216 - type: integer 
+	Parameter MENU_HEIGHT bound to: 48 - type: integer 
+	Parameter MENU_X_TOP bound to: 256 - type: integer 
+	Parameter MENU_Y_TOP bound to: 88 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'characters' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:21]
+WARNING: [Synth 8-3848] Net vect_num_p in module/entity characters does not have driver. [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:69]
+WARNING: [Synth 8-3848] Net vect_char_space in module/entity characters does not have driver. [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:52]
+WARNING: [Synth 8-3848] Net vect_char_nn in module/entity characters does not have driver. [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:51]
+INFO: [Synth 8-256] done synthesizing module 'characters' (8#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:21]
+INFO: [Synth 8-256] done synthesizing module 'hello_world_text_square' (9#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+INFO: [Synth 8-638] synthesizing module 'hello_world_text_square__parameterized0' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+	Parameter n bound to: 4 - type: integer 
+	Parameter ancho_pixel bound to: 6 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 11'b01001110001 
+	Parameter MENU_Y_LOCATION bound to: 11'b00001010000 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 11 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 396 - type: integer 
+	Parameter MENU_HEIGHT bound to: 48 - type: integer 
+	Parameter MENU_X_TOP bound to: 1021 - type: integer 
+	Parameter MENU_Y_TOP bound to: 128 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hello_world_text_square__parameterized0' (9#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+INFO: [Synth 8-638] synthesizing module 'hello_world_text_square__parameterized1' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+	Parameter n bound to: 4 - type: integer 
+	Parameter ancho_pixel bound to: 6 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 11'b00001010000 
+	Parameter MENU_Y_LOCATION bound to: 11'b01001000100 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 6 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 216 - type: integer 
+	Parameter MENU_HEIGHT bound to: 48 - type: integer 
+	Parameter MENU_X_TOP bound to: 296 - type: integer 
+	Parameter MENU_Y_TOP bound to: 628 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hello_world_text_square__parameterized1' (9#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+INFO: [Synth 8-638] synthesizing module 'hello_world_text_square__parameterized2' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+	Parameter n bound to: 4 - type: integer 
+	Parameter ancho_pixel bound to: 6 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 11'b00110010000 
+	Parameter MENU_Y_LOCATION bound to: 11'b01001000100 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 6 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 216 - type: integer 
+	Parameter MENU_HEIGHT bound to: 48 - type: integer 
+	Parameter MENU_X_TOP bound to: 616 - type: integer 
+	Parameter MENU_Y_TOP bound to: 628 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hello_world_text_square__parameterized2' (9#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+INFO: [Synth 8-638] synthesizing module 'hello_world_text_square__parameterized3' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+	Parameter n bound to: 4 - type: integer 
+	Parameter ancho_pixel bound to: 6 - type: integer 
+	Parameter MENU_X_LOCATION bound to: 11'b01011000110 
+	Parameter MENU_Y_LOCATION bound to: 11'b01001000100 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 6 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 216 - type: integer 
+	Parameter MENU_HEIGHT bound to: 48 - type: integer 
+	Parameter MENU_X_TOP bound to: 926 - type: integer 
+	Parameter MENU_Y_TOP bound to: 628 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hello_world_text_square__parameterized3' (9#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+WARNING: [Synth 8-3848] Net n_time in module/entity Interfaz_Seba does not have driver. [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Interfaz_Seba.v:54]
+WARNING: [Synth 8-3848] Net init in module/entity Interfaz_Seba does not have driver. [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Interfaz_Seba.v:54]
+INFO: [Synth 8-256] done synthesizing module 'Interfaz_Seba' (10#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Interfaz_Seba.v:23]
+WARNING: [Synth 8-350] instance 'interfaz_seba_inst' of module 'Interfaz_Seba' requires 12 connections, but only 9 given [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:48]
+INFO: [Synth 8-256] done synthesizing module 'Final_Project' (11#1) [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:23]
+WARNING: [Synth 8-3331] design Grafico_Diego has unconnected port grilla
+WARNING: [Synth 8-3331] design TWICtl has unconnected port ERRTYPE_O
+WARNING: [Synth 8-3331] design Take_sample has unconnected port init
+WARNING: [Synth 8-3331] design Interfaz_Seba has unconnected port PS2_CLK
+WARNING: [Synth 8-3331] design Interfaz_Seba has unconnected port PS2_DATA
 WARNING: [Synth 8-3331] design Final_Project has unconnected port SW
-WARNING: [Synth 8-3331] design Final_Project has unconnected port PS2_CLK
-WARNING: [Synth 8-3331] design Final_Project has unconnected port PS2_DATA
-WARNING: [Synth 8-3331] design Final_Project has unconnected port rst
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 319.254 ; gain = 108.906
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 320.883 ; gain = 110.449
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -57,45 +181,118 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin take_sample_inst:n_time to constant 0 [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Interfaz_Seba.v:58]
+WARNING: [Synth 8-3295] tying undriven pin interfaz_seba_inst:CLK100MHZ to constant 0 [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:48]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 319.254 ; gain = 108.906
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 320.883 ; gain = 110.449
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'inst' [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:38]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'inst' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v:38]
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-8788-LaptopDiewo/dcp/clk_wiz_0_in_context.xdc] for cell 'inst'
-Finished Parsing XDC File [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-8788-LaptopDiewo/dcp/clk_wiz_0_in_context.xdc] for cell 'inst'
-Parsing XDC File [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
-Finished Parsing XDC File [C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
+Parsing XDC File [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-8548-PC-SEBAQ/dcp/clk_wiz_0_in_context.xdc] for cell 'inst'
+Finished Parsing XDC File [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-8548-PC-SEBAQ/dcp/clk_wiz_0_in_context.xdc] for cell 'inst'
+Parsing XDC File [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
+WARNING: [Vivado 12-584] No ports matched 'TMP_SCL'. [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc:199]
+WARNING: [Vivado 12-584] No ports matched 'TMP_SDA'. [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc:200]
+Finished Parsing XDC File [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Final_Project_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Final_Project_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Final_Project_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 540.410 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 642.680 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 540.410 ; gain = 330.063
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 642.680 ; gain = 432.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 540.410 ; gain = 330.063
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 642.680 ; gain = 432.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-8788-LaptopDiewo/dcp/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-8788-LaptopDiewo/dcp/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-8548-PC-SEBAQ/dcp/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-8548-PC-SEBAQ/dcp/clk_wiz_0_in_context.xdc, line 4).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 540.410 ; gain = 330.063
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 642.680 ; gain = 432.246
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'sync_scl_reg' and it is trimmed from '3' to '2' bits. [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TWICtl.vhd:172]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWICtl'
+INFO: [Synth 8-5546] ROM "busState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "subState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "latchAddr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "subState" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ERR_O" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "retryCntEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "retryCnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TempSensInitMap" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "n_total" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "storage_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "storage_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                             0000 |                             0000
+                 ststart |                             0001 |                             0001
+                 stwrite |                             0010 |                             0011
+                  stsack |                             0111 |                             0110
+                  stread |                             0110 |                             0010
+             stmnackstop |                             0100 |                             1000
+            stmnackstart |                             0101 |                             1001
+                  stmack |                             1111 |                             0111
+                  ststop |                             0011 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'gray' in module 'TWICtl'
+WARNING: [Synth 8-327] inferring latch for variable 'reg_n_sample_reg' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Downloads/take_sample.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'take_sample_reg' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Downloads/take_sample.v:44]
+WARNING: [Synth 8-327] inferring latch for variable 'n_total_reg' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Downloads/take_sample.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'cuenta_n_reg' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Downloads/take_sample.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'line_reg' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Grafico_Diego.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'storage_reg[1]' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Grafico_Diego.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'storage_reg[0]' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Grafico_Diego.v:40]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 540.410 ; gain = 330.063
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 642.680 ; gain = 432.246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -107,6 +304,60 @@ Report RTL Partitions:
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     17 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 16    
+	   2 Input      8 Bit       Adders := 12    
+	   2 Input      6 Bit       Adders := 8     
+	   2 Input      5 Bit       Adders := 11    
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 12    
+	   2 Input      2 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 16    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 13    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 5     
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 3     
+	   3 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 16    
+	   8 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 10    
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	   4 Input      6 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 20    
+	   9 Input      4 Bit        Muxes := 1     
+	  27 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 16    
+	   8 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 11    
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 70    
+	   4 Input      1 Bit        Muxes := 41    
+	   3 Input      1 Bit        Muxes := 11    
+	   8 Input      1 Bit        Muxes := 9     
+	   9 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -114,6 +365,238 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module driver_vga_640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 5     
+Module template_6x4_600x400 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module TWICtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	  27 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 45    
+	   4 Input      1 Bit        Muxes := 26    
+	   3 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 3     
+	   9 Input      1 Bit        Muxes := 1     
+Module TempSensorCtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
+Module Take_sample 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 3     
+	   3 Input     17 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+Module Grafico_Diego 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module characters 
+Detailed RTL Component Info : 
++---Muxes : 
+	  45 Input     40 Bit        Muxes := 1     
+Module hello_world_text_square 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module hello_world_text_square__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module hello_world_text_square__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module hello_world_text_square__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module hello_world_text_square__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module Interfaz_Seba 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -129,26 +612,134 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_HS
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_VS
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_R[3]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_R[2]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_R[1]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_R[0]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_G[3]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_G[2]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_G[1]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_G[0]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_B[3]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_B[2]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_B[1]
-WARNING: [Synth 8-3331] design Final_Project has unconnected port VGA_B[0]
+INFO: [Synth 8-5544] ROM "grid/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grid/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grid/menu_character_position_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_time/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_time/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_time/menu_character_position_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sample/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sample/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sample/menu_character_position_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send/menu_character_position_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reset/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reset/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reset/menu_character_position_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'insttempPort/tempReg_reg' and it is trimmed from '16' to '15' bits. [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/ejemplo_temperatura_en_display/TempSensorCtl.vhd:154]
+INFO: [Synth 8-5546] ROM "insttempPort/Inst_TWICtl/subState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "insttempPort/retryCntEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "n_total" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'i_reg' into 'i_reg' [C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Grafico_Diego.v:59]
+WARNING: [Synth 8-3331] design Grafico_Diego has unconnected port grilla
+WARNING: [Synth 8-3331] design Take_sample has unconnected port init
+WARNING: [Synth 8-3331] design Interfaz_Seba has unconnected port PS2_CLK
+WARNING: [Synth 8-3331] design Interfaz_Seba has unconnected port PS2_DATA
 WARNING: [Synth 8-3331] design Final_Project has unconnected port SW
-WARNING: [Synth 8-3331] design Final_Project has unconnected port PS2_CLK
-WARNING: [Synth 8-3331] design Final_Project has unconnected port PS2_DATA
-WARNING: [Synth 8-3331] design Final_Project has unconnected port rst
+WARNING: [Synth 8-3332] Sequential element (matrix_y_reg[5]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (matrix_y_reg[4]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (matrix_y_reg[3]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (matrix_y_reg[2]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (matrix_y_reg[1]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (matrix_y_reg[0]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (matrix_x_reg[5]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (matrix_x_reg[4]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (matrix_x_reg[3]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (matrix_x_reg[2]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (matrix_x_reg[1]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (matrix_x_reg[0]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (col_reg[7]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (col_reg[6]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (col_reg[5]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (col_reg[4]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (col_reg[3]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (col_reg[2]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (col_reg[1]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (col_reg[0]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (row_reg[6]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (row_reg[5]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (row_reg[4]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (row_reg[3]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (row_reg[2]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (row_reg[1]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (row_reg[0]) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (lin_h_reg) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (lin_v_reg) is unused and will be removed from module template_6x4_600x400.
+WARNING: [Synth 8-3332] Sequential element (reg_n_sample_reg[5]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (reg_n_sample_reg[4]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (reg_n_sample_reg[3]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (reg_n_sample_reg[2]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (reg_n_sample_reg[1]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (reg_n_sample_reg[0]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (take_sample_reg) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[16]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[15]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[14]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[13]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[12]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[11]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[10]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[9]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[8]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[7]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[6]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[5]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[4]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[3]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[2]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[1]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (n_total_reg[0]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[16]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[15]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[14]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[13]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[12]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[11]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[10]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[9]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[8]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[7]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[6]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[5]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[4]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[3]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[2]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[1]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_n_reg[0]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/temp_reg[7]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/temp_reg[6]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/temp_reg[5]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/temp_reg[4]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/temp_reg[3]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/temp_reg[2]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/temp_reg[1]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/temp_reg[0]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[14]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[13]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[12]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[11]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[10]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[9]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[8]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[7]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[6]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[5]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[4]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[3]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[2]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[1]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (insttempPort/tempReg_reg[0]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_reg[16]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_reg[15]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_reg[14]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_reg[13]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_reg[12]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_reg[11]) is unused and will be removed from module Take_sample.
+WARNING: [Synth 8-3332] Sequential element (cuenta_reg[10]) is unused and will be removed from module Take_sample.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 540.410 ; gain = 330.063
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 642.680 ; gain = 432.246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -165,10 +756,10 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/clk_out1' to pin 'inst/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 571.375 ; gain = 361.027
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 642.680 ; gain = 432.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 571.375 ; gain = 361.027
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 691.012 ; gain = 480.578
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -180,7 +771,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 581.000 ; gain = 370.652
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 700.047 ; gain = 489.613
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -204,7 +795,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 581.000 ; gain = 370.652
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 700.047 ; gain = 489.613
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -217,7 +808,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 581.000 ; gain = 370.652
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 700.047 ; gain = 489.613
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -228,26 +819,29 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'Interfaz_Seba' to reference 'Take_sample' which has no pins
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'Take_sample' to reference 'TempSensorCtl' which has no pins
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'TempSensorCtl' to reference 'TWICtl' which has no pins
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 581.000 ; gain = 370.652
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 700.047 ; gain = 489.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 581.000 ; gain = 370.652
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 700.047 ; gain = 489.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 581.000 ; gain = 370.652
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 700.047 ; gain = 489.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 581.000 ; gain = 370.652
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 700.047 ; gain = 489.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -265,21 +859,39 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |clk_wiz_0 |     1|
-|2     |OBUFT     |    14|
+|2     |LUT1      |    37|
+|3     |LUT2      |    70|
+|4     |LUT3      |    73|
+|5     |LUT4      |    66|
+|6     |LUT5      |    90|
+|7     |LUT6      |   216|
+|8     |MUXF7     |     2|
+|9     |FDRE      |   216|
+|10    |OBUF      |    14|
 +------+----------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |    16|
-+------+---------+-------+------+
++------+---------------------+----------------------------------------+------+
+|      |Instance             |Module                                  |Cells |
++------+---------------------+----------------------------------------+------+
+|1     |top                  |                                        |   786|
+|2     |  interfaz_seba_inst |Interfaz_Seba                           |   770|
+|3     |    driver_vga       |driver_vga_640x480                      |   227|
+|4     |    grid             |hello_world_text_square                 |   101|
+|5     |    reset            |hello_world_text_square__parameterized3 |   109|
+|6     |    s_time           |hello_world_text_square__parameterized0 |   123|
+|7     |    sample           |hello_world_text_square__parameterized1 |   104|
+|8     |    send             |hello_world_text_square__parameterized2 |    99|
+|9     |    take_sample_inst |Take_sample                             |     7|
+|10    |      insttempPort   |TempSensorCtl                           |     7|
+|11    |        Inst_TWICtl  |TWICtl                                  |     7|
++------+---------------------+----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 581.000 ; gain = 370.652
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 700.047 ; gain = 489.613
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 581.000 ; gain = 149.496
-Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 581.000 ; gain = 370.652
+Synthesis finished with 0 errors, 0 critical warnings and 257 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 700.047 ; gain = 167.816
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 700.047 ; gain = 489.613
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -287,9 +899,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-16 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+127 Infos, 143 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 597.172 ; gain = 386.824
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/Final_Project.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 597.172 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Aug 20 20:39:47 2017...
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 700.047 ; gain = 489.613
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/LabDigitales2017/Final_Project/Final_Project.runs/synth_1/Final_Project.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 700.047 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 22 14:13:53 2017...
