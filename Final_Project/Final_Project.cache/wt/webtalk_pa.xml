@@ -3,10 +3,31 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
 <application name="pa" timeStamp="Tue Aug 22 15:54:23 2017">
+=======
+<<<<<<< HEAD
+<application name="pa" timeStamp="Tue Aug 22 15:45:32 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="b97b14968c5147cf98a7269ed7b1e8c8" type="ProjectID"/>
+<property name="ProjectIteration" value="20" type="ProjectIteration"/>
+=======
+<<<<<<< HEAD
+<application name="pa" timeStamp="Tue Aug 22 13:22:03 2017">
+>>>>>>> 9497b013b84f56d99ac7f8cc9ca9eb5df832a59c
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="9fc4ec06e6194bdea4c37b6f0ae21e79" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
+<<<<<<< HEAD
+=======
+=======
+<application name="pa" timeStamp="Tue Aug 22 14:13:04 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="b97b14968c5147cf98a7269ed7b1e8c8" type="ProjectID"/>
+<property name="ProjectIteration" value="11" type="ProjectIteration"/>
+>>>>>>> d312a68a58aa5d999352ed70d22d66499be6c5ed
+>>>>>>> aa170ad5714f9da3a0c8f4ee0f1aa81a7b3129fc
+>>>>>>> 9497b013b84f56d99ac7f8cc9ca9eb5df832a59c
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -16,6 +37,17 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
+<<<<<<< HEAD
+=======
+<item name="Java Command Handlers">
+<<<<<<< HEAD
+<property name="AddSources" value="6" type="JavaHandler"/>
+=======
+<<<<<<< HEAD
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+</item>
+>>>>>>> 9497b013b84f56d99ac7f8cc9ca9eb5df832a59c
 <item name="Gui Resources Info">
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="24" type="GuiResourceData"/>
 <property name="GettingStartedView_RECENT_PROJECTS" value="1" type="GuiResourceData"/>
@@ -23,7 +55,47 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Other">
 <property name="GuiMode" value="77" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
+<<<<<<< HEAD
 <property name="TclMode" value="53" type="TclMode"/>
+=======
+<property name="TclMode" value="52" type="TclMode"/>
+=======
+<property name="AddSources" value="2" type="JavaHandler"/>
+>>>>>>> aa170ad5714f9da3a0c8f4ee0f1aa81a7b3129fc
+<property name="AutoConnectTarget" value="2" type="JavaHandler"/>
+<property name="EditUndo" value="21" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="10" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="9" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="1" type="JavaHandler"/>
+<property name="ProgramDevice" value="8" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
+<property name="RunBitgen" value="19" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="6" type="JavaHandler"/>
+<property name="ShowView" value="5" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="2" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="BaseDialog_CANCEL" value="3" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="6" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="52" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="41" type="GuiResourceData"/>
+<property name="GettingStartedView_RECENT_PROJECTS" value="1" type="GuiResourceData"/>
+<property name="HCodeEditor_SEARCH_TEXT_COMBO_BOX" value="1" type="GuiResourceData"/>
+<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="6" type="GuiResourceData"/>
+<property name="PACommandNames_AUTO_CONNECT_TARGET" value="2" type="GuiResourceData"/>
+<property name="ProgramDebugTab_OPEN_TARGET" value="1" type="GuiResourceData"/>
+<property name="ProgramDebugTab_PROGRAM_DEVICE" value="3" type="GuiResourceData"/>
+<property name="ProgramFpgaDialog_PROGRAM" value="9" type="GuiResourceData"/>
+<property name="ProgressDialog_CANCEL" value="1" type="GuiResourceData"/>
+<property name="SaveProjectUtils_SAVE" value="1" type="GuiResourceData"/>
+<property name="SrcChooserPanel_ADD_DIRECTORIES" value="1" type="GuiResourceData"/>
+<property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="6" type="GuiResourceData"/>
+<property name="StateMonitor_CANCEL" value="3" type="GuiResourceData"/>
+<property name="StateMonitor_RESET_RUN" value="1" type="GuiResourceData"/>
+<property name="TaskBanner_CLOSE" value="1" type="GuiResourceData"/>
+>>>>>>> d312a68a58aa5d999352ed70d22d66499be6c5ed
+>>>>>>> 9497b013b84f56d99ac7f8cc9ca9eb5df832a59c
 </item>
 </section>
 </application>

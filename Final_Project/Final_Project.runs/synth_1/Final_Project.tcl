@@ -20,12 +20,15 @@ set_property ip_cache_permissions {read write} [current_project]
 add_files -quiet c:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
 set_property used_in_implementation false [get_files c:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
 read_verilog -library xil_defaultlib {
+  C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/new/translate.v
   C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v
+  C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/new/cursor.v
   C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Downloads/take_sample.v
   C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Grafico_Diego.v
   C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v
   C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v
   C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v
+  C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v
   C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Interfaz_Seba.v
   C:/GitHub/LabDigitales2017/Final_Project/Final_Project.srcs/sources_1/new/Final_Project.v
 }

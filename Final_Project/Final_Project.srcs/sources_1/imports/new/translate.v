@@ -27,19 +27,18 @@ module translate(
     );
    
     always@(*)
+    begin
+        grid = 1'b0;
+        sample_time = 1'b0;
+        sample = 1'b0;
+        send = 1'b0;
+        reset = 1'b0; 
         case({position_x,position_y})
             {3'd1,2'd1}: grid = 1'b1;
-            {3'd1,2'd2}: sample_time = 1'b1;
-            {3'd2,2'd1}: sample = 1'b1;
+            {3'd2,2'd1}: sample_time = 1'b1;
+            {3'd1,2'd2}: sample = 1'b1;
             {3'd2,2'd2}: send = 1'b1;
-            {3'd2,2'd3}: reset = 1'b1;
-            default:
-            begin
-            grid = 1'b0;
-            sample_time = 1'b0;
-            sample = 1'b0;
-            send = 1'b0;
-            reset = 1'b0;    
-            end
+            {3'd3,2'd2}: reset = 1'b1;
         endcase
+    end
 endmodule
