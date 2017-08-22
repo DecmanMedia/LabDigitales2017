@@ -12,7 +12,9 @@ module Take_sample
 	inout TMP_SDA, // comunicacion bidireccional datos
 	output [15:0] celcius, //temperatura
 	output [4:0] n_sample, // numero de muestra
-	output rdy // "1" si esta lista la muestra
+	output rdy, // "1" si esta lista la muestra
+	output [15:0] bcd
+
 );
 	wire [12:0] temperatura;
 	reg [16:0] n_total; // 
@@ -73,6 +75,16 @@ module Take_sample
 		cuenta <= cuenta_n;		
 	
 	end
+//Transformar la temperatura a BCD para mostrarla en el display
+        wire convertir;
+        assign  convertir = (idle)?1'd1:1'd0;
+        unsigned_to_bcd utb_inst(
+            .clk(CLK100MHZ),            // Reloj
+            .trigger(convertir),        // Inicio de conversión
+            .in({16'd0,tmp_celcius_adaptado_para_pantalla}),          // Número binario de entrada
+            .idle(idle),      // Si vale 0, indica una conversión en proceso
+            .bcd(bcd) 
+        );
 
 
 
