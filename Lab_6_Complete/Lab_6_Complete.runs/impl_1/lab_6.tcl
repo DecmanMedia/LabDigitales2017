@@ -49,7 +49,6 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.cache/wt [current_project]
@@ -58,8 +57,8 @@ set rc [catch {
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   add_files -quiet C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/lab_6.dcp
-  add_files -quiet C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
-  set_property netlist_only true [get_files C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
+  add_files -quiet c:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
+  set_property netlist_only true [get_files c:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
   read_xdc -mode out_of_context -ref clk_wiz_0 -cells inst c:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc
   set_property processing_order EARLY [get_files c:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
   read_xdc -prop_thru_buffers -ref clk_wiz_0 -cells inst c:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc
@@ -136,25 +135,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
-  catch { write_mem_info -force lab_6.mmi }
-  write_bitstream -force -no_partial_bitfile lab_6.bit 
-  catch { write_sysdef -hwdef lab_6.hwdef -bitfile lab_6.bit -meminfo lab_6.mmi -file lab_6.sysdef }
-  catch {write_debug_probes -quiet -force debug_nets}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

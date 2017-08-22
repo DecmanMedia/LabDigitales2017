@@ -1,14 +1,14 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Mon Aug 21 18:50:26 2017
+| Date         : Mon Aug 21 18:52:46 2017
 | Host         : LaptopDiewo running 64-bit major release  (build 9200)
-| Command      : report_drc -file lab_6_drc_opted.rpt
+| Command      : report_drc -file lab_6_drc_routed.rpt -pb lab_6_drc_routed.pb -rpx lab_6_drc_routed.rpx
 | Design       : lab_6
 | Device       : xc7a100tcsg324-1
 | Speed File   : -1
-| Design State : Synthesized
-------------------------------------------------------------------------------------
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------
 
 Report DRC
 
@@ -24,7 +24,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 17
+             Violations found: 18
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
@@ -32,6 +32,7 @@ Table of Contents
 | DPBU-1   | Warning  | Clock leaf drivers                                  | 8          |
 | DPOP-1   | Warning  | PREG Output pipelining                              | 4          |
 | DPOP-2   | Warning  | MREG Output pipelining                              | 4          |
+| PDRC-153 | Warning  | Gated clock check                                   | 1          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -127,6 +128,11 @@ Related violations: <none>
 DPOP-2#4 Warning
 MREG Output pipelining  
 DSP inst_ALU/result_temp0__2 multiplier stage inst_ALU/result_temp0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net cursor_inst/translate_inst/hex_inferred__0/i__n_0 is a gated clock net sourced by a combinational pin cursor_inst/translate_inst/hex_inferred__0/i_/O, cell cursor_inst/translate_inst/hex_inferred__0/i_. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 
