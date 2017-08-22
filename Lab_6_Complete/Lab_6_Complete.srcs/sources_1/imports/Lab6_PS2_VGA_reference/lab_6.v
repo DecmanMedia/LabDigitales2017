@@ -39,7 +39,7 @@ module lab_6(
     wire parity_error;	
     
     wire [(NUMERO_DIGITOS*8)-1:0] char, char_resultado;
-    reg [(NUMERO_DIGITOS*8)-1:0] char_op1, char_op2;
+    reg [(NUMERO_DIGITOS*8)-1:0] char_op1, char_op2,char_op2_next,char_op1_next;
     
     
 	driver_vga_640x480 m_driver(CLK82MHZ, VGA_HS, VGA_VS,hc_visible,vc_visible);
@@ -105,12 +105,12 @@ module lab_6(
                begin
                 operador1_next = hex; 
                 next_hexdec = SW;
-                char_op1 = char;
+                char_op1_next = char;
                end
                OPERADOR2_STATE: 
                begin
                 operador2_next = hex;
-                char_op2 = char;
+                char_op2_next = char;
                end
                CONTROL_STATE: ALU_ctrl_next = control;
                RESULTADO_STATE: resultado_next = (hexdec)? result_dec: result_hex;
@@ -126,6 +126,8 @@ module lab_6(
                 state <= OPERADOR1_STATE;
                 hexdec <= 1'b1;
                 resultado <= 'd0;
+                char_op2 <= "00000000";
+                char_op1 <= "00000000";
             end
             else
             begin
@@ -135,6 +137,8 @@ module lab_6(
                 state <= next_state;
                 hexdec <= next_hexdec;
                 resultado <= resultado_next;
+                char_op2 <= char_op2_next;
+                char_op1 <= char_op1_next;
             end
     
     numba_to_string char_inst(hex, char);
