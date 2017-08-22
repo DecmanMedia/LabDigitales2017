@@ -21,7 +21,7 @@
 
 
 module Grafico_Diego(
-    input hc_visible, vc_visible,
+    input [10:0] hc_visible, vc_visible,
     input CLK82MHZ, start, reset,
     input [15:0] temperatura,
     input [4:0] muestra,
@@ -57,8 +57,6 @@ module Grafico_Diego(
     if(reset)
     begin
         i <= 0;
-        for(integer i; i<20; i=i+1)
-            storage[i] <= 16'd0;
     end
     else
         i <= i_next;

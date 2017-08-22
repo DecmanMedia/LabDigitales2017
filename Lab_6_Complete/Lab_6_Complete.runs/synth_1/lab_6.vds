@@ -2,12 +2,12 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Mon Aug 21 18:24:59 2017
-# Process ID: 2372
-# Current directory: C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1
+# Start of session at: Tue Aug 22 12:17:55 2017
+# Process ID: 14536
+# Current directory: C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1
 # Command line: vivado.exe -log lab_6.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_6.tcl
-# Log file: C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/lab_6.vds
-# Journal file: C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1\vivado.jou
+# Log file: C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/lab_6.vds
+# Journal file: C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source lab_6.tcl -notrace
 Command: synth_design -top lab_6 -part xc7a100tcsg324-1
@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16116 
+INFO: Helper process launched with PID 13384 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 283.113 ; gain = 73.320
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 282.707 ; gain = 72.539
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'lab_6' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:1]
+INFO: [Synth 8-638] synthesizing module 'lab_6' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:1]
 	Parameter NUMERO_DIGITOS bound to: 8 - type: integer 
 	Parameter CUADRILLA_XI bound to: 212 - type: integer 
 	Parameter CUADRILLA_XF bound to: 812 - type: integer 
@@ -32,10 +32,10 @@ INFO: [Synth 8-638] synthesizing module 'lab_6' [C:/Users/Diego/LabDigitales2017
 	Parameter digito_x bound to: 11'b00011110111 
 	Parameter digito_y bound to: 11'b00011010010 
 	Parameter length bound to: 11'b00001100100 
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-2372-LaptopDiewo/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-2372-LaptopDiewo/realtime/clk_wiz_0_stub.v:5]
-WARNING: [Synth 8-350] instance 'inst' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:26]
-INFO: [Synth 8-638] synthesizing module 'driver_vga_640x480' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v:15]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-14536-PC-SEBAQ/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-14536-PC-SEBAQ/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'inst' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:26]
+INFO: [Synth 8-638] synthesizing module 'driver_vga_640x480' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v:15]
 	Parameter hpixels bound to: 11'b10101010000 
 	Parameter vlines bound to: 11'b01100100101 
 	Parameter hfp bound to: 11'b00001000000 
@@ -44,12 +44,12 @@ INFO: [Synth 8-638] synthesizing module 'driver_vga_640x480' [C:/Users/Diego/Lab
 	Parameter vfp bound to: 11'b00000000011 
 	Parameter vsc bound to: 11'b00000000100 
 	Parameter vbp bound to: 11'b00000011110 
-INFO: [Synth 8-256] done synthesizing module 'driver_vga_640x480' (2#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v:15]
-INFO: [Synth 8-638] synthesizing module 'kbd_ms' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:38]
-INFO: [Synth 8-638] synthesizing module 'ps2_read_ms' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:174]
-INFO: [Synth 8-256] done synthesizing module 'ps2_read_ms' (3#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:174]
-INFO: [Synth 8-256] done synthesizing module 'kbd_ms' (4#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:38]
-INFO: [Synth 8-638] synthesizing module 'cursor' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v:23]
+INFO: [Synth 8-256] done synthesizing module 'driver_vga_640x480' (2#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/driver_vga.v:15]
+INFO: [Synth 8-638] synthesizing module 'kbd_ms' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:38]
+INFO: [Synth 8-638] synthesizing module 'ps2_read_ms' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:174]
+INFO: [Synth 8-256] done synthesizing module 'ps2_read_ms' (3#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:174]
+INFO: [Synth 8-256] done synthesizing module 'kbd_ms' (4#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/kbd_ms.v:38]
+INFO: [Synth 8-638] synthesizing module 'cursor' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v:23]
 	Parameter MAX_NUMBER bound to: 8 - type: integer 
 	Parameter IDLE bound to: 3'b001 
 	Parameter STATE_RIGHT bound to: 3'b010 
@@ -57,26 +57,26 @@ INFO: [Synth 8-638] synthesizing module 'cursor' [C:/Users/Diego/LabDigitales201
 	Parameter STATE_DOWN bound to: 3'b100 
 	Parameter STATE_UP bound to: 3'b101 
 	Parameter STATE_ENTER bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v:57]
-INFO: [Synth 8-638] synthesizing module 'translate' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v:23]
-INFO: [Synth 8-256] done synthesizing module 'translate' (5#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v:93]
-INFO: [Synth 8-256] done synthesizing module 'cursor' (6#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:73]
-INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v:57]
+INFO: [Synth 8-638] synthesizing module 'translate' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v:23]
+INFO: [Synth 8-256] done synthesizing module 'translate' (5#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v:93]
+INFO: [Synth 8-256] done synthesizing module 'cursor' (6#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/cursor.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:73]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/new/ALU.v:23]
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'ALU' (7#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/new/ALU.v:23]
-INFO: [Synth 8-638] synthesizing module 'double_dabble' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Downloads/unsigned_to_bcd.v:22]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (7#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'double_dabble' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Downloads/unsigned_to_bcd.v:22]
 	Parameter S_IDLE bound to: 1 - type: integer 
 	Parameter S_SHIFT bound to: 2 - type: integer 
 	Parameter S_ADD3 bound to: 4 - type: integer 
 	Parameter COUNTER_MAX bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'double_dabble' (8#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Downloads/unsigned_to_bcd.v:22]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:103]
-INFO: [Synth 8-638] synthesizing module 'numba_to_string' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Downloads/numba_to_string.v:23]
+INFO: [Synth 8-256] done synthesizing module 'double_dabble' (8#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Downloads/unsigned_to_bcd.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:103]
+INFO: [Synth 8-638] synthesizing module 'numba_to_string' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Downloads/numba_to_string.v:23]
 	Parameter MAX_CHARACTER_LINE bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'numba_to_string' (9#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Downloads/numba_to_string.v:23]
-INFO: [Synth 8-638] synthesizing module 'template_6x4_600x400' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v:29]
+INFO: [Synth 8-256] done synthesizing module 'numba_to_string' (9#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Downloads/numba_to_string.v:23]
+INFO: [Synth 8-638] synthesizing module 'template_6x4_600x400' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v:29]
 	Parameter d_col bound to: 8'b00011001 
 	Parameter d_row bound to: 7'b0011001 
 	Parameter zeros_col bound to: 2'b00 
@@ -85,8 +85,8 @@ INFO: [Synth 8-638] synthesizing module 'template_6x4_600x400' [C:/Users/Diego/L
 	Parameter CUADRILLA_XF bound to: 812 - type: integer 
 	Parameter CUADRILLA_YI bound to: 184 - type: integer 
 	Parameter CUADRILLA_YF bound to: 584 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'template_6x4_600x400' (10#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v:29]
-INFO: [Synth 8-638] synthesizing module 'show_one_char' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'template_6x4_600x400' (10#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/templates.v:29]
+INFO: [Synth 8-638] synthesizing module 'show_one_char' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 11'b00011110111 
@@ -99,13 +99,13 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char' [C:/Users/Diego/LabDigit
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 289 - type: integer 
 	Parameter MENU_Y_TOP bound to: 266 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'characters' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:21]
-WARNING: [Synth 8-3848] Net vect_num_p in module/entity characters does not have driver. [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:69]
-WARNING: [Synth 8-3848] Net vect_char_space in module/entity characters does not have driver. [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:52]
-WARNING: [Synth 8-3848] Net vect_char_nn in module/entity characters does not have driver. [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:51]
-INFO: [Synth 8-256] done synthesizing module 'characters' (11#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:21]
-INFO: [Synth 8-256] done synthesizing module 'show_one_char' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized0' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'characters' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:21]
+WARNING: [Synth 8-3848] Net vect_num_p in module/entity characters does not have driver. [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:69]
+WARNING: [Synth 8-3848] Net vect_char_space in module/entity characters does not have driver. [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:52]
+WARNING: [Synth 8-3848] Net vect_char_nn in module/entity characters does not have driver. [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:51]
+INFO: [Synth 8-256] done synthesizing module 'characters' (11#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/characters.v:21]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized0' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 11'b00101011011 
@@ -118,8 +118,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized0' [C:/User
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 389 - type: integer 
 	Parameter MENU_Y_TOP bound to: 266 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized0' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized1' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized0' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized1' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 447 - type: integer 
@@ -132,8 +132,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized1' [C:/User
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 489 - type: integer 
 	Parameter MENU_Y_TOP bound to: 266 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized1' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized2' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized1' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized2' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 547 - type: integer 
@@ -146,8 +146,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized2' [C:/User
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 589 - type: integer 
 	Parameter MENU_Y_TOP bound to: 266 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized2' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized3' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized2' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized3' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 647 - type: integer 
@@ -160,8 +160,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized3' [C:/User
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 689 - type: integer 
 	Parameter MENU_Y_TOP bound to: 266 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized3' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized4' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized3' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized4' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 747 - type: integer 
@@ -174,8 +174,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized4' [C:/User
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 789 - type: integer 
 	Parameter MENU_Y_TOP bound to: 266 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized4' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized5' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized4' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized5' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 11'b00011110111 
@@ -188,8 +188,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized5' [C:/User
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 289 - type: integer 
 	Parameter MENU_Y_TOP bound to: 366 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized5' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized6' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized5' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized6' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 11'b00101011011 
@@ -202,8 +202,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized6' [C:/User
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 389 - type: integer 
 	Parameter MENU_Y_TOP bound to: 366 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized6' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized7' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized6' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized7' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 447 - type: integer 
@@ -216,8 +216,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized7' [C:/User
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 489 - type: integer 
 	Parameter MENU_Y_TOP bound to: 366 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized7' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized8' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized7' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized8' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 547 - type: integer 
@@ -230,8 +230,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized8' [C:/User
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 589 - type: integer 
 	Parameter MENU_Y_TOP bound to: 366 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized8' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized9' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized8' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized9' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 647 - type: integer 
@@ -244,8 +244,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized9' [C:/User
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 689 - type: integer 
 	Parameter MENU_Y_TOP bound to: 366 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized9' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized10' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized9' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized10' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 747 - type: integer 
@@ -258,8 +258,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized10' [C:/Use
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 789 - type: integer 
 	Parameter MENU_Y_TOP bound to: 366 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized10' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized11' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized10' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized11' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 11'b00011110111 
@@ -272,8 +272,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized11' [C:/Use
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 289 - type: integer 
 	Parameter MENU_Y_TOP bound to: 466 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized11' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized12' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized11' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized12' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 11'b00101011011 
@@ -286,8 +286,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized12' [C:/Use
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 389 - type: integer 
 	Parameter MENU_Y_TOP bound to: 466 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized12' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized13' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized12' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized13' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 447 - type: integer 
@@ -300,8 +300,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized13' [C:/Use
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 489 - type: integer 
 	Parameter MENU_Y_TOP bound to: 466 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized13' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized14' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized13' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized14' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 547 - type: integer 
@@ -314,8 +314,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized14' [C:/Use
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 589 - type: integer 
 	Parameter MENU_Y_TOP bound to: 466 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized14' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized15' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized14' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized15' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 647 - type: integer 
@@ -328,8 +328,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized15' [C:/Use
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 689 - type: integer 
 	Parameter MENU_Y_TOP bound to: 466 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized15' (12#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_line' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:433]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized15' (12#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_line' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:433]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 5 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 747 - type: integer 
@@ -342,8 +342,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_line' [C:/Users/Diego/LabDigit
 	Parameter MENU_HEIGHT bound to: 40 - type: integer 
 	Parameter MENU_X_TOP bound to: 807 - type: integer 
 	Parameter MENU_Y_TOP bound to: 450 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_line' (13#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:433]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized16' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_line' (13#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:433]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized16' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 11'b00011110111 
@@ -356,8 +356,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized16' [C:/Use
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 289 - type: integer 
 	Parameter MENU_Y_TOP bound to: 566 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized16' (13#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized17' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized16' (13#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized17' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 11'b00101011011 
@@ -370,8 +370,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized17' [C:/Use
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 389 - type: integer 
 	Parameter MENU_Y_TOP bound to: 566 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized17' (13#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized18' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized17' (13#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized18' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 447 - type: integer 
@@ -384,8 +384,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized18' [C:/Use
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 489 - type: integer 
 	Parameter MENU_Y_TOP bound to: 566 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized18' (13#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized19' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized18' (13#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized19' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 7 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 547 - type: integer 
@@ -398,8 +398,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_char__parameterized19' [C:/Use
 	Parameter MENU_HEIGHT bound to: 56 - type: integer 
 	Parameter MENU_X_TOP bound to: 589 - type: integer 
 	Parameter MENU_Y_TOP bound to: 566 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized19' (13#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
-INFO: [Synth 8-638] synthesizing module 'show_one_line__parameterized0' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:433]
+INFO: [Synth 8-256] done synthesizing module 'show_one_char__parameterized19' (13#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:236]
+INFO: [Synth 8-638] synthesizing module 'show_one_line__parameterized0' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:433]
 	Parameter n bound to: 3 - type: integer 
 	Parameter ancho_pixel bound to: 5 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 627 - type: integer 
@@ -412,8 +412,8 @@ INFO: [Synth 8-638] synthesizing module 'show_one_line__parameterized0' [C:/User
 	Parameter MENU_HEIGHT bound to: 40 - type: integer 
 	Parameter MENU_X_TOP bound to: 717 - type: integer 
 	Parameter MENU_Y_TOP bound to: 550 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'show_one_line__parameterized0' (13#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:433]
-INFO: [Synth 8-638] synthesizing module 'hello_world_text_square' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+INFO: [Synth 8-256] done synthesizing module 'show_one_line__parameterized0' (13#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:433]
+INFO: [Synth 8-638] synthesizing module 'hello_world_text_square' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
 	Parameter n bound to: 4 - type: integer 
 	Parameter ancho_pixel bound to: 6 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 11'b01011111010 
@@ -426,11 +426,11 @@ INFO: [Synth 8-638] synthesizing module 'hello_world_text_square' [C:/Users/Dieg
 	Parameter MENU_HEIGHT bound to: 144 - type: integer 
 	Parameter MENU_X_TOP bound to: 978 - type: integer 
 	Parameter MENU_Y_TOP bound to: 174 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'hello_world_text_square' (14#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
-WARNING: [Synth 8-689] width (32) of port connection 'op1' does not match port width (48) of module 'hello_world_text_square' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:184]
-WARNING: [Synth 8-689] width (32) of port connection 'op2' does not match port width (48) of module 'hello_world_text_square' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:184]
-WARNING: [Synth 8-689] width (32) of port connection 'result' does not match port width (48) of module 'hello_world_text_square' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:184]
-INFO: [Synth 8-638] synthesizing module 'hello_world_text_square__parameterized0' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+INFO: [Synth 8-256] done synthesizing module 'hello_world_text_square' (14#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+WARNING: [Synth 8-689] width (32) of port connection 'op1' does not match port width (48) of module 'hello_world_text_square' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:184]
+WARNING: [Synth 8-689] width (32) of port connection 'op2' does not match port width (48) of module 'hello_world_text_square' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:184]
+WARNING: [Synth 8-689] width (32) of port connection 'result' does not match port width (48) of module 'hello_world_text_square' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:184]
+INFO: [Synth 8-638] synthesizing module 'hello_world_text_square__parameterized0' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
 	Parameter n bound to: 4 - type: integer 
 	Parameter ancho_pixel bound to: 6 - type: integer 
 	Parameter MENU_X_LOCATION bound to: 11'b00101101100 
@@ -443,10 +443,10 @@ INFO: [Synth 8-638] synthesizing module 'hello_world_text_square__parameterized0
 	Parameter MENU_HEIGHT bound to: 144 - type: integer 
 	Parameter MENU_X_TOP bound to: 796 - type: integer 
 	Parameter MENU_Y_TOP bound to: 174 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'hello_world_text_square__parameterized0' (14#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
-INFO: [Synth 8-256] done synthesizing module 'lab_6' (15#1) [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:1]
+INFO: [Synth 8-256] done synthesizing module 'hello_world_text_square__parameterized0' (14#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/hello_world.v:34]
+INFO: [Synth 8-256] done synthesizing module 'lab_6' (15#1) [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 334.980 ; gain = 125.188
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 334.656 ; gain = 124.488
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -455,45 +455,45 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin inst_double_dabble:trigger to constant 0 [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:88]
+WARNING: [Synth 8-3295] tying undriven pin inst_double_dabble:trigger to constant 0 [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:88]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 334.980 ; gain = 125.188
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 334.656 ; gain = 124.488
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'inst' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:26]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'inst' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:26]
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-2372-LaptopDiewo/dcp/clk_wiz_0_in_context.xdc] for cell 'inst'
-Finished Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-2372-LaptopDiewo/dcp/clk_wiz_0_in_context.xdc] for cell 'inst'
-Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
-Finished Parsing XDC File [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab_6_propImpl.xdc].
+Parsing XDC File [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-14536-PC-SEBAQ/dcp/clk_wiz_0_in_context.xdc] for cell 'inst'
+Finished Parsing XDC File [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-14536-PC-SEBAQ/dcp/clk_wiz_0_in_context.xdc] for cell 'inst'
+Parsing XDC File [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
+Finished Parsing XDC File [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/constrs_1/imports/LabDigitales2017/The Final Alcachofita.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab_6_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/lab_6_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 660.227 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 659.637 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 660.227 ; gain = 450.434
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 659.637 ; gain = 449.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 660.227 ; gain = 450.434
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 659.637 ; gain = 449.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-2372-LaptopDiewo/dcp/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-2372-LaptopDiewo/dcp/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-14536-PC-SEBAQ/dcp/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/.Xil/Vivado-14536-PC-SEBAQ/dcp/clk_wiz_0_in_context.xdc, line 4).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 660.227 ; gain = 450.434
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 659.637 ; gain = 449.469
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "data_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "kds_state_machine_next0" won't be mapped to RAM because it is too sparse
@@ -507,7 +507,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'curso
 INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_next4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "Z" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/new/ALU.v:62]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/new/ALU.v:62]
 INFO: [Synth 8-5544] ROM "idle" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "bcd_next" won't be mapped to RAM because it is too sparse
@@ -618,8 +618,8 @@ INFO: [Synth 8-5544] ROM "result0" won't be mapped to Block RAM because address 
 INFO: [Synth 8-5544] ROM "result0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "result0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "result0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'hex_reg' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v:43]
-WARNING: [Synth 8-327] inferring latch for variable 'control_reg' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'hex_reg' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'control_reg' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/new/translate.v:59]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -640,10 +640,10 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
          RESULTADO_STATE |                             1000 |                              100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'lab_6'
-WARNING: [Synth 8-327] inferring latch for variable 'char_op1_next_reg' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:108]
-WARNING: [Synth 8-327] inferring latch for variable 'char_op2_next_reg' [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:113]
+WARNING: [Synth 8-327] inferring latch for variable 'char_op1_next_reg' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:108]
+WARNING: [Synth 8-327] inferring latch for variable 'char_op2_next_reg' [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:113]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 660.227 ; gain = 450.434
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 659.637 ; gain = 449.469
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1543,7 +1543,7 @@ WARNING: [Synth 8-3332] Sequential element (menu_character_position_y_reg[4]) is
 WARNING: [Synth 8-3332] Sequential element (menu_character_position_y_reg[3]) is unused and will be removed from module hello_world_text_square__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (menu_character_position_y_reg[2]) is unused and will be removed from module hello_world_text_square__parameterized0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:51 . Memory (MB): peak = 660.227 ; gain = 450.434
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 659.637 ; gain = 449.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1592,10 +1592,10 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/clk_out1' to pin 'inst/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:09 ; elapsed = 00:02:23 . Memory (MB): peak = 730.941 ; gain = 521.148
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:14 . Memory (MB): peak = 730.195 ; gain = 520.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:02:38 . Memory (MB): peak = 790.840 ; gain = 581.047
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:21 . Memory (MB): peak = 790.008 ; gain = 579.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1609,7 +1609,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:32 ; elapsed = 00:02:47 . Memory (MB): peak = 790.840 ; gain = 581.047
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:24 . Memory (MB): peak = 790.008 ; gain = 579.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1632,10 +1632,10 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:108]
-WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:113]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:108]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.srcs/sources_1/imports/Lab6_PS2_VGA_reference/lab_6.v:113]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:34 ; elapsed = 00:02:50 . Memory (MB): peak = 790.840 ; gain = 581.047
+Finished IO Insertion : Time (s): cpu = 00:01:14 ; elapsed = 00:01:25 . Memory (MB): peak = 790.008 ; gain = 579.840
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1648,7 +1648,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:34 ; elapsed = 00:02:50 . Memory (MB): peak = 790.840 ; gain = 581.047
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:14 ; elapsed = 00:01:25 . Memory (MB): peak = 790.008 ; gain = 579.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1660,25 +1660,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:35 ; elapsed = 00:02:50 . Memory (MB): peak = 790.840 ; gain = 581.047
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:25 . Memory (MB): peak = 790.008 ; gain = 579.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:35 ; elapsed = 00:02:51 . Memory (MB): peak = 790.840 ; gain = 581.047
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:25 . Memory (MB): peak = 790.008 ; gain = 579.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:35 ; elapsed = 00:02:51 . Memory (MB): peak = 790.840 ; gain = 581.047
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:26 . Memory (MB): peak = 790.008 ; gain = 579.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:35 ; elapsed = 00:02:51 . Memory (MB): peak = 790.840 ; gain = 581.047
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:26 . Memory (MB): peak = 790.008 ; gain = 579.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1756,11 +1756,11 @@ Report Instance Areas:
 |35    |  uno                |show_one_char__parameterized0           |    66|
 +------+---------------------+----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:35 ; elapsed = 00:02:51 . Memory (MB): peak = 790.840 ; gain = 581.047
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:26 . Memory (MB): peak = 790.008 ; gain = 579.840
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:09 ; elapsed = 00:02:28 . Memory (MB): peak = 790.840 ; gain = 255.266
-Synthesis Optimization Complete : Time (s): cpu = 00:02:36 ; elapsed = 00:02:51 . Memory (MB): peak = 790.840 ; gain = 581.047
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:12 . Memory (MB): peak = 790.008 ; gain = 254.082
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:26 . Memory (MB): peak = 790.008 ; gain = 579.840
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 158 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
@@ -1773,7 +1773,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 303 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:36 ; elapsed = 00:02:48 . Memory (MB): peak = 790.840 ; gain = 581.047
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Diego/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/lab_6.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 790.840 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 21 18:27:58 2017...
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:25 . Memory (MB): peak = 790.008 ; gain = 579.840
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/LabDigitales2017/Lab_6_Complete/Lab_6_Complete.runs/synth_1/lab_6.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 790.008 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 22 12:19:25 2017...
