@@ -1,9 +1,8 @@
 version:1
 00000000:0
-0000000000fff&s0f0ffff&s0f:0
-0000000000fff&s0f0ffff&sfff&sfff&sfff&s0f:0
-3c3c3c3cfff&s0f0ffff&sfff&sfff&sfff&sfff&s0f0ffff&sfff&sfff&s0f0ffff&sfff&s0f0ffff&s0f0ffff&sfff&s0f0ffff&s0f0ffff&sfff&sfff&sfff&sfff&s0f0ffff&sfff&sfff&s0f0ffff&sfff&sfff&sfff&sfff&s0f0ffff&sfff&sfff&sfff&sfff&s0f0ffff&s0f0ffff&sfff&sfff&s0f0ffff&sfff&sfff&sfff&sfff&s0f0ffff&sfff&sfff&s0f0ffff&sfff&s0f0ffff&s0f0ffff&sfff&sfff&s0f0ffff&sfff&sfff&sfff&sfff&s0f0ffff&sfff&s0f0f0ffff&s0f0ffff&sfff&sfff&sfff&sfff&s0f0ffff&sfff&sfff&s0f0ffff&s0f0ffff&sfff&s0b:0
-505050507ffff&s0f0ffff&sfff&sfff&sfff&sfff&sfff&s0f0f450ffff&sfff&s0f0ffff&s0f0ffff&sfff&sfff&s0f0ffff&sfff&sfff&sfff&sfff&sfff&s0f0ffff&sfff&s0f0ffff&s0f0ffff&sfff&sfff&s0f0ffff&sfff&sfff&sfff&s0f0f27fff&s0f0f04:0
+0000000000fff°p0f0ffff°pfff°pfff°pfff°p0f:0
+0000000000fff°p0f0ffff°pfff°pfff°pfff°pfff°p0f0ffff°pfff°pfff°p0f0f0f:0
+505050507ffff°p0f0ffff°pfff°pfff°pfff°pfff°p0f0ffff°pfff°pfff°p0f0ffff°pfff°pfff°p0f0ffff°pfff°p50fff°pfff°pfff°pfff°p0f0ffff°pfff°pfff°pfff°p0f0ffff°p0f0ffff°pfff°pfff°p0f0ffff°pfff°pfff°pfff°pfff°p0f0ffff°pfff°pfff°p0f0ffff°pfff°pfff°p0f0ffff°pfff°pfff°pfff°pfff°p0f0ffff°pfff°pfff°pfff°p0f0ffff°p0f0ffff°pfff°pfff°p0f0ffff°pfff°pfff°pfff°pfff°p0f0ffff°pfff°pfff°p0f0ffff°pfff°p7ffff°pfff°p0f0f04:0
 57656254616c6b5472616e736d697373696f6e417474656d70746564:57
-6d6f64655f636f756e7465727c4755494d6f6465:12
+6d6f64655f636f756e7465727c4755494d6f6465:13
 eof:

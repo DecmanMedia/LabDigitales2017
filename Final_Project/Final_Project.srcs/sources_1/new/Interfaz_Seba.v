@@ -50,6 +50,20 @@
  
     driver_vga_640x480 driver_vga(CLK82MHZ, VGA_HS, VGA_VS,hc_visible,vc_visible);
     template_6x4_600x400 template_30x20(CLK82MHZ, hc_visible, vc_visible, matrix_x, matrix_y, lines);
+
+	wire kbs_tot;
+    wire [7:0] data;
+    wire [2:0] data_type;
+    wire parity_error;
+        
+    kbd_ms m_kd(CLK82MHZ, 1'b0, PS2_DATA, PS2_CLK, data, data_type, kbs_tot, parity_error);
+    
+    wire [2:0] position_x;
+    wire [1:0] position_y;
+    cursor cursor_inst(CLK82MHZ, rst, kbs_tot, data, data_type, position_x, position_y);
+    
+    wire send, sample, reset, grid, sample_time;
+    translate translate_inst(position_x, position_y, send, sample, reset, grid, sample_time);
     
     wire n_time, init, rdy, grilla, line;
     wire [15:0] temperatura;
@@ -84,19 +98,19 @@
     wire dr_gr, dr_st, dr_sa, dr_se, dr_re;
      
     //grid
-    hello_world_text_square #(.MENU_X_LOCATION(11'd40), .MENU_Y_LOCATION(11'd40), .MAX_NUMBER_LINES('d1), .MAX_CHARACTER_LINE('d6)) grid(CLK82MHZ, 1'b0,"grid", hc_visible, vc_visible, in_sq_gr, dr_gr);
+    hello_world_text_square #(.MENU_X_LOCATION(11'd40), .MENU_Y_LOCATION(11'd40), .MAX_NUMBER_LINES('d1), .MAX_CHARACTER_LINE('d6)) grid_inst(CLK82MHZ, 1'b0,"grid", hc_visible, vc_visible, in_sq_gr, dr_gr);
     
     //sample time
-    hello_world_text_square #(.MENU_X_LOCATION(11'd625), .MENU_Y_LOCATION(11'd80), .MAX_NUMBER_LINES('d1), .MAX_CHARACTER_LINE('d11)) s_time(CLK82MHZ, 1'b0,"sample time", hc_visible, vc_visible, in_sq_st, dr_st);
+    hello_world_text_square #(.MENU_X_LOCATION(11'd625), .MENU_Y_LOCATION(11'd80), .MAX_NUMBER_LINES('d1), .MAX_CHARACTER_LINE('d11)) s_time_inst(CLK82MHZ, 1'b0,"sample time", hc_visible, vc_visible, in_sq_st, dr_st);
     
     //sample
-    hello_world_text_square #(.MENU_X_LOCATION(11'd80), .MENU_Y_LOCATION(11'd580), .MAX_NUMBER_LINES('d1), .MAX_CHARACTER_LINE('d6)) sample(CLK82MHZ, 1'b0,"sample", hc_visible, vc_visible, in_sq_sa, dr_sa);
+    hello_world_text_square #(.MENU_X_LOCATION(11'd80), .MENU_Y_LOCATION(11'd580), .MAX_NUMBER_LINES('d1), .MAX_CHARACTER_LINE('d6)) sample_inst(CLK82MHZ, 1'b0,"sample", hc_visible, vc_visible, in_sq_sa, dr_sa);
     
     //send
-    hello_world_text_square #(.MENU_X_LOCATION(11'd400), .MENU_Y_LOCATION(11'd580), .MAX_NUMBER_LINES('d1), .MAX_CHARACTER_LINE('d6)) send(CLK82MHZ, 1'b0,"send", hc_visible, vc_visible, in_sq_se, dr_se);
+    hello_world_text_square #(.MENU_X_LOCATION(11'd400), .MENU_Y_LOCATION(11'd580), .MAX_NUMBER_LINES('d1), .MAX_CHARACTER_LINE('d6)) send_inst(CLK82MHZ, 1'b0,"send", hc_visible, vc_visible, in_sq_se, dr_se);
     
     //reset
-    hello_world_text_square #(.MENU_X_LOCATION(11'd710), .MENU_Y_LOCATION(11'd580), .MAX_NUMBER_LINES('d1), .MAX_CHARACTER_LINE('d6)) reset(CLK82MHZ, 1'b0,"reset", hc_visible, vc_visible, in_sq_re, dr_re);
+    hello_world_text_square #(.MENU_X_LOCATION(11'd710), .MENU_Y_LOCATION(11'd580), .MAX_NUMBER_LINES('d1), .MAX_CHARACTER_LINE('d6)) reset_inst(CLK82MHZ, 1'b0,"reset", hc_visible, vc_visible, in_sq_re, dr_re);
     
     reg [11:0]VGA_COLOR;
     
@@ -105,8 +119,8 @@
 		begin
 		    if(dr_gr == 1'b1 | dr_st == 1'b1 | dr_sa == 1'b1 | dr_se == 1'b1 | dr_re == 1'b1)
 				VGA_COLOR = {12'h555};
-			else if (in_sq_gr == 1'b1 | in_sq_st == 1'b1 | in_sq_sa == 1'b1 | in_sq_se == 1'b1 | in_sq_re == 1'b1)
-				VGA_COLOR = {12'hFFF};
+			else if ((in_sq_se == 1'b1 && send) | (in_sq_gr && grid) | (in_sq_sa && sample) | (in_sq_re && reset) | (in_sq_st && sample))
+			     VGA_COLOR = {12'hF00};          
 			//else if((hc_visible > CUADRILLA_XI) && (hc_visible <= CUADRILLA_XF) && (vc_visible > CUADRILLA_YI) && (vc_visible <= CUADRILLA_YF))
 			else
 				VGA_COLOR = {12'h0BF};
