@@ -1,0 +1,79 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+Process ID: 11708
+
+Current time: 	8/22/17 12:11:43 PM CLT
+Time zone: 	Chile Time (America/Santiago)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	Sebastián Quiroz
+User home directory: C:/Users/Sebastián Quiroz
+User working directory: C:/GitHub/LabDigitales2017/Final_Project
+User country: 	MX
+User language: 	es
+User locale: 	es_MX
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Sebastián Quiroz/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Sebastián Quiroz/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	166 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 385 MB
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 50 MB (+50228kb) [00:00:16]
+// [Engine Memory]: 362 MB (+228321kb) [00:00:16]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\GitHub\LabDigitales2017\Final_Project\Final_Project.xpr. Version: Vivado v2016.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/GitHub/LabDigitales2017/Final_Project/Final_Project.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 391 MB. GUI used memory: 27 MB. Current time: 8/22/17 12:11:46 PM CLT
+// [Engine Memory]: 391 MB (+10913kb) [00:00:21]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 489 MB (+82858kb) [00:00:37]
+// [GUI Memory]: 53 MB (+298kb) [00:00:41]
+// Tcl Message: open_project C:/GitHub/LabDigitales2017/Final_Project/Final_Project.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 513 MB. GUI used memory: 33 MB. Current time: 8/22/17 12:12:08 PM CLT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// [Engine Memory]: 514 MB (+471kb) [00:00:44]
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 747.602 ; gain = 155.844 
+// Project name: Final_Project; location: C:/GitHub/LabDigitales2017/Final_Project; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 56 MB (+149kb) [00:00:46]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 59 MB (+651kb) [00:01:24]
