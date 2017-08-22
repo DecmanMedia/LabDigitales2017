@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/GitHub/LabDigitales2017/Final_Project/Final_Project.xpr">
+<Project Version="7" Minor="17" Path="C:/Users/Diego/LabDigitales2017/Final_Project/Final_Project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="158f7ba2059a40daaca5bd979c2159a8"/>
